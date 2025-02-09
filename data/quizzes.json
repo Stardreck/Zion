@@ -1,0 +1,15 @@
+{
+  "default": [
+    {
+      "type": "quiz",
+      "question": "Wie viele Monde hat Jupiter?",
+      "answers": [
+        "53",
+        "79",
+        "67",
+        "82"
+      ],
+      "correct_answer_position": 2
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "TerraNova": {
+    "title": "TerraNova Title",
+    "story_lines": [
+      {
+        "text": "Willkommen auf Terra Nova! Hier begann eure Reise.",
+        "image": "assets/images/people/portrait_lira.png",
+        "image_description": "Lira"
+      },
+      {
+        "text": "Dies ist die zweite Seite",
+        "image": "assets/images/people/portrait_lira.png",
+        "image_description": "Lira"
+      }
+    ]
+  }
+}

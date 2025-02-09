@@ -1,0 +1,5 @@
+pygame-ce
+pygame_gui
+pymunk
+moviepy
+numpy

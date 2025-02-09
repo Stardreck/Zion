@@ -1,0 +1,23 @@
+[
+  {
+    "name": "TerraNova",
+    "description": "Dies ist eine Beschreibung des Planeten Terra Nova blah blah blah blah sehr spânnend jop mol findi au. öüäüäöü!£",
+    "row": 2,
+    "col": 3,
+    "visited": false,
+    "isFuelPlanet": false,
+    "background_image": "assets/images/station_storage_room.webp",
+    "planet_image": "assets/images/planets/zion_background.png",
+    "cutscene": "assets/videos/video_planet_sequence.mp4"
+  },
+  {
+    "name": "Mars",
+    "description": "wa wötsch vo mir?",
+    "row": 4,
+    "col": 6,
+    "visited": false,
+    "isFuelPlanet": true,
+    "background_image": "assets/images/solar_system.png",
+    "cutscene": "assets/videos/video_planet_sequence.mp4"
+  }
+]

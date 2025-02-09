@@ -1,0 +1,143 @@
+{
+  "button": {
+    "colours": {
+      "normal_bg": "#174e38",
+      "hovered_bg": "#182721",
+      "normal_text": "#ffffff"
+    },
+    "font": {
+      "name": "Quicksand",
+      "size": "20",
+      "regular_path": "assets/fonts/Quicksand/Quicksand-Regular.ttf",
+      "bold_path": "assets/fonts/Quicksand/Quicksand-Bold.ttf",
+      "italic_path": "assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf",
+      "bold_italic_path": "assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf"
+    },
+    "misc": {
+      "border_width": "0",
+      "shape": "rounded_rectangle",
+      "shape_corner_radius": "12"
+    }
+  },
+  "panel": {
+    "colours": {
+      "dark_bg": "#0a110f",
+      "normal_border": "#0a110f"
+    },
+    "misc": {
+      "shape": "rounded_rectangle",
+      "shape_corner_radius": "12",
+      "border_width": "0",
+      "shadow_width": "0"
+    }
+  },
+  "label": {
+    "colours": {
+      "normal_text": "#ffffff"
+    }
+  },
+  "text_box": {
+    "colours": {
+      "dark_bg": "#00000000",
+      "normal_border": "#00000000",
+      "normal_text": "#ffffff"
+    },
+    "font": {
+      "size": "16"
+    },
+    "misc": {
+      "border_width": "0"
+    }
+  },
+  "text_entry_line": {
+    "colours": {
+      "dark_bg": "#162420",
+      "normal_text": "#ffffff",
+      "normal_border": "#00000000"
+    },
+    "misc": {
+      "border_width": "0",
+      "shape": "rounded_rectangle",
+      "shape_corner_radius": "12"
+    }
+  },
+  "default_panel_transparent": {
+    "colours": {
+      "dark_bg": "#101a17e6",
+      "normal_border": "#101a17e6"
+    },
+    "misc": {
+      "shape": "rounded_rectangle",
+      "shape_corner_radius": "12",
+      "border_width": "0",
+      "shadow_width": "0"
+    }
+  },
+  "default_panel": {},
+  "panel_invisible": {
+    "colours": {
+      "dark_bg": "#00000000",
+      "normal_border": "#00000000"
+    }
+  },
+  "main_menu_title": {
+    "font": {
+      "name": "StarJedi",
+      "size": "80",
+      "regular_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "italic_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_italic_path": "assets/fonts/Starjedi/Starjedi.ttf"
+    }
+  },
+  "main_menu_start_button": {
+  },
+  "quiz_title": {
+    "font": {
+      "size": "25",
+      "bold": "1"
+    }
+  },
+  "quiz_question": {
+    "font": {
+      "size": "16"
+    }
+  },
+  "quiz_input_label": {
+    "font": {
+      "bold": "1"
+    }
+  },
+  "quiz_input_label_info": {
+  },
+  "panel_button": {
+    "font": {
+      "size": "20",
+      "bold": "1"
+    }
+  },
+  "hud_inventory_button": {
+    "images": {
+      "normal_image": {
+        "package": "assets.interface.inventory",
+        "resource": "inventory_icon.png"
+      }
+    }
+  },
+  "planet_menu_title": {
+    "font": {
+      "name": "StarJedi",
+      "size": "60",
+      "regular_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "italic_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_italic_path": "assets/fonts/Starjedi/Starjedi.ttf"
+    }
+  },
+  "planet_menu_description": {
+  },
+  "planet_menu_visit_planet_button": {
+  },
+  "planet_menu_visit_station_button": {
+  }
+}
