@@ -8,6 +8,7 @@ from src.managers.debug_manager import DebugManager
 from src.managers.event.event_manager import EventManager
 from src.managers.hud_manager import HUDManager
 from src.managers.input_manager import InputManager
+from src.managers.inventory_manager import InventoryManager
 from src.managers.quiz_manager import QuizManager
 from src.managers.story_manager import StoryManager
 from src.managers.ui_manager import UIManager
@@ -48,6 +49,7 @@ class StoryGame(Game):
         self.story_manager: StoryManager = StoryManager(self)
 
         ##### Inventory Manager #####
+        self.inventory_manager = InventoryManager(self)
 
         ##### Debug Manager #####
         self.debug_manager: DebugManager = DebugManager(self)
