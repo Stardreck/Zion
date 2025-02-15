@@ -7,6 +7,9 @@
     "start_button_text": "Reise beginnen"
   },
   "event_system": {
-    "event_probability": 1
+    "event_probability": 0
+  },
+  "quiz_system": {
+    "tolerance": 0.1
   }
 }

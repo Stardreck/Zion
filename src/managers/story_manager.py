@@ -29,6 +29,12 @@ class StoryManager(Manager):
         return planet_station_menu.run()
 
     def show_planet_story(self, planet: Planet, story: Story):
-        for story_line in story.story_lines:
-            story_view = StoryView(self.game, planet, story_line)
-            story_view.run()
+        # iterate over the story and or quiz / task blocks
+        for block in story.blocks:
+            if block.block_type == "story":
+                for story_line in block.story_lines:
+                    story_view = StoryView(self.game, planet, story_line)
+                    story_view.run()
+
+            elif block.block_type in ["quiz", "task"]:
+                self.game.quiz_manager.run_quiz(block.quiz)

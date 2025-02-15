@@ -1,9 +1,9 @@
-from typing import List, Optional
+from typing import List
 
-from src.models.story_line import StoryLine
+from src.models.story_block import StoryBlock
 
 
 class Story:
-    def __init__(self, title: str, story_lines: List[StoryLine]):
+    def __init__(self, title: str, blocks: List[StoryBlock]):
         self.title: str = title
-        self.story_lines: List[StoryLine] = story_lines
+        self.blocks: List[StoryBlock] = blocks

@@ -98,6 +98,16 @@
       "bold": "1"
     }
   },
+  "quiz_classroom_title": {
+        "font": {
+      "name": "StarJedi",
+      "size": "30",
+      "regular_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "italic_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_italic_path": "assets/fonts/Starjedi/Starjedi.ttf"
+    }
+  },
   "quiz_question": {
     "font": {
       "size": "16"

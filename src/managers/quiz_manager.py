@@ -5,7 +5,9 @@ from typing import TYPE_CHECKING, Optional
 
 from src.managers.manager import Manager
 from src.models.quiz import Quiz
+from src.views.quiz.error_view import ErrorView
 from src.views.quiz.quiz_view import QuizView
+from src.views.quiz.task_view import TaskView
 
 if TYPE_CHECKING:
     from src.games.story_game import StoryGame
@@ -23,15 +25,37 @@ class QuizManager(Manager):
         """
         super().__init__()
         self.game: StoryGame = game
+        self.tolerance = self.game.engine.config.quiz_tolerance
+        self.is_last_quiz_correct: bool = False
 
-    def run(self, planet_name: str):
-        quiz = self.get_random_quiz_for_planet(planet_name)
+    def run_general_field_action(self):
+        quiz = self.get_random_quiz_for_planet("default")
+        print("[QuizManager] selected quiz_type: ", quiz.quiz_type)
 
         if quiz.quiz_type == "quiz":
-            self.__run_quiz(quiz)
+            self.run_quiz(quiz)
+        if quiz.quiz_type == "task":
+            self.run_task(quiz)
 
-    def __run_quiz(self, quiz: Quiz):
+        ##### update statistics #####
+        self.game.statistics_manager.record_quiz_task_result(quiz, self.is_last_quiz_correct)
+
+        ##### #####
+
+        # display error view (Nachhilfeunterricht)
+        if not self.is_last_quiz_correct:
+            self.run_error(quiz)
+
+    def run_quiz(self, quiz: Quiz):
         view = QuizView(self.game, quiz)
+        view.run()
+
+    def run_task(self, quiz: Quiz):
+        view = TaskView(self.game, quiz)
+        view.run()
+
+    def run_error(self, quiz: Quiz):
+        view = ErrorView(self.game, quiz)
         view.run()
 
     def process_submit(self, quiz: Quiz, user_input: str):
@@ -44,7 +68,9 @@ class QuizManager(Manager):
         else:
             print("[QuizManager] wrong answer")
             print("[QuizManager] user answer: ", user_input)
+            print("[QuizManager] correct answer would be: ", quiz.correct_answer)
             pass
+        self.is_last_quiz_correct = is_correct
 
     def __is_user_input_correct(self, quiz: Quiz, user_input: str):
         """
@@ -57,6 +83,7 @@ class QuizManager(Manager):
             is_correct = False
             if quiz.quiz_type == "task":
                 user_value = float(user_input)
+                is_correct = abs(user_value - float(quiz.correct_answer)) <= self.tolerance
             if quiz.quiz_type == "quiz":
                 is_correct = int(user_input) == quiz.correct_answer
 

@@ -12,8 +12,9 @@ class Quiz:
     """
 
     def __init__(self, question: str, answer_options: List[str],
-                 correct_answer: Optional[str] = None, quiz_type: str = "quiz"):
+                 correct_answer: Optional[str] = None, quiz_type: str = "quiz", solution: str = ""):
         self.question = question
         self.answer_options = answer_options
         self.correct_answer = correct_answer
         self.quiz_type = quiz_type
+        self.solution = solution

@@ -2,14 +2,21 @@
   "default": [
     {
       "type": "quiz",
-      "question": "Wie viele Monde hat Jupiter?",
+      "question": "Wie viel mal muesch go kägge am Tag?",
       "answers": [
-        "53",
-        "79",
-        "67",
-        "82"
+        "6",
+        "99",
+        "9",
+        "5"
       ],
-      "correct_answer_position": 2
+      "correct_answer_position": 2,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit amet"
+    },
+    {
+      "type": "task",
+      "question": "Wie viel mal muesch go kägge am Tag?",
+      "correct_value": 99,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit amet"
     }
   ]
 }

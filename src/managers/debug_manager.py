@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import math
 import pygame
+import pygame_gui
 
-from pygame_gui.elements import UIWindow, UIImage, UILabel
+from pygame_gui.elements import  UIImage, UILabel
 from typing import List, Optional, Tuple, TYPE_CHECKING
 
+from src.components.ui.ui_window import UIWindow
 from src.enums.color import Color
 from src.managers.manager import Manager
 
@@ -45,17 +47,48 @@ class DebugManager(Manager):
         ##### Hide both windows initially #####
         self.debug_info_window.hide()
         self.solar_system_window.hide()
+        self.event_info_window.hide()
+        self.quiz_info_window.hide()
+        self.stats_info_window.hide()
 
     def __init(self):
         ##### Create the Debug Information Window #####
         self.debug_info_window: UIWindow = UIWindow(
-            rect=pygame.Rect(900, 50, 400, 300),
+            rect=pygame.Rect(855, 50, 400, 250),
             manager=self.game.ui_manager.gui_manager,
-            window_display_title="Debug Information"
+            window_display_title="Debug Information",
+
         )
         # List to hold UILabel elements for debug text
         self.debug_info_labels: List[UILabel] = []
         self.__create_debug_info_ui()
+
+        ##### Event Information Window #####
+        self.event_info_window: UIWindow = UIWindow(
+            rect=pygame.Rect(1200, 50, 400, 200),
+            manager=self.game.ui_manager.gui_manager,
+            window_display_title="Event Manager Info"
+        )
+        self.event_info_labels: List[UILabel] = []
+        self.__create_event_info_ui()
+
+        ##### Quiz Information Window #####
+        self.quiz_info_window: UIWindow = UIWindow(
+            rect=pygame.Rect(855, 300, 400, 200),
+            manager=self.game.ui_manager.gui_manager,
+            window_display_title="Quiz Manager Info"
+        )
+        self.quiz_info_labels: List[UILabel] = []
+        self.__create_quiz_info_ui()
+
+        ##### Quiz Information Window #####
+        self.stats_info_window: UIWindow = UIWindow(
+            rect=pygame.Rect(855, 500, 400, 200),
+            manager=self.game.ui_manager.gui_manager,
+            window_display_title="Statistics Manager Info"
+        )
+        self.stats_info_labels: List[UILabel] = []
+        self.__create_stats_info_ui()
 
         ##### Create the Solar System Window #####
         self.solar_system_window: UIWindow = UIWindow(
@@ -63,6 +96,9 @@ class DebugManager(Manager):
             manager=self.game.ui_manager.gui_manager,
             window_display_title="Solar System"
         )
+
+
+
         # Load the solar system background image (with fallback if loading fails)
         raw_solar_system_image: pygame.Surface = self.__load_image(
             "assets/images/solar_system.png", fallback_size=(800, 600)
@@ -113,18 +149,24 @@ class DebugManager(Manager):
         self.debug_mode = not self.debug_mode
         if self.debug_mode:
             self.debug_info_window.show()
+            self.event_info_window.show()
+            self.quiz_info_window.show()
+            self.stats_info_window.show()
             self.solar_system_window.show()
         else:
             self.debug_info_window.hide()
+            self.event_info_window.hide()
+            self.quiz_info_window.hide()
+            self.stats_info_window.hide()
             self.solar_system_window.hide()
+
         print(f"[DEBUG] Debug mode: {self.debug_mode}")
 
-    def update(self, delta_time: float):
+    def update(self):
         """
         Update the debug UI elements to reflect the current game state.
         This method should be called each frame in the main game loop.
 
-        :param delta_time: Time elapsed since the last frame.
         """
         if not self.debug_mode:
             return
@@ -162,7 +204,7 @@ class DebugManager(Manager):
             int(player_center_y - self.player_circle_diameter / 2)
         ))
 
-        ##### Update Debug Information Text #####
+        ##### Update Debug Information Window #####
         general_info = [
             "Debug Mode [D]",
             f"Fuel: {self.game.fuel}",
@@ -186,6 +228,43 @@ class DebugManager(Manager):
             else:
                 label.set_text("")
 
+        ##### Update Event Information Window #####
+        event_info_lines = [
+            f"Global Event Prob.: {self.game.event_manager.event_probability}",
+            f"Positive Prob.: {self.game.event_manager.event_positive_probability}",
+            f"Negative Prob.: {self.game.event_manager.event_negative_probability}",
+            f"count(Positive Events): {len(self.game.event_manager.positive_events)}",
+            f"count(Negative Events): {len(self.game.event_manager.negative_events)}"
+        ]
+        for index, label in enumerate(self.event_info_labels):
+            if index < len(event_info_lines):
+                label.set_text(event_info_lines[index])
+            else:
+                label.set_text("")
+
+        ##### Update Quiz Information Window #####
+        quiz_info_lines = [
+            f"Tolerance: {self.game.quiz_manager.tolerance}",
+        ]
+        for index, label in enumerate(self.quiz_info_labels):
+            if index < len(quiz_info_lines):
+                label.set_text(quiz_info_lines[index])
+            else:
+                label.set_text("")
+
+        ##### Update Stats Information Window #####
+        stats_info_lines = [
+            f"Quiz total error count:  {self.game.statistics_manager.quiz_incorrect_count}",
+            f"Task total error count:  {self.game.statistics_manager.task_incorrect_count}",
+            f"Quiz total success count:  {self.game.statistics_manager.quiz_correct_count}",
+            f"Task total success count:  {self.game.statistics_manager.task_correct_count}",
+        ]
+        for index, label in enumerate(self.stats_info_labels):
+            if index < len(stats_info_lines):
+                label.set_text(stats_info_lines[index])
+            else:
+                label.set_text("")
+
     def __create_debug_info_ui(self):
         """
         Create UILabel elements inside the Debug Information window.
@@ -201,15 +280,73 @@ class DebugManager(Manager):
         for index in range(10):
             column_index = index // 5  # Two columns (5 labels per column)
             row_index = index % 5
-            x_position = 10 + column_index * (label_width + padding)
+            x_position = column_index * (label_width + padding)
             y_position = starting_y + row_index * (label_height + padding)
             label = UILabel(
                 relative_rect=pygame.Rect(x_position, y_position, label_width, label_height),
                 text="",
                 manager=self.game.ui_manager.gui_manager,
-                container=self.debug_info_window
+                container=self.debug_info_window,
+                anchors={"left": "left"}
             )
             self.debug_info_labels.append(label)
+
+    def __create_event_info_ui(self) -> None:
+        """
+        Create UILabel elements inside the Event Information Window to display data from the Event Manager.
+        """
+        self.event_info_labels.clear()
+        label_width = 350
+        label_height = 25
+        padding = 5
+        starting_y = 10
+
+        # Create 5 labels in a single column
+        for index in range(5):
+            y_position = starting_y + index * (label_height + padding)
+            label = UILabel(
+                relative_rect=pygame.Rect(0, y_position, label_width, label_height),
+                text="",
+                manager=self.game.ui_manager.gui_manager,
+                container=self.event_info_window
+            )
+            self.event_info_labels.append(label)
+
+    def __create_quiz_info_ui(self) -> None:
+        self.quiz_info_labels.clear()
+        label_width = 350
+        label_height = 25
+        padding = 5
+        starting_y = 10
+
+        # Create 5 labels in a single column
+        for index in range(5):
+            y_position = starting_y + index * (label_height + padding)
+            label = UILabel(
+                relative_rect=pygame.Rect(0, y_position, label_width, label_height),
+                text="",
+                manager=self.game.ui_manager.gui_manager,
+                container=self.quiz_info_window
+            )
+            self.quiz_info_labels.append(label)
+
+    def __create_stats_info_ui(self) -> None:
+        self.stats_info_labels.clear()
+        label_width = 350
+        label_height = 25
+        padding = 5
+        starting_y = 10
+
+        # Create 5 labels in a single column
+        for index in range(5):
+            y_position = starting_y + index * (label_height + padding)
+            label = UILabel(
+                relative_rect=pygame.Rect(0, y_position, label_width, label_height),
+                text="",
+                manager=self.game.ui_manager.gui_manager,
+                container=self.stats_info_window
+            )
+            self.stats_info_labels.append(label)
 
     def __create_hex_grid_ui_elements(self):
         """

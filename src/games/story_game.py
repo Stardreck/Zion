@@ -10,6 +10,7 @@ from src.managers.hud_manager import HUDManager
 from src.managers.input_manager import InputManager
 from src.managers.inventory_manager import InventoryManager
 from src.managers.quiz_manager import QuizManager
+from src.managers.statistics_manager import StatisticsManager
 from src.managers.story_manager import StoryManager
 from src.managers.ui_manager import UIManager
 from src.models.planet import Planet
@@ -51,6 +52,9 @@ class StoryGame(Game):
         ##### Inventory Manager #####
         self.inventory_manager = InventoryManager(self)
 
+        ##### Statistics Manager #####
+        self.statistics_manager: StatisticsManager = StatisticsManager()
+
         ##### Debug Manager #####
         self.debug_manager: DebugManager = DebugManager(self)
 
@@ -65,8 +69,11 @@ class StoryGame(Game):
 
     def update(self, delta_time: float):
         self.ui_manager.gui_manager.update(delta_time)
-        self.debug_manager.update(delta_time)
+        self.update_managers()
+
+    def update_managers(self):
         self.hud_manager.update()
+        self.debug_manager.update()
 
     def draw(self):
         self.window.blit(self.default_bg_full, (0, 0))
@@ -98,6 +105,8 @@ class StoryGame(Game):
         self.player_col = new_column
         # movement cost
         self.fuel -= 1
+        # update hud (update fuel change)
+        self.update_managers()
 
         self.run_position_actions()
 
@@ -110,6 +119,8 @@ class StoryGame(Game):
             # check if the planet coordinates matches the player ones
             if planet.row == self.player_row and planet.col == self.player_col:
                 self.current_planet = planet
+                ##### update debug view with current_planet set #####
+                self.update_managers()
                 # if not planet.visited:
                 # self.run_planet_actions(planet)
                 # self.trigger_planet_event(planet)
@@ -125,7 +136,18 @@ class StoryGame(Game):
         self.event_manager.trigger_event_if_possible()
 
     def run_general_field_actions(self):
-        self.quiz_manager.run("default")
+        ##### display quiz or task #####
+        self.quiz_manager.run_general_field_action()
+
+        ##### update event system #####
+        is_last_quiz_correct = self.quiz_manager.is_last_quiz_correct
+        if is_last_quiz_correct:
+            self.event_manager.decrease_error_count()
+        else:
+            self.event_manager.increase_error_count()
+
+
+
 
     def run_planet_actions(self, planet: Planet):
 

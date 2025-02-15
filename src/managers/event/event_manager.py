@@ -27,8 +27,16 @@ class EventManager(Manager):
 
         # Adjustable probabilities for positive/negative events
         self.event_probability = self.game.engine.config.event_probability
-        self.event_positive_probability = 0.5
-        self.event_negative_probability = 0.5
+        self.base_type_probability = 0.9
+        self.event_positive_probability = self.base_type_probability
+        self.error_count: int = 0
+
+    def increase_error_count(self):
+        self.error_count += 1
+
+    def decrease_error_count(self):
+        if self.error_count > 0:
+            self.error_count -= 1
 
     def trigger_event_if_possible(self) -> bool:
         """
