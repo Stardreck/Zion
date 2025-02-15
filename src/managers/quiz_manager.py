@@ -63,13 +63,11 @@ class QuizManager(Manager):
 
         if is_correct:
             print("[QuizManager] correct answer")
-            pass
-
         else:
             print("[QuizManager] wrong answer")
             print("[QuizManager] user answer: ", user_input)
             print("[QuizManager] correct answer would be: ", quiz.correct_answer)
-            pass
+
         self.is_last_quiz_correct = is_correct
 
     def __is_user_input_correct(self, quiz: Quiz, user_input: str):

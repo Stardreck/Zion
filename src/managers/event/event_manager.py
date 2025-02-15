@@ -27,16 +27,64 @@ class EventManager(Manager):
 
         # Adjustable probabilities for positive/negative events
         self.event_probability = self.game.engine.config.event_probability
-        self.base_type_probability = 0.9
-        self.event_positive_probability = self.base_type_probability
+        self.base_positive_probability = self.game.engine.config.event_base_positive_probability
+        self.event_positive_probability = self.base_positive_probability
+        self.change_probability_value = self.game.engine.config.change_probability_by
+
+        self.max_error_count = self.game.engine.config.event_max_error_count
         self.error_count: int = 0
 
     def increase_error_count(self):
-        self.error_count += 1
+        if self.error_count < self.max_error_count:
+            self.error_count += 1
+            self.__update_event_probabilities()
 
     def decrease_error_count(self):
         if self.error_count > 0:
             self.error_count -= 1
+            self.__update_event_probabilities()
+
+    def __update_event_probabilities(self) -> None:
+        """
+        Update the probability of triggering a positive event based on the error_count.
+        As error_count increases, the chance for a positive event decreases.
+        The positive probability is never allowed to drop below 0.1.
+        """
+        self.event_positive_probability = max(0.1, self.base_positive_probability - self.change_probability_value * self.error_count)
+
+    def get_forced_events(self) -> List[EventCard] | []:
+        events = self.negative_events + self.positive_events
+
+        forced_events: List[EventCard] = []
+
+        for event in events:
+            if event.category == "game_over":
+                # check only events with required conditions
+                if event.required_conditions.items() != 0 and len(event.required_conditions) != 0:
+                    # check if conditions are met
+                    if self.__check_conditions(event):
+                        forced_events.append(event)
+
+        return forced_events
+
+    def __check_conditions(self, event_card: EventCard) -> bool:
+        """
+        Check if the event meets the required conditions.
+        :param event_card: The EventCard to check.
+        :return: True if conditions are met, False otherwise.
+        """
+        if len(event_card.required_conditions.items()) == 0:
+            return True
+
+        for key, value in event_card.required_conditions.items():
+            if key == "min_fuel" and self.game.fuel > value:
+                return True
+            if key == "min_hull" and self.game.hull > value:
+                return True
+            if key == "quiz_error_count" and self.error_count >= value:
+                return True
+            # Add more conditions as needed
+        return False
 
     def trigger_event_if_possible(self) -> bool:
         """
@@ -45,30 +93,41 @@ class EventManager(Manager):
 
         :return: True if an event was triggered, otherwise False.
         """
+        # Update probabilities in case error_count has changed
+        self.__update_event_probabilities()
+
         # Check against global event probability from the configuration
         if random.random() < self.event_probability:
             # Decide event type (positive/negative) based on probability
             event_list = self.positive_events if random.random() < self.event_positive_probability else self.negative_events
 
-            if not event_list:
+            # Filter events that meet the conditions
+            filtered_events = [event for event in event_list if self.__check_conditions(event)]
+
+            if not filtered_events:
                 return False
 
             # Select a random event from the list
-            event_card = random.choice(event_list)
+            event_card = random.choice(filtered_events)
 
-            # apply effects
-            self.apply_effects(event_card)
+            self.run_event(event_card)
 
-            # Debug output
-            print(f"[EventManager] Event triggered: {event_card.name}")
-            print(f"[EventManager] Description: {event_card.description}")
-            print(f"[EventManager] Fuel change: {event_card.fuel_change}, Hull change: {event_card.hull_change}")
-
-            # Display the event view
-            event_view = EventView(self.game, event_card)
-            event_view.run()
             return True
+
         return False
+
+    def run_event(self, event_card: EventCard):
+        # apply effects
+        self.apply_effects(event_card)
+
+        # Debug output
+        print(f"[EventManager] Event triggered: {event_card.name}")
+        print(f"[EventManager] Description: {event_card.description}")
+        print(f"[EventManager] Fuel change: {event_card.fuel_change}, Hull change: {event_card.hull_change}")
+
+        # Display the event view
+        event_view = EventView(self.game, event_card)
+        event_view.run()
 
     def apply_effects(self, event_card: EventCard):
         # Apply event effects

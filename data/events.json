@@ -8,7 +8,9 @@
     "type": "positive",
     "duration": 0,
     "repeats": false,
-    "required_conditions": {},
+    "required_conditions": {
+      "min_hull": 60
+    },
     "category": ""
   },
   {
@@ -20,7 +22,8 @@
     "type": "negative",
     "duration": 0,
     "repeats": false,
-    "required_conditions": {},
+    "required_conditions": {
+    },
     "category": ""
   },
   {
@@ -32,7 +35,8 @@
     "type": "negative",
     "duration": 0,
     "repeats": false,
-    "required_conditions": {},
+    "required_conditions": {
+    },
     "category": ""
   },
   {
@@ -44,7 +48,8 @@
     "type": "negative",
     "duration": 0,
     "repeats": false,
-    "required_conditions": {},
+    "required_conditions": {
+    },
     "category": ""
   },
   {
@@ -57,7 +62,7 @@
     "duration": 0,
     "repeats": false,
     "required_conditions": {
-      "quiz_error_count": 5
+      "quiz_error_count": 15
     },
     "category": "game_over"
   }

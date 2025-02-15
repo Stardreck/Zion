@@ -13,6 +13,7 @@ from src.managers.quiz_manager import QuizManager
 from src.managers.statistics_manager import StatisticsManager
 from src.managers.story_manager import StoryManager
 from src.managers.ui_manager import UIManager
+from src.models.event_card import EventCard
 from src.models.planet import Planet
 from src.models.quiz import Quiz
 from src.star_engine import StarEngine
@@ -133,6 +134,18 @@ class StoryGame(Game):
             self.run_general_field_actions()
 
         ##### event #####
+
+        # check for forced events
+        forced_events: List[EventCard] | [] = self.event_manager.get_forced_events()
+        if len(forced_events) > 0:
+            for forced_event in forced_events:
+                if forced_event.category == "game_over":
+                    self.event_manager.run_event(forced_event)
+                    # todo game over view with return
+                    break
+                    
+                self.event_manager.run_event(forced_event)
+
         self.event_manager.trigger_event_if_possible()
 
     def run_general_field_actions(self):
@@ -145,9 +158,6 @@ class StoryGame(Game):
             self.event_manager.decrease_error_count()
         else:
             self.event_manager.increase_error_count()
-
-
-
 
     def run_planet_actions(self, planet: Planet):
 

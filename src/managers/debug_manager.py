@@ -232,9 +232,9 @@ class DebugManager(Manager):
         event_info_lines = [
             f"Global Event Prob.: {self.game.event_manager.event_probability}",
             f"Positive Prob.: {self.game.event_manager.event_positive_probability}",
-            f"Negative Prob.: {self.game.event_manager.event_negative_probability}",
-            f"count(Positive Events): {len(self.game.event_manager.positive_events)}",
-            f"count(Negative Events): {len(self.game.event_manager.negative_events)}"
+            f"Error Count: {self.game.event_manager.error_count}",
+            f"Positive Events: {len(self.game.event_manager.positive_events)}",
+            f"Negative Events: {len(self.game.event_manager.negative_events)}"
         ]
         for index, label in enumerate(self.event_info_labels):
             if index < len(event_info_lines):

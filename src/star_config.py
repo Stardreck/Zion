@@ -14,6 +14,9 @@ class StarConfig:
         self.main_menu_background_image: str = self._data.get("main_menu", {}).get("background_image", "")
         self.main_menu_start_button_text: str = self._data.get("main_menu", {}).get("start_button_text", "")
         self.event_probability: float = self._data.get("event_system", {}).get("event_probability", 0)
+        self.event_base_positive_probability: float = self._data.get("event_system", {}).get("base_positive_probability", 0)
+        self.event_max_error_count: float = self._data.get("event_system", {}).get("max_error_count", 0)
+        self.change_probability_by: float = self._data.get("event_system", {}).get("change_probability_by", 0)
         self.quiz_tolerance: float = self._data.get("quiz_system", {}).get("tolerance", 0)
 
     def __load_config(self, config_path: str) -> dict[str, Any]:
