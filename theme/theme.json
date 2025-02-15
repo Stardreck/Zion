@@ -80,7 +80,7 @@
       "normal_border": "#00000000"
     }
   },
-    "default_close_button": {
+  "default_close_button": {
     "colours": {
       "normal_bg": "#00000000",
       "hovered_bg": "#00000000",
@@ -111,6 +111,16 @@
     "misc": {
       "border_width": "0",
       "shadow_width": "0"
+    }
+  },
+  "common_info_view_title": {
+    "font": {
+      "name": "StarJedi",
+      "size": "60",
+      "regular_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "italic_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_italic_path": "assets/fonts/Starjedi/Starjedi.ttf"
     }
   },
   "main_menu_title": {
@@ -168,7 +178,6 @@
       }
     }
   },
-
   "planet_menu_title": {
     "font": {
       "name": "StarJedi",

@@ -18,6 +18,8 @@ from src.models.planet import Planet
 from src.models.quiz import Quiz
 from src.star_engine import StarEngine
 
+from src.views.common.info_view import InfoView
+
 
 class StoryGame(Game):
     def __init__(self, engine: StarEngine, data: GameData):
@@ -143,7 +145,7 @@ class StoryGame(Game):
                     self.event_manager.run_event(forced_event)
                     # todo game over view with return
                     break
-                    
+
                 self.event_manager.run_event(forced_event)
 
         self.event_manager.trigger_event_if_possible()
@@ -171,10 +173,12 @@ class StoryGame(Game):
             ##### solve quiz clicked #####
             if selected_station_option == 1:
                 print("aufgabe lösen")
+                self.run_station_quiz_fuel_action(planet)
 
             ##### free refuel clicked #####
             if selected_station_option == 2:
                 print("kostenlos tanken")
+                self.run_station_free_fuel_action(planet)
 
         ##### visit planet clicked #####
         if selected_planet_menu_option == 2:
@@ -185,3 +189,29 @@ class StoryGame(Game):
             self.story_manager.show_planet_story(planet, self.data.story_segments[planet.name])
 
             print("Planet besuchen")
+
+    def run_station_quiz_fuel_action(self, planet: Planet):
+        ##### display quiz or task #####
+        self.run_general_field_actions()
+
+        is_correct = self.quiz_manager.is_last_quiz_correct
+        if is_correct:
+            description = f"Antwort richtig, <b>+{self.engine.config.planet_menu_fuel_quiz_correct_amount} Treibstoff"
+            self.fuel += self.engine.config.planet_menu_fuel_quiz_correct_amount
+        else:
+            description = f"Antwort falsch, <b>+{self.engine.config.planet_menu_fuel_quiz_wrong_amount} Treibstoff"
+            self.fuel += self.engine.config.planet_menu_fuel_quiz_wrong_amount
+
+        view = InfoView(self, "Resultat", self.engine.config.planet_menu_fuel_station_image_path,
+                        self.engine.config.planet_menu_fuel_station_background_image_path, description,
+                        "Akzeptieren")
+        view.run()
+
+    def run_station_free_fuel_action(self, planet: Planet):
+        ##### display a message and add the fuel #####
+        description = f"Es wird aufgetankt.. <b>+{self.engine.config.planet_menu_fuel_free_amount}"
+        view = InfoView(self, "Tanken", self.engine.config.planet_menu_fuel_station_image_path,
+                        self.engine.config.planet_menu_fuel_station_background_image_path, description,
+                        "Akzeptieren")
+        view.run()
+        self.fuel += self.engine.config.planet_menu_fuel_free_amount

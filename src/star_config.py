@@ -11,16 +11,28 @@ class StarConfig:
         self.height: int = self._data.get("height", 720)
         self.fps: int = self._data.get("fps", 60)
         self.title: str = self._data.get("title", "")
+
+        ##### main menu #####
         self.main_menu_background_image: str = self._data.get("main_menu", {}).get("background_image", "")
         self.main_menu_start_button_text: str = self._data.get("main_menu", {}).get("start_button_text", "")
+
+        ##### planet menu #####
+        self.planet_menu_fuel_station_background_image_path: str = self._data.get("planet_menu", {}).get("fuel_station", {}).get("background", "")
+        self.planet_menu_fuel_station_image_path: str = self._data.get("planet_menu", {}).get("fuel_station", {}).get("image", "")
+        self.planet_menu_fuel_free_amount: int = self._data.get("planet_menu", {}).get("fuel_station", {}).get("fuel_free_amount", 0)
+        self.planet_menu_fuel_quiz_correct_amount: int = self._data.get("planet_menu", {}).get("fuel_station", {}).get("fuel_quiz_correct_amount", 0)
+        self.planet_menu_fuel_quiz_wrong_amount: int = self._data.get("planet_menu", {}).get("fuel_station", {}).get("fuel_quiz_wrong_amount", 0)
+
         ##### event system #####
         self.event_probability: float = self._data.get("event_system", {}).get("event_probability", 0)
         self.event_base_positive_probability: float = self._data.get("event_system", {}).get("base_positive_probability", 0)
         self.event_max_error_count: float = self._data.get("event_system", {}).get("max_error_count", 0)
         self.change_probability_by: float = self._data.get("event_system", {}).get("change_probability_by", 0)
+
         ##### quiz system #####
         self.quiz_tolerance: float = self._data.get("quiz_system", {}).get("tolerance", 0)
         self.quiz_tolerance: float = self._data.get("quiz_system", {}).get("tolerance", 0)
+
         ##### inventory system #####
         self.inventory_background_paths: List[str] = self._data.get("inventory_system", {}).get("backgrounds", [])
         self.inventory_panel_background_path: str = self._data.get("inventory_system", {}).get("panel_background", "")

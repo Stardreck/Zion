@@ -1,10 +1,19 @@
 {
   "title": "zion",
-    "width": 1600,
-    "height": 720,
+  "width": 1600,
+  "height": 720,
   "main_menu": {
     "background_image": "assets/images/menu_background.png",
     "start_button_text": "Reise beginnen"
+  },
+  "planet_menu": {
+    "fuel_station": {
+      "background": "assets/images/fuel_station/fuel_station_background.png",
+      "image": "assets/images/fuel_station/fuel_station.png",
+      "fuel_free_amount": 5,
+      "fuel_quiz_correct_amount": 10,
+      "fuel_quiz_wrong_amount": 2
+    }
   },
   "event_system": {
     "event_probability": 1,

@@ -1,53 +1,46 @@
 from __future__ import annotations
-from typing import TYPE_CHECKING, Tuple
+from typing import TYPE_CHECKING
 import pygame
 import pygame_gui
-from pygame import Rect
+from pygame import Rect, Surface
+from pygame_gui.elements import UIImage
+
 from src.components.ui.ui_button import UIButton
 from src.components.ui.ui_label import UILabel
 from src.components.ui.ui_panel import UIPanel
 from src.components.ui.ui_text_box import UITextBox
 from src.views.view import View
-from src.models.planet import Planet
 
 if TYPE_CHECKING:
     from src.games.story_game import StoryGame
 
 
-class BasePlanetMenu(View):
-    """
-    Base class for planet-related menus.
-
-    Parameters:
-      - game: The StoryGame instance.
-      - planet: The Planet to display.
-      - title_text: The title text to display (can be the planet name or a custom title).
-      - button_texts: A tuple with the texts for the two buttons.
-    """
-
-    def __init__(self, game: StoryGame, planet: Planet, title_text: str, button_texts: Tuple[str, str]):
+class InfoView(View):
+    def __init__(self, game: StoryGame, title: str, image: str, background_image: str, description: str,
+                 confirm_text: str = "Weiter"):
         super().__init__(game.ui_manager.gui_manager)
-        self.game = game
-        self.planet = planet
-        self.title_text = title_text
-        self.button_texts = button_texts
+        self.game: StoryGame = game
         self.is_running: bool = True
-        self.selected_option: int = 0
 
-        # Load the background image (from planet.background_image)
-        self.background_image = pygame.image.load(self.planet.background_image).convert()
+        ##### content #####
+        self.title_text = title
+        self.image_path: str = image
+        self.background_image_path: str = background_image
+        self.description_text: str = description
+        self.confirm_button_text: str = confirm_text
 
-        # UI elements
+        ##### UI elements #####
+        self.background_image: Surface | None = None
         self.title: UILabel | None = None
         self.panel_bg: UIPanel | None = None
         self.panel: UIPanel | None = None
-        self.planet_image = None
-        self.planet_description = None
-        self.button1 = None
-        self.button2 = None
+        self.image: UIImage | None = None
+        self.description: UITextBox | None = None
+        self.confirm_button: UIButton | None = None
 
     def __build_ui(self):
-        """Build the common UI elements"""
+        # Load the background image
+        self.background_image = pygame.image.load(self.background_image_path).convert()
         # Create title label at the top
         title_rect = Rect(0, 60, 800, 100)
         self.title = UILabel(
@@ -55,9 +48,8 @@ class BasePlanetMenu(View):
             text=self.title_text,
             manager=self.pygame_gui_ui_manager,
             anchors={"centerx": "centerx", "top": "top"},
-            object_id="planet_menu_title",
+            object_id="common_info_view_title",
         )
-
         # Create the background panel (transparent)
         self.panel_bg = UIPanel(
             relative_rect=Rect(0, 50, 550, 480),
@@ -65,65 +57,41 @@ class BasePlanetMenu(View):
             anchors={"center": "center"},
             object_id="default_panel_transparent",
         )
-
         # Create the inner panel
         self.panel = UIPanel(
-            relative_rect=Rect(0, 10, 530, 333),
+            relative_rect=Rect(0, 10, 530, 400),
             manager=self.pygame_gui_ui_manager,
             container=self.panel_bg,
             anchors={"centerx": "centerx", "top": "top"},
             object_id="default_panel",
         )
-
-        # Load and display the planet image
-        image_surface = pygame.image.load(self.planet.planet_image).convert()
-        self.planet_image = pygame_gui.elements.UIImage(
+        image_surface = pygame.image.load(self.image_path)
+        self.image = UIImage(
             relative_rect=Rect(20, 30, 240, 255),
             image_surface=image_surface,
             manager=self.pygame_gui_ui_manager,
             container=self.panel,
             anchors={"left": "left"},
         )
-
-        # Create the planet description text box
-        self.planet_description = UITextBox(
+        self.description = UITextBox(
             relative_rect=Rect(260, 20, 250, 255),
-            html_text=self.planet.description,
+            html_text=self.description_text,
             manager=self.pygame_gui_ui_manager,
             container=self.panel,
-            anchors={"left": "left"},
-        )
+            anchors={"left": "left"})
+        confirm_button_rect = Rect(0, -60, 500, 50)
 
-        # Create the first button
-        button1_rect = Rect(0, -125, 500, 50)
-        self.button1 = UIButton(
-            relative_rect=button1_rect,
-            text=self.button_texts[0],
+        self.confirm_button = UIButton(
+            relative_rect=confirm_button_rect,
+            text=self.confirm_button_text,
             manager=self.pygame_gui_ui_manager,
             container=self.panel_bg,
             anchors={"centerx": "centerx", "bottom": "bottom"},
             object_id="panel_button",
         )
-        self.button1.bind(pygame_gui.UI_BUTTON_PRESSED, lambda event: self._set_option(1))
+        self.confirm_button.bind(pygame_gui.UI_BUTTON_PRESSED, lambda: self.kill())
 
-        # Create the second button
-        button2_rect = Rect(0, -60, 500, 50)
-        self.button2 = UIButton(
-            relative_rect=button2_rect,
-            text=self.button_texts[1],
-            manager=self.pygame_gui_ui_manager,
-            container=self.panel_bg,
-            anchors={"centerx": "centerx", "bottom": "bottom"},
-            object_id="panel_button",
-        )
-        self.button2.bind(pygame_gui.UI_BUTTON_PRESSED, lambda event: self._set_option(2))
-
-    def _set_option(self, option: int):
-        """Set the selected option and exit the menu."""
-        self.selected_option = option
-        self.kill()
-
-    def run(self) -> int:
+    def run(self):
         """Display the menu modally and return the selected option."""
         self.__build_ui()
         clock = pygame.time.Clock()
@@ -144,23 +112,18 @@ class BasePlanetMenu(View):
             self.pygame_gui_ui_manager.draw_ui(self.game.window)
             pygame.display.update()
         self.kill()
-        return self.selected_option
-
 
     def kill(self):
-        """Clean up all UI elements."""
         self.is_running = False
         if self.title:
             self.title.kill()
-        if self.panel:
-            self.panel.kill()
         if self.panel_bg:
             self.panel_bg.kill()
-        if self.planet_image:
-            self.planet_image.kill()
-        if self.planet_description:
-            self.planet_description.kill()
-        if self.button1:
-            self.button1.kill()
-        if self.button2:
-            self.button2.kill()
+        if self.panel:
+            self.panel.kill()
+        if self.image:
+            self.image.kill()
+        if self.description:
+            self.description.kill()
+        if self.confirm_button:
+            self.confirm_button.kill()
