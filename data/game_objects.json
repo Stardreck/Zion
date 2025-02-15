@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Faith",
+    "alias": "Zyklon B",
+    "description": "Ein Geschenk",
+    "image_path": "assets/images/objects/artifact.png"
+  },
+  {
+    "name": "Höllenfeuer",
+    "alias": "Candy",
+    "description": "Eine Beschreibung blah blah",
+    "image_path": "assets/images/objects/artifact.png"
+  }
+]
