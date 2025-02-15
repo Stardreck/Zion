@@ -41,7 +41,7 @@ class EventView(View):
     def __init(self):
         ##### spaceship window background #####
 
-        # --- Background: Select a random spaceship window image ---
+        # select a random spaceship window image
         spaceship_folder = "assets/images/spaceship"
         spaceship_images = [
             filename for filename in os.listdir(spaceship_folder)

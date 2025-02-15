@@ -117,13 +117,21 @@ class HUDManager(Manager):
             object_id="hud_sidebar_bg"
         )
         # Inventory image (displayed as a normal image, no button text)
-        self.inventory_image: UIImage = UIImage(
+        # self.inventory_image: UIImage = UIImage(
+        #     relative_rect=pygame.Rect(10, 40, 40, 40),
+        #     image_surface=self.__load_image("assets/interface/inventory/inventory_icon.png", fallback_size=(60, 60)),
+        #     manager=self.ui_manager,
+        #     container=self.sidebar_panel,
+        #     object_id="hud_inventory_image"
+        # )
+        self.inventory_button: UIButton = UIButton(
             relative_rect=pygame.Rect(10, 40, 40, 40),
-            image_surface=self.__load_image("assets/interface/inventory/inventory_icon.png", fallback_size=(60, 60)),
             manager=self.ui_manager,
+            text="",
             container=self.sidebar_panel,
-            object_id="hud_inventory_image"
+            object_id="hud_inventory_button"
         )
+        self.inventory_button.bind(pygame_gui.UI_BUTTON_PRESSED, lambda: self.game.inventory_manager.open_inventory())
 
         # ---------------------------
         # Create the Corner Decoration

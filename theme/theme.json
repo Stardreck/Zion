@@ -80,6 +80,39 @@
       "normal_border": "#00000000"
     }
   },
+    "default_close_button": {
+    "colours": {
+      "normal_bg": "#00000000",
+      "hovered_bg": "#00000000",
+      "disabled_bg": "#00000000",
+      "selected_bg": "#00000000",
+      "active_bg": "#00000000"
+    },
+    "images": {
+      "normal_image": {
+        "package": "assets.interface.buttons",
+        "resource": "close_button.png",
+        "premultiplied": "1",
+        "sub_surface_rect": "0,0,38,38"
+      },
+      "hovered_image": {
+        "package": "assets.interface.buttons",
+        "resource": "close_button.png",
+        "premultiplied": "1",
+        "sub_surface_rect": "38,0,38,38"
+      },
+      "selected_image": {
+        "package": "assets.interface.buttons",
+        "resource": "close_button.png",
+        "premultiplied": "1",
+        "sub_surface_rect": "76,0,38,38"
+      }
+    },
+    "misc": {
+      "border_width": "0",
+      "shadow_width": "0"
+    }
+  },
   "main_menu_title": {
     "font": {
       "name": "StarJedi",
@@ -99,7 +132,7 @@
     }
   },
   "quiz_classroom_title": {
-        "font": {
+    "font": {
       "name": "StarJedi",
       "size": "30",
       "regular_path": "assets/fonts/Starjedi/Starjedi.ttf",
@@ -130,10 +163,12 @@
     "images": {
       "normal_image": {
         "package": "assets.interface.inventory",
-        "resource": "inventory_icon.png"
+        "resource": "inventory_icon.png",
+        "premultiplied": "1"
       }
     }
   },
+
   "planet_menu_title": {
     "font": {
       "name": "StarJedi",

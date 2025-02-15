@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from typing import Any
+from typing import Any, List
 
 
 class StarConfig:
@@ -13,11 +13,20 @@ class StarConfig:
         self.title: str = self._data.get("title", "")
         self.main_menu_background_image: str = self._data.get("main_menu", {}).get("background_image", "")
         self.main_menu_start_button_text: str = self._data.get("main_menu", {}).get("start_button_text", "")
+        ##### event system #####
         self.event_probability: float = self._data.get("event_system", {}).get("event_probability", 0)
         self.event_base_positive_probability: float = self._data.get("event_system", {}).get("base_positive_probability", 0)
         self.event_max_error_count: float = self._data.get("event_system", {}).get("max_error_count", 0)
         self.change_probability_by: float = self._data.get("event_system", {}).get("change_probability_by", 0)
+        ##### quiz system #####
         self.quiz_tolerance: float = self._data.get("quiz_system", {}).get("tolerance", 0)
+        self.quiz_tolerance: float = self._data.get("quiz_system", {}).get("tolerance", 0)
+        ##### inventory system #####
+        self.inventory_background_paths: List[str] = self._data.get("inventory_system", {}).get("backgrounds", [])
+        self.inventory_panel_background_path: str = self._data.get("inventory_system", {}).get("panel_background", "")
+        self.inventory_empty_slot_path: str = self._data.get("inventory_system", {}).get("empty_slot", "")
+
+
 
     def __load_config(self, config_path: str) -> dict[str, Any]:
         """

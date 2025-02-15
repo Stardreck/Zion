@@ -14,5 +14,13 @@
   },
   "quiz_system": {
     "tolerance": 0.1
+  },
+  "inventory_system": {
+    "backgrounds": [
+      "assets/images/spaceship/storage_room/spaceship_storage_room.webp",
+      "assets/images/spaceship/storage_room/spaceship_storage_room_03.png"
+    ],
+    "panel_background": "assets/interface/inventory/inventory_panel_background.png",
+    "empty_slot": "assets/interface/inventory/inventory_empty_slot.png"
   }
 }

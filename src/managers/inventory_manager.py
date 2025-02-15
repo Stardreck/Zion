@@ -1,7 +1,10 @@
 from __future__ import annotations
-from typing import List, Optional, TYPE_CHECKING
+
+import random
+from typing import TYPE_CHECKING
 
 from src.managers.manager import Manager
+from src.views.inventory.inventory_view import InventoryView
 
 if TYPE_CHECKING:
     from src.games.story_game import StoryGame
@@ -11,6 +14,8 @@ class InventoryManager(Manager):
     def __init__(self, game: StoryGame):
         super().__init__()
         self.game: StoryGame = game
+        self.is_open: bool = False
+        self.background_paths = self.game.engine.config.inventory_background_paths
 
     def add_item(self):
         """
@@ -28,7 +33,7 @@ class InventoryManager(Manager):
         """
         Returns a list of all GameObjects in the inventory.
         """
-        pass
+        return []
 
     def find_item_by_name(self, name: str):
         """
@@ -43,3 +48,17 @@ class InventoryManager(Manager):
         print("[InventoryManager] inventory cleared.")
         pass
 
+    def open_inventory(self):
+        """
+        Opens the inventory menu
+        """
+        self.is_open = not self.is_open
+        if self.is_open:
+            inventory_view = InventoryView(self.game, self.__get_background_image_path(),
+                                           self.game.engine.config.inventory_panel_background_path,
+                                           self.game.engine.config.inventory_empty_slot_path)
+            inventory_view.run()
+
+    def __get_background_image_path(self) -> str:
+        # --- Background: Select a random spaceship window image ---
+        return random.choice(self.background_paths)
