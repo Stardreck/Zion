@@ -3,6 +3,8 @@ from typing import TYPE_CHECKING, Tuple
 import pygame
 import pygame_gui
 from pygame import Rect
+from pygame_gui.elements import UIImage
+
 from src.components.ui.ui_button import UIButton
 from src.components.ui.ui_label import UILabel
 from src.components.ui.ui_panel import UIPanel
@@ -37,14 +39,14 @@ class BasePlanetMenu(View):
         # Load the background image (from planet.background_image)
         self.background_image = pygame.image.load(self.planet.background_image).convert()
 
-        # UI elements
+        ##### UI elements #####
         self.title: UILabel | None = None
         self.panel_bg: UIPanel | None = None
         self.panel: UIPanel | None = None
-        self.planet_image = None
+        self.planet_image: UIImage | None = None
         self.planet_description = None
-        self.button1 = None
-        self.button2 = None
+        self.button1: UIButton | None = None
+        self.button2: UIButton | None = None
 
     def __build_ui(self):
         """Build the common UI elements"""
@@ -145,7 +147,6 @@ class BasePlanetMenu(View):
             pygame.display.update()
         self.kill()
         return self.selected_option
-
 
     def kill(self):
         """Clean up all UI elements."""

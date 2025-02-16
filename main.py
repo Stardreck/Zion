@@ -1,5 +1,9 @@
+import pygame
+
 from src.games.game_data import GameData
 from src.games.story_game import StoryGame
+from src.mini_games.cable_connection.cable_connection_mini_game import CableConnectionMiniGame
+from src.mini_games.test_mini_game_01 import TestMiniGame01
 from src.plugins.video_player import VideoPlayer
 from src.star_config import StarConfig
 from src.star_engine import StarEngine
@@ -25,9 +29,9 @@ def main():
         return
     if result == 1:
         pass
-        #data = GameData()
-        #game = StoryGame(engine, data)
-        #engine.run(game)
+        # data = GameData()
+        # game = StoryGame(engine, data)
+        # engine.run(game)
 
 
 def debug():
@@ -38,6 +42,36 @@ def debug():
     engine.run(game)
 
 
+def test_mini_game_01():
+    config = StarConfig("data/star_config.json")
+    engine = StarEngine(config)
+    data = GameData(config)
+    game = StoryGame(engine, data)
+
+    mini_game = TestMiniGame01(game)
+    clock = pygame.time.Clock()
+    while not mini_game.is_finished():
+        delta_time = clock.tick(game.engine.fps) / 1000.0
+        for event in pygame.event.get():
+            mini_game.handle_event(event)
+        mini_game.update(delta_time)
+        mini_game.draw(game.window)
+        pygame.display.flip()
+    if mini_game.get_result():
+        print("Mini-game won!")
+    else:
+        print("Mini-game lost!")
+
+def test_mini_game_cable_connection1():
+    config = StarConfig("data/star_config.json")
+    engine = StarEngine(config)
+    data = GameData(config)
+    game = StoryGame(engine, data)
+
+    mini_game = CableConnectionMiniGame(game)
+    mini_game.run()
+
+
 # entry point
 if __name__ == "__main__":
-    debug()
+    test_mini_game_cable_connection1()
