@@ -10,12 +10,12 @@ class QuizFactory:
 
         Expected keys in quiz_data:
             - "question": str
-            - "answers": list[str] (die Antwortoptionen)
+            - "answers": list[str]
             - "correct_answer": Optional[str]
             - "type": Optional[str]
 
-        :param quiz_data: Dictionary mit Quiz-Daten.
-        :return: Ein Quiz-Objekt.
+        :param quiz_data: Dictionary of quiz data.
+        :return: A Quiz instance
         """
         quiz_type = quiz_data.get("type", "quiz")
         if quiz_type == "quiz":
@@ -29,10 +29,18 @@ class QuizFactory:
         elif quiz_type == "task":
             return Quiz(
                 question=quiz_data.get("question", ""),
-                answer_options=[],  # Bei Tasks gibt es keine Antwortoptionen
+                answer_options=[],
                 correct_answer=quiz_data.get("correct_value"),
                 solution=quiz_data.get("solution"),
                 quiz_type="task"
+            )
+        elif quiz_type == "boolean":
+            return Quiz(
+                question=quiz_data.get("question", ""),
+                answer_options=[],
+                correct_answer=quiz_data.get("correct_value"),
+                solution=quiz_data.get("solution"),
+                quiz_type="boolean"
             )
         else:
             raise Exception(f"Unknown quiz type: {quiz_type}")

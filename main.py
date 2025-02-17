@@ -74,4 +74,4 @@ def test_mini_game_cable_connection1():
 
 # entry point
 if __name__ == "__main__":
-    test_mini_game_cable_connection1()
+    debug()

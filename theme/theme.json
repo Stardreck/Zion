@@ -156,6 +156,24 @@
       "size": "16"
     }
   },
+  "quiz_boolean_false_button": {
+    "colours": {
+      "normal_bg": "#ff1d49",
+      "hovered_bg": "#b21433"
+    },
+    "font": {
+      "size": "64"
+    }
+  },
+  "quiz_boolean_true_button": {
+        "colours": {
+      "normal_bg": "#38ba7c",
+      "hovered_bg": "#1c5f3f"
+    },
+    "font": {
+      "size": "64"
+    }
+  },
   "quiz_input_label": {
     "font": {
       "bold": "1"
