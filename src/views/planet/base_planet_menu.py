@@ -80,7 +80,7 @@ class BasePlanetMenu(View):
         # Load and display the planet image
         image_surface = pygame.image.load(self.planet.planet_image).convert()
         self.planet_image = pygame_gui.elements.UIImage(
-            relative_rect=Rect(20, 30, 240, 255),
+            relative_rect=Rect(20, 30, 240, 240),
             image_surface=image_surface,
             manager=self.pygame_gui_ui_manager,
             container=self.panel,

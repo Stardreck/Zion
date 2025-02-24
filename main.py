@@ -12,12 +12,11 @@ from src.star_engine import StarEngine
 def main():
     ##### init Config #####
     config = StarConfig("data/star_config.json")
-    config.validate()
 
     ##### intro video #####
     player = VideoPlayer(None)
     player.enable_standalone(config.width, config.height, config.title)
-    player.set_video("assets/videos/intro_video.mp4")
+    player.set_video("assets/videos/intro.mp4")
     player.play()
 
     ##### init game engine #####
@@ -74,4 +73,4 @@ def test_mini_game_cable_connection1():
 
 # entry point
 if __name__ == "__main__":
-    test_mini_game_cable_connection1()
+    debug()

@@ -133,8 +133,7 @@
       "bold_italic_path": "assets/fonts/Starjedi/Starjedi.ttf"
     }
   },
-  "main_menu_start_button": {
-  },
+  "main_menu_start_button": {},
   "quiz_title": {
     "font": {
       "size": "25",
@@ -161,8 +160,7 @@
       "bold": "1"
     }
   },
-  "quiz_input_label_info": {
-  },
+  "quiz_input_label_info": {},
   "panel_button": {
     "font": {
       "size": "20",
@@ -172,7 +170,7 @@
   "hud_inventory_button": {
     "images": {
       "normal_image": {
-        "package": "assets.interface.inventory",
+        "package": "assets.icons",
         "resource": "inventory_icon.png",
         "premultiplied": "1"
       }
@@ -188,10 +186,7 @@
       "bold_italic_path": "assets/fonts/Starjedi/Starjedi.ttf"
     }
   },
-  "planet_menu_description": {
-  },
-  "planet_menu_visit_planet_button": {
-  },
-  "planet_menu_visit_station_button": {
-  }
+  "planet_menu_description": {},
+  "planet_menu_visit_planet_button": {},
+  "planet_menu_visit_station_button": {}
 }

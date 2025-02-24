@@ -1,13 +1,24 @@
 [
   {
-    "name": "TerraNova",
-    "description": "Dies ist eine Beschreibung des Planeten Terra Nova blah blah blah blah sehr spânnend jop mol findi au. öüäüäöü!£",
+    "name": "Tartarus",
+    "description": "Tartarus ist der erste Planet im Sonnensystem und somit der Sonne am nächsten. Die Temperaturen sind sehr hoch, deshalb ist er nicht bewohnt. Er ist eine Quelle für seltene Metalle.",
+    "row": 0,
+    "col": 0,
+    "visited": false,
+    "isFuelPlanet": false,
+    "background_image": "assets/images/galaxy/galaxy_01.png",
+    "planet_image": "assets/images/planets/tartarus.png",
+    "cutscene": "assets/videos/video_planet_sequence.mp4"
+  },
+  {
+    "name": "Tartarus",
+    "description": "Tartarus ist der erste Planet im Sonnensystem und somit der Sonne am nächsten. Die Temperaturen sind sehr hoch, deshalb ist er nicht bewohnt. Er ist eine Quelle für seltene Metalle.",
     "row": 2,
     "col": 3,
     "visited": false,
     "isFuelPlanet": false,
-    "background_image": "assets/images/station_storage_room.webp",
-    "planet_image": "assets/images/planets/zion_background.png",
+    "background_image": "assets/images/galaxy/galaxy_01.png",
+    "planet_image": "assets/images/planets/tartarus.png",
     "cutscene": "assets/videos/video_planet_sequence.mp4"
   },
   {
@@ -17,7 +28,8 @@
     "col": 6,
     "visited": false,
     "isFuelPlanet": true,
-    "background_image": "assets/images/solar_system.png",
+    "background_image": "assets/images/galaxy/galaxy_01.png",
+    "planet_image": "assets/images/planets/zion_background.png",
     "cutscene": "assets/videos/video_planet_sequence.mp4"
   }
 ]
