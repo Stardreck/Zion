@@ -10,9 +10,9 @@
     "planet_image": "assets/images/planets/tartarus.png",
     "cutscene": "assets/videos/video_planet_sequence.mp4"
   },
-  {
-    "name": "Tartarus",
-    "description": "Tartarus ist der erste Planet im Sonnensystem und somit der Sonne am nächsten. Die Temperaturen sind sehr hoch, deshalb ist er nicht bewohnt. Er ist eine Quelle für seltene Metalle.",
+    {
+    "name": "Kronos",
+    "description": "Kronos, der zweite Planet im Sonnensystem, ist ein Felsplanet Eis an den beiden Polen. Er hat ausserdem eine synchrone Rotation. Durch Sonneneruptionen wird das Eis nach und nach zerstört. Im Grenzgebiet hat es eine Silizium-Minenkolonie.",
     "row": 2,
     "col": 3,
     "visited": false,

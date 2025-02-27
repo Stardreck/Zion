@@ -9,5 +9,6 @@ class GameObjectFactory:
             name=game_object_data["name"],
             alias=game_object_data["alias"],
             description=game_object_data["description"],
+            location=game_object_data["location"],
             image_path=game_object_data["image_path"]
         )

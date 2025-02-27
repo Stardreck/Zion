@@ -36,6 +36,7 @@ class InventoryView(View):
             manager=self.pygame_gui_ui_manager,
             anchors={"center": "center"},
             object_id="panel_invisible",
+            starting_height=9999
         )
         inventory_panel_background = pygame.image.load(self.panel_background).convert_alpha()
         inventory_panel_background_image = pygame.transform.scale(inventory_panel_background,
@@ -46,7 +47,8 @@ class InventoryView(View):
             image_surface=inventory_panel_background_image,
             anchors={"center": "center"},
             object_id="inventory_panel_background",
-            container=self.inventory_panel
+            container=self.inventory_panel,
+            starting_height=9999
         )
 
         self.close_button: UIButton = UIButton(
@@ -56,6 +58,7 @@ class InventoryView(View):
             anchors={"top": "top", "right": "right"},
             object_id="default_close_button",
             container=self.inventory_panel,
+            starting_height=9999
         )
         self.close_button.bind(pygame_gui.UI_BUTTON_PRESSED, lambda: self.close())
 

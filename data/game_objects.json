@@ -1,14 +1,30 @@
 [
   {
-    "name": "Faith",
-    "alias": "Zyklon B",
-    "description": "Ein Geschenk",
-    "image_path": "assets/images/objects/artifact.png"
+    "name": "Kompaktfusionsgenerator",
+    "alias": "",
+    "description": "",
+    "image_path": "assets/images/objects/artifact.png",
+    "location": "Kronos"
   },
   {
-    "name": "Höllenfeuer",
-    "alias": "Candy",
-    "description": "Eine Beschreibung blah blah",
-    "image_path": "assets/images/objects/artifact.png"
+    "name": "Ione-Pulse-Array",
+    "alias": "",
+    "description": "",
+    "image_path": "assets/images/objects/artifact.png",
+    "location": "Medusa"
+  },
+  {
+    "name": "Hochleistungslaser",
+    "alias": "",
+    "description": "",
+    "image_path": "assets/images/objects/artifact.png",
+    "location": ""
+  },
+  {
+    "name": "Hydro-Splitter",
+    "alias": "",
+    "description": "",
+    "image_path": "assets/images/objects/artifact.png",
+    "location": "Thalassa"
   }
 ]
