@@ -22,8 +22,8 @@
     "cutscene": "assets/videos/video_planet_sequence.mp4"
   },
   {
-    "name": "Mars",
-    "description": "wa wötsch vo mir?",
+    "name": "Terra Nova",
+    "description": "Terra Nova, der Heimatplanet eurer Crew, ist 1,6x Grösser als die Erde und hat somit eine Sonnenumlaufbahn von 385 Tagen. Die Oberfläche ist grösstenteils mit Wasser überdeckt, doch es gibt einige Landmassen.\n",
     "row": 4,
     "col": 6,
     "visited": false,

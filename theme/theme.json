@@ -1,4 +1,17 @@
 {
+  "defaults": {
+    "font": {
+      "name": "Quicksand",
+      "size": "20",
+      "regular_path": "assets/fonts/Quicksand/Quicksand-Regular.ttf",
+      "bold_path": "assets/fonts/Quicksand/Quicksand-Bold.ttf",
+      "italic_path": "assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf",
+      "bold_italic_path": "assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf"
+    },
+    "colours": {
+      "normal_text": "#FFFFFF"
+    }
+  },
   "button": {
     "colours": {
       "normal_bg": "#174e38",
@@ -165,7 +178,7 @@
     }
   },
   "quiz_boolean_true_button": {
-        "colours": {
+    "colours": {
       "normal_bg": "#38ba7c",
       "hovered_bg": "#1c5f3f"
     },
@@ -206,5 +219,17 @@
   },
   "planet_menu_description": {},
   "planet_menu_visit_planet_button": {},
-  "planet_menu_visit_station_button": {}
+  "planet_menu_visit_station_button": {},
+  "event_title": {
+    "font": {
+      "name": "StarJedi",
+      "size": "20",
+      "bold": "0",
+      "italic": "0",
+      "regular_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "italic_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_italic_path": "assets/fonts/Starjedi/Starjedi.ttf"
+    }
+  }
 }

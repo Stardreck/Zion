@@ -1,4 +1,17 @@
 {
+  "Kronos": {
+    "title": "Kronos Title",
+    "blocks": [
+      {"type":  "story",
+      "story_lines":  [
+        {
+          "text": "Schon beim Anflug auf Kronos bemerkte die Crew, dass etwas nicht stimmte.\n\"Keine Antwort auf allen Frequenzen,\" murmelte Lyra und tippte hastig auf die Konsole. \"Entweder ist die Technik ausgefallen oder sie ignorieren uns absichtlich.\"\n\"Oder sie sind tot,\" warf Agatha trocken ein.\nVictor runzelte die Stirn. \"Wir landen, aber Agatha hat die Geschütze bereit, nur für den Fall.\"\nDie Minerva setzte in der Nähe der verlassenen Basis auf. Die Crew stieg aus und als sich der aufgewirbelte Staub von ihrer Landung legte, begaben sie sich zum Eingang der Basis.\nDoch auch dieser blieb verschlossen. Sie suchten nach anderen Eingängen und versuchten über das Panel jemanden zu kontaktieren.\n\"Okay, genug gewartet,\" sagte Agatha schliesslich und sah zu Milo. \"Kannst du die Tür kurzschliessen?\"\nSie betraten die Basis. \"Irgendetwas stimmt hier nicht Vic\" meinte Milo leise und sah zu Victor.\nDie Gänge waren dunkel, nur an einigen Stellen blinkte eine Fehlermeldung auf einem Display auf. \n\"Ja, das sieht nicht aus als hätte es hier einen Kampf gegeben\" sagte Victor und betrachtete eine offene Waffenkammer. \"Sie hatten Zeit, ihre Ausrüstung mitzunehmen.\"\n\"Aber nicht genug Zeit, um eine Nachricht zu hinterlassen,\" erwiderte Lyra.\nDie Crew kehrte zur Minerva zurück. Die Basis war verlassen – doch wohin waren sie gegangen?\n\"Laut den letzten Berichten gibt es eine Minenkolonie fünfzig Kilometer nördlich.\" meinte Victor. \"Wenn jemand noch lebt, dann dort.\"\n\"Dann los.\" Agatha startete eines der zurückgelassenen Fahrzeuge.",
+          "image": "assets/images/people/portrait_lira.png",
+          "image_description": "Lira"
+        }
+      ]}
+    ]
+  },
   "TerraNova": {
     "title": "TerraNova Title",
     "blocks": [

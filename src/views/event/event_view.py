@@ -59,7 +59,7 @@ class EventView(View):
 
         ##### event card #####
         # Define panel dimensions for the event card (with fixed size)
-        panel_width, panel_height = 800, 600
+        panel_width, panel_height = 900, 600
         panel_x = (self.game.engine.width - panel_width) // 2
         panel_y = (self.game.engine.height - panel_height) // 2
 
@@ -77,7 +77,7 @@ class EventView(View):
         # Center the scaled event image within the panel
         img_width, img_height = event_img.get_size()
         self.event_image_ui = pygame_gui.elements.UIImage(
-            relative_rect=Rect(0, 20, img_width, img_height),
+            relative_rect=Rect(0, 0, img_width, img_height),
             image_surface=event_img,
             manager=self.pygame_gui_ui_manager,
             anchors={"center": "center"},
@@ -85,22 +85,24 @@ class EventView(View):
         )
 
         ##### event information #####
-        event_title_rect = pygame.Rect(260, 125, 250, 100)
-        self.event_title = UITextBox(
+        event_title_rect = pygame.Rect(-335, 110, 250, 50)
+        self.event_title = UILabel(
             relative_rect=event_title_rect,
-            html_text=self.event_card.name,
+            text=self.event_card.name,
             manager=self.pygame_gui_ui_manager,
-            anchors={"centerx": "centerx", "top": "top"},
-            container=self.event_panel
+            anchors={"right": "right", "top": "top"},
+            container=self.event_panel,
+            object_id="event_title"
         )
-        event_description_rect = pygame.Rect(260, 125 + 100, 250, 250)
+        event_description_rect = pygame.Rect(-325, 25, 300, 350)
         self.event_description = UITextBox(
             relative_rect=event_description_rect,
             html_text=self.event_card.description,
             manager=self.pygame_gui_ui_manager,
-            anchors={"centerx": "centerx", "top": "top"},
+            anchors={"centery": "centery", "right": "right"},
             container=self.event_panel
         )
+
 
         ##### dismiss button #####
         button_rect = pygame.Rect(0, -75, 200, 50)

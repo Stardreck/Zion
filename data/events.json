@@ -1,69 +1,19 @@
 [
   {
-    "name": "Lyra gewinnt ein galaktisches Pokerturnier",
-    "description": "Lyra hat mit purem Sarkasmus ein Pokerturnier gewonnen. {fuel_change} Treibstoff",
+    "name": "glück im unglück",
+    "description": "IRIS war gerade damit beschäftigt mit Lyra über eine Flugbahnkorrektur zu diskutieren. Weshalb sie einen entgegenkommenden Kometenschauer nicht rechtzeitig erkannt hat. Einer dieser Kometen hat euren Treibstofftank beschädigt. Milo hat sich schon auf den Weg gemacht ihn zu reparieren.\n {fuel_change}",
+
+
+
+
     "hull_change": 0,
-    "fuel_change": 3,
-    "image": "assets/images/events/event_death_card.png",
-    "type": "positive",
-    "duration": 0,
-    "repeats": false,
-    "required_conditions": {
-      "min_hull": 60
-    },
-    "category": ""
-  },
-  {
-    "name": "Mayday! Mayday!",
-    "description": "Jemand hat die Toilette verstopft. {hull_change}, {fuel_change}",
-    "hull_change": -1,
-    "fuel_change": -2,
-    "image": "assets/images/events/event_death_card.png",
+    "fuel_change": 1,
+    "image": "assets/images/events/event_meteoroid_card.png",
     "type": "negative",
-    "duration": 0,
-    "repeats": false,
+    "duration": 3,
+    "repeats": true,
     "required_conditions": {
     },
-    "category": ""
-  },
-  {
-    "name": "Lyra beleidigt einen Alien-Diplomaten",
-    "description": "Lyra hat die falschen Personen verärgert. {fuel_change}",
-    "hull_change": 0,
-    "fuel_change": -2,
-    "image": "assets/images/events/event_death_card.png",
-    "type": "negative",
-    "duration": 0,
-    "repeats": false,
-    "required_conditions": {
-    },
-    "category": ""
-  },
-  {
-    "name": "Weltraum-Piraten-Angriff",
-    "description": "Die Crew dachte erst, es sei ein Hilferuf – dann wurde ihnen klar, dass es eine Falle war. {hull_change}, {fuel_change}",
-    "hull_change": -5,
-    "fuel_change": -2,
-    "image": "assets/images/events/event_death_card.png",
-    "type": "negative",
-    "duration": 0,
-    "repeats": false,
-    "required_conditions": {
-    },
-    "category": ""
-  },
-  {
-    "name": "Das war’s dann wohl…",
-    "description": "IRIS: Wow. Also DAS war wirklich beeindruckend. Ich hätte nicht gedacht, dass man so konstant danebenliegen kann. Hut ab",
-    "hull_change": -5,
-    "fuel_change": -2,
-    "image": "assets/images/events/event_death_card.png",
-    "type": "negative",
-    "duration": 0,
-    "repeats": false,
-    "required_conditions": {
-      "quiz_error_count": 15
-    },
-    "category": "game_over"
+    "category": "low"
   }
 ]

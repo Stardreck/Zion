@@ -125,6 +125,8 @@ class EventManager(Manager):
         print(f"[EventManager] Description: {event_card.description}")
         print(f"[EventManager] Fuel change: {event_card.fuel_change}, Hull change: {event_card.hull_change}")
 
+        self.game.hud_manager.fuel_label.set_text(f"{self.game.fuel} {event_card.fuel_change}")
+
         # Display the event view
         event_view = EventView(self.game, event_card)
         event_view.run()

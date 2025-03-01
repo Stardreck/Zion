@@ -22,9 +22,9 @@ class StarEngine:
         self.__initialize_pygame()
         self.__setup_display()
         self.pygame_gui_ui_manager: UIManager = UIManager((self.width, self.height), 'theme/theme.json')
-        self.pygame_gui_ui_manager.get_theme().get_font_dictionary().preload_font(16, "noto_sans", True, False, True, True)
+        self.pygame_gui_ui_manager.get_theme().get_font_dictionary().preload_font(16, "noto_sans", True, False, True,
+                                                                                  True)
         self.main_menu: MainMenu = MainMenu(self.pygame_gui_ui_manager, self.config)
-
 
     def show_main_menu(self) -> int:
         """
@@ -69,5 +69,3 @@ class StarEngine:
         self.window = pygame.display.set_mode((self.width, self.height))
         pygame.display.set_caption(self.title)
         self.clock = pygame.time.Clock()
-
-

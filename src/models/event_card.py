@@ -28,7 +28,7 @@ class EventCard:
         # Format hull_change: add '+' if positive, leave as is if zero or negative.
         formatted_hull_change = f"+{self.hull_change}" if self.hull_change > 0 else f"{self.hull_change}"
         # Format fuel_change similarly.
-        formatted_fuel_change = f"+{self.fuel_change}" if self.fuel_change > 0 else f"{self.fuel_change}"
+        formatted_fuel_change = f"<b>+{self.fuel_change} Treibstoff</b>" if self.fuel_change > 0 else f"<b>{self.fuel_change} Treibstoff</b>"
 
         return self.description_template.format(
             hull_change=formatted_hull_change,
