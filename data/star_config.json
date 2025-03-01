@@ -31,5 +31,8 @@
     ],
     "panel_background": "assets/interface/inventory/inventory_panel_background.png",
     "empty_slot": "assets/interface/inventory/inventory_empty_slot.png"
+  },
+  "game_over_system": {
+    "story_quiz_max_attempts": 5
   }
 }

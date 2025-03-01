@@ -38,6 +38,11 @@ class StarConfig:
         self.inventory_panel_background_path: str = self._data.get("inventory_system", {}).get("panel_background", "")
         self.inventory_empty_slot_path: str = self._data.get("inventory_system", {}).get("empty_slot", "")
 
+        ##### game-over system #####
+        self.game_over_story_quiz_max_attempts: int = self._data.get("game_over_system", {}).get("story_quiz_max_attempts", 5)
+
+
+
 
 
     def __load_config(self, config_path: str) -> dict[str, Any]:

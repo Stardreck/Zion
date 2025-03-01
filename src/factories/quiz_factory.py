@@ -17,13 +17,14 @@ class QuizFactory:
         :param quiz_data: Dictionary of quiz data.
         :return: A Quiz instance
         """
-        quiz_type = quiz_data.get("type", "quiz")
+        quiz_type = quiz_data.get("type", "")
         if quiz_type == "quiz":
             return Quiz(
                 question=quiz_data.get("question", ""),
                 answer_options=quiz_data.get("answers", []),
                 correct_answer=quiz_data.get("correct_answer_position"),
                 solution=quiz_data.get("solution"),
+                story_consequence=quiz_data.get("story_consequence"),
                 quiz_type="quiz",
             )
         elif quiz_type == "task":
@@ -32,6 +33,7 @@ class QuizFactory:
                 answer_options=[],
                 correct_answer=quiz_data.get("correct_value"),
                 solution=quiz_data.get("solution"),
+                story_consequence=quiz_data.get("story_consequence"),
                 quiz_type="task"
             )
         elif quiz_type == "boolean":
@@ -40,6 +42,7 @@ class QuizFactory:
                 answer_options=[],
                 correct_answer=quiz_data.get("correct_value"),
                 solution=quiz_data.get("solution"),
+                story_consequence=quiz_data.get("story_consequence"),
                 quiz_type="boolean"
             )
         else:

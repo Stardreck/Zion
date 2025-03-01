@@ -1,4 +1,8 @@
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
+
+from src.factories.story_line_factory import StoryLineFactory
+from src.models.story_line import StoryLine
+
 
 class Quiz:
     """
@@ -12,9 +16,14 @@ class Quiz:
     """
 
     def __init__(self, question: str, answer_options: List[str],
-                 correct_answer: Optional[str] = None, quiz_type: str = "quiz", solution: str = ""):
+                 correct_answer: Optional[str] = None, quiz_type: str = "quiz", solution: str = "",
+                 story_consequence: Dict[str, Any] | None = None):
         self.question = question
         self.answer_options = answer_options
         self.correct_answer = correct_answer
         self.quiz_type = quiz_type
         self.solution = solution
+        if story_consequence is not None:
+            self.story_consequence = StoryLineFactory.create_story_line(story_consequence)
+        else:
+            self.story_consequence = None

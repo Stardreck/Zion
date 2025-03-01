@@ -100,7 +100,7 @@ class StoryGame(Game):
             self.move_player(new_row, new_col)
 
         elif move_row != 0 or move_column != 0:
-            print("[Game Over]")
+          self.run_game_over()
 
     def move_player(self, new_row: int, new_column: int):
         # change player location
@@ -215,3 +215,8 @@ class StoryGame(Game):
                         "Akzeptieren")
         view.run()
         self.fuel += self.engine.config.planet_menu_fuel_free_amount
+
+    def run_game_over(self):
+        print("[Game Over]")
+        #todo implement game over screen
+        exit()
