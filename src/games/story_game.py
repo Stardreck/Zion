@@ -19,6 +19,7 @@ from src.models.quiz import Quiz
 from src.star_engine import StarEngine
 
 from src.views.common.info_view import InfoView
+from src.views.object.object_found_view import ObjectFoundView
 
 
 class StoryGame(Game):
@@ -162,6 +163,9 @@ class StoryGame(Game):
             self.event_manager.increase_error_count()
 
     def run_planet_actions(self, planet: Planet):
+        # debug
+        object_found_view = ObjectFoundView(self, planet)
+        object_found_view.run()
 
         ##### show planet menu and await user input #####
         selected_planet_menu_option = self.story_manager.show_planet_menu(planet)
