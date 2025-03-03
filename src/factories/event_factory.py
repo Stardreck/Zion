@@ -12,6 +12,7 @@ class EventFactory:
             hull_change=event_data.get("hull_change", 0),
             fuel_change=event_data.get("fuel_change", 0),
             image=event_data.get("image"),
+            icon=event_data.get("icon"),
             event_type=event_data.get("type", "negative"),
             duration=event_data.get("duration", 0),
             repeats=event_data.get("repeats", False),

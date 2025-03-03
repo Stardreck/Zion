@@ -19,7 +19,12 @@
     "event_probability": 1,
     "base_positive_probability": 0.1,
     "change_probability_by": 0.1,
-    "max_error_count": 50
+    "max_error_count": 50,
+    "backgrounds": [
+      "assets/images/spaceship/storage_room/spaceship_storage_room.webp",
+      "assets/images/spaceship/storage_room/spaceship_storage_room_03.png"
+    ],
+    "panel_background": "assets/interface/events/event_panel_background.png"
   },
   "quiz_system": {
     "tolerance": 0.1

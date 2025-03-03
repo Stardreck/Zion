@@ -6,6 +6,7 @@ from src.models.event_card import EventCard
 from typing import List, TYPE_CHECKING
 
 from src.views.event.event_view import EventView
+from src.views.event.events_active_view import EventsActiveView
 
 if TYPE_CHECKING:
     from src.games.story_game import StoryGame
@@ -24,6 +25,16 @@ class EventManager(Manager):
         # Split events into positive and negative lists
         self.negative_events = [card for card in event_cards if card.type == "negative"]
         self.positive_events = [card for card in event_cards if card.type == "positive"]
+        self.active_events: List[EventCard] = []
+
+        #todo remove this debug
+        self.active_events.append(self.negative_events[0])
+        self.active_events.append(self.negative_events[0])
+        self.active_events.append(self.negative_events[0])
+        self.active_events.append(self.negative_events[0])
+        self.active_events.append(self.negative_events[0])
+        self.active_events.append(self.negative_events[0])
+
 
         # Adjustable probabilities for positive/negative events
         self.event_probability = self.game.engine.config.event_probability
@@ -33,6 +44,9 @@ class EventManager(Manager):
 
         self.max_error_count = self.game.engine.config.event_max_error_count
         self.error_count: int = 0
+
+        self.is_open = False
+        self.background_paths = self.game.engine.config.inventory_background_paths
 
     def increase_error_count(self):
         if self.error_count < self.max_error_count:
@@ -108,7 +122,7 @@ class EventManager(Manager):
                 return False
 
             # Select a random event from the list
-            event_card = random.choice(filtered_events)
+            event_card: EventCard = random.choice(filtered_events)
 
             self.run_event(event_card)
 
@@ -125,11 +139,34 @@ class EventManager(Manager):
         print(f"[EventManager] Description: {event_card.description}")
         print(f"[EventManager] Fuel change: {event_card.fuel_change}, Hull change: {event_card.hull_change}")
 
+        # change HUD text corresponding to the card effect
         self.game.hud_manager.fuel_label.set_text(f"{self.game.fuel} {event_card.fuel_change}")
+
+        # add event to the active event list if it's not a one time event
+        if event_card.duration != 0:
+            self.active_events.append(event_card)
+
 
         # Display the event view
         event_view = EventView(self.game, event_card)
         event_view.run()
+
+    def open_active_events_menu(self):
+        print(f"[EventManager] Open events active menu")
+
+        self.is_open = not self.is_open
+        if self.is_open:
+            events_active_view = EventsActiveView(self.game, self.__get_background_image_path(),
+                                               self.game.engine.config.event_panel_background_path)
+
+            events_active_view.run()
+
+
+    def __get_background_image_path(self) -> str:
+        # --- Background: Select a random spaceship window image ---
+        return random.choice(self.background_paths)
+
+
 
     def apply_effects(self, event_card: EventCard):
         # Apply event effects

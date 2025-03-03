@@ -9,6 +9,7 @@
     "hull_change": 0,
     "fuel_change": 1,
     "image": "assets/images/events/event_meteoroid_card.png",
+    "icon": "assets/images/events/event_meteoroid_icon.png",
     "type": "negative",
     "duration": 3,
     "repeats": true,

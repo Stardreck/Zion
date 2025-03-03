@@ -7,6 +7,7 @@ from pygame_gui.elements import UIImage
 
 from src.components.ui.ui_button import UIButton
 from src.components.ui.ui_panel import UIPanel
+from src.components.ui.ui_text_box import UITextBox
 from src.views.view import View
 
 if TYPE_CHECKING:
@@ -50,6 +51,17 @@ class InventoryView(View):
             container=self.inventory_panel,
             starting_height=9999
         )
+
+        self.title: UITextBox = UITextBox(
+            relative_rect=Rect(150, -15, 500, 250),
+            html_text="inventar",
+            manager=self.pygame_gui_ui_manager,
+            object_id="events_active_title",
+            starting_height=9999,
+            container=self.inventory_panel,
+            anchors={"centerx": "centerx", "top": "top"},
+        )
+
 
         self.close_button: UIButton = UIButton(
             relative_rect=Rect(-40, 20, 38, 38),

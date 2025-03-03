@@ -28,6 +28,8 @@ class StarConfig:
         self.event_base_positive_probability: float = self._data.get("event_system", {}).get("base_positive_probability", 0)
         self.event_max_error_count: float = self._data.get("event_system", {}).get("max_error_count", 0)
         self.change_probability_by: float = self._data.get("event_system", {}).get("change_probability_by", 0)
+        self.event_panel_background_path: str = self._data.get("event_system", {}).get("panel_background", "")
+        self.event_panel_background_path: str = self._data.get("event_system", {}).get("panel_background", "")
 
         ##### quiz system #####
         self.quiz_tolerance: float = self._data.get("quiz_system", {}).get("tolerance", 0)

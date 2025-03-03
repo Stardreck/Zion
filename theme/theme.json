@@ -230,6 +230,53 @@
       "bold_path": "assets/fonts/Starjedi/Starjedi.ttf",
       "italic_path": "assets/fonts/Starjedi/Starjedi.ttf",
       "bold_italic_path": "assets/fonts/Starjedi/Starjedi.ttf"
+    },
+    "misc": {
+      "text_horiz_alignment": "left"
+    }
+  },
+  "event_duration_text_negative": {
+    "colours": {
+      "normal_text": "#ff1d49"
+    },
+    "misc": {
+      "text_horiz_alignment": "left"
+    }
+  },
+  "event_duration_text_positive": {
+    "colours": {
+      "normal_text": "#38ba7c"
+    },
+    "misc": {
+      "text_horiz_alignment": "left"
+    }
+  },
+  "event_effect_text_negative": {
+    "colours": {
+      "normal_text": "#ff1d49"
+    },
+    "misc": {
+      "text_horiz_alignment": "right"
+    }
+  },
+  "event_effect_text_positive": {
+    "colours": {
+      "normal_text": "#38ba7c"
+    },
+    "misc": {
+      "text_horiz_alignment": "right"
+    }
+  },
+  "events_active_title": {
+    "font": {
+      "name": "StarJedi",
+      "size": "40",
+      "bold": "0",
+      "italic": "0",
+      "regular_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "italic_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_italic_path": "assets/fonts/Starjedi/Starjedi.ttf"
     }
   }
 }
