@@ -207,6 +207,15 @@
       }
     }
   },
+    "hud_event_button": {
+    "images": {
+      "normal_image": {
+        "package": "assets.icons",
+        "resource": "event_icon.png",
+        "premultiplied": "1"
+      }
+    }
+  },
   "planet_menu_title": {
     "font": {
       "name": "StarJedi",

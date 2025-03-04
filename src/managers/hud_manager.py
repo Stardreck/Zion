@@ -125,7 +125,7 @@ class HUDManager(Manager):
             object_id="hud_inventory_button"
         )
         # bind button clicked event to inventory manager open inventory
-        self.inventory_button.bind(pygame_gui.UI_BUTTON_PRESSED, lambda: self.game.inventory_manager.open_inventory())
+        self.inventory_button.bind(pygame_gui.UI_BUTTON_PRESSED, lambda: self.open_menu(1))
 
         ##### event icon #####
         self.event_button: UIButton = UIButton(
@@ -133,10 +133,10 @@ class HUDManager(Manager):
             manager=self.ui_manager,
             text="",
             container=self.sidebar_panel,
-            object_id="hud_inventory_button"
+            object_id="hud_event_button"
         )
         # bind button clicked event to event manager open active events menu
-        self.event_button.bind(pygame_gui.UI_BUTTON_PRESSED, lambda: self.game.event_manager.open_active_events_menu())
+        self.event_button.bind(pygame_gui.UI_BUTTON_PRESSED, lambda: self.open_menu(2))
 
         # ---------------------------
         # Create the Corner Decoration
@@ -149,6 +149,26 @@ class HUDManager(Manager):
             starting_height=10,  # ensures this element is drawn above others
             object_id="hud_corner_decoration"
         )
+
+    def open_menu(self, menu: int):
+        clock = pygame.time.Clock()
+        time_delta = clock.tick(self.game.engine.fps) / 1000.0
+        # 1 = inventory
+        # 2 = event
+        if menu == 1:
+            # make sure that only one menu is open at a time
+            self.game.event_manager.close_active_events_menu()
+            # open inventory menu
+            self.game.inventory_manager.open_inventory()
+
+        if menu == 2:
+            # make sure that only one menu is open at a time
+            self.game.inventory_manager.close_inventory()
+            # open events menu
+            self.game.event_manager.open_active_events_menu()
+
+
+
 
     def update(self):
         """

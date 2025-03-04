@@ -61,6 +61,15 @@ class InventoryView(View):
             container=self.inventory_panel,
             anchors={"centerx": "centerx", "top": "top"},
         )
+        inventory_icon = pygame.image.load("assets/icons/inventory_icon_original.png").convert_alpha()
+
+        self.inventory_icon: UIImage = UIImage(
+            container=self.inventory_panel,
+            relative_rect=Rect(-130, 3, 50, 50),
+            image_surface=inventory_icon,
+            starting_height=9999,
+            anchors={"centerx": "centerx", "top": "top"},
+        )
 
 
         self.close_button: UIButton = UIButton(
@@ -111,6 +120,7 @@ class InventoryView(View):
     def close(self):
         self.is_running = False
         self.game.inventory_manager.is_open = False
+        self.kill()
 
     def run(self):
         self.__build_ui()

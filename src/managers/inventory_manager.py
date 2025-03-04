@@ -16,6 +16,7 @@ class InventoryManager(Manager):
         self.game: StoryGame = game
         self.is_open: bool = False
         self.background_paths = self.game.engine.config.inventory_background_paths
+        self.inventory_view: InventoryView | None
 
     def add_item(self):
         """
@@ -54,10 +55,15 @@ class InventoryManager(Manager):
         """
         self.is_open = not self.is_open
         if self.is_open:
-            inventory_view = InventoryView(self.game, self.__get_background_image_path(),
+            self.inventory_view = InventoryView(self.game, self.__get_background_image_path(),
                                            self.game.engine.config.inventory_panel_background_path,
                                            self.game.engine.config.inventory_empty_slot_path)
-            inventory_view.run()
+            self.inventory_view.run()
+    def close_inventory(self):
+        self.is_open = False
+        if self.inventory_view is not None:
+            self.inventory_view.close()
+
 
     def __get_background_image_path(self) -> str:
         # --- Background: Select a random spaceship window image ---

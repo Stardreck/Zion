@@ -21,6 +21,7 @@ class EventManager(Manager):
         :param event_cards: List of EventCard objects loaded from JSON.
         """
         super().__init__()
+        self.events_active_view: EventsActiveView | None = None
         self.game = game
         # Split events into positive and negative lists
         self.negative_events = [card for card in event_cards if card.type == "negative"]
@@ -156,10 +157,14 @@ class EventManager(Manager):
 
         self.is_open = not self.is_open
         if self.is_open:
-            events_active_view = EventsActiveView(self.game, self.__get_background_image_path(),
+            self.events_active_view = EventsActiveView(self.game, self.__get_background_image_path(),
                                                self.game.engine.config.event_panel_background_path)
 
-            events_active_view.run()
+            self.events_active_view.run()
+    def close_active_events_menu(self):
+        self.is_open = False
+        if self.events_active_view is not None:
+            self.events_active_view.close()
 
 
     def __get_background_image_path(self) -> str:

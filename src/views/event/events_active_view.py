@@ -50,12 +50,20 @@ class EventsActiveView(View):
             starting_height=9998
         )
         self.title: UITextBox = UITextBox(
-            relative_rect=Rect(50, -10, 500, 80),
+            relative_rect=Rect(125, -10, 500, 80),
             html_text="aktive ereignisse",
             manager=self.pygame_gui_ui_manager,
             object_id="events_active_title",
             starting_height=9999,
             container=self.events_panel,
+            anchors={"centerx": "centerx", "top": "top"},
+        )
+        event_icon = pygame.image.load("assets/icons/event_icon_original.png").convert_alpha()
+        self.event_icon: UIImage = UIImage(
+            container=self.events_panel,
+            relative_rect=Rect(-175, 3, 64, 64),
+            image_surface=event_icon,
+            starting_height=9999,
             anchors={"centerx": "centerx", "top": "top"},
         )
 
@@ -162,6 +170,7 @@ class EventsActiveView(View):
     def close(self):
         self.is_running = False
         self.game.event_manager.is_open = False
+        self.kill()
 
     def run(self):
         self.__build_ui()
@@ -195,3 +204,5 @@ class EventsActiveView(View):
         if self.event_item_panels:
             for panel in self.event_item_panels:
                 panel.kill()
+        if self.event_icon:
+            self.event_icon.kill()
