@@ -20,6 +20,7 @@ from src.star_engine import StarEngine
 
 from src.views.common.info_view import InfoView
 from src.views.object.object_found_view import ObjectFoundView
+from src.views.states.game_over_view import GameOverView
 
 
 class StoryGame(Game):
@@ -67,6 +68,9 @@ class StoryGame(Game):
         img = pygame.image.load("assets/images/welcome_screen.png").convert()
         self.default_bg_full: pygame.Surface | None = pygame.transform.scale(img,
                                                                              (self.engine.width, self.engine.height))
+        
+        
+        self.run_game_over()
 
     def handle_events(self):
         self.input_manager.process_events()
@@ -222,5 +226,12 @@ class StoryGame(Game):
 
     def run_game_over(self):
         print("[Game Over]")
+        self.hud_manager.kill_children()
+        game_over_view = GameOverView(self, "assets/images/galaxy/galaxy_01.png")
+        game_over_view.run()
         #todo implement game over screen
         exit()
+        
+    def restart(self):
+        print("[Game Restart]")
+        pass

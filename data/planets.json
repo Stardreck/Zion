@@ -10,7 +10,7 @@
     "planet_image": "assets/images/planets/tartarus.png",
     "cutscene": "assets/videos/video_planet_sequence.mp4"
   },
-    {
+  {
     "name": "Kronos",
     "description": "Kronos, der zweite Planet im Sonnensystem, ist ein Felsplanet Eis an den beiden Polen. Er hat ausserdem eine synchrone Rotation. Durch Sonneneruptionen wird das Eis nach und nach zerstört. Im Grenzgebiet hat es eine Silizium-Minenkolonie.",
     "row": 2,

@@ -195,3 +195,11 @@ class HUDManager(Manager):
             fallback_surface = pygame.Surface(fallback_size, pygame.SRCALPHA)
             fallback_surface.fill((0, 0, 0, 180))  # semi-transparent black
             return fallback_surface
+        
+    
+    
+    def kill_children(self):
+        self.topbar_panel.kill()
+        self.sidebar_panel.kill()
+        self.corner_decoration.kill()
+
