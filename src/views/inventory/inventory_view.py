@@ -1,4 +1,6 @@
 from __future__ import annotations
+
+import copy
 from typing import TYPE_CHECKING
 import pygame
 import pygame_gui
@@ -102,16 +104,19 @@ class InventoryView(View):
         start_y = self.inventory_panel_background.rect.top + 125
 
         ##### get found objects #####
-        objects = self.game.inventory_manager.get_items()
+        game_objects = copy.deepcopy(self.game.inventory_manager.get_items())
 
         ##### draw inventory grid #####
         for row in range(grid_rows):
             for col in range(grid_cols):
                 x_pos = start_x + col * width_spacing
                 y_pos = start_y + row * height_spacing
-                if len(objects) != 0:
-                    # todo draw found object
-                    objects.pop(0)
+                if len(game_objects) != 0:
+                    if game_objects[0].image_path is not None:
+                        object_slot = pygame.image.load(game_objects[0].image_path)
+                        object_slot = pygame.transform.scale(object_slot, (100, 100))
+                        self.game.window.blit(object_slot , (x_pos, y_pos))
+                        game_objects.pop(0)
                 else:
                     # draw empty slot
                     self.game.window.blit(self.inventory_empty_slot, (x_pos, y_pos))

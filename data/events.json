@@ -1,10 +1,9 @@
 [
   {
-    "name": "meteoriteneinschlag",
+    "name": "Meteoriteneinschlag",
     "description": "IRIS war gerade damit beschäftigt mit Lyra über eine Flugbahnkorrektur zu diskutieren. Weshalb sie einen entgegenkommenden Kometenschauer nicht rechtzeitig erkannt hat. Einer dieser Kometen hat euren Treibstofftank beschädigt. Milo hat sich schon auf den Weg gemacht ihn zu reparieren. {fuel_change}",
-    "hull_change": -1,
+    "hull_change": 0,
     "fuel_change": -1,
-    "icon": "assets/images/events/event_meteoroid_icon.png",
     "image": "assets/images/events/event_meteoroid_card.png",
     "type": "negative",
     "duration": 3,
@@ -12,5 +11,173 @@
     "required_conditions": {
     },
     "category": "low"
+  },
+  {
+    "name": "Flugstunde",
+    "description": "Während Victors Bereitschaftsschicht auf der Brücke, wollte er heimlich an seinen Flugfähigkeiten üben. Leider überschätze er seine Fähigkeiten und krachte gegen einen Verteidigungssatteliten. Versicherungsnummern wurden ausgetauscht und der Flug geht weiter. {hull_change}",
+    "hull_change": -2,
+    "fuel_change": 0,
+    "image": "assets/images/events/event_death_card.png",
+    "type": "negative",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+    },
+    "category": ""
+  },
+  {
+    "name": "Per Anhalter durch die Galaxie",
+    "description": "Ein Reisender Mechaniker hat sich der Crew angeschlossen und begleitet euch nun ein Stück auf eurem Weg. Im Gegenzug repariert er das Schiff. {hull_change}",
+    "hull_change": 5,
+    "fuel_change": 0,
+    "image": "",
+    "type": "positive",
+    "duration": 3,
+    "repeats": true,
+    "required_conditions": {
+    },
+    "category": ""
+  },
+  {
+    "name": "Überfall",
+    "description": "Ihr seid in einen Hinterhalt der Piraten geraten. Durch das Verhandlungsgeschickt von Lyra, und ein wenig physischem Nachdruck durch Agatha konntet ihr die unwillkommenen Gäste wieder loswerden. Leider haben sie aber bereits euren Treibstoff abgezapft. {hull_change} {fuel_change}",
+    "hull_change": -5,
+    "fuel_change": -20,
+    "image": "",
+    "type": "negative",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+    },
+    "category": ""
+  },
+  {
+    "name": "Meinungsverschiedenheiten",
+    "description": "Victor und IRIS gerieten in eine hitzige Auseinandersetzung bei der Planung der Flugroute. Aus Trotz lies IRIS das Schiff eine extra lange Route fliegen, ihr habt so zusätzlichen Triebstoff verloren. {fuel_change}",
+    "hull_change": 0,
+    "fuel_change": -2,
+    "image": "",
+    "type": "negative",
+    "duration": 4,
+    "repeats": true,
+    "required_conditions": {
+    },
+    "category": ""
+  },
+  {
+    "name": "Glück im Unglück",
+    "description": "Ihr findet ein Schiffswrack das noch Treibstoff an Board hatte.  {fuel_change}",
+    "hull_change": 0,
+    "fuel_change": 10,
+    "image":  "",
+    "type": "positive",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+    },
+    "category": ""
+  }
+  {
+    "name": "Jetzt wird’s brenzlig",
+    "description": "Durch wiederholte Fehlberechnungen des Kurses habt ihr eine beachtliche Menge an Treibstoff verschleudert. {fuel_change}",
+    "hull_change": 0,
+    "fuel_change": -20,
+    "image": "",
+    "type": "negative",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+    },
+    "category": ""
+  },
+  {
+    "name": "Diplomatie",
+    "description": "Lyras Sarkasmus kam bei einer Routinekontrolle durch die Weltraumbehörde nicht so gut an, sie feuerten einen Warnschuss ab. {hull_change}",
+    "hull_change": -5,
+    "fuel_change": 0,
+    "image": "",
+    "type": "negative",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+    },
+    "category": ""
+  },
+  {
+    "name": "Notlage",
+    "description": "Ihr seid einem Notruf gefolgt. Dieser kam von einem Frachtschiff, dass von Piraten angegriffen wurde. Ihr halft ihm seine Schäden zu reparieren. Im Gegenzug habt ihr einen Teil ihres Treibstoffes erhalten. {fuel_change}",
+    "hull_change": 0,
+    "fuel_change": 20,
+    "image": "",
+    "type": "positive",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+    },
+    "category": ""
+  },
+  {
+    "name": "Retter in der Not",
+    "description": "Ein kleines Shuttle, welches sich auf demselben Kurs befand wie ihr, wurde von Piraten angegriffen. Ihr habt nicht gezögert und seid den Angreifern mutig entgegen getreten. Leider musstet ihr ordentlich Schaden einstecken. {hull_change} {fuel_change}",
+    "hull_change": -35,
+    "fuel_change": -5,
+    "image": "",
+    "type": "negative",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+    },
+    "category": ""
+  },
+  {
+    "name": "Eine Hand wäscht die andere",
+    "description": "In eurer Notlage kam euch ein Schiff der Regierung von Terra Nova zur Hilfe. Das kleine Shuttle, welches ihr vor einiger Zeit beschützt habt war das einer einflussreichen Diplomatin eures Heimatplanten. Sie wollte sich erkenntlich zeigen und schickte euch Treibstoff und Unterstützung. {hull_change} {fuel_change}",
+    "hull_change": 40,
+    "fuel_change": 50,
+    "image": "",
+    "type": "positive",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+    },
+    "category": ""
+  },
+  {
+    "name": "Kosmo-naut",
+    "description": "Kosmo wollte sich als Pilot versuchen und stolzierte über die Steuerkonsole. Per Zufall änderte er die Flugroute und die Neue erwies sich als noch effizienter. Sogar Victor zeigte sich beeindruckt. {fuel_change}",
+    "hull_change": 0,
+    "fuel_change": 3,
+    "image": "",
+    "type": "positive",
+    "duration": 2,
+    "repeats": true,
+    "required_conditions": {
+    },
+    "category": ""
+  },
+  {
+    "name": "Fluss vom Gas",
+    "description": "Der Treibstoffmangel zwingt euch zu drastischen Massnahmen. Victor ordnet an, den Reaktor nur noch auf halber Leistung laufen zu lassen und vorerst nicht mehr zu beschleunigen. Geduscht wird nur noch kalt. {fuel_change}",
+    "hull_change": 0,
+    "fuel_change": 2,
+    "image": "",
+    "type": "positive",
+    "duration": 5,
+    "repeats": true,
+    "required_conditions": {},
+    "category": ""
+  },
+  {
+    "name": "Schrottsammler",
+    "description": "Ihr kommt an einem schon lange verlassenen Schiffswrack vorbei, viele Teile fehlen schon, aber ihr könnt einige Panzerungsplatten entfernen und sie wiederverwenden. {hull_change}",
+    "hull_change": 10,
+    "fuel_change": 0,
+    "image": "",
+    "type": "positive",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+    },
+    "category": ""
   }
 ]

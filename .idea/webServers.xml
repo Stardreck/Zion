@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4edd8a78-e5bc-4a6c-83f6-0d67e3576f8d" name="Stardreck">
+        <fileTransfer rootFolder="/home/stardreck/Desktop/Zion" accessType="SFTP" host="192.168.100.31" port="22" sshConfigId="775a2513-cc59-4686-844e-5ef4885d879a" sshConfig="stardreck@192.168.100.31:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" isUseSudo="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

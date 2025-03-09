@@ -1,4 +1,7 @@
 from __future__ import annotations
+
+import random
+
 import pygame
 import pygame_gui
 from pygame import Rect
@@ -26,8 +29,10 @@ class BaseQuizView(View):
         self.quiz = quiz
         self.is_running: bool = True
 
-        # Load a common background image (using the main menu background image)
-        self.background_image = pygame.image.load(self.game.engine.config.main_menu_background_image).convert()
+        # Load a background image
+        backgrounds = self.game.engine.config.quiz_backgrounds
+        chosen_image: str = random.choice(backgrounds)
+        self.background_image = pygame.image.load(chosen_image).convert()
 
         # UI element placeholders
         self.panel_bg: UIPanel | None = None

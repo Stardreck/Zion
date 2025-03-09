@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 import random
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, List
 
 from src.managers.manager import Manager
+from src.models.game_object import GameObject
 from src.views.inventory.inventory_view import InventoryView
 
 if TYPE_CHECKING:
@@ -17,12 +18,14 @@ class InventoryManager(Manager):
         self.is_open: bool = False
         self.background_paths = self.game.engine.config.inventory_background_paths
         self.inventory_view: InventoryView | None = None
+        self.game_objects: List[GameObject] = []
 
-    def add_item(self):
+    def add_item(self, game_object: GameObject | None) -> None:
         """
         Adds a GameObject to the inventory.
         """
-        print("[InventoryManager] item added")
+        print(f"[InventoryManager] item {game_object.name} added")
+        self.game_objects.append(game_object)
         pass
 
     def remove_item(self):
@@ -36,7 +39,7 @@ class InventoryManager(Manager):
         """
         Returns a list of all GameObjects in the inventory.
         """
-        return []
+        return self.game_objects
 
     def find_item_by_name(self, name: str):
         """
@@ -49,7 +52,7 @@ class InventoryManager(Manager):
         Removes all items from the inventory.
         """
         print("[InventoryManager] inventory cleared")
-        pass
+        self.game_objects = []
 
     def open_inventory(self):
         """

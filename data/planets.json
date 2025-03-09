@@ -1,9 +1,9 @@
 [
   {
     "name": "Tartarus",
-    "description": "Tartarus ist der erste Planet im Sonnensystem und somit der Sonne am nächsten. Die Temperaturen sind sehr hoch, deshalb ist er nicht bewohnt. Er ist eine Quelle für seltene Metalle.",
-    "row": 2,
-    "col": 1,
+    "description": "Tartarus ist der erste Planet im Sonnensystem und somit der Sonne am nächsten. Die Temperaturen sind sehr hoch, aus diesem Grund ist er nicht bewohnt. Er ist eine Quelle für seltene Metalle.",
+    "row": 5,
+    "col": 7,
     "visited": false,
     "isFuelPlanet": false,
     "background_image": "assets/images/galaxy/galaxy_01.png",
@@ -11,15 +11,91 @@
     "cutscene": "assets/videos/video_planet_sequence.mp4"
   },
   {
-    "name": "TerraNova",
-    "description": "Startplanet",
-    "row": 2,
-    "col": 3,
+    "name": "Kronos",
+    "description": "Kronos, der zweite Planet im Sonnensystem, ist ein Felsplanet, er hat Eis an den beiden Polen. Er hat ausserdem eine synchrone Rotation. Durch Sonneneruptionen wird das Eis nach und nach zerstört. Im Grenzgebiet hat es eine Silizium-Minenkolonie.",
+    "row": 7,
+    "col": 6,
     "visited": false,
     "isFuelPlanet": false,
-    "isStartPlanet": true,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/tartarus.png",
     "cutscene": "assets/videos/video_planet_sequence.mp4"
+  },
+  {
+    "name": "Terra Nova",
+    "description": "Terra Nova, der Heimatplanet eurer Crew. Er ist 1,6x Grösser als die Erde und hat somit eine Sonnenumlaufbahn von 385 Tagen. Die Oberfläche ist grösstenteils mit Wasser überdeckt, doch es gibt einige Landmassen.",
+    "row": 7,
+    "col": 3,
+    "visited": false,
+    "isFuelPlanet": false,
+    "background_image": "",
+    "planet_image": "",
+    "cutscene": ""
+  },
+  {
+    "name": "Luna",
+    "description": "Der Mond der euren Heimatplanet umkreist, auf ihm befindet sich ein grosser Forschungskomplex. Diese Station widmet sich der Erforschung und Abwehr der Sonnenstürme.",
+    "row": 6,
+    "col": 2,
+    "visited": false,
+    "isFuelPlanet": false,
+    "background_image": "",
+    "planet_image": "",
+    "cutscene": ""
+  },
+  {
+    "name": "Thalassa",
+    "description": "Thalassa ist der vierte Planet im Sonnensystem und komplett von Wasser bedeckt. Viel Wasser klingt einladend? Bewohnbar ist er, doch er wird von häufigen Asteroideneinschlägen geplagt.",
+    "row": 7,
+    "col": 9,
+    "visited": false,
+    "isFuelPlanet": false,
+    "background_image": "",
+    "planet_image": "",
+    "cutscene": ""
+  },
+  {
+    "name": "Olympus",
+    "description": "Olympus unser erster Gasriese inklusiv einem Mond. Er hat nicht nur einen Mond, sondern auch einen Asteroidengürtel. Doch aufgepasst, in seinem Asteroidengürtel treiben sich seltsame und gefährliche Zeitgenossen herum.",
+    "row": 2,
+    "col": 4,
+    "visited": false,
+    "isFuelPlanet": false,
+    "background_image": "",
+    "planet_image": "",
+    "cutscene": ""
+  },
+  {
+    "name": "Ymir",
+    "description": "Ymir unser zweiter Gasriese. Seine Atmosphäre besteht hauptsächlich aus Methan, doch es konnten Spuren von Wasserstoff nachgewiesen werden. ",
+    "row": 1,
+    "col": 10,
+    "visited": false,
+    "isFuelPlanet": false,
+    "background_image": "",
+    "planet_image": "",
+    "cutscene": ""
+  },
+  {
+    "name": "Zion",
+    "description": "Ymirs Mond Zion hat eine Wasserstoff-Methan Atmosphäre. Er ist von einer anderen Spezies bewohnt. In seinem Orbit schwebt die Forschungsstation Erebus.",
+    "row": 2,
+    "col": 11,
+    "visited": false,
+    "isFuelPlanet": false,
+    "background_image": "",
+    "planet_image": "",
+    "cutscene": ""
+  },
+  {
+    "name": "Jotun",
+    "description": "Jotun ist der siebte, aber nicht der letzte Planet im Sonnensystem. Er ist ein Eisriese und hat eine Ammoniak-Schwefel Atmosphäre.",
+    "row": 8,
+    "col": 0,
+    "visited": false,
+    "isFuelPlanet": false,
+    "background_image": "",
+    "planet_image": "",
+    "cutscene": ""
   }
 ]

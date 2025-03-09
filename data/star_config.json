@@ -10,7 +10,7 @@
     "start_fuel": 50,
     "start_hull": 50,
     "default_backgrounds": [
-      "assets/images/states/game_over_screen.jpg"
+      "assets/images/welcome_screen.png"
     ]
   },
   "player_settings": {
@@ -39,7 +39,10 @@
     "panel_background": "assets/interface/events/event_panel_background.png"
   },
   "quiz_system": {
-    "tolerance": 0.1
+    "tolerance": 0.1,
+    "backgrounds": [
+      "assets/images/welcome_screen.png"
+    ]
   },
   "inventory_system": {
     "backgrounds": [

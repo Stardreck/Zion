@@ -17,27 +17,25 @@ if TYPE_CHECKING:
 
 
 class ObjectFoundView(View):
-    def __init__(self, game: StoryGame, planet: Planet):
+    def __init__(self, game: StoryGame, planet: Planet, game_object: GameObject):
         super().__init__(game.ui_manager.gui_manager)
         self.game = game
         self.planet = planet
         self.is_running: bool = True
 
         # get the obtainable object for this planet
-        self.object: GameObject = next(
-            (game_object for game_object in self.game.data.game_objects if
-             game_object.location.lower() == planet.name.lower()), None)
+        self.game_object: GameObject = game_object
 
         # get the object image
-        self.object_image_surface = pygame.image.load(self.object.image_path).convert_alpha()
+        self.object_image_surface = pygame.image.load(self.game_object.image_path).convert_alpha()
 
         # Load the background image (default from planet.background_image) override from object
         background_image_path = self.planet.background_image
-        if self.object.background_image is not None:
-            background_image_path = self.object.background_image
+        if self.game_object.background_image is not None:
+            background_image_path = self.game_object.background_image
         self.background_image_surface = pygame.image.load(background_image_path).convert()
 
-        self.title_text = f"{self.object.name} erhalten!"
+        self.title_text = f"{self.game_object.name} erhalten!"
 
 
 
@@ -53,9 +51,9 @@ class ObjectFoundView(View):
     def __build_ui(self):
         """Build the UI elements """
         # Create title label at the top
-        title_rect = Rect(0, 60, 800, 100)
-        self.title = UILabel(
-            relative_rect=title_rect,
+        planet_title_rect = Rect(0, 60, 800, 100)
+        self.planet_title = UILabel(
+            relative_rect=planet_title_rect,
             text=self.planet.name,
             manager=self.pygame_gui_ui_manager,
             anchors={"centerx": "centerx", "top": "top"},
@@ -134,6 +132,8 @@ class ObjectFoundView(View):
     def kill(self):
         """Clean up all UI elements."""
         self.is_running = False
+        if self.planet_title:
+            self.planet_title.kill()
         if self.title:
             self.title.kill()
         if self.panel:

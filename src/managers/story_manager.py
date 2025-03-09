@@ -3,8 +3,10 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from src.managers.manager import Manager
+from src.models.game_object import GameObject
 from src.models.planet import Planet
 from src.models.story import Story
+from src.views.object.object_found_view import ObjectFoundView
 from src.views.planet.planet_menu import PlanetMenu
 from src.views.planet.planet_station_menu import PlanetStationMenu
 from src.views.story.story_view import StoryView
@@ -72,3 +74,18 @@ class StoryManager(Manager):
 
                 if total_quiz_count == current_quiz_count:
                     print(f"[Story Quiz] object gained")
+                    self.show_object_found(planet)
+
+    def show_object_found(self, planet: Planet):
+        game_object: GameObject = next(
+            (game_object for game_object in self.game.data.game_objects if
+             game_object.location.lower() == planet.name.lower()), None)
+        self.game.inventory_manager.add_item(game_object)
+        object_found_view = ObjectFoundView(self.game, planet, game_object)
+        object_found_view.run()
+
+
+
+
+
+

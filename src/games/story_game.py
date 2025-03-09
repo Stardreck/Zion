@@ -1,4 +1,5 @@
 import random
+import sys
 from typing import Dict, List
 
 import pygame
@@ -8,7 +9,7 @@ from src.games.game_data import GameData
 from src.managers.debug_manager import DebugManager
 from src.managers.event.event_manager import EventManager
 from src.managers.hud_manager import HUDManager
-from src.managers.input_manager import InputManager
+from src.managers.input.input_manager import InputManager
 from src.managers.inventory_manager import InventoryManager
 from src.managers.quiz_manager import QuizManager
 from src.managers.statistics_manager import StatisticsManager
@@ -20,8 +21,9 @@ from src.models.quiz import Quiz
 from src.star_engine import StarEngine
 
 from src.views.common.info_view import InfoView
-from src.views.object.object_found_view import ObjectFoundView
 from src.views.states.game_over_view import GameOverView
+
+
 
 
 class StoryGame(Game):
@@ -41,6 +43,12 @@ class StoryGame(Game):
 
         ##### Input Manager #####
         self.input_manager: InputManager = InputManager(self)
+
+        if sys.platform.startswith("linux"):
+            from src.managers.input.mcp_input_manager import McpInputManager, PIN_DEFINITIONS_FOR_GAME_BOARD
+            self.mcp_input_manager = McpInputManager(self, PIN_DEFINITIONS_FOR_GAME_BOARD)
+        else:
+            self.mcp_input_manager = None
 
         ##### UI Manager #####
         self.ui_manager: UIManager = UIManager(self)
@@ -75,6 +83,8 @@ class StoryGame(Game):
 
     def handle_events(self):
         self.input_manager.process_events()
+        if self.mcp_input_manager:
+            self.mcp_input_manager.process_events()
 
     def update(self, delta_time: float):
         self.ui_manager.gui_manager.update(delta_time)

@@ -44,6 +44,7 @@ class StarConfig:
         ##### quiz system #####
         self.quiz_tolerance: float = self._data.get("quiz_system", {}).get("tolerance", 0)
         self.quiz_tolerance: float = self._data.get("quiz_system", {}).get("tolerance", 0)
+        self.quiz_backgrounds: [] = self._data.get("quiz_system", {}).get("backgrounds", [])
 
         ##### inventory system #####
         self.inventory_background_paths: List[str] = self._data.get("inventory_system", {}).get("backgrounds", [])

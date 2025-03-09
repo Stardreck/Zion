@@ -1,5 +1,8 @@
 pygame-ce
-pygame_gui
-pymunk
-moviepy
+pygame_gui~=0.6.13
+pymunk~=6.10.0
+moviepy~=2.1.1
 numpy
+colorama~=0.4.6
+smbus2
+colorama
