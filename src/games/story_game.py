@@ -1,3 +1,4 @@
+import random
 from typing import Dict, List
 
 import pygame
@@ -28,12 +29,12 @@ class StoryGame(Game):
         super().__init__(engine, data)
 
         ##### Game Data #####
-        self.fuel: int = 50
-        self.hull: int = 50
+        self.fuel: int = self.engine.config.game_settings_start_fuel
+        self.hull: int = self.engine.config.game_settings_start_hull
         # Starting location
-        self.player_row: int = 2
-        self.player_col: int = 2
-        self.current_planet = None
+        self.player_row: int = self.engine.config.player_settings_start_row
+        self.player_col: int = self.engine.config.player_settings_start_col
+        self.current_planet: Planet | None = None
         self.planet_quizzes_current: Dict[str, List[Quiz]] = {
             pname: list(q_list) for pname, q_list in self.data.planet_quizzes.items()
         }
@@ -64,13 +65,13 @@ class StoryGame(Game):
         self.debug_manager: DebugManager = DebugManager(self)
 
         ##### windows #####
-        # todo change this hardcoded value to dynamic json
-        img = pygame.image.load("assets/images/welcome_screen.png").convert()
+        default_backgrounds = self.engine.config.game_settings_default_backgrounds
+        chosen_image: str = random.choice(default_backgrounds)
+        img = pygame.image.load(chosen_image).convert()
         self.default_bg_full: pygame.Surface | None = pygame.transform.scale(img,
                                                                              (self.engine.width, self.engine.height))
-        
-        
-        self.run_game_over()
+
+        self.move_player(self.engine.config.player_settings_start_row, self.engine.config.player_settings_start_col)
 
     def handle_events(self):
         self.input_manager.process_events()
@@ -105,7 +106,7 @@ class StoryGame(Game):
             self.move_player(new_row, new_col)
 
         elif move_row != 0 or move_column != 0:
-          self.run_game_over()
+            self.run_game_over()
 
     def move_player(self, new_row: int, new_column: int):
         # change player location
@@ -119,6 +120,10 @@ class StoryGame(Game):
         self.run_position_actions()
 
     def run_position_actions(self):
+
+        ##### apply active event effects #####
+        self.event_manager.run_active_events()
+
         self.current_planet = None
         ##### Planet #####
         # check if the position is a planet
@@ -148,12 +153,16 @@ class StoryGame(Game):
             for forced_event in forced_events:
                 if forced_event.category == "game_over":
                     self.event_manager.run_event(forced_event)
-                    # todo game over view with return
+                    self.run_game_over()
                     break
 
                 self.event_manager.run_event(forced_event)
 
         self.event_manager.trigger_event_if_possible()
+
+        ##### calculate next change #####
+
+
 
     def run_general_field_actions(self):
         ##### display quiz or task #####
@@ -167,9 +176,11 @@ class StoryGame(Game):
             self.event_manager.increase_error_count()
 
     def run_planet_actions(self, planet: Planet):
-        # debug
-        object_found_view = ObjectFoundView(self, planet)
-        object_found_view.run()
+        ##### show story content on start planet #####
+        if planet.is_start_planet:
+            self.ui_manager.display_cutscene(planet.cutscene_media)
+            self.story_manager.show_planet_story(planet, self.data.story_segments[planet.name])
+            return
 
         ##### show planet menu and await user input #####
         selected_planet_menu_option = self.story_manager.show_planet_menu(planet)
@@ -227,11 +238,9 @@ class StoryGame(Game):
     def run_game_over(self):
         print("[Game Over]")
         self.hud_manager.kill_children()
-        game_over_view = GameOverView(self, "assets/images/galaxy/galaxy_01.png")
+        game_over_view = GameOverView(self, "assets/images/states/game_over_screen.jpg")
         game_over_view.run()
-        #todo implement game over screen
-        exit()
-        
+
     def restart(self):
         print("[Game Restart]")
         pass

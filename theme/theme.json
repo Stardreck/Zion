@@ -44,6 +44,22 @@
       "shadow_width": "0"
     }
   },
+  "tool_tip": {
+    "misc": {
+      "rect_width": "170"
+    }
+  },
+  "tool_tip.text_box": {
+    "colours": {
+      "dark_bg": "#0a110f",
+      "normal_border": "#174e38"
+    },
+    "misc": {
+      "shape_corner_radius": "12",
+      "border_width": "2",
+      "padding": "5,5"
+    }
+  },
   "label": {
     "colours": {
       "normal_text": "#ffffff"
@@ -207,7 +223,7 @@
       }
     }
   },
-    "hud_event_button": {
+  "hud_event_button": {
     "images": {
       "normal_image": {
         "package": "assets.icons",

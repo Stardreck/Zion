@@ -3,8 +3,19 @@
   "width": 1600,
   "height": 720,
   "main_menu": {
-    "background_image": "assets/images/menu_background.png",
+    "background_image": "assets/images/logo.png",
     "start_button_text": "Reise beginnen"
+  },
+  "game_settings": {
+    "start_fuel": 50,
+    "start_hull": 50,
+    "default_backgrounds": [
+      "assets/images/states/game_over_screen.jpg"
+    ]
+  },
+  "player_settings": {
+    "player_start_row": 2,
+    "player_start_col": 3
   },
   "planet_menu": {
     "fuel_station": {
@@ -17,6 +28,7 @@
   },
   "event_system": {
     "event_probability": 1,
+    "mini_game_probability": 0.5,
     "base_positive_probability": 0.1,
     "change_probability_by": 0.1,
     "max_error_count": 50,

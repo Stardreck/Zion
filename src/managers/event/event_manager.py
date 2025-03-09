@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import copy
 import random
 from src.managers.manager import Manager
+from src.mini_games.cable_connection.cable_connection_mini_game import CableConnectionMiniGame
 from src.models.event_card import EventCard
 from typing import List, TYPE_CHECKING
 
@@ -28,17 +30,9 @@ class EventManager(Manager):
         self.positive_events = [card for card in event_cards if card.type == "positive"]
         self.active_events: List[EventCard] = []
 
-        #todo remove this debug
-        self.active_events.append(self.negative_events[0])
-        self.active_events.append(self.negative_events[0])
-        self.active_events.append(self.negative_events[0])
-        self.active_events.append(self.negative_events[0])
-        self.active_events.append(self.negative_events[0])
-        self.active_events.append(self.negative_events[0])
-
-
         # Adjustable probabilities for positive/negative events
         self.event_probability = self.game.engine.config.event_probability
+        self.mini_game_probability = self.game.engine.config.mini_game_probability
         self.base_positive_probability = self.game.engine.config.event_base_positive_probability
         self.event_positive_probability = self.base_positive_probability
         self.change_probability_value = self.game.engine.config.change_probability_by
@@ -65,7 +59,8 @@ class EventManager(Manager):
         As error_count increases, the chance for a positive event decreases.
         The positive probability is never allowed to drop below 0.1.
         """
-        self.event_positive_probability = max(0.1, self.base_positive_probability - self.change_probability_value * self.error_count)
+        self.event_positive_probability = max(0.1,
+                                              self.base_positive_probability - self.change_probability_value * self.error_count)
 
     def get_forced_events(self) -> List[EventCard] | []:
         events = self.negative_events + self.positive_events
@@ -113,44 +108,78 @@ class EventManager(Manager):
 
         # Check against global event probability from the configuration
         if random.random() < self.event_probability:
-            # Decide event type (positive/negative) based on probability
-            event_list = self.positive_events if random.random() < self.event_positive_probability else self.negative_events
+            # an event should be triggered, check if a mini-game should be played
+            if random.random() < self.mini_game_probability:
+                ##### run a random mini-game #####
+                # run a random mini-game , currently there is only one mini-game available
+                num_pairs = random.choice([4, 6, 8])
+                mini_game = CableConnectionMiniGame(self.game, num_pairs)
+                mini_game.run()
+                result = mini_game.get_result()
 
-            # Filter events that meet the conditions
-            filtered_events = [event for event in event_list if self.__check_conditions(event)]
 
-            if not filtered_events:
-                return False
+            else:
+                ##### run a random event #####
+                # Decide event type (positive/negative) based on probability
+                event_list = self.positive_events if random.random() < self.event_positive_probability else self.negative_events
 
-            # Select a random event from the list
-            event_card: EventCard = random.choice(filtered_events)
+                # Filter events that meet the conditions
+                filtered_events = [event for event in event_list if self.__check_conditions(event)]
 
-            self.run_event(event_card)
+                if not filtered_events:
+                    return False
+
+                # Select a random event from the list
+                event_card: EventCard = random.choice(filtered_events)
+
+                self.run_event(event_card)
 
             return True
 
         return False
 
     def run_event(self, event_card: EventCard):
-        # apply effects
-        self.apply_effects(event_card)
-
         # Debug output
         print(f"[EventManager] Event triggered: {event_card.name}")
         print(f"[EventManager] Description: {event_card.description}")
         print(f"[EventManager] Fuel change: {event_card.fuel_change}, Hull change: {event_card.hull_change}")
 
         # change HUD text corresponding to the card effect
-        self.game.hud_manager.fuel_label.set_text(f"{self.game.fuel} {event_card.fuel_change}")
-
-        # add event to the active event list if it's not a one time event
-        if event_card.duration != 0:
-            self.active_events.append(event_card)
-
+        # self.game.hud_manager.fuel_label.set_text(f"{self.game.fuel} {event_card.fuel_change}")
 
         # Display the event view
         event_view = EventView(self.game, event_card)
         event_view.run()
+
+        # apply effects
+        self.apply_effects(event_card)
+
+        # add event to the active event list if it's not a one time event
+        if event_card.duration != 0:
+            self.add_active_event(event_card)
+
+    def run_active_events(self):
+        """Runs active events, applies effects, and removes expired events."""
+        for index in reversed(range(len(self.get_active_events()))):
+            event = self.active_events[index]
+            self.apply_effects(event)
+            event.duration -= 1
+            if event.duration <= 0:
+                self.active_events.pop(index)  # Sicheres Entfernen
+
+    def get_active_events(self):
+        return self.active_events
+
+    def get_active_events_fuel_change(self):
+        active_events = self.get_active_events()
+        fuel_change = 0
+        for event in active_events:
+            fuel_change += event.fuel_change
+        return fuel_change
+
+    def add_active_event(self, event: EventCard):
+        copied_event = copy.deepcopy(event)
+        self.active_events.append(copied_event)
 
     def open_active_events_menu(self):
         print(f"[EventManager] Open events active menu")
@@ -158,20 +187,18 @@ class EventManager(Manager):
         self.is_open = not self.is_open
         if self.is_open:
             self.events_active_view = EventsActiveView(self.game, self.__get_background_image_path(),
-                                               self.game.engine.config.event_panel_background_path)
+                                                       self.game.engine.config.event_panel_background_path)
 
             self.events_active_view.run()
+
     def close_active_events_menu(self):
         self.is_open = False
         if self.events_active_view is not None:
             self.events_active_view.close()
 
-
     def __get_background_image_path(self) -> str:
         # --- Background: Select a random spaceship window image ---
         return random.choice(self.background_paths)
-
-
 
     def apply_effects(self, event_card: EventCard):
         # Apply event effects

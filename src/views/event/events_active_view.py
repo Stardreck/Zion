@@ -82,7 +82,7 @@ class EventsActiveView(View):
 
     def __draw_events_active_objects(self):
 
-        event_cards = self.game.event_manager.active_events
+        event_cards = self.game.event_manager.get_active_events()
 
         # grid settings
         columns = 2
@@ -109,6 +109,9 @@ class EventsActiveView(View):
             x = start_x + col * (cell_width + spacing_x)
             y = start_y + row * (cell_height + spacing_y)
 
+            event_duration_text = f"Noch {event_card.duration} Runden"
+            event_effect_text = f"{event_card.formatted_text_hull_change}     {event_card.formatted_text_fuel_change}"
+
             event_panel = UIPanel(
                 relative_rect=Rect(x, y, cell_width, cell_height),
                 manager=self.pygame_gui_ui_manager,
@@ -129,7 +132,6 @@ class EventsActiveView(View):
                 relative_rect=Rect(118, -30, 425, 100),
                 manager=self.pygame_gui_ui_manager,
                 text=event_card.name,
-
                 object_id="event_title",
                 container=event_panel,
             )
@@ -152,17 +154,18 @@ class EventsActiveView(View):
             event_duration = UILabel(
                 relative_rect=Rect(10, 90, 150, 100),
                 manager=self.pygame_gui_ui_manager,
-                text="Noch 2 Runden",
+                text=event_duration_text,
                 object_id=duration_id,
                 container=event_panel,
             )
             event_effect = UILabel(
-                relative_rect=Rect(cell_width - 165, 90, 150, 100),
+                relative_rect=Rect(cell_width - 185, 90, 175, 100),
                 manager=self.pygame_gui_ui_manager,
-                text="-10 Treibstoff, -5 Hülle",
+                text=event_effect_text,
                 object_id=effect_id,
                 container=event_panel,
             )
+            event_effect.text_horiz_alignment = "right"
 
 
             self.event_item_panels.append(event_panel)

@@ -8,4 +8,4 @@ class Endpoint:
         self.shape: pymunk.Circle = shape
         self.color:  tuple[int, int, int] = color
         self.connected: bool = connected
-        self.connection: Endpoint = connection
+        self.connection: Endpoint | None = connection

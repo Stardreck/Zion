@@ -1,5 +1,16 @@
 {
   "CableConnectionMiniGame": {
-    "backgrounds": []
+    "backgrounds": [
+      "assets/images/spaceship/door/spaceship_door_01.png",
+      "assets/images/spaceship/door/spaceship_door_02.png",
+      "assets/images/spaceship/door/spaceship_door_03.png",
+      "assets/images/spaceship/door/spaceship_door_04.png"
+    ],
+    "panel_images": [
+      "assets/images/spaceship/panel/spaceship_panel_01.png",
+      "assets/images/spaceship/panel/spaceship_panel_02.png",
+      "assets/images/spaceship/panel/spaceship_panel_03.png",
+      "assets/images/spaceship/panel/spaceship_panel_04.png"
+    ]
   }
 }

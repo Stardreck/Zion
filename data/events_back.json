@@ -1,6 +1,6 @@
 [
   {
-    "name": "Meteoriteneinschlag",
+    "name": "meteoriteneinschlag",
     "description": "IRIS war gerade damit beschäftigt mit Lyra über eine Flugbahnkorrektur zu diskutieren. Weshalb sie einen entgegenkommenden Kometenschauer nicht rechtzeitig erkannt hat. Einer dieser Kometen hat euren Treibstofftank beschädigt. Milo hat sich schon auf den Weg gemacht ihn zu reparieren. {fuel_change}",
     "hull_change": 0,
     "fuel_change": -1,
@@ -13,10 +13,10 @@
     "category": "low"
   },
   {
-    "name": "Mayday! Mayday!",
-    "description": "Jemand hat die Toilette verstopft. {hull_change}, {fuel_change}",
-    "hull_change": -1,
-    "fuel_change": -2,
+    "name": "Flugstunde",
+    "description": "Während Victors Bereitschaftsschicht auf der Brücke, wollte er heimlich an seinen Flugfähigkeiten üben. Leider überschätze er seine Fähigkeiten und krachte gegen einen Verteidigungssatteliten. Versicherungsnummern wurden ausgetauscht und der Flug geht weiter. {hull_change}",
+    "hull_change": -2,
+    "fuel_change": 0,
     "image": "assets/images/events/event_death_card.png",
     "type": "negative",
     "duration": 0,

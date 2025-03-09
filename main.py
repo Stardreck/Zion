@@ -25,12 +25,13 @@ def main():
     ##### show main menu #####
     result = engine.show_main_menu()
     if result == 0:
+        # game closed
         return
     if result == 1:
-        pass
-        # data = GameData()
-        # game = StoryGame(engine, data)
-        # engine.run(game)
+        # start story game
+        data = GameData(config)
+        game = StoryGame(engine, data)
+        engine.run(game)
 
 
 def debug():
@@ -69,6 +70,9 @@ def test_mini_game_cable_connection1():
 
     mini_game = CableConnectionMiniGame(game)
     mini_game.run()
+
+    result = mini_game.get_result()
+    print("Result:", result)
 
 
 # entry point

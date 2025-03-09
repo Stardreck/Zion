@@ -24,15 +24,6 @@ class BaseStateView(View):
         
     
     def __build_ui(self):
-        # Create title label at the top
-        title_rect = Rect(0, 60, 800, 100)
-        self.title = UILabel(
-            relative_rect=title_rect,
-            text=self.title_text,
-            manager=self.pygame_gui_ui_manager,
-            anchors={"centerx": "centerx", "top": "top"},
-            object_id="planet_menu_title",
-        )
         
         # Create the first button
         confirm_button = Rect(0, -125, 500, 50)

@@ -11,21 +11,21 @@
     "name": "Ione-Pulse-Array",
     "alias": "",
     "description": "",
-    "image_path": "assets/images/objects/artifact.png",
+    "image_path": "assets/images/objects/kompakt_fusions_generator.png",
     "location": "Medusa"
   },
   {
     "name": "Hochleistungslaser",
     "alias": "",
     "description": "",
-    "image_path": "assets/images/objects/artifact.png",
+    "image_path": "assets/images/objects/kompakt_fusions_generator.png",
     "location": ""
   },
   {
     "name": "Hydro-Splitter",
     "alias": "",
     "description": "",
-    "image_path": "assets/images/objects/artifact.png",
+    "image_path": "assets/images/objects/kompakt_fusions_generator.png",
     "location": "Thalassa"
   }
 ]

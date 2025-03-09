@@ -11,7 +11,7 @@ class StoryBlockFactory:
             story_lines_data = block_data.get("story_lines", [])
             story_lines = [StoryLineFactory.create_story_line(sl) for sl in story_lines_data]
             return StoryBlock(block_type="story", story_lines=story_lines)
-        elif block_type in ["quiz", "task"]:
+        elif block_type in ["quiz", "task", "boolean"]:
             quiz = QuizFactory.create_quiz(block_data)
             # set the quiz tipe Quiz-Typ
             quiz.quiz_type = block_type

@@ -20,6 +20,7 @@ class HUDManager(Manager):
     It uses pygame_gui elements to display the top bar (with fuel and hull),
     a sidebar with an inventory image, and a corner decoration.
     """
+
     def __init__(self, game: StoryGame):
         """
         Initialize the HUD manager.
@@ -59,7 +60,8 @@ class HUDManager(Manager):
         # Top bar background image
         self.topbar_background: UIImage = UIImage(
             relative_rect=pygame.Rect(0, 0, self.screen_width, self.topbar_height),
-            image_surface=self.__load_image("assets/interface/hud/topbar_background.png", fallback_size=(self.screen_width, self.topbar_height)),
+            image_surface=self.__load_image("assets/interface/hud/topbar_background.png",
+                                            fallback_size=(self.screen_width, self.topbar_height)),
             manager=self.ui_manager,
             container=self.topbar_panel,
             anchors={"top": "top", "left": "left", "right": "right"},
@@ -110,7 +112,8 @@ class HUDManager(Manager):
         # Sidebar background image
         self.sidebar_background: UIImage = UIImage(
             relative_rect=pygame.Rect(0, 0, 60, self.screen_height - self.topbar_height),
-            image_surface=self.__load_image("assets/interface/hud/sidebar_background.png", fallback_size=(80, self.screen_height - self.topbar_height)),
+            image_surface=self.__load_image("assets/interface/hud/sidebar_background.png",
+                                            fallback_size=(80, self.screen_height - self.topbar_height)),
             manager=self.ui_manager,
             container=self.sidebar_panel,
             anchors={"top": "top", "left": "left", "bottom": "bottom"},
@@ -167,14 +170,16 @@ class HUDManager(Manager):
             # open events menu
             self.game.event_manager.open_active_events_menu()
 
-
-
-
     def update(self):
         """
         Update the HUD with the current game data.
         This method should be called in the main game loop.
         """
+        # active_events_fuel_change_amount = self.game.event_manager.get_active_events_fuel_change()
+        # active_events_fuel_change = f"Events: <br>"
+        # if active_events_fuel_change_amount > 0:
+        #    active_events_fuel_change += f"{active_events_fuel_change}"
+
         self.fuel_label.set_text(f"{self.game.fuel}")
         self.hull_label.set_text(f"{self.game.hull}")
 
@@ -195,11 +200,8 @@ class HUDManager(Manager):
             fallback_surface = pygame.Surface(fallback_size, pygame.SRCALPHA)
             fallback_surface.fill((0, 0, 0, 180))  # semi-transparent black
             return fallback_surface
-        
-    
-    
+
     def kill_children(self):
         self.topbar_panel.kill()
         self.sidebar_panel.kill()
         self.corner_decoration.kill()
-

@@ -25,6 +25,8 @@ class QuizFactory:
                 correct_answer=quiz_data.get("correct_answer_position"),
                 solution=quiz_data.get("solution"),
                 story_consequence=quiz_data.get("story_consequence"),
+                category=quiz_data.get("category"),
+                difficulty=quiz_data.get("difficulty"),
                 quiz_type="quiz",
             )
         elif quiz_type == "task":
@@ -34,6 +36,8 @@ class QuizFactory:
                 correct_answer=quiz_data.get("correct_value"),
                 solution=quiz_data.get("solution"),
                 story_consequence=quiz_data.get("story_consequence"),
+                category=quiz_data.get("category"),
+                difficulty=quiz_data.get("difficulty"),
                 quiz_type="task"
             )
         elif quiz_type == "boolean":
@@ -43,6 +47,8 @@ class QuizFactory:
                 correct_answer=quiz_data.get("correct_value"),
                 solution=quiz_data.get("solution"),
                 story_consequence=quiz_data.get("story_consequence"),
+                category=quiz_data.get("category"),
+                difficulty=quiz_data.get("difficulty"),
                 quiz_type="boolean"
             )
         else:

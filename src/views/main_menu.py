@@ -24,13 +24,13 @@ class MainMenu(View):
         title_rect = pygame.Rect(0, 50, 500, 250)
         self.title = UILabel(
             relative_rect=title_rect,
-            text=self.config.title,
+            text="",
             manager=self.pygame_gui_ui_manager,
             anchors={"centerx": "centerx", "top": "top"},
             object_id="main_menu_title",
         )
 
-        button_rect = pygame.Rect(0, 0, 200, 50)
+        button_rect = pygame.Rect(0, 250, 200, 50)
         self.start_button = UIButton(
             relative_rect=button_rect,
             text=self.config.main_menu_start_button_text,
@@ -41,21 +41,23 @@ class MainMenu(View):
         self.start_button.bind(pygame_gui.UI_BUTTON_PRESSED, lambda: self.start())
 
     def kill(self):
+        self.is_running = False
         self.title.kill()
         self.start_button.kill()
 
     def start(self):
         self.start_story_game = True
 
-    def run(self, surface: Surface, clock: Clock, fps: int) -> int:
+    def run(self, surface: Surface, clock: Clock, fps: int) -> int | None:
         self.__build_ui()
         while self.is_running:
             time_delta = clock.tick(fps) / 1000.0  # limit to 60 FPS (defined in star_config)
-            if (self.start_story_game):
+            if self.start_story_game:
+                self.kill()
                 return 1
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    self.is_running = False
+                    self.kill()
                     return 0
                 self.pygame_gui_ui_manager.process_events(event)
             # pass events to the UI elements

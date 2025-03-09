@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import json
 from abc import ABC, abstractmethod
+from pathlib import Path
 from typing import TYPE_CHECKING
 
 import pygame
@@ -19,6 +21,13 @@ class MiniGame(ABC):
         self.game = game
         self.finished: bool = False
         self.success: bool = False
+        self.data_directory = "data"
+
+    def load_config_file_data(self):
+        path = Path(self.data_directory ) / "mini_games.json"
+        with open(path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+        return data
 
     @abstractmethod
     def show_start_menu(self):

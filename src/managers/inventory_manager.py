@@ -16,18 +16,20 @@ class InventoryManager(Manager):
         self.game: StoryGame = game
         self.is_open: bool = False
         self.background_paths = self.game.engine.config.inventory_background_paths
-        self.inventory_view: InventoryView | None
+        self.inventory_view: InventoryView | None = None
 
     def add_item(self):
         """
         Adds a GameObject to the inventory.
         """
+        print("[InventoryManager] item added")
         pass
 
     def remove_item(self):
         """
         Removes a GameObject from the inventory. Returns True if successful.
         """
+        print("[InventoryManager]item removed")
         pass
 
     def get_items(self):
@@ -46,7 +48,7 @@ class InventoryManager(Manager):
         """
         Removes all items from the inventory.
         """
-        print("[InventoryManager] inventory cleared.")
+        print("[InventoryManager] inventory cleared")
         pass
 
     def open_inventory(self):
@@ -55,16 +57,21 @@ class InventoryManager(Manager):
         """
         self.is_open = not self.is_open
         if self.is_open:
+            print("[InventoryManager] inventory opened")
             self.inventory_view = InventoryView(self.game, self.__get_background_image_path(),
-                                           self.game.engine.config.inventory_panel_background_path,
-                                           self.game.engine.config.inventory_empty_slot_path)
+                                                self.game.engine.config.inventory_panel_background_path,
+                                                self.game.engine.config.inventory_empty_slot_path)
             self.inventory_view.run()
+
     def close_inventory(self):
+        """
+         Close the inventory menu
+        """
         self.is_open = False
         if self.inventory_view is not None:
+            print("[InventoryManager] inventory closed")
             self.inventory_view.close()
 
-
     def __get_background_image_path(self) -> str:
-        # --- Background: Select a random spaceship window image ---
+        # select a random spaceship window image
         return random.choice(self.background_paths)

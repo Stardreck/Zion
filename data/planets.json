@@ -2,8 +2,8 @@
   {
     "name": "Tartarus",
     "description": "Tartarus ist der erste Planet im Sonnensystem und somit der Sonne am nächsten. Die Temperaturen sind sehr hoch, deshalb ist er nicht bewohnt. Er ist eine Quelle für seltene Metalle.",
-    "row": 0,
-    "col": 0,
+    "row": 2,
+    "col": 1,
     "visited": false,
     "isFuelPlanet": false,
     "background_image": "assets/images/galaxy/galaxy_01.png",
@@ -11,25 +11,15 @@
     "cutscene": "assets/videos/video_planet_sequence.mp4"
   },
   {
-    "name": "Kronos",
-    "description": "Kronos, der zweite Planet im Sonnensystem, ist ein Felsplanet Eis an den beiden Polen. Er hat ausserdem eine synchrone Rotation. Durch Sonneneruptionen wird das Eis nach und nach zerstört. Im Grenzgebiet hat es eine Silizium-Minenkolonie.",
+    "name": "TerraNova",
+    "description": "Startplanet",
     "row": 2,
     "col": 3,
     "visited": false,
     "isFuelPlanet": false,
+    "isStartPlanet": true,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/tartarus.png",
-    "cutscene": "assets/videos/video_planet_sequence.mp4"
-  },
-  {
-    "name": "Terra Nova",
-    "description": "Terra Nova, der Heimatplanet eurer Crew, ist 1,6x Grösser als die Erde und hat somit eine Sonnenumlaufbahn von 385 Tagen. Die Oberfläche ist grösstenteils mit Wasser überdeckt, doch es gibt einige Landmassen.\n",
-    "row": 4,
-    "col": 6,
-    "visited": false,
-    "isFuelPlanet": true,
-    "background_image": "assets/images/galaxy/galaxy_01.png",
-    "planet_image": "assets/images/planets/zion_background.png",
     "cutscene": "assets/videos/video_planet_sequence.mp4"
   }
 ]

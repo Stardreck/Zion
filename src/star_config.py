@@ -16,6 +16,15 @@ class StarConfig:
         self.main_menu_background_image: str = self._data.get("main_menu", {}).get("background_image", "")
         self.main_menu_start_button_text: str = self._data.get("main_menu", {}).get("start_button_text", "")
 
+        ##### game settings #####
+        self.game_settings_start_fuel: int = self._data.get("game_settings", {}).get("start_fuel", 0)
+        self.game_settings_start_hull: int = self._data.get("game_settings", {}).get("start_hull", 0)
+        self.game_settings_default_backgrounds: [] = self._data.get("game_settings", {}).get("default_backgrounds", [])
+
+        ##### player settings #####
+        self.player_settings_start_row: int = self._data.get("player_settings", {}).get("player_start_row", 0)
+        self.player_settings_start_col: int = self._data.get("player_settings", {}).get("player_start_col", 0)
+
         ##### planet menu #####
         self.planet_menu_fuel_station_background_image_path: str = self._data.get("planet_menu", {}).get("fuel_station", {}).get("background", "")
         self.planet_menu_fuel_station_image_path: str = self._data.get("planet_menu", {}).get("fuel_station", {}).get("image", "")
@@ -25,6 +34,7 @@ class StarConfig:
 
         ##### event system #####
         self.event_probability: float = self._data.get("event_system", {}).get("event_probability", 0)
+        self.mini_game_probability: float = self._data.get("event_system", {}).get("mini_game_probability", 0)
         self.event_base_positive_probability: float = self._data.get("event_system", {}).get("base_positive_probability", 0)
         self.event_max_error_count: float = self._data.get("event_system", {}).get("max_error_count", 0)
         self.change_probability_by: float = self._data.get("event_system", {}).get("change_probability_by", 0)

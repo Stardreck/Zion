@@ -27,7 +27,7 @@ class EventCard:
         :return: Formatted description string.
         """
         # Format hull_change: add '+' if positive, leave as is if zero or negative.
-        formatted_hull_change = f"+{self.hull_change}" if self.hull_change > 0 else f"{self.hull_change}"
+        formatted_hull_change = f"<b>+{self.hull_change} Hülle</b>" if self.hull_change > 0 else f"<b>{self.hull_change} Hülle</b>"
         # Format fuel_change similarly.
         formatted_fuel_change = f"<b>+{self.fuel_change} Treibstoff</b>" if self.fuel_change > 0 else f"<b>{self.fuel_change} Treibstoff</b>"
 
@@ -35,3 +35,21 @@ class EventCard:
             hull_change=formatted_hull_change,
             fuel_change=formatted_fuel_change
         )
+
+    @property
+    def formatted_html_hull_change(self):
+        return f"<b>+{self.hull_change} Hülle</b>" if self.hull_change > 0 else f"<b>{self.hull_change} Hülle</b>"
+
+    @property
+    def formatted_html_fuel_change(self):
+        return f"<b>+{self.fuel_change} Treibstoff</b>" if self.fuel_change > 0 else f"<b>{self.fuel_change} Treibstoff</b>"
+
+    @property
+    def formatted_text_hull_change(self):
+        if self.hull_change == 0: return ""
+        return f"+{self.hull_change} Hülle" if self.hull_change > 0 else f"{self.hull_change} Hülle"
+
+    @property
+    def formatted_text_fuel_change(self):
+        if self.fuel_change == 0: return ""
+        return f"+{self.fuel_change} Treibstoff" if self.fuel_change > 0 else f"{self.fuel_change} Treibstoff"
