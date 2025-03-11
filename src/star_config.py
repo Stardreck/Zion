@@ -4,13 +4,20 @@ from typing import Any, List
 
 
 class StarConfig:
+    """
+    This is the main configuration file (star_config.json in data)
+    """
+
     def __init__(self, config_path: str):
         self._data = self.__load_config(config_path)
 
-        self.width: int = self._data.get("width", 1600)
-        self.height: int = self._data.get("height", 720)
-        self.fps: int = self._data.get("fps", 60)
         self.title: str = self._data.get("title", "")
+
+        ##### engine settings #####
+        self.width: int = self._data.get("engine", {}).get("width", 1600)
+        self.height: int = self._data.get("engine", {}).get("height", 720)
+        self.fps: int = self._data.get("engine", {}).get("fps", 60)
+        self.full_screen: bool = self._data.get("engine", {}).get("full_screen", False)
 
         ##### main menu #####
         self.main_menu_background_image: str = self._data.get("main_menu", {}).get("background_image", "")
@@ -26,16 +33,23 @@ class StarConfig:
         self.player_settings_start_col: int = self._data.get("player_settings", {}).get("player_start_col", 0)
 
         ##### planet menu #####
-        self.planet_menu_fuel_station_background_image_path: str = self._data.get("planet_menu", {}).get("fuel_station", {}).get("background", "")
-        self.planet_menu_fuel_station_image_path: str = self._data.get("planet_menu", {}).get("fuel_station", {}).get("image", "")
-        self.planet_menu_fuel_free_amount: int = self._data.get("planet_menu", {}).get("fuel_station", {}).get("fuel_free_amount", 0)
-        self.planet_menu_fuel_quiz_correct_amount: int = self._data.get("planet_menu", {}).get("fuel_station", {}).get("fuel_quiz_correct_amount", 0)
-        self.planet_menu_fuel_quiz_wrong_amount: int = self._data.get("planet_menu", {}).get("fuel_station", {}).get("fuel_quiz_wrong_amount", 0)
+        self.planet_menu_fuel_station_background_image_path: str = self._data.get("planet_menu", {}).get("fuel_station",
+                                                                                                         {}).get(
+            "background", "")
+        self.planet_menu_fuel_station_image_path: str = self._data.get("planet_menu", {}).get("fuel_station", {}).get(
+            "image", "")
+        self.planet_menu_fuel_free_amount: int = self._data.get("planet_menu", {}).get("fuel_station", {}).get(
+            "fuel_free_amount", 0)
+        self.planet_menu_fuel_quiz_correct_amount: int = self._data.get("planet_menu", {}).get("fuel_station", {}).get(
+            "fuel_quiz_correct_amount", 0)
+        self.planet_menu_fuel_quiz_wrong_amount: int = self._data.get("planet_menu", {}).get("fuel_station", {}).get(
+            "fuel_quiz_wrong_amount", 0)
 
         ##### event system #####
         self.event_probability: float = self._data.get("event_system", {}).get("event_probability", 0)
         self.mini_game_probability: float = self._data.get("event_system", {}).get("mini_game_probability", 0)
-        self.event_base_positive_probability: float = self._data.get("event_system", {}).get("base_positive_probability", 0)
+        self.event_base_positive_probability: float = self._data.get("event_system", {}).get(
+            "base_positive_probability", 0)
         self.event_max_error_count: float = self._data.get("event_system", {}).get("max_error_count", 0)
         self.change_probability_by: float = self._data.get("event_system", {}).get("change_probability_by", 0)
         self.event_panel_background_path: str = self._data.get("event_system", {}).get("panel_background", "")
@@ -52,11 +66,8 @@ class StarConfig:
         self.inventory_empty_slot_path: str = self._data.get("inventory_system", {}).get("empty_slot", "")
 
         ##### game-over system #####
-        self.game_over_story_quiz_max_attempts: int = self._data.get("game_over_system", {}).get("story_quiz_max_attempts", 5)
-
-
-
-
+        self.game_over_story_quiz_max_attempts: int = self._data.get("game_over_system", {}).get(
+            "story_quiz_max_attempts", 5)
 
     def __load_config(self, config_path: str) -> dict[str, Any]:
         """

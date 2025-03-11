@@ -1,7 +1,11 @@
 {
   "title": "zion",
-  "width": 1600,
-  "height": 720,
+  "engine": {
+    "width": 1600,
+    "height": 720,
+    "fps": 60,
+    "full_screen": false
+  },
   "main_menu": {
     "background_image": "assets/images/logo.png",
     "start_button_text": "Reise beginnen"
@@ -28,8 +32,8 @@
   },
   "event_system": {
     "event_probability": 1,
-    "mini_game_probability": 0.5,
-    "base_positive_probability": 0.1,
+    "mini_game_probability": 0.0,
+    "base_positive_probability": 1,
     "change_probability_by": 0.1,
     "max_error_count": 50,
     "backgrounds": [

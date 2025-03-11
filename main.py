@@ -15,7 +15,7 @@ def main():
 
     ##### intro video #####
     player = VideoPlayer(None)
-    player.enable_standalone(config.width, config.height, config.title)
+    player.enable_standalone(config.width, config.height, config.title, config.full_screen)
     player.set_video("assets/videos/intro.mp4")
     player.play()
 
@@ -77,4 +77,4 @@ def test_mini_game_cable_connection1():
 
 # entry point
 if __name__ == "__main__":
-    debug()
+    main()

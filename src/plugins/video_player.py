@@ -14,19 +14,22 @@ class VideoPlayer:
 
     def __init__(self, screen: Surface | None):
         self.screen = screen
-        self.video_path = None
-        self.temp_folder = "temp"
-        self.temp_audio_path = os.path.join(self.temp_folder, "temp_audio.mp3")
+        self.video_path: str | None = None
+        self.temp_folder: str = "temp"
+        self.temp_audio_path: str = os.path.join(self.temp_folder, "temp_audio.mp3")
 
         if not os.path.exists(self.temp_folder):
             os.makedirs(self.temp_folder, exist_ok=True)
 
-    def enable_standalone(self, width: int, height: int, title: str):
+    def enable_standalone(self, width: int, height: int, title: str, full_screen: bool):
         """
         Use the VideoPlayer as a standalone window, without prior initialization of pygame
         """
         pygame.init()
-        self.screen = pygame.display.set_mode((width, height))
+        if full_screen:
+            self.screen = pygame.display.set_mode((width, height), pygame.FULLSCREEN)
+        else:
+            self.screen = pygame.display.set_mode((width, height))
         pygame.display.set_caption(title)
 
     def set_video(self, video_path: str):

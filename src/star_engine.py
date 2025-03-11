@@ -66,7 +66,10 @@ class StarEngine:
         Set up the display, window title, and clock.
         """
         self.title = self.config.title
-        self.window = pygame.display.set_mode((self.width, self.height))
-        # self.window = pygame.display.set_mode((self.width, self.height), pygame.FULLSCREEN)
+        if self.config.full_screen:
+            self.window = pygame.display.set_mode((self.width, self.height), pygame.FULLSCREEN)
+        else:
+            self.window = pygame.display.set_mode((self.width, self.height))
+
         pygame.display.set_caption(self.title)
         self.clock = pygame.time.Clock()
