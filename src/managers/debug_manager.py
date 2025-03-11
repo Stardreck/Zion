@@ -35,12 +35,12 @@ class DebugManager(Manager):
         self.debug_mode = False
 
         ##### Hexagon grid configuration #####
-        self.hex_rows = 11
+        self.hex_rows = 13
         self.hex_columns = 11
-        self.hexagon_radius = 25
+        self.hexagon_radius = 26.5
         # Offsets to position the hex grid within the solar system window
-        self.hexagon_offset_x = 140
-        self.hexagon_offset_y = 80
+        self.hexagon_offset_x = 160
+        self.hexagon_offset_y = 70
 
         self.__init()
 
@@ -101,7 +101,7 @@ class DebugManager(Manager):
 
         # Load the solar system background image (with fallback if loading fails)
         raw_solar_system_image: pygame.Surface = self.__load_image(
-            "assets/images/solar_system.png", fallback_size=(800, 600)
+            "assets/images/debug/solar_system_v2.png", fallback_size=(800, 600)
         )
         # Scale the solar system image so that it fits within the target size without stretching
         self.solar_system_background: pygame.Surface = self.__scale_image_preserving_aspect_ratio(
@@ -398,8 +398,8 @@ class DebugManager(Manager):
         horizontal_spacing = math.sqrt(3) * self.hexagon_radius
 
         center_x = self.hexagon_offset_x + grid_column * horizontal_spacing
-        # Offset every other row for a staggered grid layout.
-        if grid_row % 2:
+        # Offset every even row for a staggered grid layout.
+        if grid_row % 2 == 0:
             center_x += horizontal_spacing / 2
 
         center_y = self.hexagon_offset_y + grid_row * vertical_spacing
