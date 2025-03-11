@@ -29,8 +29,8 @@ class CableConnectionMiniGame(MiniGame):
     Clicking on a connected endpoint will remove its connection.
     """
 
-    def __init__(self, game: StoryGame, num_pairs: int = 8):
-        super().__init__(game)
+    def __init__(self, game: StoryGame, background: str, num_pairs: int = 8):
+        super().__init__(game, background)
         self.space: pymunk.Space = pymunk.Space()
         self.space.gravity = (0, -981)  # Gravity in pixels per second^2
 
@@ -177,7 +177,7 @@ class CableConnectionMiniGame(MiniGame):
                 self.endpoints.append(endpoint)
 
     def show_start_menu(self) -> None:
-        """Display the start menu (not implemented)."""
+        """Display the start menu """
         pass
 
     def handle_event(self, event: pygame.event.Event) -> None:

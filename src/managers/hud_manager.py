@@ -99,6 +99,14 @@ class HUDManager(Manager):
             container=self.topbar_panel,
             object_id="hud_hull_label"
         )
+        self.position_label: UILabel = UILabel(
+            relative_rect=pygame.Rect(-150, 10, 200, 30),
+            manager=self.ui_manager,
+            text="Aktuelle Position: ",
+            container=self.topbar_panel,
+            anchors={"top": "top", "right": "right"},
+            object_id="hud_hull_label"
+        )
 
         # ---------------------------
         # Create the Sidebar Panel
@@ -182,6 +190,7 @@ class HUDManager(Manager):
 
         self.fuel_label.set_text(f"{self.game.fuel}")
         self.hull_label.set_text(f"{self.game.hull}")
+        self.position_label.set_text(f"R{self.game.player_row + 1} S{self.game.player_col + 1}")
 
     def __load_image(self, path: str, fallback_size: Tuple[int, int]) -> pygame.Surface:
         """

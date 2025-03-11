@@ -29,12 +29,12 @@ class BaseStateView(View):
         confirm_button = Rect(0, -125, 500, 50)
         self.confirm_button = UIButton(
             relative_rect=confirm_button,
-            text="neustart",
+            text="beenden",
             manager=self.pygame_gui_ui_manager,
             anchors={"centerx": "centerx", "bottom": "bottom"},
             object_id="panel_button",
         )
-        self.confirm_button.bind(pygame_gui.UI_BUTTON_PRESSED, lambda event: self._restart())
+        self.confirm_button.bind(pygame_gui.UI_BUTTON_PRESSED, lambda event: self._stop())
         
         pass
 
@@ -62,7 +62,10 @@ class BaseStateView(View):
             pygame.display.update()
         self.kill()
 
-    
+    def _stop(self):
+        self.is_running = False
+        self.game.stop()
+
     def _restart(self):
         self.is_running = False
         self.game.restart()

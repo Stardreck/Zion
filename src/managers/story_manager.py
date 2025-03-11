@@ -9,6 +9,7 @@ from src.models.story import Story
 from src.views.object.object_found_view import ObjectFoundView
 from src.views.planet.planet_menu import PlanetMenu
 from src.views.planet.planet_station_menu import PlanetStationMenu
+from src.views.planet.spacestation_menu import SpacestationMenu
 from src.views.story.story_view import StoryView
 
 if TYPE_CHECKING:
@@ -29,6 +30,30 @@ class StoryManager(Manager):
         planet_station_menu = PlanetStationMenu(self.game, planet)
 
         return planet_station_menu.run()
+
+    def show_spacestation_menu(self, spacestation: Planet):
+        spacestation_menu = SpacestationMenu(self.game, spacestation)
+        button_clicked = spacestation_menu.run()
+
+        ##### #####
+
+        ##### enter wormhole #####
+        if button_clicked == 2:
+            print("Wurmloch betreten")
+            if spacestation.wormhole_cutscene_media is not None:
+                self.game.ui_manager.display_cutscene(spacestation.wormhole_cutscene_media)
+
+            # subtract wormhole cost, add + 1 as the movement costs 1 fuel
+            fuel_cost = self.game.engine.config.game_settings_wormhole_cost
+            self.game.fuel = self.game.fuel - fuel_cost + 1
+            self.game.hud_manager.update()
+
+            if spacestation.row == 1:
+                ##### first spacestation jump to second one #####
+                self.game.move_player(11, 4)
+            else:
+                ##### second spacestation jump to first one #####
+                self.game.move_player(1, 7)
 
     def show_planet_story(self, planet: Planet, story: Story):
         # iterate over the story and or quiz / task / boolean blocks

@@ -121,3 +121,9 @@ class TestMiniGame01(MiniGame):
         x_position = random.randint(0, self.game.engine.width - asteroid_width)
         asteroid_rect = pygame.Rect(x_position, -asteroid_height, asteroid_width, asteroid_height)
         self.asteroids.append(asteroid_rect)
+
+    def run(self):
+        pass
+
+    def show_start_menu(self):
+        pass

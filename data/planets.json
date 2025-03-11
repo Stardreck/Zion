@@ -1,5 +1,30 @@
 [
   {
+    "name": "station1",
+    "description": "Beschreibung 01",
+    "row": 1,
+    "col": 7,
+    "visited": false,
+    "isFuelPlanet": false,
+    "IsSpacestation": true,
+    "background_image": "assets/images/galaxy/galaxy_01.png",
+    "planet_image": "assets/images/planets/tartarus.png",
+    "wormhole_cutscene": "assets/videos/planets/wormhole_sequence.mp4"
+  },
+  {
+    "name": "station2",
+    "description": "Beschreibung 02",
+    "row": 11,
+    "col": 4,
+    "visited": false,
+    "isFuelPlanet": false,
+    "IsSpacestation": true,
+    "background_image": "assets/images/galaxy/galaxy_01.png",
+    "planet_image": "assets/images/planets/tartarus.png",
+    "cutscene": "assets/videos/planets/tartarus_cutscene.mp4",
+    "wormhole_cutscene": "assets/videos/planets/wormhole_sequence.mp4"
+  },
+  {
     "name": "tartarus",
     "description": "Tartarus ist der erste Planet im Sonnensystem und somit der Sonne am nächsten. Die Temperaturen sind sehr hoch, aus diesem Grund ist er nicht bewohnt. Er ist eine Quelle für seltene Metalle.",
     "row": 5,
@@ -73,7 +98,7 @@
     "col": 10,
     "visited": false,
     "isFuelPlanet": false,
-    "background_image": "assets/images/planets/ymir_background.png",
+    "background_image": "assets/images/planets/ymir_zion_background.png",
     "planet_image": "assets/images/planets/ymir.png",
     "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"
   },
@@ -84,7 +109,7 @@
     "col": 11,
     "visited": false,
     "isFuelPlanet": false,
-    "background_image": "assets/images/galaxy/galaxy_01.png",
+    "background_image": "assets/images/planets/ymir_zion_background.png",
     "planet_image": "assets/images/planets/zion.png",
     "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"
   },

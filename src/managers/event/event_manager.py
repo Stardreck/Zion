@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import copy
 import random
+
+from src.managers.event.mini_game_manager import MiniGameManager
 from src.managers.manager import Manager
 from src.mini_games.cable_connection.cable_connection_mini_game import CableConnectionMiniGame
 from src.models.event_card import EventCard
@@ -25,14 +27,16 @@ class EventManager(Manager):
         super().__init__()
         self.events_active_view: EventsActiveView | None = None
         self.game = game
+
+        self.mini_game_manager: MiniGameManager = MiniGameManager(self.game)
+
         # Split events into positive and negative lists
         self.negative_events = [card for card in event_cards if card.type == "negative"]
         self.positive_events = [card for card in event_cards if card.type == "positive"]
         self.active_events: List[EventCard] = []
 
-        # Adjustable probabilities for positive/negative events
+        # Adjustable probabilities for positive/negative events in star_config.json
         self.event_probability = self.game.engine.config.event_probability
-        self.mini_game_probability = self.game.engine.config.mini_game_probability
         self.base_positive_probability = self.game.engine.config.event_base_positive_probability
         self.event_positive_probability = self.base_positive_probability
         self.change_probability_value = self.game.engine.config.change_probability_by
@@ -109,15 +113,8 @@ class EventManager(Manager):
         # Check against global event probability from the configuration
         if random.random() < self.event_probability:
             # an event should be triggered, check if a mini-game should be played
-            if random.random() < self.mini_game_probability:
-                ##### run a random mini-game #####
-                # run a random mini-game , currently there is only one mini-game available
-                num_pairs = random.choice([4, 6, 8])
-                mini_game = CableConnectionMiniGame(self.game, num_pairs)
-                mini_game.run()
-                result = mini_game.get_result()
-
-
+            if self.mini_game_manager.play_mini_game_if_possible():
+                return True
             else:
                 ##### run a random event #####
                 # Decide event type (positive/negative) based on probability
@@ -133,9 +130,7 @@ class EventManager(Manager):
                 event_card: EventCard = random.choice(filtered_events)
 
                 self.run_event(event_card)
-
-            return True
-
+                return True
         return False
 
     def run_event(self, event_card: EventCard):

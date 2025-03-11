@@ -17,14 +17,15 @@ class MiniGame(ABC):
     abstract base class for mini-games.
     """
 
-    def __init__(self, game: StoryGame):
+    def __init__(self, game: StoryGame, background_path: str):
         self.game = game
         self.finished: bool = False
         self.success: bool = False
-        self.data_directory = "data"
+        self.data_directory: str = "data"
+        self.background_path: str = background_path
 
     def load_config_file_data(self):
-        path = Path(self.data_directory ) / "mini_games.json"
+        path = Path(self.data_directory) / "mini_games.json"
         with open(path, "r", encoding="utf-8") as file:
             data = json.load(file)
         return data
@@ -81,5 +82,3 @@ class MiniGame(ABC):
         run the mini-game.
         """
         raise NotImplementedError("run not implemented")
-
-

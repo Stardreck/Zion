@@ -1,3 +1,5 @@
+import sys
+
 import pygame
 
 from src.games.game_data import GameData
@@ -61,6 +63,7 @@ def test_mini_game_01():
         print("Mini-game won!")
     else:
         print("Mini-game lost!")
+
 
 def test_mini_game_cable_connection1():
     config = StarConfig("data/star_config.json")

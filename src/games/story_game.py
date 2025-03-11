@@ -118,14 +118,17 @@ class StoryGame(Game):
         elif event.key == pygame.K_RIGHT:
             move_column = 1
 
-        if (move_row != 0 or move_column != 0) and self.fuel > 0:
+        if move_row != 0 or move_column != 0:
             new_row = self.player_row + move_row
             new_col = self.player_col + move_column
 
             self.move_player(new_row, new_col)
 
-        elif move_row != 0 or move_column != 0:
-            self.run_game_over()
+    def __is_game_over(self):
+        if self.fuel <= 0 or self.hull <= 0:
+            return True
+        return False
+
 
     def move_player(self, new_row: int, new_column: int):
         # change player location
@@ -135,6 +138,9 @@ class StoryGame(Game):
         self.fuel -= 1
         # update hud (update fuel change)
         self.update_managers()
+
+        if self.__is_game_over():
+            return self.run_game_over()
 
         self.run_position_actions()
 
@@ -201,6 +207,10 @@ class StoryGame(Game):
         if planet.is_end_planet:
             # todo implement logic
             pass
+        if planet.is_spacestation:
+            self.story_manager.show_spacestation_menu(planet)
+            return
+
 
         ##### show planet menu and await user input #####
         selected_planet_menu_option = self.story_manager.show_planet_menu(planet)
@@ -258,7 +268,12 @@ class StoryGame(Game):
     def run_game_over(self):
         print("[Game Over]")
         self.hud_manager.kill_children()
-        game_over_view = GameOverView(self, "assets/images/states/game_over_screen.jpg")
+
+        if self.fuel <= 0:
+            background_image = self.engine.config.game_over_fuel_background_path
+        else:
+            background_image = self.engine.config.game_over_hull_background_path
+        game_over_view = GameOverView(self, background_image)
         game_over_view.run()
 
     def restart(self):

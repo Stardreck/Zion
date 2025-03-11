@@ -27,6 +27,8 @@ class StarConfig:
         self.game_settings_start_fuel: int = self._data.get("game_settings", {}).get("start_fuel", 0)
         self.game_settings_start_hull: int = self._data.get("game_settings", {}).get("start_hull", 0)
         self.game_settings_default_backgrounds: [] = self._data.get("game_settings", {}).get("default_backgrounds", [])
+        self.game_settings_wormhole_cost: int = self._data.get("game_settings", {}).get("wormhole_cost", 10)
+
 
         ##### player settings #####
         self.player_settings_start_row: int = self._data.get("player_settings", {}).get("player_start_row", 0)
@@ -47,13 +49,16 @@ class StarConfig:
 
         ##### event system #####
         self.event_probability: float = self._data.get("event_system", {}).get("event_probability", 0)
-        self.mini_game_probability: float = self._data.get("event_system", {}).get("mini_game_probability", 0)
         self.event_base_positive_probability: float = self._data.get("event_system", {}).get(
             "base_positive_probability", 0)
         self.event_max_error_count: float = self._data.get("event_system", {}).get("max_error_count", 0)
         self.change_probability_by: float = self._data.get("event_system", {}).get("change_probability_by", 0)
         self.event_panel_background_path: str = self._data.get("event_system", {}).get("panel_background", "")
         self.event_panel_background_path: str = self._data.get("event_system", {}).get("panel_background", "")
+
+        ##### mini-game system #####
+        self.mini_game_probability: float = self._data.get("mini_game_system", {}).get("mini_game_probability", 0)
+        self.mini_game_menu_backgrounds: List[str] = self._data.get("mini_game_system", {}).get("menu_backgrounds", [])
 
         ##### quiz system #####
         self.quiz_tolerance: float = self._data.get("quiz_system", {}).get("tolerance", 0)
@@ -68,6 +73,10 @@ class StarConfig:
         ##### game-over system #####
         self.game_over_story_quiz_max_attempts: int = self._data.get("game_over_system", {}).get(
             "story_quiz_max_attempts", 5)
+        self.game_over_fuel_background_path: str = self._data.get("game_over_system", {}).get(
+            "game_over_fuel_background", "")
+        self.game_over_hull_background_path: str = self._data.get("game_over_system", {}).get(
+            "game_over_hull_background", "")
 
     def __load_config(self, config_path: str) -> dict[str, Any]:
         """
