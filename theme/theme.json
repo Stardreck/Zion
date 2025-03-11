@@ -260,6 +260,13 @@
       "text_horiz_alignment": "left"
     }
   },
+  "event_description": {
+    "colours": {
+      "dark_bg": "#00000080",
+      "normal_border": "#00000080",
+      "normal_text": "#ffffff"
+    }
+  },
   "event_duration_text_negative": {
     "colours": {
       "normal_text": "#ff1d49"

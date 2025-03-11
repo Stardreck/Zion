@@ -42,7 +42,7 @@ class EventView(View):
         ##### spaceship window background #####
 
         # select a random spaceship window image
-        spaceship_folder = "assets/images/spaceship"
+        spaceship_folder = "assets/images/spaceship/window"
         spaceship_images = [
             filename for filename in os.listdir(spaceship_folder)
             if filename.startswith("spaceship_window") and filename.endswith(".png")
@@ -85,7 +85,7 @@ class EventView(View):
         )
 
         ##### event information #####
-        event_title_rect = pygame.Rect(-335, 110, 250, 50)
+        event_title_rect = pygame.Rect(-320, 110, 450, 50)
         self.event_title = UILabel(
             relative_rect=event_title_rect,
             text=self.event_card.name,
@@ -100,7 +100,8 @@ class EventView(View):
             html_text=self.event_card.description,
             manager=self.pygame_gui_ui_manager,
             anchors={"centery": "centery", "right": "right"},
-            container=self.event_panel
+            container=self.event_panel,
+            object_id="event_description"
         )
 
 
