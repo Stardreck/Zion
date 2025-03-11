@@ -8,7 +8,7 @@
     "isFuelPlanet": false,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/tartarus.png",
-    "cutscene": "assets/videos/video_planet_sequence.mp4"
+    "cutscene": "assets/videos/planets/tartarus_cutscene.mp4"
   },
   {
     "name": "kronos",
@@ -19,7 +19,7 @@
     "isFuelPlanet": false,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/kronos.png",
-    "cutscene": "assets/videos/video_planet_sequence.mp4"
+    "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"
   },
   {
     "name": "terra nova",
@@ -28,9 +28,10 @@
     "col": 3,
     "visited": false,
     "isFuelPlanet": false,
+    "isStartPlanet": true,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/terra-nova.png",
-    "cutscene": "assets/videos/video_planet_sequence.mp4"
+    "cutscene": "assets/videos/planets/terra_nova_cutscene.mp4"
   },
   {
     "name": "luna",
@@ -41,7 +42,7 @@
     "isFuelPlanet": false,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/luna.png",
-    "cutscene": "assets/videos/video_planet_sequence.mp4"
+    "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"
   },
   {
     "name": "thalassa",
@@ -52,7 +53,7 @@
     "isFuelPlanet": false,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/thalassa.png",
-    "cutscene": "assets/videos/video_planet_sequence.mp4"
+    "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"
   },
   {
     "name": "olympus",
@@ -63,7 +64,7 @@
     "isFuelPlanet": false,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/olympus.png",
-    "cutscene": "assets/videos/video_planet_sequence.mp4"
+    "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"
   },
   {
     "name": "ymir",
@@ -72,9 +73,9 @@
     "col": 10,
     "visited": false,
     "isFuelPlanet": false,
-    "background_image": "assets/images/galaxy/galaxy_01.png",
+    "background_image": "assets/images/planets/ymir_background.png",
     "planet_image": "assets/images/planets/ymir.png",
-    "cutscene": "assets/videos/video_planet_sequence.mp4"
+    "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"
   },
   {
     "name": "zion",
@@ -85,7 +86,7 @@
     "isFuelPlanet": false,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/zion.png",
-    "cutscene": "assets/videos/video_planet_sequence.mp4"
+    "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"
   },
   {
     "name": "jotun",
@@ -94,8 +95,9 @@
     "col": 0,
     "visited": false,
     "isFuelPlanet": false,
+    "isEndPlanet": true,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/jotun.png",
-    "cutscene": "assets/videos/video_planet_sequence.mp4"
+    "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"
   }
 ]

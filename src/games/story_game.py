@@ -198,6 +198,9 @@ class StoryGame(Game):
             self.ui_manager.display_cutscene(planet.cutscene_media)
             self.story_manager.show_planet_story(planet, self.data.story_segments[planet.name])
             return
+        if planet.is_end_planet:
+            # todo implement logic
+            pass
 
         ##### show planet menu and await user input #####
         selected_planet_menu_option = self.story_manager.show_planet_menu(planet)
