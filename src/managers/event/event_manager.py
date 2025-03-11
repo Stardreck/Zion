@@ -139,9 +139,7 @@ class EventManager(Manager):
         return False
 
     def run_event(self, event_card: EventCard):
-        # Debug output
         print(f"[EventManager] Event triggered: {event_card.name}")
-        print(f"[EventManager] Description: {event_card.description}")
         print(f"[EventManager] Fuel change: {event_card.fuel_change}, Hull change: {event_card.hull_change}")
 
         # change HUD text corresponding to the card effect
@@ -164,6 +162,9 @@ class EventManager(Manager):
             event = self.active_events[index]
             self.apply_effects(event)
             event.duration -= 1
+            print(f"[EventManager] active event {event.name} triggered, "
+                  f"effects: Fuel Change: {event.fuel_change}, Hull change: {event.hull_change} "
+                  f"new duration: {event.duration}")
             if event.duration <= 0:
                 self.active_events.pop(index)  # Sicheres Entfernen
 

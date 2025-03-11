@@ -31,7 +31,7 @@ class StoryManager(Manager):
         return planet_station_menu.run()
 
     def show_planet_story(self, planet: Planet, story: Story):
-        # iterate over the story and or quiz / task blocks
+        # iterate over the story and or quiz / task / boolean blocks
 
         current_quiz_count = 0
         total_quiz_count = len([block for block in story.blocks if block.block_type in {"quiz", "task", "boolean"}])
@@ -83,9 +83,3 @@ class StoryManager(Manager):
         self.game.inventory_manager.add_item(game_object)
         object_found_view = ObjectFoundView(self.game, planet, game_object)
         object_found_view.run()
-
-
-
-
-
-

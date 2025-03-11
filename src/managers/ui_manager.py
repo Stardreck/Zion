@@ -32,7 +32,6 @@ class UIManager(Manager):
         :param media_path: Path to the cutscene media (image or video).
         """
         if media_path.lower().endswith(('.mp4', '.avi', '.mov', '.mkv')):
-            # Es ist ein Video, VideoPlayer verwenden
             player = VideoPlayer(self.game.window)
             player.set_video(media_path)
             player.play()

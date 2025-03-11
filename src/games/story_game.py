@@ -24,27 +24,36 @@ from src.views.common.info_view import InfoView
 from src.views.states.game_over_view import GameOverView
 
 
-
-
 class StoryGame(Game):
+    """
+    This is the main story game instance, responsible for the entire game logic
+    """
+
     def __init__(self, engine: StarEngine, data: GameData):
         super().__init__(engine, data)
 
         ##### Game Data #####
         self.fuel: int = self.engine.config.game_settings_start_fuel
         self.hull: int = self.engine.config.game_settings_start_hull
-        # Starting location
+
+        # start location
         self.player_row: int = self.engine.config.player_settings_start_row
         self.player_col: int = self.engine.config.player_settings_start_col
+        # init planet and planet quizzes
         self.current_planet: Planet | None = None
         self.planet_quizzes_current: Dict[str, List[Quiz]] = {
             pname: list(q_list) for pname, q_list in self.data.planet_quizzes.items()
         }
 
+        ##########################
+        ##### Init Managers ######
+        ##########################
+
         ##### Input Manager #####
         self.input_manager: InputManager = InputManager(self)
-
         if sys.platform.startswith("linux"):
+            # only include the mcp manager on the raspberry pi, otherwise the entire game could not be executed on windows
+            # as this manager depends on linux specific libraries (GPIO connection)
             from src.managers.input.mcp_input_manager import McpInputManager, PIN_DEFINITIONS_FOR_GAME_BOARD
             self.mcp_input_manager = McpInputManager(self, PIN_DEFINITIONS_FOR_GAME_BOARD)
         else:
@@ -171,8 +180,6 @@ class StoryGame(Game):
         self.event_manager.trigger_event_if_possible()
 
         ##### calculate next change #####
-
-
 
     def run_general_field_actions(self):
         ##### display quiz or task #####

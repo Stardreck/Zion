@@ -4,7 +4,7 @@ import math
 import pygame
 import pygame_gui
 
-from pygame_gui.elements import  UIImage, UILabel
+from pygame_gui.elements import UIImage, UILabel
 from typing import List, Optional, Tuple, TYPE_CHECKING
 
 from src.components.ui.ui_window import UIWindow
@@ -17,18 +17,12 @@ if TYPE_CHECKING:
 
 class DebugManager(Manager):
     """
-    Implements a debug view using pygame_gui elements exclusively.
-    The UI is split into two windows:
-      1. Debug Information Window – shows textual debug data.
-      2. Solar System Window – displays the solar system background (scaled without stretching)
-         with a hexagon grid overlay, and overlays green circles for planets and a red circle for the player.
+    Implements a debug view
     """
 
     def __init__(self, game: StoryGame):
         """
-        Initialize the DebugManager.
-
-        :param game: The main game instance which provides game data and a reference to the UI manager.
+        Initialize the DebugManager
         """
         super().__init__()
         self.game = game
@@ -37,14 +31,14 @@ class DebugManager(Manager):
         ##### Hexagon grid configuration #####
         self.hex_rows = 13
         self.hex_columns = 11
-        self.hexagon_radius = 26.5
+        self.hexagon_radius = 27
         # Offsets to position the hex grid within the solar system window
         self.hexagon_offset_x = 160
-        self.hexagon_offset_y = 70
+        self.hexagon_offset_y = 65
 
         self.__init()
 
-        ##### Hide both windows initially #####
+        ##### Hide windows initially #####
         self.debug_info_window.hide()
         self.solar_system_window.hide()
         self.event_info_window.hide()
@@ -97,9 +91,7 @@ class DebugManager(Manager):
             window_display_title="Solar System"
         )
 
-
-
-        # Load the solar system background image (with fallback if loading fails)
+        # Load the solar system background image
         raw_solar_system_image: pygame.Surface = self.__load_image(
             "assets/images/debug/solar_system_v2.png", fallback_size=(800, 600)
         )
@@ -144,7 +136,7 @@ class DebugManager(Manager):
     def toggle_debug_mode(self):
         """
         Toggle the debug mode on or off.
-        When enabled, both the Debug Information and Solar System windows are shown.
+        When enabled, all debug windows are shown.
         """
         self.debug_mode = not self.debug_mode
         if self.debug_mode:
@@ -165,7 +157,7 @@ class DebugManager(Manager):
     def update(self):
         """
         Update the debug UI elements to reflect the current game state.
-        This method should be called each frame in the main game loop.
+        This method is being called each frame in the main game loop.
 
         """
         if not self.debug_mode:

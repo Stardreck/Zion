@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import List, Dict
 
 from src.factories.event_factory import EventFactory
 from src.factories.game_object_factory import GameObjectFactory
@@ -16,6 +16,11 @@ from src.star_config import StarConfig
 
 
 class GameData:
+    """
+    this class stores all game data like events, planets and so on (located in data)
+    the json data are mapped according to the corresponding models
+    """
+
     def __init__(self, config: StarConfig, data_directory: str = "data"):
         self.planet_quizzes: Dict[str, List[Quiz]] = self.load_quizzes(Path(data_directory) / "quizzes.json")
         self.game_objects: List[GameObject] = self.load_game_objects(Path(data_directory) / "game_objects.json")

@@ -26,7 +26,7 @@ class QuizManager(Manager):
         """
         super().__init__()
         self.game: StoryGame = game
-        self.tolerance = self.game.engine.config.quiz_tolerance
+        self.tolerance: float = self.game.engine.config.quiz_tolerance
         self.is_last_quiz_correct: bool = False
 
     def run_general_field_action(self):
@@ -82,7 +82,7 @@ class QuizManager(Manager):
         Process user input and determine if the answer is correct.
         :param user_input: User's input as a string.
         :param quiz: the quiz or task data
-        :return: True if the input is processed successfully, False otherwise.
+        :return: True if the input is correct, False otherwise.
         """
         try:
             is_correct = False

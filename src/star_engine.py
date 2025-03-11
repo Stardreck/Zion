@@ -2,12 +2,11 @@ from __future__ import annotations
 import pygame
 import sys
 
-from typing import List, TYPE_CHECKING, Optional
+from typing import  TYPE_CHECKING
 
 if TYPE_CHECKING:
     from src.games.story_game import StoryGame
 
-from pygame import Surface
 from pygame_gui import UIManager
 from src.star_config import StarConfig
 from src.views.main_menu import MainMenu
