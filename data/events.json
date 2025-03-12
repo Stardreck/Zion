@@ -186,5 +186,19 @@
       "max_fuel": 20
     },
     "category": "low"
+  },
+  {
+    "name": "Schrottsammler",
+    "description": "Ihr kommt an einem seit Langem verlassenen Schiffswrack vorbei. Viele Teile fehlen bereits, aber ihr könnt einige Panzerungsplatten entfernen und wiederverwenden.<br/>{hull_change}",
+    "hull_change": 10,
+    "fuel_change": 0,
+    "image": "assets/images/events/event_schrott_sammler_card.png",
+    "icon": "assets/images/events/icons/event_schrott_sammler_icon.png",
+    "type": "positive",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+    },
+    "category": "low"
   }
 ]
