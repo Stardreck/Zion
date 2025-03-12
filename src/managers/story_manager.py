@@ -105,6 +105,7 @@ class StoryManager(Manager):
         game_object: GameObject = next(
             (game_object for game_object in self.game.data.game_objects if
              game_object.location.lower() == planet.name.lower()), None)
-        self.game.inventory_manager.add_item(game_object)
-        object_found_view = ObjectFoundView(self.game, planet, game_object)
-        object_found_view.run()
+        if game_object is not None:
+            self.game.inventory_manager.add_item(game_object)
+            object_found_view = ObjectFoundView(self.game, planet, game_object)
+            object_found_view.run()
