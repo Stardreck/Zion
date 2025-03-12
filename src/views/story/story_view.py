@@ -68,14 +68,27 @@ class StoryView(View):
         )
 
         # Load and display the planet image
-        image_surface = pygame.image.load(self.story_line.image_path).convert_alpha()
-        self.story_image = pygame_gui.elements.UIImage(
-            relative_rect=Rect(20, 30, 240, 255),
-            image_surface=image_surface,
-            manager=self.pygame_gui_ui_manager,
-            container=self.panel,
-            anchors={"left": "left"},
-        )
+        if len(self.story_line.image_description) > 0:
+            portrait_path = ""
+            if len(self.story_line.image_path) > 0:
+                portrait_path = self.story_line.image_path
+            if self.story_line.image_description.lower() == "milo":
+                portrait_path = "assets/images/people/portrait_milo.png"
+            elif self.story_line.image_description.lower() == "lyra":
+                portrait_path = "assets/images/people/portrait_lyra.png"
+            elif self.story_line.image_description.lower() == "agatha":
+                portrait_path = "assets/images/people/portrait_agatha.png"
+            elif self.story_line.image_description.lower() == "victor":
+                portrait_path = "assets/images/people/portrait_victor.png"
+            if len(portrait_path) > 0:
+                image_surface = pygame.image.load(portrait_path).convert_alpha()
+                self.story_image = pygame_gui.elements.UIImage(
+                    relative_rect=Rect(20, 30, 240, 255),
+                    image_surface=image_surface,
+                    manager=self.pygame_gui_ui_manager,
+                    container=self.panel,
+                    anchors={"left": "left"},
+                )
         self.story_image_description = UILabel(
             relative_rect=Rect(20, 260, 100, 100),
             manager=self.pygame_gui_ui_manager,
@@ -83,7 +96,7 @@ class StoryView(View):
             container=self.panel,
             anchors={"left": "left"},
         )
-        # Create the planet description text box
+        # Create the story text box
         self.planet_description = UITextBox(
             relative_rect=Rect(260, 20, 700, 320),
             html_text=self.story_line.text,

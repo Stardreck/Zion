@@ -185,7 +185,9 @@ class StoryGame(Game):
 
         self.event_manager.trigger_event_if_possible()
 
-        ##### calculate next change #####
+        ##### check if event results in game over #####
+        if self.__is_game_over():
+            return self.run_game_over()
 
     def run_general_field_actions(self):
         ##### display quiz or task #####
