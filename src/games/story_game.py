@@ -166,6 +166,7 @@ class StoryGame(Game):
 
         if not self.current_planet is None and not self.current_planet.visited:
             self.run_planet_actions(self.current_planet)
+            return
         else:
             ##### general field - show default quiz #####
             self.run_general_field_actions()

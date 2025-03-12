@@ -27,7 +27,6 @@
         "story_lines": [
           {
             "text": "<b>Der Anflug</b><br/>Schon beim Anflug auf Kronos bemerkte die Crew, dass etwas nicht stimmte.<br/>",
-            "image": "",
             "image_description": ""
           },
           {
@@ -44,7 +43,6 @@
           },
           {
             "text": "Die Minerva setzte in der Nähe der verlassenen Basis auf. Die Crew stieg aus, und als sich der aufgewirbelte Staub von ihrer Landung legte, begaben sie sich zum Eingang der Basis.\nDoch auch dieser blieb verschlossen. Sie suchten nach anderen Eingängen und versuchten über das Panel jemanden zu kontaktieren.",
-            "image": "",
             "image_description": ""
           },
           {
@@ -142,7 +140,7 @@
         "question": "<b>Wie viele Paneele muss die Crew mindestens wieder in Gang bringen um die Stromversorgung sicher zu stellen?</b><br>Die Anzahl muss anschliessend aufgerundet werden.<br/><br/><b>Informationen</b><br/>Die Mine hat einen Bedarf von 1MW. \nDie Sonneneinstrahlungsenergie in der Übergangszone beträgt konstant 3200W/m2\nEin Solarpanel hat eine Oberfläche von 8m2 \nEinen Wirkungsgrad von 62% aber mit der Schutzbeschichtung verschlechtert sich der Wirkungsgrad auf 59%.\nVon den Ursprünglichen 85 Solarpaneelen funktionieren noch 43.",
         "correct_value": 24,
         "story_consequence": {
-          "text": "Lyra war gerade dabei ihre Berechnungen an Victor zu übermitteln, als Milos ihr über die Schulter sah und sie dann zurückhielt. «Bist du sicher, dass das stimmt?» \nLyra überprüfte ihre Angaben noch einmal und stellte fest, dass ihr tatsächlich ein Fehler unterlaufen war.",
+          "text": "Lyra war gerade dabei ihre Berechnungen an Victor zu übermitteln, als Milo ihr über die Schulter sah und sie dann zurückhielt. «Bist du sicher, dass das stimmt?» \nLyra überprüfte ihre Angaben noch einmal und stellte fest, dass ihr tatsächlich ein Fehler unterlaufen war.",
           "image_description": "Lyra"
         }
       },
@@ -186,6 +184,279 @@
             "image_description": "Victor"
           }
         ]
+      }
+    ]
+  },
+  "luna": {
+    "title": "Luna",
+    "blocks": [
+      {
+        "type": "story",
+        "story_lines": [
+          {
+            "text": "<b>Teil 1:<br>Der Schüler</b><br/><br/>Da die Gravitation von Luna geringer war als auf anderen Planeten und der Mond keine Atmosphäre besass, war eine Landung technisch wenig anspruchsvoll. Deshalb bestand Victor darauf, das Manöver selbst durchzuführen.",
+            "image_description": ""
+          },
+          {
+            "text": "«Du willst es wirklich nochmal versuchen?» Lyra drehte sich mit hochgezogener Augenbraue zu ihm. «Erinnerst du dich überhaupt noch an das letzte Mal?»",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "«Keine Ahnung, was du meinst.» Victor liess ein schelmisches Lächeln aufblitzen, während er sich auf die Steuerung konzentrierte. «Ein guter Captain sollte in der Lage sein, sein Schiff zu landen.»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Lyra lachte. «Alles klar, Leute, haltet euch fest.»",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Bis auf eine verbogene Antenne und ein paar Kratzer an der Aussenhülle setzte die Minerva sanft auf. Nicht perfekt, aber stabil.\n\nDie Crew machte sich auf den Weg zur Solaren Forschungsstation, um das Hochfrequenz-Ionen-Generator-Aggregat abzuholen.",
+            "image_description": ""
+          },
+          {
+            "text": "«Warum haben wissenschaftliche Dinge immer so unnötig komplizierte Namen?» Agatha verschränkte die Arme. «Und was genau macht das Ding eigentlich?»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "«Laut Auftrag dient es zur Abwehr von Sonnenstürmen.» Victor warf einen flüchtigen Blick auf sein Intercom. «Offiziell heisst es Ion-Pulse-Array, kurz IPA.»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Milo lachte. «Blooss nicht, IPA trinke ich seit der SECA nicht mehr.»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Lyra grinste. «Lieber dein Selbstgebrautes? – Dass das nicht schon längst als biologische Waffe eingestuft wurde, wundert mich.»\nMilo grinste sie nur an.",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "<b>Der Angriff</b><br/><br/>Sie waren gerade mit dem Leiter der Station auf dem Weg zum Bauteil, als dieser eine Nachricht auf seinem Intercom erhielt. Seine Gesichtszüge erstarrten.\n\n«Feindliche Schiffe haben die Verteidigung durchbrochen.»\n\nEr riss den Kopf hoch. «Wir müssen das IPA sichern!»",
+            "image_description": ""
+          },
+          {
+            "text": "Victor und die anderen folgten ihm. Der Wissenschaftler bog in einen Seitengang ab. Noch bevor sie ihn einholen konnten, wurde das Licht abrupt dunkel.\n\nEin lautes Knistern hallte durch die Gänge, Funken stoben aus den Schaltkästen an den Wänden.\nEin EMP-Schlag.\n\nDann ein dumpfer Knall.\nDann ein Zischen.",
+            "image_description": ""
+          },
+          {
+            "text": "Die Notbeleuchtung flackerte auf – ein unheilvolles, rotes Licht füllte die Korridore.\n\nSie näherten sich der Tür, durch die der Wissenschaftler zuvor verschwunden war.\nSie liess sich nicht öffnen, auf dem Panel der Tür blinkte es nur.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>«Druckverlust – Zugang gesperrt.»</b><br/>Instinktiv wusste die Crew, was das bedeutete. Helme auf. Notschotts schliessen.\n\nMilo überbrückte die Tür. Das Metall glitt auf – und sofort entwich die restliche Luft aus dem Korridor.\n\nDahinter klaffte ein riesiges Loch in der Aussenwand, Kabel hingen heraus, Funken zuckten in der Dunkelheit.",
+            "image_description": ""
+          },
+          {
+            "text": "Der Leiter der Station lag am Boden. Sein Gesicht war bläulich gefroren, dünne Eiskristalle hatten sich über seine Haut gezogen.\n\nUnd das Modul war verschwunden.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Der Start</b><br/>Die Crew sprintete zurück zur Minerva, um den Piraten nachzusetzen. Doch kaum hatten sie den Hangar erreicht, sahen sie das nächste Problem.\n\nNicht nur die Station war vom EMP getroffen worden – ihr Schiff ebenfalls.\n\nDas gesamte System war abgestürzt.",
+            "image_description": ""
+          },
+          {
+            "text": "Mit fieberhafter Geschwindigkeit arbeitete das Team daran, den Reaktor hochzufahren und die Systeme zu booten. Nach einer gefühlten Ewigkeit – die in Wahrheit nur Minuten dauerte – erwachten die ersten Konsolen zum Leben.\n\nDoch ein System blieb inaktiv.\nDie Bord-KI IRIS reagierte nicht.\n\nVictor fluchte innerlich. Ohne IRIS gab es keine Unterstützung bei der Feinabstimmung der Flugparameter. Victor sah zu Lyra, beide wussten, was das bedeutete: Sie mussten manuell starten.",
+            "image_description": ""
+          },
+          {
+            "text": "Victor sprang an die Konsole. «Maximalen Schub, wir müssen denen nach!»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Milo fuhr ihm ins Wort: «Spinnst du, Vic? 10g maximal, und das auch nur für 30 Sekunden, sonst riskieren wir alle einen Schlaganfall.»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Lyra zog ihren Gurt fest. «Das wird unschön.»",
+            "image_description": "Lyra"
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "question": "<b>Doch wie viel Schub kann er nun maximal geben, damit er noch über 10g kommt und nicht länger als 30s beschleunigt?</b><br/>Die Angabe soll in Meganewton sein. Kommastelle abrunden.",
+        "correct_value": 304,
+        "story_consequence": {
+          "text": "Victor war sich bei der Eingabe der Werte nicht sicher, irgendetwas schien nicht plausibel zu sein. Er ging es noch einmal durch und tatsächlich, hätte er diesen Fehler nicht bemerkt wären die Folgen fatal gewesen.",
+          "image_description": "Victor"
+        }
+      },
+      {
+        "type": "story",
+        "story_lines": [
+          {
+            "text": "Victor tippte die Werte ein. Dann prüfte er sie. Dann noch einmal. Ein Fehler wäre fatal.\nVon seiner Stirn lief Schweiss.<br>«Tritt drauf!», schrie er zu Lyra hinüber.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Lyra aktivierte die Triebwerke, und die Beschleunigung presste sie sofort in ihre Sitze.\nAgatha klammerte sich krampfhaft an ihre Armlehnen. Lyra presste die Luft durch zusammengebissene Zähne. Milo wurde schon nach kurzer Zeit ohnmächtig.",
+            "image_description": ""
+          },
+          {
+            "text": "Die Sekunden dehnten sich zur Ewigkeit.\n\nAls sie den Schub reduzierten, liess auch die Belastung nach.\nMilo, unterdessen kreidebleich, kam wieder zu sich – und übergab sich über die Armlehne.",
+            "image_description": ""
+          },
+          {
+            "text": "Agatha riss den Kopf weg. «Wehe, ich krieg was davon ab. Sonst fliegst du beim nächsten Mal im Frachtraum mit.»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Victor atmete auf. «Okay. Wir sind im Orbit. Agatha, ich brauch die Flugbahnen der Schiffe, jetzt!»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Ein leises Piepen ertönte. Agatha blickte auf die Scanner.\n\n«Ich habe sie! Drei Schiffe, unterwegs Richtung Asteroidengürtel. Sie sind schnell. Wir müssen dranbleiben.»",
+            "image_description": "Agatha"
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "question": "<b>Victor begann mit den Berechnungen für den Konstant-Schub, während Lyra den Kurs in ihre Konsole eingab.\nSie sollten kontinuierlich mit 1,2g beschleunigen, um so künstliche Schwerkraft an Bord des Schiffes zu erhalten.</b>><br/>Die Angabe soll in Meganewton sein. Kommastelle abrunden.",
+        "correct_value": 36,
+        "story_consequence": {
+          "text": "Victor war sich bei der Eingabe der Werte nicht sicher, irgendetwas schien nicht plausibel zu sein. Er ging es noch einmal durch und tatsächlich, hätte er diesen Fehler nicht bemerkt wären die Folgen fatal gewesen.",
+          "image_description": "Victor"
+        }
+      },
+      {
+        "type": "story",
+        "story_lines": [
+          {
+            "text": "<b>Teil 2:<br/>Die Verfolgungsjagd</b><br/>Die Verfolgungsjagd zog sich über mehrere Tage hin.\nNicht nur mussten sie die Brücke in Schichten bewachen, auch die konstante Gravitation von 1.2G nagte an ihnen. Der Asteroidengürtel kam näher, und ihre Vermutung bestätigte sich: Die Angreifer waren Piraten.\n\nDie Schiffe waren bereits an der Station angedockt. Es handelte sich um einen der berüchtigtsten Piratenhäfen des Systems – Medusa.",
+            "image_description": ""
+          },
+          {
+            "text": "«Da kommen wir nicht ran.» Victor starrte auf die Scanner.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "«Wenn wir auch nur in die Nähe der Docks kommen», ergänzte Lyra, «werden wir als Militärschiff erkannt und in Stücke geschossen.»",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Sie liessen die Minerva hinter einem Asteroiden treiben, um ihre Radarsignatur zu verschleiern, und fuhren den Reaktor herunter.",
+            "image_description": ""
+          },
+          {
+            "text": "«Ihr wisst, dass das Schwachsinn ist, oder?» Agatha überprüfte die Versiegelungen ihres Anzugs.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "«Wir haben keine Wahl.» Victor setzte den Helm auf. «Wenn wir uns mit den Manövrierdüsen zur Station bewegen, können uns die Sensoren nicht erfassen.»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "«Oder sie tun es doch, und wir treiben dann als vereiste, durchlöcherte Leichen durchs All», merkte sie an.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Milo meldete sich freiwillig, um auf dem Schiff zu bleiben – er wollte die Zeit nutzen, um IRIS wieder zum Laufen zu bringen. Lyra blieb ebenfalls zurück, falls sie die anderen retten musste.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Die Suche</b><br/>Victor und Agatha verbrachten Stunden in den Docks.\nIrgendwann blieb ihnen nichts anderes übrig, als die Verladecrew zu befragen, zuweilen ihr Herumstreunen auch immer auffälliger wurde.\nDoch wie würden sie dies anstellen, ohne dass sie Verdacht schöpfen würden?\n\nZum Glück handelte es sich bei der Dock-Crew nicht gerade um sonderlich intelligente Individuen, die zudem noch ordentlich einen sitzen hatten.",
+            "image_description": ""
+          },
+          {
+            "text": "Mit gekonnter Vulgärsprache und leichter Androhung physischer Gewalt gelang es Agatha, ein paar von ihnen einzuschüchtern – und dies trotz ihrer geringen Grösse und ihrer schlanken Statur. Victor war beeindruckt.\n\nDoch es führte zu nichts – ausser einer Beinahe-Prügelei, aus der sie sich gerade noch herausziehen konnten.\n\nFrustriert gingen sie in die einzige «Bar» der Station.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Die Bar</b><br/>Der Begriff «Bar» war übertrieben. Ein leer geräumter Hangar, schwach beleuchtet, Piraten auf alten Frachtkisten. Die Luft roch nach Schweiss, Alkohol und schlecht gelüfteten Raumanzügen. Einer betrunkener als der andere.\n\nEine Getränkekarte suchte man vergebens, das Angebot beschränkte sich auf Bier oder Schnaps. Wobei «Schnaps» eine nette Umschreibung für verdünntes Desinfektionsmittel war, wie Victor nach einem Schluck feststellte.",
+            "image_description": ""
+          },
+          {
+            "text": "«Milo würde sich hier bestimmt wohlfühlen», witzelte er.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Ein Trupp junger Piraten stürmte laut johlend in den Hangar. «Für Medusa!» schrien sie mehrmals im Chor. Der Kleinste, aber wohl derjenige mit dem grössten Ego, marschierte breitbeinig zum Tresen und bestellte eine ganze Flasche «Schnaps» für seine Kameraden. «Haben was zu feiern! Vor ein paar Tagen haben wir eine dieser versnobten Forschungseinrichtungen der Terraner hochgenommen. Fette Beute gemacht!»",
+            "image_description": ""
+          },
+          {
+            "text": "Victor und Agatha wechselten einen Blick. Das war ihre Spur. Aber wie sollten sie herausfinden, wo das Modul war?\n\nEine Schlägerei in einer Bar voller betrunkener Piraten? Keine gute Idee.\nVictor drehte sich zu Agatha um – doch sie war verschwunden.\nSein Blick scannte die Bar – dann sah er sie.\nSie ging direkt auf die Piraten zu.\n«Oh nein, bitte nicht», flehte er.",
+            "image_description": ""
+          },
+          {
+            "text": "Victor war kurz davor, einzugreifen, doch dann sah er, was sie tat.\nAnstatt den Typen zu verprügeln, johlte sie mit ihnen mit.\nSie schloss sich ihrer Gruppe an, bestellte Schnaps, legte sich subtil an den Anführer ran und sagte wohl etwas, das seinem Ego schmeichelte.",
+            "image_description": ""
+          },
+          {
+            "text": "Victor konnte nicht glauben, was er sah.\nRunde um Runde.\nAgatha spielte ihr Spiel. Victor wurde immer nervöser.\nDann stand der Kleine schwankend auf und taumelte zur Toilette.\nAgatha erhob sich gleichzeitig, lief an Victor vorbei – und zwinkerte ihm zu.\nEr wusste sofort: Sie hatte, was sie brauchten.\nVictor stand auf und folgte ihr. Er wollte wissen, was passiert war.",
+            "image_description": ""
+          },
+          {
+            "text": "Agatha grinste. «Ich weiss, wohin wir müssen.»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "<b>Das IPA</b><br/>Die Türen zu den Werkstätten der Docks waren leicht zu knacken. Kein Tür-Panel, also musste ein Stemmeisen her.\nDrinnen erspähten sie in der Dunkelheit das Modul, bereits zur Hälfte zerlegt, auf einem Tisch.\nVictor packte die Teile ein. Agatha sicherte den Korridor.\nDoch dann hörten sie Schritte.\n«Scheisse, da kommt einer.»\nSie wurden entdeckt und hörten, wie die Rufe immer lauter wurden.\nJetzt musste es schnell gehen.",
+            "image_description": ""
+          },
+          {
+            "text": "Victor funkte Lyra an.\n«Lyra, wir könnten eine Mitfahrgelegenheit gebrauchen – und lieber schnell!»\n\nAn den Docks wimmelte es plötzlich von Piraten, die sich in ihren Weg stellten.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "«Achtung!», schrie Agatha, und beide duckten sich.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Plötzlich erschütterte die Station.\n\nDie Minerva krachte in eine Andockbucht, ihre Geschütze feuerten, doch sie schienen wahllos ins Nichts zu zielen – aber als Ablenkung taugte dies allemal.\n\nVictor und Agatha sprangen von einem Steg auf ihre Ladebucht zu und wurden von Milo aufgefangen.\n\n«Verdammt, das war knapp.»\n\nNoch ehe sie auf der Brücke waren, riss Lyra das Schiff herum und gab ihm die Sporen.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Das Manöver</b><br/>«Kann es sein, dass ihr die vielleicht ein wenig wütend gemacht habt?», fragte Lyra zynisch.",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Drei kleinere Abfangjäger näherten sich schnell ihrem Schiff. Sie waren klein, aber bis an die Zähne bewaffnet – und viel flinker.\n\nAgatha und Lyra sahen sich an.\n\n«Das Manöver?»\n«Das Manöver.»",
+            "image_description": ""
+          },
+          {
+            "text": "Victor wurde blass. «Ich hasse das Manöver.»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Lyra wendete das Schiff abrupt.\nG-Kräfte drückten die Crew in ihre Sitze.\n\nDie Jäger versuchten, sich zu formieren, doch sie hatten es nicht kommen sehen.",
+            "image_description": ""
+          },
+          {
+            "text": "Lyra brachte die Minerva in eine Rotation, während Agatha mit einem Sturm aus Salven die Feinde zerlegte.\n\nDie Abfangjäger explodierten, einer nach dem anderen.",
+            "image_description": ""
+          },
+          {
+            "text": "Lyra justierte den Kurs.\n\n«Ich glaub, sie folgen uns nicht mehr.»",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Agatha atmete aus.\n«Na dann.»\n\nSie drehten ab – und verschwanden im All.",
+            "image_description": "Agatha"
+          }
+        ]
+      }
+    ]
+  },
+  "template": {
+    "title": "x",
+    "blocks": [
+      {
+        "type": "story",
+        "story_lines": [
+          {
+            "text": "",
+            "image_description": ""
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "question": "<b>question</b><br/>information.",
+        "correct_value": 304,
+        "story_consequence": {
+          "text": "text",
+          "image_description": "Person"
+        }
       }
     ]
   }
