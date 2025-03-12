@@ -139,13 +139,53 @@
       },
       {
         "type": "task",
-        "question": "Wie viele  Paneele muss die Crew mindestens wieder in Gang bringen um die Stromversorgung sicher zu stellen?\nDie Anzahl muss anschliessend aufgerundet werden.<br/><b>Informationen</b>Die Mine hat einen Bedarf von 1MW. \nDie Sonneneinstrahlungsenergie in der Übergangszone beträgt konstant 3200W/m2\nEin Solarpanel hat eine Oberfläche von 8m2 \nEinen Wirkungsgrad von 62% aber mit der Schutzbeschichtung verschlechtert sich der Wirkungsgrad auf 59%.\nVon den Ursprünglichen 85 Solarpaneelen funktionieren noch 43.\nWie viele  Paneele muss die Crew mindestens wieder in Gang bringen um die Stromversorgung sicher zu stellen?\nDie Anzahl muss anschliessend aufgerundet werden.",
+        "question": "<b>Wie viele Paneele muss die Crew mindestens wieder in Gang bringen um die Stromversorgung sicher zu stellen?</b><br>Die Anzahl muss anschliessend aufgerundet werden.<br/><br/><b>Informationen</b><br/>Die Mine hat einen Bedarf von 1MW. \nDie Sonneneinstrahlungsenergie in der Übergangszone beträgt konstant 3200W/m2\nEin Solarpanel hat eine Oberfläche von 8m2 \nEinen Wirkungsgrad von 62% aber mit der Schutzbeschichtung verschlechtert sich der Wirkungsgrad auf 59%.\nVon den Ursprünglichen 85 Solarpaneelen funktionieren noch 43.",
         "correct_value": 24,
         "story_consequence": {
           "text": "Lyra war gerade dabei ihre Berechnungen an Victor zu übermitteln, als Milos ihr über die Schulter sah und sie dann zurückhielt. «Bist du sicher, dass das stimmt?» \nLyra überprüfte ihre Angaben noch einmal und stellte fest, dass ihr tatsächlich ein Fehler unterlaufen war.",
-          "image": "assets/images/people/portrait_lyra.png",
           "image_description": "Lyra"
         }
+      },
+      {
+        "type": "story",
+        "story_lines": [
+          {
+            "text": "Victor und Agatha verbrachten mehrere Tage damit, Bauteile in der verlassenen Basis zu bergen. Die Strahlenbelastung war nur bei aktiven Stürmen gefährlich. Doch die Arbeit mit den Schutzanzügen machte jede Minute an der Oberfläche zu einer Belastungsprobe.<br/><br/>Dann kam die nächste Hiobsbotschaft:\nEin neuer Sonnensturm war auf dem Weg – und würde in wenigen Stunden eintreffen.",
+            "image_description": ""
+          },
+          {
+            "text": "«Wir haben keine Zeit mehr, wir müssen sofort los», sagte Victor.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "«Ich wollte eh nicht länger bleiben», meinte Agatha und verstaute die letzten Ersatzteile.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Während sie fuhren, tauchten am Horizont Polarlichter auf – faszinierend und wunderschön, aber sie bedeuteten nichts Gutes.\nDie ersten statischen Ladungen entluden sich auf der Planetenoberfläche, und Staubpartikel begannen zu schweben und an ihrem Gefährt zu haften.",
+            "image_description": ""
+          },
+          {
+            "text": "«Das wird verdammt knapp», murmelte Agatha und trat aufs Gas.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Gerade noch rechtzeitig erreichten sie die Mine.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Das Resultat</b></br>Die nächsten Tage war die Crew pausenlos mit der Reparatur der Solarpanels beschäftigt.\nAls sich der Sonnensturm schliesslich legte, begannen sie mit der Installation.\n\nDie Mission war erfolgreich: Die Mine war wieder stabil mit Energie versorgt.\nDie Bergleute hielten ihr Wort – das Bauteil war nun entbehrlich, und die Crew der Minerva konnte es endlich mitnehmen.",
+            "image_description": ""
+          },
+          {
+            "text": "Während des Rückflugs blickte Milo nachdenklich aus dem Fenster.\n«Sag mal, Victor ... warum braucht eine Forschungsstation eigentlich einen militärischen Fusionsgenerator?»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Victor sah ihn an, antwortete aber nicht.",
+            "image_description": "Victor"
+          }
+        ]
       }
     ]
   }

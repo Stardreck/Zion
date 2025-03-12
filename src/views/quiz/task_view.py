@@ -76,12 +76,11 @@ class TaskView(View):
         )
         # Question label (displaying the quiz question)
         self.question = UITextBox(
-            relative_rect=Rect(0, 50, 500, 250),
+            relative_rect=Rect(15, 50, 500, 250),
             manager=self.pygame_gui_ui_manager,
             html_text=self.quiz.question,
             container=self.panel,
-            anchors={"centerx": "centerx", "top": "top"},
-            object_id="task_question"
+            anchors={"left": "left"},
         )
 
         # Create input label for answer entry

@@ -273,8 +273,11 @@ class StoryGame(Game):
 
         if self.fuel <= 0:
             background_image = self.engine.config.game_over_fuel_background_path
-        else:
+        elif self.hull <= 0:
             background_image = self.engine.config.game_over_hull_background_path
+        else:
+            backgrounds = self.engine.config.game_over_default_background_paths
+            background_image = random.choice(backgrounds)
         game_over_view = GameOverView(self, background_image)
         game_over_view.run()
 

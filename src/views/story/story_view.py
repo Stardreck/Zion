@@ -34,7 +34,7 @@ class StoryView(View):
         self.panel_bg: UIPanel | None = None
         self.panel: UIPanel | None = None
         self.story_image = None
-        self.planet_description = None
+        self.story_description = None
         self.button1 = None
         self.continue_button = None
 
@@ -90,14 +90,14 @@ class StoryView(View):
                     anchors={"left": "left"},
                 )
         self.story_image_description = UILabel(
-            relative_rect=Rect(20, 260, 100, 100),
+            relative_rect=Rect(75, 260, 100, 100),
             manager=self.pygame_gui_ui_manager,
             text=self.story_line.image_description,
             container=self.panel,
             anchors={"left": "left"},
         )
         # Create the story text box
-        self.planet_description = UITextBox(
+        self.story_description = UITextBox(
             relative_rect=Rect(260, 20, 700, 320),
             html_text=self.story_line.text,
             manager=self.pygame_gui_ui_manager,
@@ -156,8 +156,8 @@ class StoryView(View):
             self.panel_bg.kill()
         if self.story_image:
             self.story_image.kill()
-        if self.planet_description:
-            self.planet_description.kill()
+        if self.story_description:
+            self.story_description.kill()
         if self.button1:
             self.button1.kill()
         if self.continue_button:
