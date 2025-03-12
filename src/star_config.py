@@ -77,6 +77,8 @@ class StarConfig:
             "game_over_fuel_background", "")
         self.game_over_hull_background_path: str = self._data.get("game_over_system", {}).get(
             "game_over_hull_background", "")
+        self.game_over_default_background_paths: List[str] = self._data.get("game_over_system", {}).get(
+            "game_over_default_backgrounds", [])
 
     def __load_config(self, config_path: str) -> dict[str, Any]:
         """

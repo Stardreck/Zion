@@ -11,7 +11,7 @@
     "start_button_text": "Reise beginnen"
   },
   "game_settings": {
-    "start_fuel": 10,
+    "start_fuel": 50,
     "start_hull": 50,
     "wormhole_cost": 5,
     "default_backgrounds": [
@@ -19,8 +19,8 @@
     ]
   },
   "player_settings": {
-    "player_start_row": 1,
-    "player_start_col": 7
+    "player_start_row": 7,
+    "player_start_col": 6
   },
   "planet_menu": {
     "fuel_station": {
@@ -33,9 +33,9 @@
   },
   "event_system": {
     "event_probability": 1,
-    "base_positive_probability": 1,
+    "base_positive_probability": 0.5,
     "change_probability_by": 0.1,
-    "max_error_count": 50,
+    "max_error_count": 20,
     "backgrounds": [
       "assets/images/spaceship/storage_room/spaceship_storage_room.webp",
       "assets/images/spaceship/storage_room/spaceship_storage_room_03.png"
@@ -43,7 +43,7 @@
     "panel_background": "assets/interface/events/event_panel_background.png"
   },
   "mini_game_system": {
-    "mini_game_probability": 0.2,
+    "mini_game_probability": 0,
     "menu_backgrounds": [
       "assets/images/spaceship/casino/spaceship_casino_01.png",
       "assets/images/spaceship/casino/spaceship_casino_02.png",
@@ -69,7 +69,13 @@
   },
   "game_over_system": {
     "game_over_fuel_background": "assets/images/states/game_over/game_over_fuel.png",
-    "game_over_hull_background": "assets/images/states/game_over/game_hull_hull.png",
+    "game_over_hull_background": "assets/images/states/game_over/game_over_hull.png",
+    "game_over_default_backgrounds": [
+      "assets/images/states/game_over/game_over_default_01.png",
+      "assets/images/states/game_over/game_over_default_02.png",
+      "assets/images/states/game_over/game_over_default_03.png",
+      "assets/images/states/game_over/game_over_default_04.png"
+    ],
     "story_quiz_max_attempts": 5
   }
 }
