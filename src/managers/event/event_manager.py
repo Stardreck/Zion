@@ -93,6 +93,8 @@ class EventManager(Manager):
         for key, value in event_card.required_conditions.items():
             if key == "min_fuel" and self.game.fuel > value:
                 return True
+            if key == "max_fuel" and self.game.fuel <= value:
+                return True
             if key == "min_hull" and self.game.hull > value:
                 return True
             if key == "quiz_error_count" and self.error_count >= value:

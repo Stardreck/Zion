@@ -1,5 +1,5 @@
 [
-    {
+  {
     "name": "meteoriteneinschlag",
     "description": "IRIS war gerade damit beschäftigt mit Lyra über eine Flugbahnkorrektur zu diskutieren. Weshalb sie einen entgegenkommenden Kometenschauer nicht rechtzeitig erkannt hat. Einer dieser Kometen hat euren Treibstofftank beschädigt. Milo hat sich schon auf den Weg gemacht ihn zu reparieren. {fuel_change}",
     "hull_change": 0,
@@ -143,7 +143,7 @@
     "category": "high"
   },
   {
-    "name": "Eine Hand wäscht die andere",
+    "name": "eine hand wäscht die andere",
     "description": "In eurer Notlage kam euch ein Schiff der Regierung von Terra Nova zur Hilfe. Das kleine Shuttle, das ihr vor einiger Zeit beschützt habt, gehörte einer einflussreichen Diplomatin eures Heimatplaneten. Sie wollte sich erkenntlich zeigen und schickte euch Treibstoff sowie Unterstützung.<br/>{hull_change} {fuel_change}",
     "hull_change": 40,
     "fuel_change": 50,
@@ -157,5 +157,34 @@
       "event_completed_negative": "retter in der not"
     },
     "category": "high"
+  },
+  {
+    "name": "Kosmo-naut",
+    "description": "Kosmo wollte sich als Pilot versuchen und stolzierte über die Steuerkonsole. Zufällig änderte er die Flugroute – die neue erwies sich als noch effizienter. Sogar Victor zeigte sich beeindruckt.<br/> {fuel_change}",
+    "hull_change": 0,
+    "fuel_change": 3,
+    "image": "assets/images/events/event_kosmo_naut_card.png",
+    "icon": "assets/images/events/icons/event_kosmo_naut_icon.png",
+    "type": "positive",
+    "duration": 2,
+    "repeats": true,
+    "required_conditions": {
+    },
+    "category": "low"
+  },
+  {
+    "name": "Fuss vom Gas",
+    "description": "Der Treibstoffmangel zwingt euch zu drastischen Massnahmen. Victor ordnet an, den Reaktor nur noch auf halber Leistung laufen zu lassen und vorerst nicht mehr zu beschleunigen. Geduscht wird nur noch kalt. {fuel_change}",
+    "hull_change": 0,
+    "fuel_change": 2,
+    "image": "assets/images/events/event_fuss_vom_gas_card.png",
+    "icon": "assets/images/events/icons/event_fuss_vom_gas_icon.png",
+    "type": "positive",
+    "duration": 5,
+    "repeats": true,
+    "required_conditions": {
+      "max_fuel": 20
+    },
+    "category": "low"
   }
 ]
