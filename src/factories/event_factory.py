@@ -16,6 +16,7 @@ class EventFactory:
             event_type=event_data.get("type", "negative"),
             duration=event_data.get("duration", 0),
             repeats=event_data.get("repeats", False),
+            once=event_data.get("once", False),
             required_conditions=event_data.get("required_conditions", {}),
             category=event_data.get("category", "general")
         )

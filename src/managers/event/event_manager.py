@@ -97,7 +97,11 @@ class EventManager(Manager):
                 return True
             if key == "quiz_error_count" and self.error_count >= value:
                 return True
-            # Add more conditions as needed
+            if key == "event_completed_negative":
+                required_event = [event for event in self.negative_events if event.name == value]
+                if required_event is None or len(required_event) == 0:
+                    return True
+
         return False
 
     def trigger_event_if_possible(self) -> bool:
@@ -118,7 +122,11 @@ class EventManager(Manager):
             else:
                 ##### run a random event #####
                 # Decide event type (positive/negative) based on probability
-                event_list = self.positive_events if random.random() < self.event_positive_probability else self.negative_events
+                is_positive_event = random.random() < self.event_positive_probability
+                if is_positive_event:
+                    event_list = self.positive_events
+                else:
+                    event_list = self.negative_events
 
                 # Filter events that meet the conditions
                 filtered_events = [event for event in event_list if self.__check_conditions(event)]
@@ -130,6 +138,14 @@ class EventManager(Manager):
                 event_card: EventCard = random.choice(filtered_events)
 
                 self.run_event(event_card)
+
+                # remove the event card if it's only once allowed
+                if event_card.once:
+                    if is_positive_event:
+                        self.positive_events.remove(event_card)
+                    else:
+                        self.negative_events.remove(event_card)
+
                 return True
         return False
 

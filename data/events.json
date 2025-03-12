@@ -1,5 +1,5 @@
 [
-  {
+    {
     "name": "meteoriteneinschlag",
     "description": "IRIS war gerade damit beschäftigt mit Lyra über eine Flugbahnkorrektur zu diskutieren. Weshalb sie einen entgegenkommenden Kometenschauer nicht rechtzeitig erkannt hat. Einer dieser Kometen hat euren Treibstofftank beschädigt. Milo hat sich schon auf den Weg gemacht ihn zu reparieren. {fuel_change}",
     "hull_change": 0,
@@ -82,5 +82,80 @@
     "required_conditions": {
     },
     "category": "medium"
+  },
+  {
+    "name": "jetzt wird’s brenzlig",
+    "description": "Durch wiederholte Fehlberechnungen des Kurses habt ihr eine beachtliche Menge an Treibstoff verschleudert.<br/> {fuel_change}",
+    "hull_change": 0,
+    "fuel_change": -20,
+    "image": "assets/images/events/event_jetzt_wirds_brenzlig_card.png",
+    "icon": "assets/images/events/icons/event_jetzt_wirds_brenzlig_icon.png",
+    "type": "negative",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+      "quiz_error_count": 2
+    },
+    "category": "medium"
+  },
+  {
+    "name": "diplomatie",
+    "description": "Lyras Sarkasmus kam bei einer Routinekontrolle durch die Weltraumbehörde nicht so gut an,<br/>sie feuerten einen Warnschuss ab.<br/>{hull_change}",
+    "hull_change": -5,
+    "fuel_change": 0,
+    "image": "assets/images/events/event_diplomatie_card.png",
+    "icon": "assets/images/events/icons/event_diplomatie_icon.png",
+    "type": "negative",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+    },
+    "category": "low"
+  },
+  {
+    "name": "notlage",
+    "description": "Ihr seid einem Notruf gefolgt.<br/>Dieser kam von einem Frachtschiff, das von Piraten angegriffen wurde.<br/>Ihr halft ihm, seine Schäden zu reparieren. Im Gegenzug habt ihr einen Teil seines Treibstoffs erhalten. {fuel_change}",
+    "hull_change": 0,
+    "fuel_change": 20,
+    "image": "assets/images/events/event_notlage_card.png",
+    "icon": "assets/images/events/icons/event_notlage_icon.png",
+    "type": "positive",
+    "duration": 0,
+    "repeats": false,
+    "required_conditions": {
+    },
+    "category": "medium"
+  },
+  {
+    "name": "retter in der not",
+    "description": "Ein kleines Shuttle, welches sich auf demselben Kurs befand wie ihr, wurde von Piraten angegriffen. Ihr habt nicht gezögert und seid den Angreifern mutig entgegen getreten. Leider musstet ihr ordentlich Schaden einstecken. {hull_change} {fuel_change}",
+    "hull_change": -35,
+    "fuel_change": -5,
+    "image": "assets/images/events/event_retter_in_not_card.png",
+    "icon": "assets/images/events/icons/event_retter_in_not_icon.png",
+    "type": "negative",
+    "duration": 0,
+    "repeats": false,
+    "once": true,
+    "required_conditions": {
+      "min_hull": 40
+    },
+    "category": "high"
+  },
+  {
+    "name": "Eine Hand wäscht die andere",
+    "description": "In eurer Notlage kam euch ein Schiff der Regierung von Terra Nova zur Hilfe. Das kleine Shuttle, das ihr vor einiger Zeit beschützt habt, gehörte einer einflussreichen Diplomatin eures Heimatplaneten. Sie wollte sich erkenntlich zeigen und schickte euch Treibstoff sowie Unterstützung.<br/>{hull_change} {fuel_change}",
+    "hull_change": 40,
+    "fuel_change": 50,
+    "image": "assets/images/events/event_eine_hand_waescht_die_andere_card.png",
+    "icon": "assets/images/events/icons/event_eine_hand_waescht_die_andere_icon.png",
+    "type": "positive",
+    "duration": 0,
+    "repeats": false,
+    "once": true,
+    "required_conditions": {
+      "event_completed_negative": "retter in der not"
+    },
+    "category": "high"
   }
 ]

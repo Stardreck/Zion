@@ -5,7 +5,7 @@ class EventCard:
 
     def __init__(self, name: str, description: str, hull_change: int = 0, fuel_change: int = 0,
                  image: str = None, icon: str = None, event_type: str = "negative", duration: int = 0,
-                 repeats: bool = False, required_conditions: dict = None, category: str = None):
+                 repeats: bool = False, once: bool = False, required_conditions: dict = None, category: str = None):
         self.name = name
         self.description_template = description  # Speichern der Vorlage
         self.hull_change = hull_change
@@ -15,6 +15,7 @@ class EventCard:
         self.type = event_type
         self.duration = duration
         self.repeats = repeats
+        self.once = once
         self.required_conditions = required_conditions or {}
         self.category = category
 
