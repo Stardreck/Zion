@@ -15,14 +15,20 @@ def main():
     ##### init Config #####
     config = StarConfig("data/star_config.json")
 
+    ##### init game engine #####
+    engine = StarEngine(config)
+
+    ##### run system check #####
+    #if sys.platform.startswith("linux"):
+    #    is_system_valid = engine.run_system_check()
+    #    if not is_system_valid:
+    #        sys.exit()
+
     ##### intro video #####
     player = VideoPlayer(None)
     player.enable_standalone(config.width, config.height, config.title, config.full_screen)
     player.set_video("assets/videos/intro.mp4")
     player.play()
-
-    ##### init game engine #####
-    engine = StarEngine(config)
 
     ##### show main menu #####
     result = engine.show_main_menu()

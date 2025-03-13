@@ -2,7 +2,9 @@ from __future__ import annotations
 import pygame
 import sys
 
-from typing import  TYPE_CHECKING
+from typing import TYPE_CHECKING
+
+from src.system_check import SystemCheck
 
 if TYPE_CHECKING:
     from src.games.story_game import StoryGame
@@ -48,6 +50,20 @@ class StarEngine:
 
         pygame.quit()
         sys.exit()
+
+    def run_system_check(self) -> bool:
+        """
+        check the GPIO I2C bus connection, if the connection can't be established,
+        shows a message to indicate that the raspberry pi must be shutdown.
+        only executed on the raspberry itself (linux OS)
+        """
+
+        system_check = SystemCheck(self)
+        is_system_valid = system_check.is_system_valid()
+        if not is_system_valid:
+            return False
+
+        return True
 
     ##### private methods #####
     def __initialize_pygame(self):

@@ -1,5 +1,6 @@
 import random
 import sys
+import time
 from typing import Dict, List
 
 import pygame
@@ -54,10 +55,15 @@ class StoryGame(Game):
         if sys.platform.startswith("linux"):
             # only include the mcp manager on the raspberry pi, otherwise the entire game could not be executed on windows
             # as this manager depends on linux specific libraries (GPIO connection)
-            from src.managers.input.mcp_input_manager import McpInputManager, PIN_DEFINITIONS_FOR_GAME_BOARD
-            self.mcp_input_manager = McpInputManager(self, PIN_DEFINITIONS_FOR_GAME_BOARD)
+            from src.managers.input.mcp_input_manager import MCPInputManager, GAME_BOARD_PIN_DEFINITIONS
+            self.mcp_input_manager = MCPInputManager(self, GAME_BOARD_PIN_DEFINITIONS)
+            from src.managers.input.switch_input_manager import SwitchInputManager
+            self.switch_input_manager = SwitchInputManager(self)
         else:
             self.mcp_input_manager = None
+            self.switch_input_manager = None
+
+        self.last_mcp_time: float = 0.0  # last time MCP/Switch-Events
 
         ##### UI Manager #####
         self.ui_manager: UIManager = UIManager(self)
@@ -92,8 +98,13 @@ class StoryGame(Game):
 
     def handle_events(self):
         self.input_manager.process_events()
-        if self.mcp_input_manager:
-            self.mcp_input_manager.process_events()
+        current_time = time.time()
+        if current_time - self.last_mcp_time >= 2.0:
+            if self.mcp_input_manager:
+                self.mcp_input_manager.process_events()
+            if self.switch_input_manager:
+                self.switch_input_manager.process_events()
+            self.last_mcp_time = current_time  # reset timer
 
     def update(self, delta_time: float):
         self.ui_manager.gui_manager.update(delta_time)
@@ -128,7 +139,6 @@ class StoryGame(Game):
         if self.fuel <= 0 or self.hull <= 0:
             return True
         return False
-
 
     def move_player(self, new_row: int, new_column: int):
         # change player location
@@ -214,7 +224,6 @@ class StoryGame(Game):
             self.story_manager.show_spacestation_menu(planet)
             return
 
-
         ##### show planet menu and await user input #####
         selected_planet_menu_option = self.story_manager.show_planet_menu(planet)
 
@@ -281,6 +290,12 @@ class StoryGame(Game):
             background_image = random.choice(backgrounds)
         game_over_view = GameOverView(self, background_image)
         game_over_view.run()
+
+    def has_all_items(self) -> bool:
+        items = self.inventory_manager.get_items()
+        if len(items) == 4:
+            return True
+        return False
 
     def restart(self):
         print("[Game Restart]")

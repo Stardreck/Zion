@@ -102,7 +102,7 @@ class HUDManager(Manager):
         self.position_label: UILabel = UILabel(
             relative_rect=pygame.Rect(-150, 10, 200, 30),
             manager=self.ui_manager,
-            text="Aktuelle Position: ",
+            text="",
             container=self.topbar_panel,
             anchors={"top": "top", "right": "right"},
             object_id="hud_hull_label"

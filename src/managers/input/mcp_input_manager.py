@@ -318,6 +318,7 @@ class MCPInputManager(Manager):
         valid_moves = self.get_valid_moves(current_row, current_col)
 
         state_changes = self.pin_monitor.check_for_state_changes(self.bus)
+        print("state_changes:", state_changes)
         for pin, previous_state, current_state in state_changes:
             if previous_state == "HIGH" and current_state == "LOW":
                 new_position = (pin.row, pin.col)

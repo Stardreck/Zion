@@ -1,4 +1,6 @@
 from typing import Dict, Any
+
+from src.factories.final_decision_factory import FinalDecisionFactory
 from src.models.story_block import StoryBlock
 from src.factories.story_line_factory import StoryLineFactory
 from src.factories.quiz_factory import QuizFactory
@@ -16,5 +18,8 @@ class StoryBlockFactory:
             # set the quiz tipe Quiz-Typ
             quiz.quiz_type = block_type
             return StoryBlock(block_type=block_type, quiz=quiz)
+        if block_type == "final_decision":
+            decision = FinalDecisionFactory.create_final_decision(block_data)
+            return StoryBlock(block_type=block_type, decision=decision)
         else:
             raise ValueError(f"Unknown Block-Type: {block_type}")

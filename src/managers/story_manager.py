@@ -6,10 +6,12 @@ from src.managers.manager import Manager
 from src.models.game_object import GameObject
 from src.models.planet import Planet
 from src.models.story import Story
+from src.views.decisions.final_decision_view import FinalDecisionView
 from src.views.object.object_found_view import ObjectFoundView
 from src.views.planet.planet_menu import PlanetMenu
 from src.views.planet.planet_station_menu import PlanetStationMenu
 from src.views.planet.spacestation_menu import SpacestationMenu
+from src.views.states.game_over_view import GameOverView
 from src.views.story.story_view import StoryView
 
 if TYPE_CHECKING:
@@ -100,6 +102,23 @@ class StoryManager(Manager):
                 if total_quiz_count == current_quiz_count:
                     print(f"[Story Quiz] object gained")
                     self.show_object_found(planet)
+
+            if block.block_type == "final_decision":
+                # todo game finished screen improvement
+                decision = FinalDecisionView(self.game, block.decision)
+                decision.run()
+                option = decision.selected_option
+                print("decision option selected:", option)
+                if option == 1:
+                    reject_view = GameOverView(self.game,
+                                               self.game.engine.config.game_over_reject_background_paths[0])
+                    reject_view.run()
+                    self.game.stop()
+                if option == 2:
+                    terra_forming_view = GameOverView(self.game,
+                                                      self.game.engine.config.game_over_terraform_backgrounds_paths[0])
+                    terra_forming_view.run()
+                    self.game.stop()
 
     def show_object_found(self, planet: Planet):
         game_object: GameObject = next(

@@ -18,6 +18,8 @@ class StarConfig:
         self.height: int = self._data.get("engine", {}).get("height", 720)
         self.fps: int = self._data.get("engine", {}).get("fps", 60)
         self.full_screen: bool = self._data.get("engine", {}).get("full_screen", False)
+        self.system_check_backgrounds: List[str] = self._data.get("engine", {}).get("system_check_backgrounds", [])
+
 
         ##### main menu #####
         self.main_menu_background_image: str = self._data.get("main_menu", {}).get("background_image", "")
@@ -79,6 +81,10 @@ class StarConfig:
             "game_over_hull_background", "")
         self.game_over_default_background_paths: List[str] = self._data.get("game_over_system", {}).get(
             "game_over_default_backgrounds", [])
+        self.game_over_reject_background_paths: List[str] = self._data.get("game_over_system", {}).get(
+            "game_over_reject_backgrounds", [])
+        self.game_over_terraform_backgrounds_paths: List[str] = self._data.get("game_over_system", {}).get(
+            "game_over_terraform_backgrounds", [])
 
     def __load_config(self, config_path: str) -> dict[str, Any]:
         """

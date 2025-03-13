@@ -11,7 +11,7 @@
             "image_description": "Lyra"
           },
           {
-            "text": "IRIS: \"Ach und noch was zum Schluss, egal was ihr tut - NIEMALS, aber wirklich NIEMALS, den roten Kippschalter ohne Erlaubnis betätigen!\"",
+            "text": "Achtung<br/>.Sicherheitsprotokoll aktiviert: Der rote Kippschalter darf unter keinen Umständen ohne ausdrückliche Genehmigung betätigt werden. Jede unautorisierte Betätigung könnte kritische Systeme destabilisieren und irreversible Schäden verursachen.",
             "image": "assets/images/spaceship/cockpit/red_switch.png",
             "image_description": ""
           }
@@ -434,6 +434,231 @@
             "image_description": "Agatha"
           }
         ]
+      }
+    ]
+  },
+  "jotun": {
+    "title": "jotun",
+    "blocks": [
+      {
+        "type": "story",
+        "story_lines": [
+          {
+            "text": "<b>Der Anflug</b><br/>Die Crew befand sich auf dem Weg nach Jotun, dem Eisplaneten des Sonnensystems. Laut Auftrag sollten sie in einer Industrieanlage eine Maschine abholen. Da Jotun der äusserste der erforschten Planeten war, dauerte die Reise eine gefühlte Ewigkeit. Die einzige Abwechslung gab es nur, wenn Lyra wieder Kurskorrekturen vornahm, doch diese waren immer nur von kurzer Dauer.",
+            "image_description": ""
+          },
+          {
+            "text": "Sie waren nun schon weit draussen und befanden sich gerade in einem ruhigeren Kurs, als Victor beschloss, einige Reparaturen an der Aussenhülle der Minerva vorzunehmen. Milo entschloss sich, gegen seine Abneigung vor dem Weltraum, ihn zu begleiten.",
+            "image_description": ""
+          },
+          {
+            "text": "Agatha und Lyra sassen auf der Brücke und beobachteten durch die Aussenkameras Victor und Milo, die in Raumanzügen Reparaturen an der Minerva vornahmen. Die Männer wirkten in der Schwerelosigkeit unbeholfen, und Lyra grinste amüsiert.",
+            "image_description": ""
+          },
+          {
+            "text": "«Also, Lyra», begann Agatha mit auffälliger Unschuld in der Stimme. «Was läuft eigentlich zwischen dir und Milo?»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Lyra erstarrte für einen Moment, dann tat sie so, als hätte sie es nicht gehört. «Ich finde ihn nett ... und wenn er in der Nähe ist, habe ich das Gefühl, dass nichts schiefgehen kann.» Sie zuckte mit den Schultern. «Aber das ist halt seine Art.»",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Agatha zog eine Augenbraue hoch. «Ach komm schon, ich hab gesehen, wie er dich ansieht. Und du denkst, ich hab nicht auch deine Blicke bemerkt?»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Lyra riss ihren Blick von den Bildschirmen los und sah Agatha scharf an. «Das bildest du dir ein.»",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "«Sicher», sagte Agatha betont beiläufig. «Ich meine, was könnte schon schiefgehen? Ausser, dass du’s verpasst, weil du wieder alles überanalysierst.»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Lyra wollte aus dem unangenehmen Gespräch irgendwie entkommen. Sie funkte Victor und Milo an, um nachzufragen, wie es bei ihnen da draussen läuft. Die wie zu erwarten knappe Antwort kam sofort. ",
+            "image_description": ""
+          },
+          {
+            "text": "Agatha schmunzelte. «Dem Gespräch bist du damit nicht entkommen.»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Lyra seufzte und gab widerwillig nach. «Ich weiss ja, und vielleicht könnte ich … aber erst, wenn das hier vorbei ist. Denk einmal nach, was, wenn es nicht funktioniert und es damit alles kompliziert macht?»",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Agatha legte den Kopf schief und beobachtete ihre Freundin nachdenklich. «Du findest es nur heraus, wenn du es probierst.»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "<b>Die Geisel</b><br/>Kurz darauf rief IRIS über die Lautsprecher: «Meine Damen und Herren, wir nähern uns Jotun. Geschätzte Ankunft im Orbit in 30 Minuten. Oberflächentemperatur: angenehme -183 Grad Celsius, bei der schwachen Brise von 230 km/h erwarte ich nur leichte Turbulenzen.»",
+            "image_description": ""
+          },
+          {
+            "text": "Die Crew begab sich zur Forschungsstation und wurde von einem jüngeren Mann namens Richard empfangen. Er führte sie durch die Anlage, während Lyra sich zusammen mit seinen Leuten um den Verlad des Bauteils kümmerte.",
+            "image_description": ""
+          },
+          {
+            "text": "Während der Führung erzählte Richard ausführlich von der Blütezeit der Station, als hier noch wertvolle Mineralien und Ammoniak für Dünger abgebaut wurden. Seine Stimme war geprägt von Nostalgie, aber auch etwas Trauer klang hindurch.",
+            "image_description": ""
+          },
+          {
+            "text": "Schliesslich kamen sie im Büro des Vorarbeiters an. Dieser bot ihnen – ganz zur Freude von Victor – vortrefflichen Kaffee an.",
+            "image_description": ""
+          },
+          {
+            "text": "Doch dann begann die Stimmung zu kippen. «Aber dann gab es neue Technologien … effizientere Methoden zur Lebensmittelproduktion … wir wurden überflüssig.»\n\nSein Blick verfinsterte sich. «Aber Jangkoff hat uns nicht vergessen. Er hat versprochen, uns allen zu helfen.»",
+            "image_description": ""
+          },
+          {
+            "text": "Victor erstarrte, Milo wandte sich zu ihm. «Jangkoff? Der radikale Milliardär von Terra?»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Richard wurde nun noch lauter, und seine Stimme zitterte. «Er weiss von eurer Mission, er weiss, dass ihr einen speziellen Fusionsreaktor habt oder wisst, wo er zu finden ist.»",
+            "image_description": ""
+          },
+          {
+            "text": "Agatha verschränkte die Arme. «Lass mich raten: Er will den Laser für einen Angriff oder als Erpressungsmittel?»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Plötzlich zog er eine Waffe.\n\n«Halt dein Maul! Ihr könnt entweder mit mir kooperieren, oder wir warten, bis seine Männer hier eintreffen – aber glaubt mir, das wollt ihr nicht.»",
+            "image_description": ""
+          },
+          {
+            "text": "Er wurde immer nervöser, seine Hand zitterte, und er fuchtelte mit der Waffe zwischen ihren Köpfen hin und her.\n\nIn diesem Moment meldete sich sein Intercom. «Ritschi, wir sind soweit. Der Laser ist bereit, und das vorlaute Weib haben wir festgesetzt.»\n\n«Die Irre hat versucht, mich zu beissen!», rief eine weitere Stimme durch den Lautsprecher.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Die Flucht </b><br/>Die Crew bot an, ihm den Reaktor zu überlassen, doch dafür müssten sie aufs Schiff – und nur im Austausch gegen Lyra.",
+            "image_description": ""
+          },
+          {
+            "text": "Auf dem Weg zur Minerva flüsterte Milo zu Victor: «Ich hoffe, dein Bluff geht auf, sonst sind wir geliefert.»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Sie standen in der Minerva, und Milo und Agatha taten so, als würden sie den Frachtraum entsperren. Victor überwältigte Richard von hinten und rang ihn zu Boden. Eine Minute später verstauten sie den gefesselten Wahnsinnigen in einer Abstellkammer.",
+            "image_description": ""
+          },
+          {
+            "text": "Agatha und Milo schlichen sich durch die Station. Victor blieb auf dem Schiff.\n\nSie fanden Lyra in einem Lagerraum, zusammen mit dem Laser. Doch zwei Wachen standen vor der Tür.",
+            "image_description": ""
+          },
+          {
+            "text": "«Plan?», flüsterte Milo.",
+            "image_description": "Milo"
+          },
+          {
+            "text": "«Direkt drauf los», sagte Agatha und schlug einer der Wachen mit dem Schaft ihrer Waffe gegen den Kopf.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Der andere griff Milo an, doch er schaffte es, einen gezielten Schlag zu landen. Überraschend effektiv.",
+            "image_description": ""
+          },
+          {
+            "text": "«Nicht schlecht», meinte Agatha anerkennend.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Sie befreiten Lyra, die sich aufrichtete und trocken sagte: «Das ging aber lange genug, Leute.»",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "«Halt die Klappe und beweg dich», erwiderte Agatha grinsend.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Die Tür summte – weitere Wachen näherten sich. Agatha zerstörte das Türpanel mit einem Hieb, um Zeit zu gewinnen.\n\n«Wir müssen einen anderen Weg rausfinden.»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Milo zeigte auf den Laser. «Wenn wir den an die Stromversorgung anschliessen, könnten wir uns rausschiessen.»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Sie zogen ihre Helme an und schlossen den Laser an das Stromnetz der Station an.\n\nDer erste Schuss war zu schwach.",
+            "image_description": ""
+          },
+          {
+            "text": "«Verdammt», fluchte Agatha. «Mehr Energie!»",
+            "image_description": "Agatha"
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "question": "<b>Welche Leistung muss diesem Laser mindestens zugeführt werden, wenn er die Wand innert einer Sekunde wegschmilzt?</b><br/>Angabe in MW auf eine Kommastelle runden.<br/><br/><b>informationen</b><br/>Spezifische Wärmekapazität Stahl: 0,45 KJ / kg*K\nSchmelzwärme Stahl: 270 KJ / kg \nUmgebungstemperatur: 20 Grad Celsius\nSchmelztemperatur: 1600 Grad Celsius\nMasse des zu schmelzenden Stahls: 2'700 kg\nWirkungsgrad des Lasers: 83%",
+        "correct_value": 3.2,
+        "story_consequence": {
+          "text": "Milos tippte hastig einen anderen Wert ein. Doch auch dieser führte nicht zum Ziel, entweder wurde die Wand nur leicht erwärmt oder das Stromnetz begann nur schon beim Aufladen des Lasers zu kollabieren",
+          "image_description": "Milo"
+        }
+      },
+      {
+        "type": "story",
+        "story_lines": [
+          {
+            "text": "Der zweite Schuss überlastete das Netz der Station und frass ein riesiges Loch in die Aussenwand. Eiskalte Luft strömte ein, gefrorene Eiskristalle regneten herab.\n\nIn diesem Moment tauchte die Minerva mit Suchscheinwerfern auf. Victor hielt das Schiff so nah wie möglich in Position.",
+            "image_description": ""
+          },
+          {
+            "text": "Agatha befestigte das Seil an dem Laser und aktivierte die Winde.\n\nDie Wachen stürmten den Raum – und eröffneten das Feuer.\n\nAgatha erwiderte es, während Milo und Lyra zur Rampe rannten. Ein Schuss traf Lyra ins Bein. Sie taumelte.",
+            "image_description": ""
+          },
+          {
+            "text": "«Verdammt!» Milo zögerte nicht, lief zurück, hob sie hoch und schleppte sie zur Rampe. Agatha deckte sie weiter ab.",
+            "image_description": "Milo"
+          },
+          {
+            "text": "«Los, los!», schrie Agatha Victor über Funk an.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Die Rampe schloss sich, Victor gab Schub.\n\nLyra ignorierte den Schmerz und humpelte zur Brücke. Sie steuerte das Schiff trotz der blutenden Wunde durch den Sturm bis in den Orbit, doch dann verlor sie das Bewusstsein.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Die Übergabe</b><br/>Lyra kam langsam zu sich. Die Beleuchtung war gedämpft. Neben ihr sass Milo.",
+            "image_description": ""
+          },
+          {
+            "text": "«Wie lange war ich weg? Fliegen wir noch? Wieso fliegen wir nicht?», fragte sie verwirrt.",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Milo schmunzelte. «Wir sind an ein Patrouillenschiff von Terra angedockt. Victor übergibt gerade unseren Gefangenen und bespricht noch irgendetwas mit denen.»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Lyra liess sich erschöpft in die Kissen sinken und sah Milo an. Eine Spur Dankbarkeit lag in ihrem Blick.\n\nEr hielt ihre Hand.",
+            "image_description": ""
+          }
+        ]
+      }
+    ]
+  },
+  "zion": {
+    "title": "zion",
+    "blocks": [
+      {
+        "type": "story",
+        "story_lines": [
+          {
+            "text": "Hier kommt die story",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "HOOOOIIIIII",
+            "image_description": "Milo"
+          }
+        ]
+      },
+      {
+        "type": "final_decision"
       }
     ]
   },

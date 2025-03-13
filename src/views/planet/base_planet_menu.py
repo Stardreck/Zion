@@ -47,6 +47,8 @@ class BasePlanetMenu(View):
         self.planet_description = None
         self.button1: UIButton | None = None
         self.button2: UIButton | None = None
+        self.show_button_1 = True
+        self.show_button_2 = True
 
     def __build_ui(self):
         """Build the common UI elements"""
@@ -96,29 +98,31 @@ class BasePlanetMenu(View):
             anchors={"left": "left"},
         )
 
-        # Create the first button
-        button1_rect = Rect(0, -125, 500, 50)
-        self.button1 = UIButton(
-            relative_rect=button1_rect,
-            text=self.button_texts[0],
-            manager=self.pygame_gui_ui_manager,
-            container=self.panel_bg,
-            anchors={"centerx": "centerx", "bottom": "bottom"},
-            object_id="panel_button",
-        )
-        self.button1.bind(pygame_gui.UI_BUTTON_PRESSED, lambda event: self._set_option(1))
+        if self.show_button_1:
+            # Create the first button
+            button1_rect = Rect(0, -125, 500, 50)
+            self.button1 = UIButton(
+                relative_rect=button1_rect,
+                text=self.button_texts[0],
+                manager=self.pygame_gui_ui_manager,
+                container=self.panel_bg,
+                anchors={"centerx": "centerx", "bottom": "bottom"},
+                object_id="panel_button",
+            )
+            self.button1.bind(pygame_gui.UI_BUTTON_PRESSED, lambda event: self._set_option(1))
 
-        # Create the second button
-        button2_rect = Rect(0, -60, 500, 50)
-        self.button2 = UIButton(
-            relative_rect=button2_rect,
-            text=self.button_texts[1],
-            manager=self.pygame_gui_ui_manager,
-            container=self.panel_bg,
-            anchors={"centerx": "centerx", "bottom": "bottom"},
-            object_id="panel_button",
-        )
-        self.button2.bind(pygame_gui.UI_BUTTON_PRESSED, lambda event: self._set_option(2))
+        if self.show_button_2:
+            # Create the second button
+            button2_rect = Rect(0, -60, 500, 50)
+            self.button2 = UIButton(
+                relative_rect=button2_rect,
+                text=self.button_texts[1],
+                manager=self.pygame_gui_ui_manager,
+                container=self.panel_bg,
+                anchors={"centerx": "centerx", "bottom": "bottom"},
+                object_id="panel_button",
+            )
+            self.button2.bind(pygame_gui.UI_BUTTON_PRESSED, lambda event: self._set_option(2))
 
     def _set_option(self, option: int):
         """Set the selected option and exit the menu."""

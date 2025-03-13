@@ -9,7 +9,18 @@ if TYPE_CHECKING:
 
 class SpacestationMenu(BasePlanetMenu):
     def __init__(self, game: StoryGame, planet: Planet):
-        title_text = planet.name
+
         fuel_cost = game.engine.config.game_settings_wormhole_cost
-        button_texts = ("Station besuchen", f"Wurmloch betreten (-{fuel_cost} Treibstoff)")
+        if game.has_all_items():
+            title_text = planet.name
+            button_texts = ("", f"Wurmloch betreten (-{fuel_cost} Treibstoff)")
+        else:
+            title_text = "zugang verweigert"
+            button_texts = ("verlassen", "")
+
         super().__init__(game, planet, title_text, button_texts)
+
+        if game.has_all_items():
+            self.show_button_1 = False
+        else:
+            self.show_button_2 = False
