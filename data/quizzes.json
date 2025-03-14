@@ -2,20 +2,173 @@
   "default": [
     {
       "type": "boolean",
-      "question": "Muesch 99 Mal pro Tag go kägge?",
+      "question": "Die Beschleunigung eines Objektes berechnet sich aus der Geschwindigkeitsänderung pro Zeiteinheit?",
       "correct_value": true,
       "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
       "category": "Kinematik",
       "difficulty": "easy"
     },
     {
+      "type": "boolean",
+      "question": "Die Geschwindigkeit eines Objektes berechnet sich aus der zurückgelegten Distanz während einer bestimmten Zeiteinheit?",
+      "correct_value": true,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "boolean",
+      "question": "Die Steigung der Geraden im v/t Diagramm beschreibt die Beschleunigung.",
+      "correct_value": true,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "boolean",
+      "question": "Wenn man genug lange beschleunigt, übertrifft man irgendwann die Lichtgeschwindigkeit?",
+      "correct_value": false,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "boolean",
+      "question": "Kann eine Kreisbewegung auch beschleunigt sein?",
+      "correct_value": true,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "boolean",
+      "question": "Im v/t Diagramm, entspricht die Fläche der Durchschnittsgeschwindigkeit?",
+      "correct_value": false,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "boolean",
+      "question": "Ist die Gerade im v/t Diagramm horizontal so ist die Geschwindigkeit 0?",
+      "correct_value": false,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "boolean",
+      "question": "Die Kinematik beschreibt die Bewegung von Körpern ohne Berücksichtigung der Kräfte.",
+      "correct_value": true,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "boolean",
+      "question": "Ist die Momentangeschwindigkeit bei einer gleichmässigen Bewegung konstant?",
+      "correct_value": true,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "boolean",
+      "question": "Ein Stein fällt im Vakuum schneller als ein Blatt Papier.",
+      "correct_value": false,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "boolean",
+      "question": "Ist die Geschwindigkeit eine skalare Grösse?",
+      "correct_value": false,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "boolean",
+      "question": "Eine höhere Kreisbahngeschwindigkeit resultiert in einer Höheren Frequenz und tieferer Umlaufperiode?",
+      "correct_value": true,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "boolean",
+      "question": "Das Superpositionsprinzip besagt, dass ein Körper mit einer Bewegung gleichzeitig an mehreren Positionen sein kann?",
+      "correct_value": false,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "boolean",
+      "question": "Bei einem Waagerechten- und Schiefen-Wurf finden zwei Bewegungen gleichzeitig überlagert statt.",
+      "correct_value": true,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "boolean",
+      "question": "Die Tangentialgeschwindigkeit und die Winkelgeschwindigkeit sind die gleiche Art der Bewegung?",
+      "correct_value": false,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "hard"
+    },
+    {
       "type": "quiz",
-      "question": "Wie viel mal muesch go kägge am Tag?",
+      "question": "Agatha fragt Victor wieso sie eigentlich die ganze Zeit beschleunigen müssen, was würde passieren wenn sie den Antrieb auf ihrer Reise im All abschalten würden?",
       "answers": [
-        "6",
-        "99",
-        "9",
-        "5"
+        "A) Sie würden immer langsamer werden und schliesslich stehen bleiben.",
+        "B) Sie würden mit konstanter Geschwindigkeit weiterfliegen, jedoch keine Anziehungskraft mehr auf dem Schiff haben.",
+        "C) Sie würden mit konstanter Geschwindigkeit weiterfliegen, der konstante Schub ist nur damit die Triebwerke in der Kälte des Alls nicht einfrieren.",
+        "D) Manchmal frage ich mich wirklich was du auf der Universität gelernt hast…"
+      ],
+      "correct_answer_position": 2,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text",
+      "category": "Dynamik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "quiz",
+      "question": "Agatha versucht ihrem Kater Kosmo wieder einmal die Grundlagen der Raumfahrt zu erklären, man weiss ja nie, wann er sie einmal braucht. Also Kosmo, weisst du noch, was mit der Umlaufbahn eines Satelliten passiert wenn er an Geschwindigkeit zunimmt?",
+      "answers": [
+        "A) Er steigt auf eine höhere Umlaufbahn.",
+        "B) Er fällt nun auf die Oberfläche weil er sich schneller bewegt als die Rotation des Planeten.",
+        "C) Es passiert gar nichts, er umrundet den Planeten nur schneller.",
+        "D) Er schiesst komplett aus der Umlaufbahn und verschwindet in den Tiefen des Alls."
+      ],
+      "correct_answer_position": 1,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "quiz",
+      "question": "In welchem Zusammenhang stehen Frequenz und Umlaufzeit?",
+      "answers": [
+        "A) In keinem Zusammenhang, Frequenz wird in Hertz angegeben und die Umlaufzeit in Sekunden.",
+        "B) Sie sind umgekehrt proportional.",
+        "C) Sie sind der jeweilige Kehrwert zueinander.",
+        "D) Frequenz in Hertz * 60s entspricht der Umlaufzeit."
+      ],
+      "correct_answer_position": 3,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text",
+      "category": "Kinematik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "quiz",
+      "question": "Inwiefern unterscheidet sich das steuern eines Raumschiffes im All vom Steuern eines Flugzeuges auf einem Planeten.",
+      "answers": [
+        "A) Durch die zusätzlich mögliche Bewegungsrichtungen ergeben sich viel mehr Möglichkeiten.",
+        "B) Ohne Gegenkraft bleiben einmal initiierte Bewegungen konstant, und können sich sogar überlagern.",
+        "C) ..."
       ],
       "correct_answer_position": 2,
       "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text",
@@ -23,11 +176,113 @@
       "difficulty": "medium"
     },
     {
-      "type": "task",
-      "question": "Wie viel mal muesch go kägge am Tag? ",
-      "correct_value": 99,
-      "solution": "<b>Bist du dumm?</b> <br/ Das isch en lange unnötige text",
+      "type": "quiz",
+      "question": "Wie verhält sich der Geschwindigkeitsvektor der Bahngeschwindigkeit eines Punktes, welcher einen anderen Punkt umkreist.",
+      "answers": [
+        "A) Der Geschwindigkeitsvektor ist immer rechtwinklig zum Radius.",
+        "B) Der Geschwindigkeitsvektor zeigt aufgrund der Zentrifugalkraft senkrecht vom Radius weg.",
+        "C) Der Geschwindigkeitsvektor ist immer zur Kreisbahn gerichtet.",
+        "D) Der Geschwindigkeitsvektor ergibt sich aus einer Überlagerung von b & c."
+      ],
+      "correct_answer_position": 1,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "quiz",
+      "question": "Milos fragt sich was passieren würde, wenn ihre Triebwerke bei einer Landung auf einmal ausfallen würden. Zum Beispiel in 50 Kilometer Höhe, an die Bremswirkung der Atmosphäre denkt er nicht. Anziehungskraft wäre 0.7g. Mit welcher Geschwindigkeit würden sie am Boden aufprallen?",
+      "answers": [
+        "A) 264.6m/s",
+        "B) 8.4km/s",
+        "C) 828m/s",
+        "D) 26.2km/s"
+      ],
+      "correct_answer_position": 3,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text",
+      "category": "Kinematik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "quiz",
+      "question": "Milos war gerade dabei sich Frühstück zuzubereiten, dass der Kaffee scheusslich schmeck, daran hat er sich schon lange gewöhnt. Aber wieso braucht sein 3-Minuten Ei auf der Minerva fast doppelt so lange bis es gar ist? (In der Minerva herrscht ein Luftdruck von 0.5 Bar )",
+      "answers": [
+        "A) Aufgrund der geringen Schwerkraft schmeckt alles weniger intensiv, der Luftdruck hat keinen Einfluss.",
+        "B) Die Hintergrundstrahlung des Alls heizt die Minerva und das Wasser immer ein bisschen auf, wie in einer Mikrowelle, deshalb kocht das Wasser früher und das Ei muss kochen. ",
+        "C) Da die Luft immer wieder aufbereitet wird, ist sie extrem gesättigt mit Wasser, dies verlangsamt den Kochprozess.",
+        "D) Aufgrund des tieferen Luftdruckes kocht Wasser schon bei tieferen Temperaturen, das Ei braucht länger und Aromen kommen schlechter zur Geltung."
+      ],
+      "correct_answer_position": 4,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text",
+      "category": "Hydrostatik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "quiz",
+      "question": "Als Victor, Agatha die Reisezeit zum nächsten Objekt mitteilt, beginnt sie sich zu beklagen. Wieso könnten sie nicht schneller fliegen, in den Sitzen halten sie Werte von 5g problemlos aus. Das Problem ist auch nicht die Beschleunigung sondern die Hitze die der Reaktor produziert. Aber wieso?",
+      "answers": [
+        "A) Bei höheren Beschleunigungen, fliesst das Wasser nicht mehr kontinuierlich in Kühlkreislauf.",
+        "B) Weil das Vakuum die Wärme speichert und sich so eine Wärmeblase um das Schiff bildet.",
+        "C) Weil im Vakuum fast keine Teilchen vorhanden sind, kann kein guter Wärmetransport erfolgen, lediglich über die Wärmestrahlung.",
+        "D) Bei höheren Beschleunigung, findet die Fusion exponentiell stärker statt was zu einer exponentiell höheren Wärmeproduktion führt."
+      ],
+      "correct_answer_position": 3,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text",
+      "category": "Wärmelehre",
+      "difficulty": "hard"
+    },
+    {
+      "type": "quiz",
+      "question": "Schon bei seinem ersten Start von Terra Nova fragte sich Milo, wie weit sie fliegen müssen, um vom Gravitationsfeld des Planeten zu entkommen. Victors Antwort darauf hatte fast etwas poetisches.",
+      "answers": [
+        "A) Sie bleibt konstant, sie wird lediglich durch andere stärkere Kräfte überlagert",
+        "B) Milo sollte sich doch auf die wesentlichen Dinge im Leben konzentrieren.",
+        "C) Sie nimmt linear mit der Entfernung ab bis sie irgendwann null ist. Ab diesem Punk lassen wir unsere Heimat endgültig hinter uns. ",
+        "D) Sie nimmt quadratisch mit der Entfernung ab, egal wie weit weg du bist, sie wirkt immer, auch wenn nur unmerklich wenig."
+      ],
+      "correct_answer_position": 4,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text",
       "category": "Dynamik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "task",
+      "question": "Lyra sendet eine Nachricht mit Statusmeldungen zum Flottenkommando auf Terra Nova, sie fragt sich wie lange sie wohl auf eine Antwort warten muss. Wenn die Zentrale die Nachricht während den Bürozeiten empfängt und innerhalb von 2 Stunden eine Antwort sendet. Sie schaut auf die Karte, aktuell befinden sie sich 75'000'000 Kilometer weit entfernt von ihrer Heimat.",
+      "correct_value": 7700,
+      "solution": "<b>Bist du dumm?</b> <br/ Das isch en lange unnötige text",
+      "category": "Kinematik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "task",
+      "question": "Milos begutachtet die Raumanzüge der Crew, schon ziemlich ramponiert, ob die noch halten? Er fragt sich, wie viel Kraft wohl auf die Innenseite (2.5m2), bei einem Druckunterschied von 0.5 bar, wirkt. F=p*A",
+      "correct_value": 125000,
+      "solution": "<b>Bist du dumm?</b> <br/ Das isch en lange unnötige text",
+      "category": "Hydrostatik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "task",
+      "question": "WVictor stellt fest, dass sich auf der Flugbahn ein Objekt befindet, er versucht nun, ein einfaches Ausweichmanöver zu fliegen. Er initiiert einen Seitwärtsschub, so dass die Minerva nun neben der Vorwärts- , auch eine Seitwärtsgeschwindigkeit hat. Das Objekt mit einem Durchmesser von ca. 5km befindet sich zu diesem Zeitpunkt 43400km weit entfernt. Die Minerva fliegt konstant mit einer Geschwindigkeit von 1400km/s Die Seitwärtsgeschwindigkeit beträgt 100m/s Schaffen sie es am Objekt vorbei und um wie viele Meter?",
+      "correct_value": "3100",
+      "solution": "<b>Bist du dumm?</b> <br/ Das isch en lange unnötige text",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "task",
+      "question": "Eine der grössten Raumstationen im System dreht sich um sich selbst, um eine Künstliche Schwerkraft zu erzeugen. Sie hat einen Durchmesser von 1.252km und dreht mit 1 Umdrehung pro Minute. Es herrschen 0,7g. Welche Geschwindigkeit muss ein Schiff haben, um an der rotierenden Aussenwand andocken zu können?",
+      "correct_value": "1",
+      "solution": "<b>Bist du dumm?</b> <br/ Das isch en lange unnötige text",
+      "category": "Kinematik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "task",
+      "question": "Das letzte Mal als Victor auf einem Planeten gelandet war, gestaltete sich die Landung als eher unbequem. Bei Lyra ist sie immer kaum spürbar. Der Grund, Victor setzt mit einer höheren Restgeschwindigkeit auf. Doch welche? Beim Beginn des Landemanövers hatten sie eine Geschwindigkeit von 2km/s mit 100km Entfernung zum Boden. Von da an verzögerten sie mit -20m/s.",
+      "correct_value": "10",
+      "solution": "<b>Bist du dumm?</b> <br/ Das isch en lange unnötige text",
+      "category": "Kinematik",
       "difficulty": "hard"
     }
   ]

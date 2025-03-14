@@ -1,0 +1,34 @@
+{
+  "default": [
+    {
+      "type": "boolean",
+      "question": "Muesch 99 Mal pro Tag go kägge?",
+      "correct_value": true,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text um margin und padding zdefiniere vo de ui text box lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum",
+      "category": "Kinematik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "quiz",
+      "question": "Wie viel mal muesch go kägge am Tag?",
+      "answers": [
+        "6",
+        "99",
+        "9",
+        "5"
+      ],
+      "correct_answer_position": 2,
+      "solution": "<b>Bist du dumm?</b> <br/> Das isch en lange unnötige text",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "task",
+      "question": "Wie viel mal muesch go kägge am Tag? ",
+      "correct_value": 99,
+      "solution": "<b>Bist du dumm?</b> <br/ Das isch en lange unnötige text",
+      "category": "Dynamik",
+      "difficulty": "hard"
+    }
+  ]
+}
