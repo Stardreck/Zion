@@ -75,11 +75,11 @@ class BooleanView(View):
         )
         # Question label (displaying the quiz question)
         self.question = UITextBox(
-            relative_rect=Rect(0, 50, 500, 150),
+            relative_rect=Rect(16.5, 50, 500, 150),
             manager=self.pygame_gui_ui_manager,
             html_text=self.quiz.question,
             container=self.panel,
-            anchors={"centerx": "centerx", "top": "top"},
+            anchors={"left": "left"},
             object_id="quiz_question"
         )
 

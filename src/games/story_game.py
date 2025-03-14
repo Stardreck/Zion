@@ -19,10 +19,12 @@ from src.managers.ui_manager import UIManager
 from src.models.event_card import EventCard
 from src.models.planet import Planet
 from src.models.quiz import Quiz
+from src.models.story_line import StoryLine
 from src.star_engine import StarEngine
 
 from src.views.common.info_view import InfoView
 from src.views.states.game_over_view import GameOverView
+from src.views.story.story_view import StoryView
 
 
 class StoryGame(Game):
@@ -174,7 +176,7 @@ class StoryGame(Game):
                 # self.trigger_planet_event(planet)
                 break
 
-        if not self.current_planet is None and not self.current_planet.visited:
+        if not self.current_planet is None:
             self.run_planet_actions(self.current_planet)
             return
         else:
@@ -218,8 +220,15 @@ class StoryGame(Game):
             self.story_manager.show_planet_story(planet, self.data.story_segments[planet.name])
             return
         if planet.is_end_planet:
-            # todo implement logic
-            pass
+            ##### player hasn't all items, show error message #####
+            if not self.has_all_items():
+                story_line = StoryLine(
+                    self.engine.config.planet_menu_states_zion_not_allowed_text,
+                    "", "Lyra")
+                error_view = StoryView(self, planet, story_line)
+                error_view.run()
+                return
+
         if planet.is_spacestation:
             self.story_manager.show_spacestation_menu(planet)
             return
@@ -246,8 +255,16 @@ class StoryGame(Game):
             # show cutscene
             self.ui_manager.display_cutscene(planet.cutscene_media)
 
-            # show the planet stories
-            self.story_manager.show_planet_story(planet, self.data.story_segments[planet.name])
+            if planet.visited:
+                story_line = StoryLine(
+                    self.engine.config.planet_menu_visited,
+                    "", "Victor")
+                error_view = StoryView(self, planet, story_line)
+                error_view.run()
+            else:
+                # show the planet stories
+                self.story_manager.show_planet_story(planet, self.data.story_segments[planet.name])
+                planet.visited = True
 
             print("Planet besuchen")
 

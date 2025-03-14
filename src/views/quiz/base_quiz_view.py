@@ -9,6 +9,7 @@ from pygame import Rect
 from src.components.ui.ui_button import UIButton
 from src.components.ui.ui_label import UILabel
 from src.components.ui.ui_panel import UIPanel
+from src.components.ui.ui_text_box import UITextBox
 from src.components.ui.ui_text_entry_line import UITextEntryLine
 from src.views.view import View
 from src.models.quiz import Quiz
@@ -74,12 +75,12 @@ class BaseQuizView(View):
             object_id="quiz_title"
         )
         # Question label (displaying the quiz question)
-        self.question = UILabel(
-            relative_rect=Rect(0, 50, 500, 30),
+        self.question = UITextBox(
+            relative_rect=Rect(16.5, 50, 500, 80),
             manager=self.pygame_gui_ui_manager,
-            text=self.quiz.question,
+            html_text=self.quiz.question,
             container=self.panel,
-            anchors={"centerx": "centerx", "top": "top"},
+            anchors={"left": "left", "top": "top"},
             object_id="quiz_question"
         )
 

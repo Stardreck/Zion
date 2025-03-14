@@ -64,7 +64,7 @@ class EventManager(Manager):
         The positive probability is never allowed to drop below 0.1.
         """
         self.event_positive_probability = max(0.1,
-                                              self.base_positive_probability - self.change_probability_value * self.error_count)
+                                              self.event_positive_probability - self.change_probability_value * self.error_count)
 
     def get_forced_events(self) -> List[EventCard] | []:
         events = self.negative_events + self.positive_events

@@ -109,6 +109,7 @@
     "col": 2,
     "visited": false,
     "isFuelPlanet": false,
+    "isEndPlanet": true,
     "background_image": "assets/images/planets/ymir_zion_background.png",
     "planet_image": "assets/images/planets/zion.png",
     "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"
@@ -120,7 +121,6 @@
     "col": 0,
     "visited": false,
     "isFuelPlanet": false,
-    "isEndPlanet": true,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/jotun.png",
     "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"

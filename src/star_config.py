@@ -37,8 +37,7 @@ class StarConfig:
         self.player_settings_start_col: int = self._data.get("player_settings", {}).get("player_start_col", 0)
 
         ##### planet menu #####
-        self.planet_menu_fuel_station_background_image_path: str = self._data.get("planet_menu", {}).get("fuel_station",
-                                                                                                         {}).get(
+        self.planet_menu_fuel_station_background_image_path: str = self._data.get("planet_menu", {}).get("fuel_station",                                                                                                         {}).get(
             "background", "")
         self.planet_menu_fuel_station_image_path: str = self._data.get("planet_menu", {}).get("fuel_station", {}).get(
             "image", "")
@@ -48,6 +47,10 @@ class StarConfig:
             "fuel_quiz_correct_amount", 0)
         self.planet_menu_fuel_quiz_wrong_amount: int = self._data.get("planet_menu", {}).get("fuel_station", {}).get(
             "fuel_quiz_wrong_amount", 0)
+        self.planet_menu_states_zion_not_allowed_text: str = self._data.get("planet_menu", {}).get("states",{}).get(
+            "zion_not_allowed", "")
+        self.planet_menu_visited: str = self._data.get("planet_menu", {}).get("states",{}).get(
+            "visited", "")
 
         ##### event system #####
         self.event_probability: float = self._data.get("event_system", {}).get("event_probability", 0)

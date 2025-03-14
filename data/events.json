@@ -122,6 +122,7 @@
     "type": "positive",
     "duration": 0,
     "repeats": false,
+    "once": true,
     "required_conditions": {
     },
     "category": "medium"

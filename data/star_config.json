@@ -30,8 +30,8 @@
     ]
   },
   "player_settings": {
-    "player_start_row": 0,
-    "player_start_col": 0
+    "player_start_row": 5,
+    "player_start_col": 3
   },
   "planet_menu": {
     "fuel_station": {
@@ -40,11 +40,15 @@
       "fuel_free_amount": 5,
       "fuel_quiz_correct_amount": 10,
       "fuel_quiz_wrong_amount": 2
+    },
+    "states": {
+      "zion_not_allowed": "«Solange wir nicht alle 4 Objekte gefunden haben, besitzen wir keine Landeerlaubnis.»",
+      "visited": "«Auf diesem Planeten waren wir bereits. Jeder weitere Aufenthalt würde zu einem Konflikt führen. Wir müssen aufhören unsere Zeit zu verschwenden und endlich weiter. Jede Minute, die wir hier verbringen ist eine Schandminute.»"
     }
   },
   "event_system": {
     "event_probability": 1,
-    "base_positive_probability": 0.7,
+    "base_positive_probability": 0.5,
     "change_probability_by": 0.1,
     "max_error_count": 20,
     "backgrounds": [
