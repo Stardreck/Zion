@@ -29,6 +29,12 @@
       "assets/images/welcome_screen.png"
     ]
   },
+  "portraits": {
+    "milo": "assets/images/people/portrait_milo.png",
+    "lyra": "assets/images/people/portrait_lyra.png",
+    "agatha": "assets/images/people/portrait_agatha.png",
+    "victor": "assets/images/people/portrait_victor.png"
+  },
   "player_settings": {
     "player_start_row": 9,
     "player_start_col": 7

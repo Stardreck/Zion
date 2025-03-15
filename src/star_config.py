@@ -31,6 +31,11 @@ class StarConfig:
         self.game_settings_default_backgrounds: [] = self._data.get("game_settings", {}).get("default_backgrounds", [])
         self.game_settings_wormhole_cost: int = self._data.get("game_settings", {}).get("wormhole_cost", 10)
 
+        ##### portraits #####
+        self.portrait_milo = self._data.get("portraits", {}).get("milo", 0)
+        self.portrait_lyra = self._data.get("portraits", {}).get("lyra", 0)
+        self.portrait_agatha = self._data.get("portraits", {}).get("agatha", 0)
+        self.portrait_victor = self._data.get("portraits", {}).get("victor", 0)
 
         ##### player settings #####
         self.player_settings_start_row: int = self._data.get("player_settings", {}).get("player_start_row", 0)

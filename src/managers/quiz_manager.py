@@ -70,15 +70,15 @@ class QuizManager(Manager):
         view.run()
 
     def run_error_text(self, quiz: Quiz):
-        portrait_path = "assets/images/people/portrait_milo.png"
+        portrait_path = self.game.engine.config.portrait_milo
         if quiz.person.lower() == "milo":
-            portrait_path = "assets/images/people/portrait_milo.png"
+            portrait_path = self.game.engine.config.portrait_milo
         elif quiz.person.lower() == "lyra":
-            portrait_path = "assets/images/people/portrait_lyra.png"
+            portrait_path = self.game.engine.config.portrait_lyra
         elif quiz.person.lower() == "agatha":
-            portrait_path = "assets/images/people/portrait_agatha.png"
+            portrait_path = self.game.engine.config.portrait_agatha
         elif quiz.person.lower() == "victor":
-            portrait_path = "assets/images/people/portrait_victor.png"
+            portrait_path = self.game.engine.config.portrait_victor
 
         view = InfoView(self.game, "Hoppla!", portrait_path,
                         self.game.engine.config.planet_menu_fuel_station_background_image_path, quiz.solution,

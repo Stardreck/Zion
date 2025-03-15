@@ -270,7 +270,7 @@ class StoryGame(Game):
 
                     if depend_planet is not None and not depend_planet.visited:
                         print("depend planet not visited", depend_planet.name)
-                        error_view = InfoView(self, "Falsch abgebogen", "assets/images/people/portrait_victor.png",
+                        error_view = InfoView(self, "Falsch abgebogen", self.engine.config.portrait_victor,
                                               depend_planet.background_image,
                                               "Moment mal – wir sind hier zu früh. Wir müssen zuerst woanders hin, bevor wir hier weitermachen können.")
                         error_view.run()
@@ -294,7 +294,7 @@ class StoryGame(Game):
             description = f"Milos: «Schade das war wohl nichts. Naja, immerhin haben sie uns aus Mitleid ein wenig geschenkt. Vielleicht klappt es ja beim nächsten Mal.» <b>+{self.engine.config.planet_menu_fuel_quiz_wrong_amount} Treibstoff"
             self.fuel += self.engine.config.planet_menu_fuel_quiz_wrong_amount
 
-        view = InfoView(self, "Resultat", "assets/images/people/portrait_milo.png",
+        view = InfoView(self, "Resultat", self.engine.config.portrait_milo,
                         self.engine.config.planet_menu_fuel_station_background_image_path, description,
                         "Akzeptieren")
         view.run()

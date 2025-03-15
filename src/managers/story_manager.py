@@ -13,6 +13,7 @@ from src.views.planet.planet_menu import PlanetMenu
 from src.views.planet.planet_station_menu import PlanetStationMenu
 from src.views.planet.spacestation_menu import SpacestationMenu
 from src.views.states.game_over_view import GameOverView
+from src.views.story.story_block_view import StoryBlockView
 from src.views.story.story_view import StoryView
 
 if TYPE_CHECKING:
@@ -70,9 +71,11 @@ class StoryManager(Manager):
 
         for block in story.blocks:
             if block.block_type == "story":
-                for story_line in block.story_lines:
-                    story_view = StoryView(self.game, planet, story_line)
-                    story_view.run()
+                story_block_view = StoryBlockView(self.game, planet, block)
+                story_block_view.run()
+            # for story_line in block.story_lines:
+            #     story_view = StoryView(self.game, planet, story_line)
+            #    story_view.run()
 
             has_quizzes: bool = block.block_type in ["quiz", "task", "boolean"]
             ##### run quiz loop #####
