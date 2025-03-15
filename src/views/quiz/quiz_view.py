@@ -1,19 +1,15 @@
 from __future__ import annotations
-import pygame
 import pygame_gui
 from pygame import Rect
 from src.views.quiz.base_quiz_view import BaseQuizView
-from src.models.quiz import Quiz
-from typing import TYPE_CHECKING
 
-if TYPE_CHECKING:
-    from src.games.story_game import StoryGame
 
 class QuizView(BaseQuizView):
     """
     QuizView displays a multiple-choice quiz.
     It inherits common UI elements from BaseQuizView and adds a multiple-choice answer list.
     """
+
     def build_specific_ui(self) -> None:
         """
         Build UI elements specific to a multiple-choice quiz.
