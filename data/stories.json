@@ -10,7 +10,7 @@
             "image": "assets/images/people/portrait_lyra.png",
             "image_description": "Lyra"
           },
-                    {
+          {
             "text": "Seite 2",
             "image_description": "Milo"
           },
@@ -687,19 +687,212 @@
         "type": "story",
         "story_lines": [
           {
-            "text": "test",
+            "text": "<b>Von Regen in die Taufe</b><br/><br/>Der Fahrstuhl<br/>Die Minerva durchbrach die dichte Wolkendecke von Thalassa, es regnete wie immer auf diesem Planeten. Sie näherte sich einem der vielen Landeplätze, welche wie stählerne Inseln aus dem Wasser ragten.",
+            "image_description": ""
+          },
+          {
+            "text": "«Und wie kommen wir jetzt da hinunter?» fragte Milos skeptisch.",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Victor, der sich zusammen mit Lyra immer noch auf das Landemanöver konzentrierte, entgegnete: «Wir nehmen den Fahrstuhl, wart ab.»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Sie landeten auf einem dieser seltsam aussehenden Plätze, und nur eine kurze Zeit später begann die Plattform, in einem Schacht zu versinken. Milos staunte nicht schlecht.\n\nDunkelheit umgab sie, nur ab und zu sahen sie einzelne Leuchten an den Wänden des Schachtes. Die Plattform setzte am Boden einer riesigen Halle auf, weitere kleine Schiffe standen auf anderen Plattformen, alle längst verlassen.",
+            "image_description": ""
+          },
+          {
+            "text": "«Wirklich beeindruckend», staunte Milos, als sie ausstiegen.",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Jedes Geräusch, das sie produzierten, hallte mehrere Sekunden durch die riesige Halle. Victor wirkte angespannt. Die Tatsache, dass sie 500 Meter unter der Oberfläche in einer verlassenen Station waren, gefiel ihm gar nicht. Solche Wassermassen seien einfach nicht kontrollierbar, gab er von sich. Im selben Moment ergoss sich von oben herab ein Schwall Wasser über Victor.",
+            "image_description": ""
+          },
+          {
+            "text": "Es herrschte Stille, nur weit entfernt hörte man das Rauschen der Wasseroberfläche und das leise Knurren des Schotts, welches den Schacht wieder verschloss.\n\nDer Hydrosplitter, das letzte fehlende Bauteil, sollte sich in einem der vielen Lagerräume befinden. Doch das System der Station war grösstenteils offline, also machten sie sich auf die Suche. Victor und Lyra nahmen die östlichen Lager, während Agatha und Milos sich nach Westen begaben.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Die Vergangenheit</b><br/>Die Gänge waren feucht und kalt. Während Agatha und Milos eine Tür nach der anderen öffneten, vertrieben sie sich die Zeit mit Gesprächen.\n\nAgatha wollte wissen, wieso Milos, welcher eigentlich eine Abneigung gegen das All hatte, sich für eine solche Mission meldete.",
+            "image_description": ""
+          },
+          {
+            "text": "«Habe ich auch nicht», sagte er mit einem schiefen Grinsen. «Vor ein paar Wochen rief mich Vic an, er meinte, er bräuchte mich, weil er sonst keinen Arzt auf dem Schiff hätte.» Milos blickte in die Ferne und legte die Stirn in Falten. «Es gibt doch genügend andere Ärzte, welche sogar speziell dafür ausgebildet wären.»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Agatha grinste. «Ja, aber die sind nicht du. Es geht doch nicht darum, einfach nur jemanden hier zu haben, er wollte genau dich...»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "«Ja, aber wieso?» Milos fuhr ihr ins Wort.",
+            "image_description": "Milo"
+          },
+          {
+            "text": "«Das weiss ich doch nicht, sag du's mir. Ihr seid beste Freunde seit jeher. Vielleicht als Unterstützung oder moralischen Kompass oder irgendwas.» Agatha legte so viel Nachdruck in ihre Aussage wie es nur ging, in der Hoffnung, dass diese bis zu ihm durchdringen würde.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Sie schwiegen eine Zeit lang, während sie drei weitere Räume inspizierten. Irgendwann begann Milos, von seinem Medizinstudium zu erzählen und wie ihm dies half, dieses Ding in ihm besser zu verstehen. Er vertraute ihr an, dass seit sie unterwegs waren, dieses Ding wieder viel aktiver war und es ihm wieder schlechter ging. Dies sei natürlich schlecht, aber es verriet ihm auch sehr viel darüber.",
+            "image_description": ""
+          },
+          {
+            "text": "Er wirkte trotz allem sehr zuversichtlich. Agatha hörte ihm nur zu und freute sich darüber, dass er es immer wieder schafft, die Dinge positiv zu sehen.",
+            "image_description": ""
+          },
+          {
+            "text": "«Und was läuft so mit Lyra?» fragte sie mit vorgetäuschter Unschuld.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Milos war dies offensichtlich sehr unangenehm. Er versuchte es aber herunterzuspielen, indem er so tat, als hätte er selbst noch nie darüber nachgedacht.",
+            "image_description": ""
+          },
+          {
+            "text": "Agatha aber blieb hartnäckig. «Komm schon, wir sind unter uns und ich sag ihr bestimmt nichts, ich schwöre auf Kosmo», sagte sie mit einer überspitzten Unschuldsmiene.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Milos verdrehte die Augen. Eigentlich wollte er nicht, aber die Möglichkeit, endlich mit jemandem darüber reden zu können, war zu verlockend. «Ich finde sie super, sie ist so, wie ich gerne wäre, aber es ist... kompliziert. Im einen Moment habe ich das Gefühl, ja, da könnte auch von ihr aus etwas sein, und im anderen denke ich mir, ich bilde mir das ein, fast wie...»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "«Wie Schrödingers-Katze, ich weiss.» Agatha grinste, während sie durch die Gänge blickte.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "«Aber wie auch bei der Katze, weisst du erst, wie es wirklich ist, wenn du nachsiehst.» Agatha lachte leise. «Und nur so nebenbei, du bildest es dir nicht ein.»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Bevor Milos darauf reagieren konnte, hielten sie vor einer weiteren Tür. Auf dem verblassten Display las Milos die Inventarliste des Raumes vor. Und da stand nur ein Objekt: der Hydrosplitter.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Das Wasser</b><br/>Milos wollte gerade das Panel betätigen, als Agatha ihn zurückriss. «Warte. Sieh mal da!» Feine Wassertropfen drückten kontinuierlich durch den Türspalt und bildeten eine Pfütze am Boden.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Der Verbindungskorridor hinter der Tür war möglicherweise komplett mit Wasser geflutet. Wenn sie ihn öffneten, würde die ganze Station volllaufen.",
+            "image_description": ""
+          },
+          {
+            "text": "Milos überlegte lange, dann kam er auf eine Idee. «Was, wenn ich die Notfallschotts in unserem Korridor schliessen würde und danach die Tür öffne?»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "«Dann müsstest du warten, bis alles geflutet ist, aber dann könntest du dich im Wasser bewegen», fuhr sie fort.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "«Genau. Und dann verschliesse ich das Loch irgendwie und lasse das ganze Wasser in den Lagerraum ab. Der ist riesig, dort hat es Platz.»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Agatha blickte ihn skeptisch an. «Aber dein Anzug ist für das All gemacht, nicht für Tiefendruck.»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Milos haderte. «Ich muss das mit dem Innendruck in meinem Anzug ausgleichen. Das muss gehen.»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Normalerweise bewunderte Agatha seinen Enthusiasmus, aber nun machte sie sich ernsthafte Sorgen.\n\nAgatha schloss die Schotts. Milos liess von einer Luftflasche zusätzlichen Druck in seinen Anzug. Dann öffnete er die Tür.",
+            "image_description": ""
+          },
+          {
+            "text": "Eine riesige Wassermenge riss ihn sofort mit und drückte ihn zu Boden.\nEr blieb am Boden liegen und sah, wie die turbulente Strömung das Wasser im Raum immer höher steigen liess. Er hoffte, dass sein Anzug halten würde. Und dann, plötzlich, war es still. Das Wasser bewegte sich nicht mehr. Er konnte nun endlich aufstehen und sich in den Verbindungsgang bewegen.",
+            "image_description": ""
+          },
+          {
+            "text": "Er sah, dass das Loch gross war. Wie sollte er es schliessen? Er überlegte und schaute sich um. Er schnappte sich etwas, das er als Stemmeisen benutzen konnte, und drückte eine Abdeckplatte von der Wand weg. Trotz des Wassers hatte er Mühe, sie zu halten und hochzuheben.",
+            "image_description": ""
+          },
+          {
+            "text": "Nun musste er nur noch die Tür zum Lagerraum öffnen. Während er die Platte hielt, versuchte er mit seinem Stiefel das Panel der Tür zu aktivieren. Nach dem fünften Versuch schaffte er es.",
+            "image_description": ""
+          },
+          {
+            "text": "Die Tür zum Lagerraum öffnete sich langsam. Er wollte sich so lange wie möglich festhalten, wurde aber mitgerissen. Er schlug hart gegen etwas, das mitten im Raum stand. Sein Kopf dröhnte. Er sah, wie sich das Wasser im Raum ausbreitete und der Wasserpegel zu sinken begann. Doch würde die Platte nun halten?",
             "image_description": ""
           }
         ]
       },
       {
         "type": "task",
-        "question": "<b>question</b><br/>information.",
-        "correct_value": 304,
+        "question": "<b>Mit welcher Kraft wird die Stahlplatte auf das Loch gepresst, wenn in der Station ein Luftdruck von 0.9 bar herrscht?</b><br/>Angabe in kN<br/><br/><b>Informationen</b><br/>Grösse der Platte: 50cm x 50cm\nDichte des Wassers: 1030 kg / m³\nTiefe: 500m\nFallbeschleunigung: 11.5 m/s²\nAtmosphärischer Druck: 1.15 hPa.",
+        "correct_value": 1487,
         "story_consequence": {
-          "text": "text",
-          "image_description": "Person"
+          "text": "Während Milos auf dem Boden im Lagerraum lag und sein Schädel dröhnte überlegte er mehrmals, ob das überhaupt so funktionieren kann wie er es sich ausgedacht hatte. Doch als er alles noch einmal überschlug kam er auf eine absurde Zahl die so nicht stimmen konnte.",
+          "image_description": "Milo"
         }
+      },
+      {
+        "type": "story",
+        "story_lines": [
+          {
+            "text": "Währenddessen wanderte Agatha ungeduldig vor dem Schott auf und ab. «Milos, ich schwöre dir, wenn du tot bist, bringe ich dich um!» Sie legte ihren Kopf gegen das Metall, das sie trennte. Sie erschrak, als es von der anderen Seite dagegen hämmerte.\n\nSie rannte zur Konsole und öffnete das Schott – dann sah sie Milos.\nEin Schwall Wasser strömte ihr entgegen und warf sie beinahe um.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "<b>Die Bergung</b><br/>Sie versuchten, Victor und Lyra anzufunken, doch das Signal brach immer wieder ab.\n\nPlötzlich hallten Stimmen durch die Gänge.",
+            "image_description": ""
+          },
+          {
+            "text": "«Das sind sie!», rief Agatha, und kurz darauf kamen Victor und Lyra um die Ecke.\nSie erklärten den anderen kurz, was passiert war.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "«Das habt ihr echt durchgezogen?», fragte Victor beeindruckt.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Milos grinste erschöpft. «Ja, aber wir sollten jetzt wirklich gehen, ich glaube, es wird bald nass.»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Sie schoben den Hydrosplitter auf einen Karren und eilten so schnell es ging zur Minerva. Während Lyra auf der Brücke das Schiff vorbereitete, verluden die anderen das Bauteil.",
+            "image_description": ""
+          },
+          {
+            "text": "Sie hielten inne, als ein lautes dumpfes Grollen, gefolgt von einem weit entfernten Zischen, durch den Hangar hallte.\nDas verhies nichts Gutes.\n\nDie Beleuchtung flackerte und ging aus.",
+            "image_description": ""
+          },
+          {
+            "text": "Milos’ Gesicht wurde blass. «Es hält nicht mehr. Wir werden geflutet. Wir müssen weg – JETZT!»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Sie schlossen die Rampe und rannten zur Brücke.\nWasser strömte aus den Gängen und begann die Halle zu füllen.\n\nVictor versuchte, die Plattform zu starten. Doch sie reagierte nicht mehr.",
+            "image_description": ""
+          },
+          {
+            "text": "«Wir müssen hier raus!», rief Lyra und aktivierte die Treibwerkssteuerung.",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Die Triebwerke zündeten und liessen das Wasser unter ihnen schlagartig verdampfen. Die Minerva stiess nach oben, während unter ihr der Hangar und die ganze Station mit Wasser volllief und in einem gewaltigen Strudel versank.",
+            "image_description": ""
+          },
+          {
+            "text": "Agatha feuerte eine Salve mit den Geschützen nach vorne, um das Schott, das den Schacht immer noch verschlossen hielt, zu schwächen.\nEine Sekunde später brachen sie hindurch.",
+            "image_description": ""
+          },
+          {
+            "text": "Unter ihnen sahen sie, wie sich der Schacht mit Wasser füllte – die Station war nun für immer verloren.",
+            "image_description": ""
+          },
+          {
+            "text": "«Kriegen wir auch sowas wie Gefahrenzulagen, Vic?», fragte Lyra sichtlich erleichtert.",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "«Mich würde es mehr interessieren, wieso dieser ganze verdammte Aufwand für dieses Ding?», fragte Agatha.",
+            "image_description": "Agatha"
+          }
+        ]
       }
     ]
   },

@@ -270,9 +270,11 @@ class StoryGame(Game):
 
                     if depend_planet is not None and not depend_planet.visited:
                         print("depend planet not visited", depend_planet.name)
-                        error_view = ErrorView()
-
-
+                        error_view = InfoView(self, "Falsch abgebogen", "assets/images/people/portrait_victor.png",
+                                              depend_planet.background_image,
+                                              "Moment mal – wir sind hier zu früh. Wir müssen zuerst woanders hin, bevor wir hier weitermachen können.")
+                        error_view.run()
+                        return
 
                 # show the planet stories
                 self.story_manager.show_planet_story(planet, self.data.story_segments[planet.name])
