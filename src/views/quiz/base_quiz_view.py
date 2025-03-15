@@ -50,7 +50,7 @@ class BaseQuizView(View):
         """
         # Create a centered transparent background panel
         self.panel_bg = UIPanel(
-            relative_rect=Rect(0, 0, 550, 480),
+            relative_rect=Rect(0, 0, 650, 580),
             manager=self.pygame_gui_ui_manager,
             anchors={"center": "center"},
             object_id="default_panel_transparent"
@@ -58,7 +58,7 @@ class BaseQuizView(View):
 
         # Create the inner panel for quiz content
         self.panel = UIPanel(
-            relative_rect=Rect(0, 10, 530, 400),
+            relative_rect=Rect(0, 10, 630, 500),
             manager=self.pygame_gui_ui_manager,
             container=self.panel_bg,
             anchors={"centerx": "centerx", "top": "top"},
@@ -76,7 +76,7 @@ class BaseQuizView(View):
         )
         # Question label (displaying the quiz question)
         self.question = UITextBox(
-            relative_rect=Rect(16.5, 50, 500, 80),
+            relative_rect=Rect(16.5, 50, 600, 130),
             manager=self.pygame_gui_ui_manager,
             html_text=self.quiz.question,
             container=self.panel,
@@ -86,7 +86,7 @@ class BaseQuizView(View):
 
         # Create input label for answer entry
         self.input_label = UILabel(
-            relative_rect=Rect(16.5, -60, 150, 50),
+            relative_rect=Rect(16.5, -65, 150, 50),
             manager=self.pygame_gui_ui_manager,
             text="Antwort eingeben:",
             container=self.panel,
@@ -95,7 +95,7 @@ class BaseQuizView(View):
         )
         # helper text
         self.input_info_label = UILabel(
-            relative_rect=Rect(16.5, -40, 150, 50),
+            relative_rect=Rect(16.5, -45, 150, 50),
             manager=self.pygame_gui_ui_manager,
             text="",
             container=self.panel,
@@ -105,7 +105,7 @@ class BaseQuizView(View):
 
         # Create an input field for the user to enter their answer
         self.input_field = UITextEntryLine(
-            relative_rect=Rect(16.5 + 150, -60, 350, 50),
+            relative_rect=Rect(16.5 + 150, -60, 450, 50),
             manager=self.pygame_gui_ui_manager,
             container=self.panel,
             anchors={"left": "left", "bottom": "bottom"},
@@ -114,7 +114,7 @@ class BaseQuizView(View):
 
         # Create a confirm button to submit the answer
         self.confirm_button = UIButton(
-            relative_rect=Rect(0, -60, 500, 50),
+            relative_rect=Rect(0, -60, 600, 50),
             text="Bestätigen",
             manager=self.pygame_gui_ui_manager,
             container=self.panel_bg,

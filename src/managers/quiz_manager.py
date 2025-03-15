@@ -5,6 +5,7 @@ from typing import TYPE_CHECKING, Optional
 
 from src.managers.manager import Manager
 from src.models.quiz import Quiz
+from src.views.common.info_view import InfoView
 from src.views.quiz.boolean_view import BooleanView
 from src.views.quiz.error_view import ErrorView
 from src.views.quiz.quiz_view import QuizView
@@ -46,8 +47,11 @@ class QuizManager(Manager):
         ##### #####
 
         # display error view (Nachhilfeunterricht)
-        if not self.is_last_quiz_correct:
+        if not self.is_last_quiz_correct and quiz.quiz_type == "task":
             self.run_error(quiz)
+        # display general error message
+        elif not self.is_last_quiz_correct:
+            self.run_error_text(quiz)
 
     def run_quiz(self, quiz: Quiz):
         view = QuizView(self.game, quiz)
@@ -63,6 +67,22 @@ class QuizManager(Manager):
 
     def run_error(self, quiz: Quiz):
         view = ErrorView(self.game, quiz)
+        view.run()
+
+    def run_error_text(self, quiz: Quiz):
+        portrait_path = "assets/images/people/portrait_milo.png"
+        if quiz.person.lower() == "milo":
+            portrait_path = "assets/images/people/portrait_milo.png"
+        elif quiz.person.lower() == "lyra":
+            portrait_path = "assets/images/people/portrait_lyra.png"
+        elif quiz.person.lower() == "agatha":
+            portrait_path = "assets/images/people/portrait_agatha.png"
+        elif quiz.person.lower() == "victor":
+            portrait_path = "assets/images/people/portrait_victor.png"
+
+        view = InfoView(self.game, "Hoppla!", portrait_path,
+                        self.game.engine.config.planet_menu_fuel_station_background_image_path, quiz.solution,
+                        "Weiter")
         view.run()
 
     def process_submit(self, quiz: Quiz, user_input: str | bool):

@@ -9,6 +9,6 @@ if TYPE_CHECKING:
 
 class PlanetStationMenu(BasePlanetMenu):
     def __init__(self, game: StoryGame, planet: Planet):
-        title_text = "Handelsstation"
+        title_text = "Tankstelle"
         button_texts = ("Aufgabe lösen", "Kostenlos tanken")
         super().__init__(game, planet, title_text, button_texts)

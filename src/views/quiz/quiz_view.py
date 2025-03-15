@@ -27,7 +27,7 @@ class QuizView(BaseQuizView):
             answers_html = "No answers provided."
         # Create a UITextBox to display the answer options
         self.answer_list = pygame_gui.elements.UITextBox(
-            relative_rect=Rect(16.5, 130, 500, 200),
+            relative_rect=Rect(16.5, 180, 600, 250),
             manager=self.pygame_gui_ui_manager,
             html_text=answers_html,
             container=self.panel,

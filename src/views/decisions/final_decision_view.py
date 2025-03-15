@@ -14,7 +14,6 @@ from src.components.ui.ui_panel import UIPanel
 from src.components.ui.ui_text_box import UITextBox
 from src.models.final_decision import FinalDecision
 from src.views.view import View
-from src.models.planet import Planet
 
 if TYPE_CHECKING:
     from src.games.story_game import StoryGame

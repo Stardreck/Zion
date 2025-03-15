@@ -274,13 +274,13 @@ class StoryGame(Game):
 
         is_correct = self.quiz_manager.is_last_quiz_correct
         if is_correct:
-            description = f"Antwort richtig, <b>+{self.engine.config.planet_menu_fuel_quiz_correct_amount} Treibstoff"
+            description = f"Milos: «Ich hatte keine Zweifel daran, dass wir es schaffen, wir sind eben gut.» <b>+{self.engine.config.planet_menu_fuel_quiz_correct_amount} Treibstoff"
             self.fuel += self.engine.config.planet_menu_fuel_quiz_correct_amount
         else:
-            description = f"Antwort falsch, <b>+{self.engine.config.planet_menu_fuel_quiz_wrong_amount} Treibstoff"
+            description = f"Milos: «Schade das war wohl nichts. Naja, immerhin haben sie uns aus Mitleid ein wenig geschenkt. Vielleicht klappt es ja beim nächsten Mal.» <b>+{self.engine.config.planet_menu_fuel_quiz_wrong_amount} Treibstoff"
             self.fuel += self.engine.config.planet_menu_fuel_quiz_wrong_amount
 
-        view = InfoView(self, "Resultat", self.engine.config.planet_menu_fuel_station_image_path,
+        view = InfoView(self, "Resultat", "assets/images/people/portrait_milo.png",
                         self.engine.config.planet_menu_fuel_station_background_image_path, description,
                         "Akzeptieren")
         view.run()

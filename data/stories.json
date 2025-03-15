@@ -317,7 +317,12 @@
           "text": "Victor war sich bei der Eingabe der Werte nicht sicher, irgendetwas schien nicht plausibel zu sein. Er ging es noch einmal durch und tatsächlich, hätte er diesen Fehler nicht bemerkt wären die Folgen fatal gewesen.",
           "image_description": "Victor"
         }
-      },
+      }
+    ]
+  },
+  "medusa": {
+    "title": "medusa",
+    "blocks": [
       {
         "type": "story",
         "story_lines": [
@@ -434,6 +439,15 @@
             "image_description": "Agatha"
           }
         ]
+      },
+      {
+        "type": "task",
+        "question": "<b>question</b><br/>information.",
+        "correct_value": 304,
+        "story_consequence": {
+          "text": "text",
+          "image_description": "Person"
+        }
       }
     ]
   },
@@ -659,6 +673,29 @@
       },
       {
         "type": "final_decision"
+      }
+    ]
+  },
+  "thalassa": {
+    "title": "thalassa",
+    "blocks": [
+      {
+        "type": "story",
+        "story_lines": [
+          {
+            "text": "test",
+            "image_description": ""
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "question": "<b>question</b><br/>information.",
+        "correct_value": 304,
+        "story_consequence": {
+          "text": "text",
+          "image_description": "Person"
+        }
       }
     ]
   },

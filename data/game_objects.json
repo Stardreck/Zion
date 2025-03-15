@@ -11,21 +11,21 @@
     "name": "Ione-Pulse-Array",
     "alias": "",
     "description": "",
-    "image_path": "assets/images/objects/kompakt_fusions_generator.png",
+    "image_path": "assets/images/objects/ione_pulse_array.png",
     "location": "Medusa"
   },
   {
     "name": "Hochleistungslaser",
     "alias": "",
     "description": "",
-    "image_path": "assets/images/objects/kompakt_fusions_generator.png",
+    "image_path": "assets/images/objects/hochleistungslaser.png",
     "location": "Jotun"
   },
   {
     "name": "Hydro-Splitter",
     "alias": "",
     "description": "",
-    "image_path": "assets/images/objects/kompakt_fusions_generator.png",
+    "image_path": "assets/images/objects/hydro_splitter.png",
     "location": "Thalassa"
   }
 ]
