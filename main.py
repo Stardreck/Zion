@@ -1,11 +1,9 @@
-import sys
-
 import pygame
 
 from src.games.game_data import GameData
 from src.games.story_game import StoryGame
 from src.mini_games.cable_connection.cable_connection_mini_game import CableConnectionMiniGame
-from src.mini_games.test_mini_game_01 import TestMiniGame01
+from tests.test_mini_game_01 import TestMiniGame01
 from src.plugins.video_player import VideoPlayer
 from src.star_config import StarConfig
 from src.star_engine import StarEngine

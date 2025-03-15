@@ -19,8 +19,8 @@ class TestMiniGame01(MiniGame):
     def get_result(self) -> bool:
         pass
 
-    def __init__(self, game, duration: float = 30.0):
-        super().__init__(game)
+    def __init__(self, game, background_path: str, duration: float = 30.0):
+        super().__init__(game, background_path)
         # Duration of the mini-game in seconds
         self.duration = duration
         self.elapsed_time = 0.0

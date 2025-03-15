@@ -58,7 +58,7 @@
     "panel_background": "assets/interface/events/event_panel_background.png"
   },
   "mini_game_system": {
-    "mini_game_probability": 0,
+    "mini_game_probability": 0.9,
     "menu_backgrounds": [
       "assets/images/spaceship/casino/spaceship_casino_01.png",
       "assets/images/spaceship/casino/spaceship_casino_02.png",
