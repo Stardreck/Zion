@@ -23,6 +23,7 @@ from src.models.story_line import StoryLine
 from src.star_engine import StarEngine
 
 from src.views.common.info_view import InfoView
+from src.views.quiz.error_view import ErrorView
 from src.views.states.game_over_view import GameOverView
 from src.views.story.story_view import StoryView
 
@@ -262,6 +263,17 @@ class StoryGame(Game):
                 error_view = StoryView(self, planet, story_line)
                 error_view.run()
             else:
+                if planet.depend_on is not None:
+                    depend_planet = next(
+                        (p for p in self.data.planets if p.name.lower() == planet.depend_on.lower()), None
+                    )
+
+                    if depend_planet is not None and not depend_planet.visited:
+                        print("depend planet not visited", depend_planet.name)
+                        error_view = ErrorView()
+
+
+
                 # show the planet stories
                 self.story_manager.show_planet_story(planet, self.data.story_segments[planet.name])
                 planet.visited = True

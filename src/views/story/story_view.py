@@ -68,10 +68,10 @@ class StoryView(View):
         )
 
         # Load and display the planet image
+        portrait_path = ""
+        if len(self.story_line.image_path) > 0:
+            portrait_path = self.story_line.image_path
         if len(self.story_line.image_description) > 0:
-            portrait_path = ""
-            if len(self.story_line.image_path) > 0:
-                portrait_path = self.story_line.image_path
             if self.story_line.image_description.lower() == "milo":
                 portrait_path = "assets/images/people/portrait_milo.png"
             elif self.story_line.image_description.lower() == "lyra":
@@ -80,15 +80,16 @@ class StoryView(View):
                 portrait_path = "assets/images/people/portrait_agatha.png"
             elif self.story_line.image_description.lower() == "victor":
                 portrait_path = "assets/images/people/portrait_victor.png"
-            if len(portrait_path) > 0:
-                image_surface = pygame.image.load(portrait_path).convert_alpha()
-                self.story_image = pygame_gui.elements.UIImage(
-                    relative_rect=Rect(20, 30, 240, 255),
-                    image_surface=image_surface,
-                    manager=self.pygame_gui_ui_manager,
-                    container=self.panel,
-                    anchors={"left": "left"},
-                )
+
+        if len(portrait_path) > 0:
+            image_surface = pygame.image.load(portrait_path).convert_alpha()
+            self.story_image = pygame_gui.elements.UIImage(
+                relative_rect=Rect(20, 30, 240, 255),
+                image_surface=image_surface,
+                manager=self.pygame_gui_ui_manager,
+                container=self.panel,
+                anchors={"left": "left"},
+            )
         self.story_image_description = UILabel(
             relative_rect=Rect(75, 260, 100, 100),
             manager=self.pygame_gui_ui_manager,

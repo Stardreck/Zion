@@ -16,6 +16,7 @@ class PlanetFactory:
             is_start_planet=planet_data.get("isStartPlanet", False),
             is_end_planet=planet_data.get("isEndPlanet", False),
             is_spacestation=planet_data.get("IsSpacestation", False),
+            depend_on=planet_data.get("depend_on", None),
             background_image=planet_data.get("background_image"),
             planet_image=planet_data.get("planet_image"),
             cutscene_media=planet_data.get("cutscene", None),

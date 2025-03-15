@@ -10,8 +10,12 @@
             "image": "assets/images/people/portrait_lyra.png",
             "image_description": "Lyra"
           },
+                    {
+            "text": "Seite 2",
+            "image_description": "Milo"
+          },
           {
-            "text": "Achtung<br/>.Sicherheitsprotokoll aktiviert: Der rote Kippschalter darf unter keinen Umständen ohne ausdrückliche Genehmigung betätigt werden. Jede unautorisierte Betätigung könnte kritische Systeme destabilisieren und irreversible Schäden verursachen.",
+            "text": "<b>Achtung</b><br/>.Sicherheitsprotokoll aktiviert: Der rote Kippschalter darf unter keinen Umständen ohne ausdrückliche Genehmigung betätigt werden. Jede unautorisierte Betätigung könnte kritische Systeme destabilisieren und irreversible Schäden verursachen.",
             "image": "assets/images/spaceship/cockpit/red_switch.png",
             "image_description": ""
           }
