@@ -6,13 +6,16 @@
         "type": "story",
         "story_lines": [
           {
-            "text": "Willkommen auf Terra Nova! Hier begann eure Reise.",
-            "image": "assets/images/people/portrait_lyra.png",
-            "image_description": "Lyra"
+            "text": "Viktor «Unser Heimatplanet Terra Nova steht kurz vor seiner Zerstörung. Durch die Ausdehnung der Sonne wird er früher oder später verbrennen. Aus diesem Grund wurde eine Forschungsstation nahe einem potenziell bewohnbaren Planeten errichtet. Diese dient dazu, die Bedingungen auf dem Planeten so anzupassen, dass er für Menschen bewohnbar wird.»",
+            "image_description": "Viktor"
           },
           {
-            "text": "Seite 2",
-            "image_description": "Milo"
+            "text": "«Leider fehlen einige Teile, die für die Fertigstellung benötigt werden. Und an dieser Stelle kommen wir ins Spiel, die Crew der Minerva. Unser Auftrag ist es, die fehlenden 4 Objekte zu finden und diese zur Forschungsstation zu transportieren.»",
+            "image_description": "Viktor"
+          },
+          {
+            "text": "«Den einzigen Hinweis, den wir erhalten haben, ist, dass sich die Objekte auf Planeten befinden müssen. Lasst uns keine Zeit verlieren und gleich losfliegen. Alle auf ihre Plätze! Lyra starte den Antrieb, wir fliegen los!»",
+            "image_description": "Viktor"
           },
           {
             "text": "<b>Achtung</b><br/>.Sicherheitsprotokoll aktiviert: Der rote Kippschalter darf unter keinen Umständen ohne ausdrückliche Genehmigung betätigt werden. Jede unautorisierte Betätigung könnte kritische Systeme destabilisieren und irreversible Schäden verursachen.",
@@ -98,7 +101,7 @@
             "image_description": ""
           },
           {
-            "text": "«Und das Modul?», fragte Lyra.<br/>«Wir brauchten es. Ohne den Fusionsgenerator hätten wir kein Wasser mehr.»",
+            "text": "«Und das Modul?», fragte Lyra.<br/>«Wir brauchten es. Ohne den Fusionsgenerator hätten wir kein Wasser mehr.» erwiderte eine der Bewohnerin.",
             "image_description": "Lyra"
           },
           {
@@ -176,7 +179,7 @@
             "image_description": ""
           },
           {
-            "text": "<b>Das Resultat</b></br>Die nächsten Tage war die Crew pausenlos mit der Reparatur der Solarpanels beschäftigt.\nAls sich der Sonnensturm schliesslich legte, begannen sie mit der Installation.\n\nDie Mission war erfolgreich: Die Mine war wieder stabil mit Energie versorgt.\nDie Bergleute hielten ihr Wort – das Bauteil war nun entbehrlich, und die Crew der Minerva konnte es endlich mitnehmen.",
+            "text": "<b>Das Resultat</b><br/>Die nächsten Tage war die Crew pausenlos mit der Reparatur der Solarpanels beschäftigt.\nAls sich der Sonnensturm schliesslich legte, begannen sie mit der Installation.\n\nDie Mission war erfolgreich: Die Mine war wieder stabil mit Energie versorgt.\nDie Bergleute hielten ihr Wort – das Bauteil war nun entbehrlich, und die Crew der Minerva konnte es endlich mitnehmen.",
             "image_description": ""
           },
           {

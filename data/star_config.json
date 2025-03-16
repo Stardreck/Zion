@@ -4,7 +4,7 @@
     "width": 1600,
     "height": 720,
     "fps": 60,
-    "full_screen": false,
+    "full_screen": true,
     "system_check_backgrounds": [
       "assets/images/states/system_check/system_check_01.png",
       "assets/images/states/system_check/system_check_02.png",
@@ -36,8 +36,8 @@
     "victor": "assets/images/people/portrait_victor.png"
   },
   "player_settings": {
-    "player_start_row": 9,
-    "player_start_col": 7
+    "player_start_row": 10,
+    "player_start_col": 6
   },
   "planet_menu": {
     "fuel_station": {
@@ -64,7 +64,7 @@
     "panel_background": "assets/interface/events/event_panel_background.png"
   },
   "mini_game_system": {
-    "mini_game_probability": 0.2,
+    "mini_game_probability": 0.15,
     "menu_backgrounds": [
       "assets/images/spaceship/casino/spaceship_casino_01.png",
       "assets/images/spaceship/casino/spaceship_casino_02.png",

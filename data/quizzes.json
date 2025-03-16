@@ -1,286 +1,226 @@
 {
   "default": [
     {
-      "type": "quiz",
-      "question": "Agatha fragt Victor wieso sie eigentlich die ganze Zeit beschleunigen müssen, was würde passieren wenn sie den Antrieb auf ihrer Reise im All abschalten würden?",
-      "answers": [
-        "Sie würden immer langsamer werden und schliesslich stehen bleiben.",
-        "Sie würden mit konstanter Geschwindigkeit weiterfliegen, jedoch keine Anziehungskraft mehr auf dem Schiff haben.",
-        "Sie würden mit konstanter Geschwindigkeit weiterfliegen, der konstante Schub ist nur damit die Triebwerke in der Kälte des Alls nicht einfrieren.",
-        "Manchmal frage ich mich wirklich was du auf der Universität gelernt hast…"
-      ],
-      "correct_answer_position": 2,
+      "type": "boolean",
+      "question": "Die Beschleunigung eines Objektes berechnet sich aus der Geschwindigkeitsänderung pro Zeiteinheit?",
+      "correct_value": true,
       "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
-      "person": "Milo",
-      "category": "Dynamik",
-      "difficulty": "easy"
-    },
-    {
-      "type": "quiz",
-      "question": "Agatha versucht ihrem Kater Kosmo wieder einmal die Grundlagen der Raumfahrt zu erklären, man weiss ja nie, wann er sie einmal braucht. Also Kosmo, weisst du noch, was mit der Umlaufbahn eines Satelliten passiert wenn er an Geschwindigkeit zunimmt?",
-      "answers": [
-        "Er steigt auf eine höhere Umlaufbahn.",
-        "Er fällt nun auf die Oberfläche weil er sich schneller bewegt als die Rotation des Planeten.",
-        "Es passiert gar nichts, er umrundet den Planeten nur schneller.",
-        "Er schiesst komplett aus der Umlaufbahn und verschwindet in den Tiefen des Alls."
-      ],
-      "correct_answer_position": 1,
-      "solution": "<b>Leider falsch</b> <br/>«Naja, nicht so schlimm Schätzchen. Beim nächsten Mal klappt das schon.»",
-      "person": "Agatha",
-      "category": "Kinematik",
-      "difficulty": "medium"
-    },
-    {
-      "type": "quiz",
-      "question": "In welchem Zusammenhang stehen Frequenz und Umlaufzeit?",
-      "answers": [
-        "In keinem Zusammenhang, Frequenz wird in Hertz angegeben und die Umlaufzeit in Sekunden.",
-        "Sie sind umgekehrt proportional.",
-        "Sie sind der jeweilige Kehrwert zueinander.",
-        "Frequenz in Hertz * 60s entspricht der Umlaufzeit."
-      ],
-      "correct_answer_position": 3,
-      "solution": "<b>Leider falsch</b> <br/>«Naja, nicht so schlimm Schätzchen. Beim nächsten Mal klappt das schon.»",
-      "person": "Agatha",
+      	"person": "Milo",
       "category": "Kinematik",
       "difficulty": "easy"
     },
     {
-      "type": "quiz",
-      "question": "Inwiefern unterscheidet sich das steuern eines Raumschiffes im All vom Steuern eines Flugzeuges auf einem Planeten.",
-      "answers": [
-        "Durch die zusätzlich mögliche Bewegungsrichtungen ergeben sich viel mehr Möglichkeiten.",
-        "Ohne Gegenkraft bleiben einmal initiierte Bewegungen konstant, und können sich sogar überlagern.",
-        "..."
-      ],
-      "correct_answer_position": 2,
+      "type": "boolean",
+      "question": "Die Geschwindigkeit eines Objektes berechnet sich aus der zurückgelegten Distanz während einer bestimmten Zeiteinheit?",
+      "correct_value": true,
       "solution": "<b>Leider falsch</b> <br/>«Schade, aber die Mission muss weitergehen. Das üben wir noch.»",
-      "person": "Viktor",
+      	"person": "Viktor",
+      "category": "Kinematik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "boolean",
+      "question": "Die Steigung der Geraden im v/t Diagramm beschreibt die Beschleunigung.",
+      "correct_value": true,
+      "solution": "<b>Leider falsch</b> <br/>«Naja, nicht so schlimm Schätzchen. Beim nächsten Mal klappt das schon.»",
+      	"person": "Agatha",
+      "category": "Kinematik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "boolean",
+      "question": "Wenn man genug lange beschleunigt, übertrifft man irgendwann die Lichtgeschwindigkeit?",
+      "correct_value": false,
+      "solution": "<b>Leider falsch</b> <br/>«Es war Nichts anderes zu erwarten, wenn man diese Aufgabe euch überlässt.»",
+      	"person": "Lyra",
+      "category": "Kinematik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "boolean",
+      "question": "Kann eine Kreisbewegung auch beschleunigt sein?",
+      "correct_value": true,
+      "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
+      	"person": "Milo",
+      "category": "Kinematik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "boolean",
+      "question": "Im v/t Diagramm, entspricht die Fläche der Durchschnittsgeschwindigkeit?",
+      "correct_value": false,
+      "solution": "<b>Leider falsch</b> <br/>«Schade, aber die Mission muss weitergehen. Das üben wir noch.»",
+      	"person": "Viktor",
       "category": "Kinematik",
       "difficulty": "medium"
     },
     {
-      "type": "quiz",
-      "question": "Wie verhält sich der Geschwindigkeitsvektor der Bahngeschwindigkeit eines Punktes, welcher einen anderen Punkt umkreist.",
-      "answers": [
-        "Der Geschwindigkeitsvektor ist immer rechtwinklig zum Radius.",
-        "Der Geschwindigkeitsvektor zeigt aufgrund der Zentrifugalkraft senkrecht vom Radius weg.",
-        "Der Geschwindigkeitsvektor ist immer zur Kreisbahn gerichtet.",
-        "Der Geschwindigkeitsvektor ergibt sich aus einer Überlagerung von b & c."
-      ],
-      "correct_answer_position": 1,
-      "solution": "<b>Leider falsch</b> <br/>«Es war Nichts anderes zu erwarten, wenn man diese Aufgabe euch überlässt.»",
-      "person": "Lyra",
+      "type": "boolean",
+      "question": "Ist die Gerade im v/t Diagramm horizontal so ist die Geschwindigkeit 0?",
+      "correct_value": false,
+      "solution": "<b>Leider falsch</b> <br/>«Naja, nicht so schlimm Schätzchen. Beim nächsten Mal klappt das schon.»",
+      	"person": "Agatha",
       "category": "Kinematik",
       "difficulty": "medium"
     },
     {
-      "type": "quiz",
-      "question": "Milos fragt sich was passieren würde, wenn ihre Triebwerke bei einer Landung auf einmal ausfallen würden. Zum Beispiel in 50 Kilometer Höhe, an die Bremswirkung der Atmosphäre denkt er nicht. Anziehungskraft wäre 0.7g. Mit welcher Geschwindigkeit würden sie am Boden aufprallen?",
-      "answers": [
-        "264.6m/s",
-        "8.4km/s",
-        "828m/s",
-        "26.2km/s"
-      ],
-      "correct_answer_position": 3,
+      "type": "boolean",
+      "question": "Die Kinematik beschreibt die Bewegung von Körpern ohne Berücksichtigung der Kräfte.",
+      "correct_value": true,
+      "solution": "<b>Leider falsch</b> <br/>«Es war Nichts anderes zu erwarten, wenn man diese Aufgabe euch überlässt.»",
+      	"person": "Lyra",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "boolean",
+      "question": "Ist die Momentangeschwindigkeit bei einer gleichmässigen Bewegung konstant?",
+      "correct_value": true,
+      "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
+      	"person": "Milo",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "boolean",
+      "question": "Ein Stein fällt im Vakuum schneller als ein Blatt Papier.",
+      "correct_value": false,
       "solution": "<b>Leider falsch</b> <br/>«Schade, aber die Mission muss weitergehen. Das üben wir noch.»",
-      "person": "Viktor",
+      "category": "Viktor",
+      "difficulty": "medium"
+    },
+    {
+      "type": "boolean",
+      "question": "Ist die Geschwindigkeit eine skalare Grösse?",
+      "correct_value": false,
+      "solution": "<b>Leider falsch</b> <br/>«Naja, nicht so schlimm Schätzchen. Beim nächsten Mal klappt das schon.»",
+      	"person": "Agatha",
       "category": "Kinematik",
       "difficulty": "hard"
     },
     {
-      "type": "quiz",
-      "question": "Milos war gerade dabei sich Frühstück zuzubereiten, dass der Kaffee scheusslich schmeck, daran hat er sich schon lange gewöhnt. Aber wieso braucht sein 3-Minuten Ei auf der Minerva fast doppelt so lange bis es gar ist? (In der Minerva herrscht ein Luftdruck von 0.5 Bar )",
-      "answers": [
-        "Aufgrund der geringen Schwerkraft schmeckt alles weniger intensiv, der Luftdruck hat keinen Einfluss.",
-        "Die Hintergrundstrahlung des Alls heizt die Minerva und das Wasser immer ein bisschen auf, wie in einer Mikrowelle, deshalb kocht das Wasser früher und das Ei muss kochen. ",
-        "Da die Luft immer wieder aufbereitet wird, ist sie extrem gesättigt mit Wasser, dies verlangsamt den Kochprozess.",
-        "Aufgrund des tieferen Luftdruckes kocht Wasser schon bei tieferen Temperaturen, das Ei braucht länger und Aromen kommen schlechter zur Geltung."
-      ],
-      "correct_answer_position": 4,
+      "type": "boolean",
+      "question": "Eine höhere Kreisbahngeschwindigkeit resultiert in einer Höheren Frequenz und tieferer Umlaufperiode?",
+      "correct_value": true,
       "solution": "<b>Leider falsch</b> <br/>«Es war Nichts anderes zu erwarten, wenn man diese Aufgabe euch überlässt.»",
-      "person": "Lyra",
-      "category": "Hydrostatik",
-      "difficulty": "medium"
-    },
-    {
-      "type": "quiz",
-      "question": "Als Victor, Agatha die Reisezeit zum nächsten Objekt mitteilt, beginnt sie sich zu beklagen. Wieso könnten sie nicht schneller fliegen, in den Sitzen halten sie Werte von 5g problemlos aus. Das Problem ist auch nicht die Beschleunigung sondern die Hitze die der Reaktor produziert. Aber wieso?",
-      "answers": [
-        "Bei höheren Beschleunigungen, fliesst das Wasser nicht mehr kontinuierlich in Kühlkreislauf.",
-        "Weil das Vakuum die Wärme speichert und sich so eine Wärmeblase um das Schiff bildet.",
-        "Weil im Vakuum fast keine Teilchen vorhanden sind, kann kein guter Wärmetransport erfolgen, lediglich über die Wärmestrahlung.",
-        "Bei höheren Beschleunigung, findet die Fusion exponentiell stärker statt was zu einer exponentiell höheren Wärmeproduktion führt."
-      ],
-      "correct_answer_position": 3,
-      "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
-      "person": "Milo",
-      "category": "Wärmelehre",
+      	"person": "Lyra",
+      "category": "Kinematik",
       "difficulty": "hard"
     },
     {
-      "type": "quiz",
-      "question": "Schon bei seinem ersten Start von Terra Nova fragte sich Milo, wie weit sie fliegen müssen, um vom Gravitationsfeld des Planeten zu entkommen. Victors Antwort darauf hatte fast etwas poetisches.",
-      "answers": [
-        "Sie bleibt konstant, sie wird lediglich durch andere stärkere Kräfte überlagert",
-        "Milo sollte sich doch auf die wesentlichen Dinge im Leben konzentrieren.",
-        "Sie nimmt linear mit der Entfernung ab bis sie irgendwann null ist. Ab diesem Punk lassen wir unsere Heimat endgültig hinter uns. ",
-        "Sie nimmt quadratisch mit der Entfernung ab, egal wie weit weg du bist, sie wirkt immer, auch wenn nur unmerklich wenig."
-      ],
-      "correct_answer_position": 4,
+      "type": "boolean",
+      "question": "Das Superpositionsprinzip besagt, dass ein Körper mit einer Bewegung gleichzeitig an mehreren Positionen sein kann?",
+      "correct_value": false,
       "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
-      "person": "Milo",
-      "category": "Dynamik",
+      	"person": "Milo",
+      "category": "Kinematik",
       "difficulty": "hard"
     },
     {
-      "type": "quiz",
-      "question": "Was kann eine Kraft nicht?",
-      "answers": [
-        "Beschleunigen, verzögern",
-        "Richtungsänderungen",
-        "Verformungen",
-        "Masseänderung"
-      ],
-      "correct_answer_position": 4,
+      "type": "boolean",
+      "question": "Bei einem Waagerechten- und Schiefen-Wurf finden zwei Bewegungen gleichzeitig überlagert statt.",
+      "correct_value": true,
       "solution": "<b>Leider falsch</b> <br/>«Schade, aber die Mission muss weitergehen. Das üben wir noch.»",
-      "person": "Viktor",
-      "category": "Statik",
-      "difficulty": "easy"
+      	"person": "Viktor",
+      "category": "Kinematik",
+      "difficulty": "hard"
     },
     {
-      "type": "quiz",
-      "question": "Wenn bei einem System eine resultierende Kraft entsteht, was macht das System?",
-      "answers": [
-        "Es entsteht eine Gegenkraft nach dem Wechselwirkungsprinzip.",
-        "Das System bewegt  sich mit konstanter Geschwindigkeit.",
-        "Das System beschleunigt.",
-        "Das System bleibt in Ruhe aber verfügt über mehr potentielle Energie."
-      ],
-      "correct_answer_position": 3,
+      "type": "boolean",
+      "question": "Die Tangentialgeschwindigkeit und die Winkelgeschwindigkeit sind die gleiche Art der Bewegung?",
+      "correct_value": false,
       "solution": "<b>Leider falsch</b> <br/>«Naja, nicht so schlimm Schätzchen. Beim nächsten Mal klappt das schon.»",
-      "person": "Agatha",
-      "category": "Statik",
-      "difficulty": "easy"
+      	"person": "Agatha",
+      "category": "Kinematik",
+      "difficulty": "hard"
     },
     {
-      "type": "quiz",
-      "question": "Wo liegt der Unterschied zwischen Masse und Gewichtskraft?",
-      "answers": [
-        "Masse ist abhängig von der wirkenden Fallbeschleunigung und die Gewichtskraft ist unveränderlich.",
-        "Beide Kräfte sind unveränderlich da sie durch Konstanten definiert werden.",
-        "Beide Grössen variieren unabhängig voneinander, Abhängig von Ort und Ausrichtung.",
-        "Masse ist unveränderlich aber die Gewichtskraft ist abhängig von der wirkenden Fallbeschleunigung."
-      ],
-      "correct_answer_position": 4,
+      "type": "boolean",
+      "question": "In der Statik betrachtet man nur Systeme im Gleichgewicht.",
+      "correct_value": true,
       "solution": "<b>Leider falsch</b> <br/>«Es war Nichts anderes zu erwarten, wenn man diese Aufgabe euch überlässt.»",
-      "person": "Lyra",
+      	"person": "Lyra",
       "category": "Statik",
       "difficulty": "easy"
     },
     {
-      "type": "quiz",
-      "question": "Milos muss im Rahmen einer Routineuntersuchung die Gewichte aller Crewmitglieder ermitteln. Wieso könnte das an Bord der Minerva noch schwierig werden.",
-      "answers": [
-        "In der Schwerelosigkeit nimmt man durch die fehlende Bewegung zwangsweise zu, was vielen unangenehm ist.",
-        "Je nach Beschleunigung der Minerva ist die Gravitation an Bord des Schiffes anders. Und so variieren auch die Gewichtswerte.",
-        "Aufgrund von Budgetkürzungen besitzen sie keine Waage.",
-        "Er sollte keine Probleme damit haben, da die Masse einer Person unabhängig von der herrschenden Gravitation gleich ist."
-      ],
-      "correct_answer_position": 2,
-      "solution": "<b>Leider falsch</b> <br/>Kosmo!",
-      "person": "Lyra",
+      "type": "boolean",
+      "question": "F=m*a ist die Fundamentale Formel der Statik.",
+      "correct_value": false,
+      "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
+      	"person": "Milo",
       "category": "Statik",
-      "difficulty": "medium"
+      "difficulty": "easy"
     },
     {
-      "type": "quiz",
-      "question": "Was trifft auf einen Körper im statischen Gleichgewicht nicht zu?",
-      "answers": [
-        "Wenn er in Ruhelage ist oder eine konstante Geschwindigkeit hat.",
-        "Wenn die Summe aller Drehmomente 0 beträgt.",
-        "Wenn die Beschleunigung konstant ist.",
-        "Wenn die Summer aller Vektorkräfte 0 beträgt."
-      ],
-      "correct_answer_position": 3,
-      "solution": "<b>Leider falsch</b> <br/>«Naja, nicht so schlimm Schätzchen. Beim nächsten Mal klappt das schon.»",
-      "person": "Agatha",
-      "category": "Statik",
-      "difficulty": "medium"
-    },
-    {
-      "type": "quiz",
-      "question": "In welche Komponenten zerlegt sich die Gewichtskraft auf der schiefen Ebene.",
-      "answers": [
-        "Auflagekraft und Hangabtriebskraft",
-        "Reibungskraft und Normalkraft",
-        "Reibungskraft und Auflagekraft",
-        "Sie zerlegt sich gar nicht, da die Masse konstant bleibt."
-      ],
-      "correct_answer_position": 1,
+      "type": "boolean",
+      "question": "Kraft ist eine vektorielle Grösse, welche durch ihre Richtung und Grösse definiert wird.",
+      "correct_value": true,
       "solution": "<b>Leider falsch</b> <br/>«Schade, aber die Mission muss weitergehen. Das üben wir noch.»",
-      "person": "Viktor",
+      	"person": "Viktor",
+      "category": "Statik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "boolean",
+      "question": "Eine Kraft kann immer in mehrere Komponenten zerlegt werden.",
+      "correct_value": true,
+      "solution": "<b>Leider falsch</b> <br/>«Naja, nicht so schlimm Schätzchen. Beim nächsten Mal klappt das schon.»",
+      	"person": "Agatha",
+      "category": "Statik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "boolean",
+      "question": "Die Einheit der Kraft ist Newtonmeter (Nm).",
+      "correct_value": false,
+      "solution": "<b>Leider falsch</b> <br/>«Es war Nichts anderes zu erwarten, wenn man diese Aufgabe euch überlässt.»",
+      	"person": "Lyra",
+      "category": "Statik",
+      "difficulty": "easy"
+    },
+    {
+      "type": "boolean",
+      "question": "Wenn sich die Wirkungslinien einer Kraft nicht in einem Punkt schneiden entsteht ein Drehmoment.",
+      "correct_value": true,
+      "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
+      	"person": "Milo",
       "category": "Statik",
       "difficulty": "medium"
     },
     {
-      "type": "quiz",
-      "question": "Wie lautet das 1. Newtonsche Gesetz (Trägheitsgesetz)",
-      "answers": [
-        "Jeder Körper behält seine Geschwindigkeit nach Betrag und Richtung so lange bei, bis er durch äußere Kräfte gezwungen wird, seinen Bewegungszustand zu ändern.",
-        "Wirkt auf einen Körper eine Kraft, so wird er in Richtung der Kraft beschleunigt. Die Beschleunigung ist dabei direkt proportional zur Kraft und indirekt proportional zur Masse des Körpers.",
-        "Besteht zwischen zwei Körpern 1 und 2 eine Kraftwirkung, so ist die Kraft, die Körper 1 auf Körper 2 auswirkt, gleich der Kraft, die Körper 2 auf Körper 1 auswirkt.",
-        "Wirken auf eine Punktmasse oder einen starren Körper mehrere Kräfte, so addieren sich diese vektoriell zu einer resultierenden Kraft auf."
-      ],
-      "correct_answer_position": 1,
-      "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
-      "person": "Milo",
+      "type": "boolean",
+      "question": "Wenn die Summer der links- und rechtsdrehenden Drehmomente nicht gleich 0 ist, dann entsteht eine konstante Geschwindigkeit.",
+      "correct_value": false,
+      "solution": "<b>Leider falsch</b> <br/>«Schade, aber die Mission muss weitergehen. Das üben wir noch.»",
+      	"person": "Viktor",
       "category": "Statik",
-      "difficulty": "hard"
+      "difficulty": "medium"
     },
     {
-      "type": "quiz",
-      "question": "Wie lautet das 2. Newtonsche Gesetz (Aktionsprinzip)",
-      "answers": [
-        "Jeder Körper behält seine Geschwindigkeit nach Betrag und Richtung so lange bei, bis er durch äußere Kräfte gezwungen wird, seinen Bewegungszustand zu ändern.",
-        "Wirkt auf einen Körper eine Kraft, so wird er in Richtung der Kraft beschleunigt. Die Beschleunigung ist dabei direkt proportional zur Kraft und indirekt proportional zur Masse des Körpers.",
-        "Besteht zwischen zwei Körpern 1 und 2 eine Kraftwirkung, so ist die Kraft, die Körper 1 auf Körper 2 auswirkt, gleich der Kraft, die Körper 2 auf Körper 1 auswirkt.",
-        "Wirken auf eine Punktmasse oder einen starren Körper mehrere Kräfte, so addieren sich diese vektoriell zu einer resultierenden Kraft auf."
-      ],
-      "correct_answer_position": 2,
-      "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
-      "person": "Milo",
-      "category": "Statik",
-      "difficulty": "hard"
-    },
-    {
-      "type": "quiz",
-      "question": "Wie lautet das 3. Newtonsche Gesetz (Reaktionsprinzip)",
-      "answers": [
-        "Jeder Körper behält seine Geschwindigkeit nach Betrag und Richtung so lange bei, bis er durch äußere Kräfte gezwungen wird, seinen Bewegungszustand zu ändern.",
-        "Wirkt auf einen Körper eine Kraft, so wird er in Richtung der Kraft beschleunigt. Die Beschleunigung ist dabei direkt proportional zur Kraft und indirekt proportional zur Masse des Körpers.",
-        "Besteht zwischen zwei Körpern 1 und 2 eine Kraftwirkung, so ist die Kraft, die Körper 1 auf Körper 2 auswirkt, gleich der Kraft, die Körper 2 auf Körper 1 auswirkt.",
-        "Wirken auf eine Punktmasse oder einen starren Körper mehrere Kräfte, so addieren sich diese vektoriell zu einer resultierenden Kraft auf."
-      ],
-      "correct_answer_position": 3,
-      "solution": "<b>Leider falsch</b> <br/>«Es war Nichts anderes zu erwarten, wenn man diese Aufgabe euch überlässt.»",
-      "person": "Lyra",
-      "category": "Statik",
-      "difficulty": "hard"
-    },
-    {
-      "type": "quiz",
-      "question": "Wie lautet das Superpositionsprinzip",
-      "answers": [
-        "Jeder Körper behält seine Geschwindigkeit nach Betrag und Richtung so lange bei, bis er durch äußere Kräfte gezwungen wird, seinen Bewegungszustand zu ändern.",
-        "Wirkt auf einen Körper eine Kraft, so wird er in Richtung der Kraft beschleunigt. Die Beschleunigung ist dabei direkt proportional zur Kraft und indirekt proportional zur Masse des Körpers.",
-        "Besteht zwischen zwei Körpern, 1 und 2, eine Kraftwirkung, so ist die Kraft, die Körper 1 auf Körper 2 auswirkt, gleich der Kraft, die Körper 2 auf Körper 1 auswirkt.",
-        "Wirken auf eine Punktmasse oder einen starren Körper mehrere Kräfte, so addieren sich diese vektoriell zu einer resultierenden Kraft auf."
-      ],
-      "correct_answer_position": 4,
+      "type": "boolean",
+      "question": "Sowohl die die Funktion der Steuerdüsen, wie auch die des Haupttriebwerkes basieren auf dem Wechselwirkungsgesetz.",
+      "correct_value": true,
       "solution": "<b>Leider falsch</b> <br/>«Naja, nicht so schlimm Schätzchen. Beim nächsten Mal klappt das schon.»",
-      "person": "Agatha",
+      	"person": "Agatha",
+      "category": "Statik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "boolean",
+      "question": "Es ist egal in welchem Winkel die Kräfte auf einen Hebel wirken, solange alle auf den Gleichen Hebel gerichtet sind.",
+      "correct_value": false,
+      "solution": "<b>Leider falsch</b> <br/>«Es war Nichts anderes zu erwarten, wenn man diese Aufgabe euch überlässt.»",
+      	"person": "Lyra",
+      "category": "Statik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "boolean",
+      "question": "Wenn ein Schiff einen Asteroiden mit einem Seil zeihen möchte, dann kann dieses in der Schwerelosigkeit irgendwo am Asteroiden befestigt werden.",
+      "correct_value": false,
+      "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
+      	"person": "Milo",
       "category": "Statik",
       "difficulty": "hard"
     }

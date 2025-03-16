@@ -1,3 +1,5 @@
+import sys
+
 import pygame
 
 from src.games.game_data import GameData
@@ -17,10 +19,10 @@ def main():
     engine = StarEngine(config)
 
     ##### run system check #####
-    #if sys.platform.startswith("linux"):
-    #    is_system_valid = engine.run_system_check()
-    #    if not is_system_valid:
-    #        sys.exit()
+    if sys.platform.startswith("linux"):
+        is_system_valid = engine.run_system_check()
+        if not is_system_valid:
+            sys.exit()
 
     ##### intro video #####
     player = VideoPlayer(None)
@@ -84,4 +86,4 @@ def test_mini_game_cable_connection1():
 
 # entry point
 if __name__ == "__main__":
-    debug()
+    main()

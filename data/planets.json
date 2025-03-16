@@ -3,7 +3,7 @@
     "name": "Castor",
     "description": "Die Castor- sowie die Pollux-Station sind zwei identische Raumstationen, welcher der Erforschung der Wurmlochtechnologie dienen. Nur den höchsten Militärs ist ihr wahrer Nutzen bekannt.",
     "row": 1,
-    "col": 7,
+    "col": 4,
     "visited": false,
     "isFuelPlanet": false,
     "IsSpacestation": true,
@@ -15,7 +15,7 @@
     "name": "Pollux",
     "description": "Die Castor- sowie die Pollux-Station sind zwei identische Raumstationen, welcher der Erforschung der Wurmlochtechnologie dienen. Nur den höchsten Militärs ist ihr wahrer Nutzen bekannt.",
     "row": 11,
-    "col": 4,
+    "col": 7,
     "visited": false,
     "isFuelPlanet": false,
     "IsSpacestation": true,
@@ -27,7 +27,7 @@
   {
     "name": "tartarus",
     "description": "Tartarus ist der erste Planet im Sonnensystem und somit der Sonne am nächsten. Die Temperaturen sind sehr hoch, aus diesem Grund ist er nicht bewohnt. Er ist eine Quelle für seltene Metalle.",
-    "row": 7,
+    "row": 5,
     "col": 5,
     "visited": false,
     "isFuelPlanet": false,
@@ -49,7 +49,7 @@
   {
     "name": "terra nova",
     "description": "Terra Nova, der Heimatplanet eurer Crew. Er ist 1,6x Grösser als die Erde und hat somit eine Sonnenumlaufbahn von 385 Tagen. Die Oberfläche ist grösstenteils mit Wasser überdeckt, doch es gibt einige Landmassen.",
-    "row": 3,
+    "row": 9,
     "col": 7,
     "visited": false,
     "isFuelPlanet": false,
@@ -61,7 +61,7 @@
   {
     "name": "luna",
     "description": "Der Mond der euren Heimatplanet umkreist, auf ihm befindet sich ein grosser Forschungskomplex. Diese Station widmet sich der Erforschung und Abwehr der Sonnenstürme.",
-    "row": 2,
+    "row": 10,
     "col": 6,
     "visited": false,
     "isFuelPlanet": false,
@@ -72,8 +72,8 @@
   {
     "name": "medusa",
     "description": "Medusa ist die grösste Piratenstation im System, sie gleicht einem eigenen Staat, regiert von Gesetzlosen. Ein Ort um den man lieber einen grossen Bogen macht.\n",
-    "row": 2,
-    "col": 8,
+    "row": 7,
+    "col": 2,
     "visited": false,
     "isFuelPlanet": false,
     "depend_on": "luna",
@@ -84,7 +84,7 @@
   {
     "name": "thalassa",
     "description": "Thalassa ist der vierte Planet im Sonnensystem und komplett von Wasser bedeckt. Viel Wasser klingt einladend? Bewohnbar ist er, doch er wird von häufigen Asteroideneinschlägen geplagt.",
-    "row": 9,
+    "row": 3,
     "col": 7,
     "visited": false,
     "isFuelPlanet": false,
@@ -95,7 +95,7 @@
   {
     "name": "olympus",
     "description": "Olympus unser erster Gasriese inklusiv einem Mond. Er hat nicht nur einen Mond, sondern auch einen Asteroidengürtel. Doch aufgepasst, in seinem Asteroidengürtel treiben sich seltsame und gefährliche Zeitgenossen herum.",
-    "row": 4,
+    "row": 8,
     "col": 2,
     "visited": false,
     "isFuelPlanet": false,
@@ -106,7 +106,7 @@
   {
     "name": "ymir",
     "description": "Ymir unser zweiter Gasriese. Seine Atmosphäre besteht hauptsächlich aus Methan, doch es konnten Spuren von Wasserstoff nachgewiesen werden. ",
-    "row": 10,
+    "row": 2,
     "col": 1,
     "visited": false,
     "isFuelPlanet": false,
@@ -117,7 +117,7 @@
   {
     "name": "zion",
     "description": "Ymirs Mond Zion hat eine Wasserstoff-Methan Atmosphäre. Er ist von einer anderen Spezies bewohnt. In seinem Orbit schwebt die Forschungsstation Erebus.",
-    "row": 11,
+    "row": 1,
     "col": 2,
     "visited": false,
     "isFuelPlanet": false,
@@ -129,8 +129,8 @@
   {
     "name": "jotun",
     "description": "Jotun ist der siebte, aber nicht der letzte Planet im Sonnensystem. Er ist ein Eisriese und hat eine Ammoniak-Schwefel Atmosphäre.",
-    "row": 8,
-    "col": 0,
+    "row": 12,
+    "col": 8,
     "visited": false,
     "isFuelPlanet": false,
     "background_image": "assets/images/galaxy/galaxy_01.png",
