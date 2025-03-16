@@ -310,5 +310,15 @@
       "italic_path": "assets/fonts/Starjedi/Starjedi.ttf",
       "bold_italic_path": "assets/fonts/Starjedi/Starjedi.ttf"
     }
+  },
+  "score_text": {
+    "font": {
+      "name": "StarJedi",
+      "size": "24",
+      "regular_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "italic_path": "assets/fonts/Starjedi/Starjedi.ttf",
+      "bold_italic_path": "assets/fonts/Starjedi/Starjedi.ttf"
+    }
   }
 }

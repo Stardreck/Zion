@@ -197,10 +197,6 @@ class MagicalOrbsConnectionMiniGame(MiniGame):
             )
         self.game.window.blit(star_surface, (int(pos.x) - radius, int(pos.y) - radius))
 
-    def show_start_menu(self) -> None:
-        """Display the start menu."""
-        pass
-
     def handle_event(self, event: pygame.event.Event) -> None:
         """Process input events."""
         if event.type == pygame.QUIT:

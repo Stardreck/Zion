@@ -31,13 +31,6 @@ class MiniGame(ABC):
         return data
 
     @abstractmethod
-    def show_start_menu(self):
-        """
-        show the start menu
-        """
-        raise NotImplementedError("show_start_menu not implemented")
-
-    @abstractmethod
     def handle_event(self, event: pygame.event.Event):
         """
         Handle a single pygame event.
