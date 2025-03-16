@@ -12,5 +12,14 @@
       "assets/images/spaceship/panel/spaceship_panel_03.png",
       "assets/images/spaceship/panel/spaceship_panel_04.png"
     ]
+  },
+  "MagicalOrbsConnectionMiniGame": {
+    "backgrounds": [
+      "assets/images/mini_games/magical_orbs_connection/sky_background_01.png",
+      "assets/images/mini_games/magical_orbs_connection/sky_background_02.png",
+      "assets/images/mini_games/magical_orbs_connection/sky_background_03.png",
+      "assets/images/mini_games/magical_orbs_connection/sky_background_04.png",
+      "assets/images/mini_games/magical_orbs_connection/sky_background_05.png"
+    ]
   }
 }

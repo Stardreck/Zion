@@ -4,7 +4,7 @@
     "width": 1600,
     "height": 720,
     "fps": 60,
-    "full_screen": true,
+    "full_screen": false,
     "system_check_backgrounds": [
       "assets/images/states/system_check/system_check_01.png",
       "assets/images/states/system_check/system_check_02.png",
@@ -36,13 +36,13 @@
     "victor": "assets/images/people/portrait_victor.png"
   },
   "player_settings": {
-    "player_start_row": 10,
+    "player_start_row": 11,
     "player_start_col": 6
   },
   "planet_menu": {
     "fuel_station": {
       "background": "assets/images/fuel_station/fuel_station_background.png",
-      "image": "assets/images/fuel_station/fuel_station.png",
+      "image": "assets/images/fuel_station/fuel_station_icon.png",
       "fuel_free_amount": 5,
       "fuel_quiz_correct_amount": 10,
       "fuel_quiz_wrong_amount": 2
@@ -64,7 +64,7 @@
     "panel_background": "assets/interface/events/event_panel_background.png"
   },
   "mini_game_system": {
-    "mini_game_probability": 0.15,
+    "mini_game_probability": 1,
     "menu_backgrounds": [
       "assets/images/spaceship/casino/spaceship_casino_01.png",
       "assets/images/spaceship/casino/spaceship_casino_02.png",

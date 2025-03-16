@@ -4,6 +4,8 @@ from src.managers.manager import Manager
 from src.mini_games.asteroid_dodge.asteroid_dodge_mini_game import AsteroidDodgeMiniGame
 from src.mini_games.cable_connection.cable_connection_mini_game import CableConnectionMiniGame
 from typing import List, TYPE_CHECKING
+
+from src.mini_games.magical_orbs_connection.magical_orbs_connection import MagicalOrbsConnectionMiniGame
 from src.views.mini_games.mini_game_start_menu import MiniGameStartMenu
 
 if TYPE_CHECKING:
@@ -20,19 +22,21 @@ class MiniGameManager(Manager):
 
     def play_mini_game_if_possible(self):
         if not self.__should_game_be_played():
-            # don't play a mini-game this round
+            # Don't play a mini-game this round.
             return False
 
-        ##### run a random mini-game #####
-
-        # cable connection mini-game
-        result = self.__play_cable_connection_mini_game()
-        # asteroid doge mini-game
-        # result = self.__play_asteroid_dodge_mini_game()
+        ##### Run a random mini-game #####
+        mini_game_options = [
+           # self.__play_cable_connection_mini_game,
+            self.__play_magical_orbs_connection_mini_game
+        ]
+        mini_game_choice = random.choice(mini_game_options)
+        result = mini_game_choice()
+        return result
 
     def __play_cable_connection_mini_game(self) -> bool:
         background = self.__get_background_image_path()
-        # todo define mini game title and description
+
         title_text = "Minispiel"
         description_text = "Grossartig. IRIS hat ein Software-Update gemacht, und jetzt ist die Tür verriegelt. Wir müssen die richtigen Kabel verbinden, um die Sperre zu umgehen"
         button_text = "starten"
@@ -43,6 +47,24 @@ class MiniGameManager(Manager):
         num_pairs = random.choice([4, 6, 8])
         mini_game = CableConnectionMiniGame(self.game, background, num_pairs)
         mini_game.run()
+
+        result = mini_game.get_result()
+        return result
+
+    def __play_magical_orbs_connection_mini_game(self) -> bool:
+        background = self.__get_background_image_path()
+
+        title_text = "Minispiel"
+        description_text = "Lyra schlief tief, ihr Atem ruhig und gleichmässig. Doch in ihrem Geist entfaltete sich eine andere Welt – ein Traum, seltsam und doch vertraut.<br/>Sie schwebte in einem endlosen Raum aus schimmerndem Licht. Farben tanzten um sie herum, sanfte Wellen aus Blau, Violett und Gold. Vor ihr schwebten mehrere leuchtende Kugeln, pulsierend wie kleine Sterne.<br/>Eine flüsternde Stimme, fern und schwer zu greifen, hallte durch ihren Traum: «Verbinde sie…»"
+        button_text = "starten"
+
+        mini_game_start_menu = MiniGameStartMenu(self.game, background, title_text, description_text, button_text)
+        mini_game_start_menu.run()
+
+        num_pairs = random.choice([6,8,10])
+        mini_game = MagicalOrbsConnectionMiniGame(self.game, background, num_pairs)
+        mini_game.run()
+
         result = mini_game.get_result()
         return result
 

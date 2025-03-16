@@ -58,7 +58,7 @@ class BaseMiniGameMenu(View):
         )
         # Create the mini-game description text box
         self.description = UITextBox(
-            relative_rect=Rect(260, 20, 250, 255),
+            relative_rect=Rect(10, 20, 500, 350),
             html_text=self.description_text,
             manager=self.pygame_gui_ui_manager,
             container=self.panel,
