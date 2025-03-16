@@ -1,5 +1,69 @@
 {
   "default": [
+     {
+      "type": "task",
+      "question": "Wasserstoff auf Olympus wir mittels sogenannter Atmosphärensauger gesammelt. Dies sind Zylinderförmige Drohnen welche durch die Atmosphäre fliegen. <br/><br/>Die Windgeschwindigkeit beträgt 800km/h was zu einer entgegenwirkenden Kraft von 77.9 kN führt.<br/>Welche Schubkraft müssen die hinteren Triebwerke mindesten aufbringen, um die Drohne mit 20m/s² beschleunigen zu können? Ihre Masse beträgt 2300kg. <br/><br/>Runde den Wert auf die nächste ganze Zahl auf oder ab. <br/>Gib die Schubkraft in kN an.",
+      "correct_value": "124",
+      "solution": "<b>Kleine Hilfestellung gefälligst? Tipp für das nächste Mal.</b> <br/Um die erforderliche Schubkraft der Drohne zu berechnen, wird zunächst die Kraft für die gewünschte Beschleunigung ermittelt: F(Beschleunigung)=m⋅a Anschliessend wird der Luftwiderstand dazugerechnet. Zum Schluss wird der Wert durch 1000 gerechnet um auf kN zu kommen.",
+      "category": "Dynamik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "task",
+      "question": "Lyra sendet eine Nachricht mit Statusmeldungen zum Flottenkommando auf Terra Nova. Sie fragt sich, wie lange sie wohl auf eine Antwort warten muss, wenn die Zentrale die Nachricht während den Bürozeiten empfängt und innerhalb von 2 Stunden eine Antwort sendet. Sie schaut auf die Karte. Aktuell befinden sie sich 75'000'000 Kilometer weit von ihrer Heimat entfernt. Gib die Antwort in Sekunden an.",
+      "correct_value": 7700,
+      "solution": "<b>Kleine Hilfestellung gefälligst? Tipp für das nächste Mal.</b> <br/>Die Lösung lässt sich berechnen, indem man berechnet, wie lange Licht für 75'000'000 Km braucht und dann noch die 2h dazu rechnet. ",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "task",
+      "question": "Milos begutachtet die Raumanzüge der Crew. Schon ziemlich ramponiert, ob die noch halten? Er fragt sich, wie viel Kraft wohl auf die Innenseite (2.5m²), bei einem Druckunterschied von 0.5 bar, wirkt. <br/><br/>Gib die Antwort in Newton an.",
+      "correct_value": 125000,
+      "solution": "<b>Kleine Hilfestellung gefälligst? Tipp für das nächste Mal.</b> <br/>Die Kraft lässt sich aus dem Druck mal die Fläche berechnen. F=p*A",
+      "category": "Hydrostatik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "task",
+      "question": "Victor stellt fest, dass sich auf der Flugbahn ein Objekt befindet. Er versucht nun, ein einfaches Ausweichmanöver zu fliegen. Er initiiert einen Seitwärtsschub, so dass die Minerva nun neben der Vorwärts- , auch eine Seitwärtsgeschwindigkeit hat. <br/><br/>Das Objekt mit einem Durchmesser von 5km befindet sich zu diesem Zeitpunkt 43400km weit entfernt. Die Minerva fliegt konstant mit einer Geschwindigkeit von 1400km/s. <br/>Die Seitwärtsgeschwindigkeit beträgt 100m/s <br/><br/>Um wie viel Meter verfehlen sie das Objekt?",
+      "correct_value": "600",
+      "solution": "<b>Kleine Hilfestellung gefälligst? Tipp für das nächste Mal.</b> <br/>Um die Aufgabe zu lösen, wird als erstes die Zeit mit folgender Formel berechnet: t=s/v (vorwärts) Danach wird die Seitliche Abweichung (d) mit d=v (seitlich)*t berechnet. Für die Verfehlung wird nun der Radius des Objekts von der seitlichen Abweichung abgezogen.",
+      "category": "Kinematik",
+      "difficulty": "medium"
+    },
+    {
+      "type": "task",
+      "question": "Eine der grössten Raumstationen im System dreht sich um sich selbst, um eine Künstliche Schwerkraft zu erzeugen. <br/><br/>Sie hat einen Durchmesser von 1.252km und dreht mit 1 Umdrehung pro Minute. Es herrschen 0,7g. <br/><br/>Welche Geschwindigkeit muss ein Schiff haben, um an der rotierenden Aussenwand andocken zu können? <br/>Gib die Geschwindigkeit in m/s an.",
+      "correct_value": "65.56",
+      "solution": "<b>Kleine Hilfestellung gefälligst? Tipp für das nächste Mal.</b> <br/>Um die Geschwindigkeit zu berechnen, stellt man die Formel für die Zentripetalbeschleunigung, a=v ²/r nach der Geschwindigkeit (v) um. a wird aus der g und der Erdanziehungskraft berechnet.",
+      "category": "Kinematik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "task",
+      "question": "Je nach aktueller Beschleunigung des Schiffes haben die Crewmitglieder eine unterschiedliche Gewichtskraft. <br/><br/>Angenommen Victor hat eine Masse von 85 kg. Auf dem Mond von Olympus beträgt seine Gewichtskraft 127.5 N. <br/><br/>Was ist seine Fallbeschleunigung auf diesem Mond. <br/>Gib die Lösung in m/s² an.",
+      "correct_value": "1.5",
+      "solution": "<b>Kleine Hilfestellung gefälligst? Tipp für das nächste Mal.</b> <br/>Die Fallbeschleunigung berechnet sich aus der Kraft durch die Masse. g=F/m",
+      "category": "Statik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "task",
+      "question": "Während sie mit dem Schiff fliegen beschleunigen sie konstant um eine künstliche Gravitation zu erzeugen. Ein angenehmer Reisewert ist 0.7g. Welcher Beschleunigung entspricht dies? <br/>Gib die Lösung in m/s² an.",
+      "correct_value": "6.85",
+      "solution": "<b>Kleine Hilfestellung gefälligst? Tipp für das nächste Mal.</b> <br/>Die Beschleunigung berechnet sich aus der Gravitation und der Drehzahl. a=g*n",
+      "category": "Statik",
+      "difficulty": "hard"
+    },
+    {
+      "type": "task",
+      "question": "Ein junger unerfahrener Pilot hat einen Asteroiden nicht an der Schwerpunktlinie befestigt. Dieser beginnt sich nun zu drehen. Welches Drehmoment erzeugt er?<br/><br/>Er hat 5m Abstand zum Drehpunkt und zieht mit 100MN. <br/>Gib die Lösung in MNm an.",
+      "correct_value": "500",
+      "solution": "<b>Kleine Hilfestellung gefälligst? Tipp für das nächste Mal.</b> <br/Das Drehmoment wird aus der Kraft und dem Radius berechnet. M=F*r",
+      "category": "Statik",
+      "difficulty": "hard"
+    },
     {
       "type": "boolean",
       "question": "Die Beschleunigung eines Objektes berechnet sich aus der Geschwindigkeitsänderung pro Zeiteinheit?",
@@ -224,5 +288,6 @@
       "category": "Statik",
       "difficulty": "hard"
     }
+
   ]
 }
