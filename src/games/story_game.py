@@ -290,9 +290,11 @@ class StoryGame(Game):
         if is_correct:
             description = f"Milos: «Ich hatte keine Zweifel daran, dass wir es schaffen, wir sind eben gut.» <b>+{self.engine.config.planet_menu_fuel_quiz_correct_amount} Treibstoff"
             self.fuel += self.engine.config.planet_menu_fuel_quiz_correct_amount
+            self.hull += self.engine.config.planet_menu_fuel_quiz_correct_amount
         else:
             description = f"Milos: «Schade das war wohl nichts. Naja, immerhin haben sie uns aus Mitleid ein wenig geschenkt. Vielleicht klappt es ja beim nächsten Mal.» <b>+{self.engine.config.planet_menu_fuel_quiz_wrong_amount} Treibstoff"
             self.fuel += self.engine.config.planet_menu_fuel_quiz_wrong_amount
+            self.hull += self.engine.config.planet_menu_fuel_quiz_wrong_amount
 
         view = InfoView(self, "Resultat", self.engine.config.portrait_milo,
                         self.engine.config.planet_menu_fuel_station_background_image_path, description,
@@ -301,12 +303,13 @@ class StoryGame(Game):
 
     def run_station_free_fuel_action(self, planet: Planet):
         ##### display a message and add the fuel #####
-        description = f"Es wird aufgetankt.. <b>+{self.engine.config.planet_menu_fuel_free_amount}"
+        description = f"Die Minerva wird aufgetankt, mit <b>+{self.engine.config.planet_menu_fuel_free_amount} Treibstoff</b> ist sie wieder einsatzbereit."
         view = InfoView(self, "Tanken", self.engine.config.planet_menu_fuel_station_image_path,
                         self.engine.config.planet_menu_fuel_station_background_image_path, description,
                         "Akzeptieren")
         view.run()
         self.fuel += self.engine.config.planet_menu_fuel_free_amount
+        self.hull += self.engine.config.planet_menu_fuel_free_amount
 
     def run_game_over(self):
         print("[Game Over]")

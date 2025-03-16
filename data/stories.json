@@ -49,7 +49,7 @@
             "image_description": "Victor"
           },
           {
-            "text": "Die Minerva setzte in der Nähe der verlassenen Basis auf. Die Crew stieg aus, und als sich der aufgewirbelte Staub von ihrer Landung legte, begaben sie sich zum Eingang der Basis.\nDoch auch dieser blieb verschlossen. Sie suchten nach anderen Eingängen und versuchten über das Panel jemanden zu kontaktieren.",
+            "text": "Die Minerva setzte in der Nähe der verlassenen Basis auf. Die Crew stieg aus und als sich der aufgewirbelte Staub von ihrer Landung legte, begaben sie sich zum Eingang der Basis.\nDoch auch dieser blieb verschlossen. Sie suchten nach anderen Eingängen und versuchten über das Panel jemanden zu kontaktieren.",
             "image_description": ""
           },
           {
@@ -73,7 +73,7 @@
             "image_description": "Lyra"
           },
           {
-            "text": "Die Crew kehrte zur Minerva zurück. Die Basis war verlassen – doch wohin waren sie gegangen?",
+            "text": "Die Crew kehrte zur Minerva zurück. Die Basis war verlassen, doch wohin waren sie gegangen?",
             "image_description": ""
           },
           {
@@ -101,11 +101,15 @@
             "image_description": ""
           },
           {
-            "text": "«Und das Modul?», fragte Lyra.<br/>«Wir brauchten es. Ohne den Fusionsgenerator hätten wir kein Wasser mehr.» erwiderte eine der Bewohnerin.",
+            "text": "«Und das Modul?», fragte Lyra",
             "image_description": "Lyra"
           },
           {
-            "text": "Die Crew tauschte Blicke. Das Bauteil, das sie bergen sollten, war jetzt überlebenswichtig für die Mine – die alten Solarpanels waren grösstenteils zerstört.\n«Ihr kriegt es nicht zurück», sagte einer der Bergleute bestimmt. «Ohne das Ding sterben wir oder noch schlimmer, wir müssen die Mine aufgeben.»",
+            "text": "«Wir brauchten es», erwiderte eine der Bewohnerinnen, «ohne den Fusionsgenerator hätten wir kein Wasser mehr.»",
+            "image_description": ""
+          },
+          {
+            "text": "Die Crew tauschte Blicke. Das Bauteil, das sie bergen sollten, war jetzt überlebenswichtig für die Mine, denn die die alten Solarpanels waren grösstenteils zerstört.\n«Ihr kriegt es nicht zurück», sagte einer der Bergleute bestimmt. «Ohne das Ding sterben wir oder noch schlimmer, wir müssen die Mine aufgeben.»",
             "image_description": ""
           },
           {
@@ -113,7 +117,7 @@
             "image_description": "Victor"
           },
           {
-            "text": "Lyra dachte nach. «Was, wenn wir die Solaranlagen reparieren? Wenn sie wieder funktionieren, braucht ihr den Generator nicht mehr so dringend. Zudem könnten wir diese auch gleich verbessern, sodass sie nicht mehr durch die Sonnenstürme zerstört werden.»",
+            "text": "Lyra dachte laut nach: «Was, wenn wir die Solaranlagen reparieren? Wenn sie wieder funktionieren, braucht ihr den Generator nicht mehr so dringend. Zudem könnten wir diese auch gleich verbessern, so dass sie nicht mehr durch die Sonnenstürme zerstört werden.»",
             "image_description": "Lyra"
           },
           {
@@ -125,7 +129,7 @@
             "image_description": "Agatha"
           },
           {
-            "text": "Schliesslich willigten die Bergleute ein.\nDoch es gab ein Problem: Die Mine hatte nicht genug Ersatzteile.",
+            "text": "Schliesslich willigten die Bergleute ein.\nDoch es gab ein Problem, die Mine hatte nicht genug Ersatzteile.",
             "image_description": ""
           },
           {
@@ -155,7 +159,7 @@
         "type": "story",
         "story_lines": [
           {
-            "text": "Victor und Agatha verbrachten mehrere Tage damit, Bauteile in der verlassenen Basis zu bergen. Die Strahlenbelastung war nur bei aktiven Stürmen gefährlich. Doch die Arbeit mit den Schutzanzügen machte jede Minute an der Oberfläche zu einer Belastungsprobe.<br/><br/>Dann kam die nächste Hiobsbotschaft:\nEin neuer Sonnensturm war auf dem Weg – und würde in wenigen Stunden eintreffen.",
+            "text": "Victor und Agatha verbrachten mehrere Tage damit, Bauteile in der verlassenen Basis zu bergen. Die Strahlenbelastung war nur bei aktiven Stürmen gefährlich. Doch die Arbeit mit den Schutzanzügen machte jede Minute an der Oberfläche zu einer Belastungsprobe.<br/><br/>Dann kam die nächste Hiobsbotschaft:\nEin neuer Sonnensturm war auf dem Weg und würde in wenigen Stunden eintreffen.",
             "image_description": ""
           },
           {
@@ -167,7 +171,7 @@
             "image_description": "Agatha"
           },
           {
-            "text": "Während sie fuhren, tauchten am Horizont Polarlichter auf – faszinierend und wunderschön, aber sie bedeuteten nichts Gutes.\nDie ersten statischen Ladungen entluden sich auf der Planetenoberfläche, und Staubpartikel begannen zu schweben und an ihrem Gefährt zu haften.",
+            "text": "Während sie fuhren, tauchten am Horizont Polarlichter auf. faszinierend und wunderschön, aber sie bedeuteten nichts Gutes.\nDie ersten statischen Ladungen entluden sich auf der Planetenoberfläche, und Staubpartikel begannen zu schweben und an ihrem Gefährt zu haften.",
             "image_description": ""
           },
           {
@@ -179,11 +183,11 @@
             "image_description": ""
           },
           {
-            "text": "<b>Das Resultat</b><br/>Die nächsten Tage war die Crew pausenlos mit der Reparatur der Solarpanels beschäftigt.\nAls sich der Sonnensturm schliesslich legte, begannen sie mit der Installation.\n\nDie Mission war erfolgreich: Die Mine war wieder stabil mit Energie versorgt.\nDie Bergleute hielten ihr Wort – das Bauteil war nun entbehrlich, und die Crew der Minerva konnte es endlich mitnehmen.",
+            "text": "<b>Das Resultat</b><br/>Die nächsten Tage war die Crew pausenlos mit der Reparatur der Solarpanels beschäftigt.\nAls sich der Sonnensturm schliesslich legte, begannen sie mit der Installation.\n\nDie Mission war erfolgreich. Die Mine war wieder stabil mit Energie versorgt.\nDie Bergleute hielten ihr Wort, das Bauteil war nun entbehrlich, und die Crew der Minerva konnte es endlich mitnehmen.",
             "image_description": ""
           },
           {
-            "text": "Während des Rückflugs blickte Milo nachdenklich aus dem Fenster.\n«Sag mal, Victor ... warum braucht eine Forschungsstation eigentlich einen militärischen Fusionsgenerator?»",
+            "text": "Während des Rückflugs blickte Milo nachdenklich aus dem Fenster.\n«Sag mal, Victor, warum braucht eine Forschungsstation eigentlich einen militärischen Fusionsgenerator?»",
             "image_description": "Milo"
           },
           {
@@ -217,7 +221,7 @@
             "image_description": "Lyra"
           },
           {
-            "text": "Bis auf eine verbogene Antenne und ein paar Kratzer an der Aussenhülle setzte die Minerva sanft auf. Nicht perfekt, aber stabil.\n\nDie Crew machte sich auf den Weg zur Solaren Forschungsstation, um das Hochfrequenz-Ionen-Generator-Aggregat abzuholen.",
+            "text": "Bis auf eine verbogene Antenne und ein paar Kratzer an der Aussenhülle setzte die Minerva sanft auf. Nicht perfekt, aber stabil.\n\nDie Crew machte sich auf den Weg zur solaren Forschungsstation, um das Hochfrequenz-Ionen-Generator-Aggregat abzuholen.",
             "image_description": ""
           },
           {
@@ -233,7 +237,7 @@
             "image_description": "Milo"
           },
           {
-            "text": "Lyra grinste. «Lieber dein Selbstgebrautes? – Dass das nicht schon längst als biologische Waffe eingestuft wurde, wundert mich.»\nMilo grinste sie nur an.",
+            "text": "Lyra grinste. «Lieber dein Selbstgebrautes? Dass das nicht schon längst als biologische Waffe eingestuft wurde, wundert mich.»\nMilo grinste sie nur an.",
             "image_description": "Lyra"
           },
           {
@@ -241,27 +245,27 @@
             "image_description": ""
           },
           {
-            "text": "Victor und die anderen folgten ihm. Der Wissenschaftler bog in einen Seitengang ab. Noch bevor sie ihn einholen konnten, wurde das Licht abrupt dunkel.\n\nEin lautes Knistern hallte durch die Gänge, Funken stoben aus den Schaltkästen an den Wänden.\nEin EMP-Schlag.\n\nDann ein dumpfer Knall.\nDann ein Zischen.",
+            "text": "Victor und die anderen folgten ihm. Der Wissenschaftler bog in einen Seitengang ab. Noch bevor sie ihn einholen konnten, wurde es abrupt dunkel.\n\nEin lautes Knistern hallte durch die Gänge, Funken stoben aus den Schaltkästen an den Wänden.\nEin EMP-Schlag.\n\nDann ein dumpfer Knall.\nDanach ein Zischen.",
             "image_description": ""
           },
           {
-            "text": "Die Notbeleuchtung flackerte auf – ein unheilvolles, rotes Licht füllte die Korridore.\n\nSie näherten sich der Tür, durch die der Wissenschaftler zuvor verschwunden war.\nSie liess sich nicht öffnen, auf dem Panel der Tür blinkte es nur.",
+            "text": "Die Notbeleuchtung flackerte auf, ein unheilvolles, rotes Licht füllte die Korridore.\n\nSie näherten sich der Tür, durch die der Wissenschaftler zuvor verschwunden war.\nSie liess sich nicht öffnen. Auf dem Panel der Tür blinkte es nur.",
             "image_description": ""
           },
           {
-            "text": "<b>«Druckverlust – Zugang gesperrt.»</b><br/>Instinktiv wusste die Crew, was das bedeutete. Helme auf. Notschotts schliessen.\n\nMilo überbrückte die Tür. Das Metall glitt auf – und sofort entwich die restliche Luft aus dem Korridor.\n\nDahinter klaffte ein riesiges Loch in der Aussenwand, Kabel hingen heraus, Funken zuckten in der Dunkelheit.",
+            "text": "<b>«Druckverlust – Zugang gesperrt.»</b><br/>Instinktiv wusste die Crew, was das bedeutete. Helme auf. Notschotts schliessen.\n\nMilo überbrückte die Tür. Das Metall glitt auf und sofort entwich die restliche Luft aus dem Korridor.\n\nDahinter klaffte ein riesiges Loch in der Aussenwand. Kabel hingen heraus, Funken zuckten in der Dunkelheit.",
             "image_description": ""
           },
           {
-            "text": "Der Leiter der Station lag am Boden. Sein Gesicht war bläulich gefroren, dünne Eiskristalle hatten sich über seine Haut gezogen.\n\nUnd das Modul war verschwunden.",
+            "text": "Der Leiter der Station schwebte über dem Boden. Sein Gesicht war bläulich gefroren, dünne Eiskristalle hatten sich über seine Haut gezogen.\n\nUnd das Modul war verschwunden.",
             "image_description": ""
           },
           {
-            "text": "<b>Der Start</b><br/>Die Crew sprintete zurück zur Minerva, um den Piraten nachzusetzen. Doch kaum hatten sie den Hangar erreicht, sahen sie das nächste Problem.\n\nNicht nur die Station war vom EMP getroffen worden – ihr Schiff ebenfalls.\n\nDas gesamte System war abgestürzt.",
+            "text": "<b>Der Start</b><br/>Die Crew sprintete zurück zur Minerva, um den Piraten nachzusetzen. Doch kaum hatten sie den Hangar erreicht, sahen sie das nächste Problem.\n\nNicht nur die Station war vom EMP getroffen worden, sondern auch ihr Schiff.\n\nDas gesamte System war abgestürzt.",
             "image_description": ""
           },
           {
-            "text": "Mit fieberhafter Geschwindigkeit arbeitete das Team daran, den Reaktor hochzufahren und die Systeme zu booten. Nach einer gefühlten Ewigkeit – die in Wahrheit nur Minuten dauerte – erwachten die ersten Konsolen zum Leben.\n\nDoch ein System blieb inaktiv.\nDie Bord-KI IRIS reagierte nicht.\n\nVictor fluchte innerlich. Ohne IRIS gab es keine Unterstützung bei der Feinabstimmung der Flugparameter. Victor sah zu Lyra, beide wussten, was das bedeutete: Sie mussten manuell starten.",
+            "text": "Mit fieberhafter Geschwindigkeit arbeitete das Team daran, den Reaktor hochzufahren und die Systeme zu booten. Nach einer gefühlten Ewigkeit, die in Wahrheit nur Minuten dauerte, erwachten die ersten Konsolen zum Leben.\n\nDoch ein System blieb inaktiv.\nDie Bord-KI IRIS reagierte nicht.\n\nVictor fluchte innerlich. Ohne IRIS gab es keine Unterstützung bei der Feinabstimmung der Flugparameter. Victor sah zu Lyra, beide wussten, was das bedeutete: Sie mussten manuell starten.",
             "image_description": ""
           },
           {
@@ -269,7 +273,7 @@
             "image_description": "Victor"
           },
           {
-            "text": "Milo fuhr ihm ins Wort: «Spinnst du, Vic? 10g maximal, und das auch nur für 30 Sekunden, sonst riskieren wir alle einen Schlaganfall.»",
+            "text": "Milo fuhr ihm ins Wort: «Spinnst du, Vic? 10g maximal und das auch nur für 30 Sekunden, sonst riskieren wir alle einen Schlaganfall.»",
             "image_description": "Milo"
           },
           {
@@ -299,7 +303,7 @@
             "image_description": ""
           },
           {
-            "text": "Die Sekunden dehnten sich zur Ewigkeit.\n\nAls sie den Schub reduzierten, liess auch die Belastung nach.\nMilo, unterdessen kreidebleich, kam wieder zu sich – und übergab sich über die Armlehne.",
+            "text": "Die Sekunden dehnten sich zur Ewigkeit.\n\nAls sie den Schub reduzierten, liess auch die Belastung nach.\nMilo, unterdessen kreidebleich, kam wieder zu sich und übergab sich über die Armlehne.",
             "image_description": ""
           },
           {
@@ -318,7 +322,7 @@
       },
       {
         "type": "task",
-        "question": "<b>Victor begann mit den Berechnungen für den Konstant-Schub, während Lyra den Kurs in ihre Konsole eingab.\nSie sollten kontinuierlich mit 1,2g beschleunigen, um so künstliche Schwerkraft an Bord des Schiffes zu erhalten.</b>><br/>Die Angabe soll in Meganewton sein. Kommastelle abrunden.",
+        "question": "<b>Victor begann mit den Berechnungen für den konstanten Schub, während Lyra den Kurs in ihre Konsole eingab.\nSie sollten kontinuierlich mit 1.2g beschleunigen, um so eine künstliche Schwerkraft an Bord des Schiffes zu generieren.</b>><br/>Die Angabe soll in Meganewton sein. Kommastelle abrunden.",
         "correct_value": 36,
         "story_consequence": {
           "text": "Victor war sich bei der Eingabe der Werte nicht sicher, irgendetwas schien nicht plausibel zu sein. Er ging es noch einmal durch und tatsächlich, hätte er diesen Fehler nicht bemerkt wären die Folgen fatal gewesen.",
@@ -334,7 +338,7 @@
         "type": "story",
         "story_lines": [
           {
-            "text": "<b>Teil 2:<br/>Die Verfolgungsjagd</b><br/>Die Verfolgungsjagd zog sich über mehrere Tage hin.\nNicht nur mussten sie die Brücke in Schichten bewachen, auch die konstante Gravitation von 1.2G nagte an ihnen. Der Asteroidengürtel kam näher, und ihre Vermutung bestätigte sich: Die Angreifer waren Piraten.\n\nDie Schiffe waren bereits an der Station angedockt. Es handelte sich um einen der berüchtigtsten Piratenhäfen des Systems – Medusa.",
+            "text": "<b>Teil 2:<br/>Die Verfolgungsjagd</b><br/>Die Verfolgungsjagd zog sich über mehrere Tage hin.\nNicht nur mussten sie die Brücke in Schichten bewachen, auch die konstante Gravitation von 1.2G nagte an ihnen. Der Asteroidengürtel kam näher, und ihre Vermutung bestätigte sich: Die Angreifer waren Piraten.\n\nDie Schiffe waren bereits an der Station angedockt. Es handelte sich um einen der berüchtigtsten Piratenhäfen des Systems - Medusa.",
             "image_description": ""
           },
           {
@@ -366,7 +370,7 @@
             "image_description": ""
           },
           {
-            "text": "<b>Die Suche</b><br/>Victor und Agatha verbrachten Stunden in den Docks.\nIrgendwann blieb ihnen nichts anderes übrig, als die Verladecrew zu befragen, zuweilen ihr Herumstreunen auch immer auffälliger wurde.\nDoch wie würden sie dies anstellen, ohne dass sie Verdacht schöpfen würden?\n\nZum Glück handelte es sich bei der Dock-Crew nicht gerade um sonderlich intelligente Individuen, die zudem noch ordentlich einen sitzen hatten.",
+            "text": "<b>Die Suche</b><br/>Victor und Agatha verbrachten Stunden in den Docks.\nIrgendwann blieb ihnen nichts anderes übrig, als die Verladecrew zu befragen, zuweilen ihr Herumstreunen immer auffälliger wurde.\nDoch wie würden sie dies anstellen, ohne dass sie Verdacht schöpfen würden?\n\nZum Glück handelte es sich bei der Dock-Crew nicht gerade um sonderlich intelligente Individuen, die zudem noch ordentlich einen sitzen hatten.",
             "image_description": ""
           },
           {
@@ -394,7 +398,7 @@
             "image_description": ""
           },
           {
-            "text": "Victor konnte nicht glauben, was er sah.\nRunde um Runde.\nAgatha spielte ihr Spiel. Victor wurde immer nervöser.\nDann stand der Kleine schwankend auf und taumelte zur Toilette.\nAgatha erhob sich gleichzeitig, lief an Victor vorbei – und zwinkerte ihm zu.\nEr wusste sofort: Sie hatte, was sie brauchten.\nVictor stand auf und folgte ihr. Er wollte wissen, was passiert war.",
+            "text": "Victor konnte nicht glauben, was er da sah.\nRunde um Runde.\nAgatha spielte ihr Spiel. Victor wurde immer nervöser.\nDann stand der Kleine schwankend auf und taumelte zur Toilette.\nAgatha erhob sich gleichzeitig, lief an Victor vorbei und zwinkerte ihm zu.\nEr wusste sofort, sie hatte, was sie brauchten.\nVictor stand auf und folgte ihr. Er wollte wissen, was passiert war.",
             "image_description": ""
           },
           {
@@ -402,7 +406,29 @@
             "image_description": "Agatha"
           },
           {
-            "text": "<b>Das IPA</b><br/>Die Türen zu den Werkstätten der Docks waren leicht zu knacken. Kein Tür-Panel, also musste ein Stemmeisen her.\nDrinnen erspähten sie in der Dunkelheit das Modul, bereits zur Hälfte zerlegt, auf einem Tisch.\nVictor packte die Teile ein. Agatha sicherte den Korridor.\nDoch dann hörten sie Schritte.\n«Scheisse, da kommt einer.»\nSie wurden entdeckt und hörten, wie die Rufe immer lauter wurden.\nJetzt musste es schnell gehen.",
+            "text": "<b>Das IPA</b><br/>Das Haupttor zur Werkstatt der Docks war natürlich verschlossen. Doch kein Tür Panel war in Sicht, also musste ein Stemmeisen her.\nMit vereinten Kräften würden sie es vielleicht schaffen das Tor einen Spalt breit aufzustemmen.\n",
+            "image_description": ""
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "question": "<b>Doch wäre es für sie überhaupt möglich dieses Tor zu bewegen?</b><br/><br/><b>informationen:<b/><br/>Der Gleitreibungskoeffizient von Stahl auf Beton ist 0,4.\nDas Stemmeisen ist 0,8m lang, und greift 5cm unter das Tor.\nDas Tor wiegt 870kg\nAuf der Station herrsch eine Gravitation von 0.5g.\nEin Bremsmechanismus übt zusätzliche 1350N auf die Türe aus.\nRunde das Resultat auf die nächste ganze Zahl und gib sie in N an",
+        "correct_value": 191,
+        "story_consequence": {
+          "text": "Agatha verstand nicht so viel von diesen Berechnungen die Victor immer vor sich hin murmelt, aber diesmal bemerkte auch sie, dass etwas nicht stimmen konnte.",
+          "image_description": "Agatha"
+        }
+      },
+      {
+        "type": "story",
+        "story_lines": [
+          {
+            "text": "Ein schrilles Quietschen hallte durch die leeren Gänge, unauffälliger ging es kaum. Sie quetschten sich durch einen kleinen Spalt in die Werkstatt hinein.\nDrinnen erspähten sie in der Dunkelheit das Modul, welches bereits zur Hälfte zerlegt auf einem Tisch verstreut lag. ",
+            "image_description": ""
+          },
+          {
+            "text": "Victor packte die Teile ein. Agatha sicherte den Korridor. Doch dann hörten sie Schritte. «Scheisse, da kommt einer.»\nSie wurden entdeckt und hörten, wie die Rufe immer lauter wurden. Jetzt musste es schnell gehen. \n",
             "image_description": ""
           },
           {
@@ -418,11 +444,11 @@
             "image_description": ""
           },
           {
-            "text": "<b>Das Manöver</b><br/>«Kann es sein, dass ihr die vielleicht ein wenig wütend gemacht habt?», fragte Lyra zynisch.",
+            "text": "<b>Das Manöver</b><br/>«Unauffällig war keine Option?», fragte Lyra zynisch.",
             "image_description": "Lyra"
           },
           {
-            "text": "Drei kleinere Abfangjäger näherten sich schnell ihrem Schiff. Sie waren klein, aber bis an die Zähne bewaffnet – und viel flinker.\n\nAgatha und Lyra sahen sich an.\n\n«Das Manöver?»\n«Das Manöver.»",
+            "text": "Drei kleinere Abfangjäger näherten sich schnell ihrem Schiff. Sie waren klein, aber bis an die Zähne bewaffnet und viel flinker als die Minerva.\n\nAgatha und Lyra sahen sich an.\n\n«Das Manöver?»\n«Das Manöver.»",
             "image_description": ""
           },
           {
@@ -442,19 +468,10 @@
             "image_description": "Lyra"
           },
           {
-            "text": "Agatha atmete aus.\n«Na dann.»\n\nSie drehten ab – und verschwanden im All.",
+            "text": "Agatha atmete aus.\n«Na dann.»\n\nSie drehten ab und verschwanden im All.",
             "image_description": "Agatha"
           }
         ]
-      },
-      {
-        "type": "task",
-        "question": "<b>question</b><br/>information.",
-        "correct_value": 304,
-        "story_consequence": {
-          "text": "text",
-          "image_description": "Person"
-        }
       }
     ]
   },
@@ -469,7 +486,7 @@
             "image_description": ""
           },
           {
-            "text": "Sie waren nun schon weit draussen und befanden sich gerade in einem ruhigeren Kurs, als Victor beschloss, einige Reparaturen an der Aussenhülle der Minerva vorzunehmen. Milo entschloss sich, gegen seine Abneigung vor dem Weltraum, ihn zu begleiten.",
+            "text": "Sie waren nun schon weit draussen und befanden sich gerade auf einem ruhigeren Kurs, als Victor beschloss, einige Reparaturen an der Aussenhülle der Minerva vorzunehmen. Milo entschloss sich, gegen seine Abneigung vor dem Weltraum, ihn zu begleiten.",
             "image_description": ""
           },
           {
@@ -477,23 +494,23 @@
             "image_description": ""
           },
           {
-            "text": "«Also, Lyra», begann Agatha mit auffälliger Unschuld in der Stimme. «Was läuft eigentlich zwischen dir und Milo?»",
+            "text": "«Also, Lyra», begann Agatha mit auffälliger Unschuld in der Stimme, «was läuft eigentlich zwischen dir und Milo?»",
             "image_description": "Agatha"
           },
           {
-            "text": "Lyra erstarrte für einen Moment, dann tat sie so, als hätte sie es nicht gehört. «Ich finde ihn nett ... und wenn er in der Nähe ist, habe ich das Gefühl, dass nichts schiefgehen kann.» Sie zuckte mit den Schultern. «Aber das ist halt seine Art.»",
+            "text": "Lyra erstarrte für einen Moment, dann tat sie so, als hätte sie es nicht gehört, antwortete aber schliesslich doch drauf; «Ich finde ihn nett und wenn er in der Nähe ist, habe ich das Gefühl, dass nichts schiefgehen kann.» Sie zuckte mit den Schultern. «Aber das ist halt seine Art.»",
             "image_description": "Lyra"
           },
           {
-            "text": "Agatha zog eine Augenbraue hoch. «Ach komm schon, ich hab gesehen, wie er dich ansieht. Und du denkst, ich hab nicht auch deine Blicke bemerkt?»",
+            "text": "Agatha zog eine Augenbraue hoch: «Ach komm schon, ich hab gesehen, wie er dich ansieht. Und du denkst, ich hab nicht auch deine Blicke bemerkt?»",
             "image_description": "Agatha"
           },
           {
-            "text": "Lyra riss ihren Blick von den Bildschirmen los und sah Agatha scharf an. «Das bildest du dir ein.»",
+            "text": "Lyra riss ihren Blick von den Bildschirmen los und sah Agatha scharf an: «Das bildest du dir ein.»",
             "image_description": "Lyra"
           },
           {
-            "text": "«Sicher», sagte Agatha betont beiläufig. «Ich meine, was könnte schon schiefgehen? Ausser, dass du’s verpasst, weil du wieder alles überanalysierst.»",
+            "text": "«Sicher», sagte Agatha betont beiläufig, «ich meine, was könnte schon schiefgehen? Ausser, dass du’s verpasst, weil du wieder alles überanalysierst.»",
             "image_description": "Agatha"
           },
           {
@@ -501,19 +518,19 @@
             "image_description": ""
           },
           {
-            "text": "Agatha schmunzelte. «Dem Gespräch bist du damit nicht entkommen.»",
+            "text": "Agatha schmunzelte: «Dem Gespräch bist du damit nicht entkommen.»",
             "image_description": "Agatha"
           },
           {
-            "text": "Lyra seufzte und gab widerwillig nach. «Ich weiss ja, und vielleicht könnte ich … aber erst, wenn das hier vorbei ist. Denk einmal nach, was, wenn es nicht funktioniert und es damit alles kompliziert macht?»",
+            "text": "Lyra seufzte und gab widerwillig nach: «Ich weiss ja, und vielleicht könnte ich, aber erst wenn das hier vorbei ist. Denk einmal nach, was wenn es nicht funktioniert und es damit alles kompliziert macht?»",
             "image_description": "Lyra"
           },
           {
-            "text": "Agatha legte den Kopf schief und beobachtete ihre Freundin nachdenklich. «Du findest es nur heraus, wenn du es probierst.»",
+            "text": "Agatha legte den Kopf schief und beobachtete ihre Freundin nachdenklich: «Du findest es nur heraus, wenn du es probierst.»",
             "image_description": "Agatha"
           },
           {
-            "text": "<b>Die Geisel</b><br/>Kurz darauf rief IRIS über die Lautsprecher: «Meine Damen und Herren, wir nähern uns Jotun. Geschätzte Ankunft im Orbit in 30 Minuten. Oberflächentemperatur: angenehme -183 Grad Celsius, bei der schwachen Brise von 230 km/h erwarte ich nur leichte Turbulenzen.»",
+            "text": "<b>Die Geisel</b><br/>Kurz darauf rief IRIS über die Lautsprecher: «Meine Damen und Herren, wir nähern uns Jotun. Geschätzte Ankunft im Orbit: 30 Minuten. Oberflächentemperatur: angenehme -183 Grad Celsius, bei der schwachen Brise von 230 km/h erwarte ich nur leichte Turbulenzen.»",
             "image_description": ""
           },
           {
@@ -529,19 +546,19 @@
             "image_description": ""
           },
           {
-            "text": "Doch dann begann die Stimmung zu kippen. «Aber dann gab es neue Technologien … effizientere Methoden zur Lebensmittelproduktion … wir wurden überflüssig.»\n\nSein Blick verfinsterte sich. «Aber Jangkoff hat uns nicht vergessen. Er hat versprochen, uns allen zu helfen.»",
+            "text": "Doch dann begann die Stimmung zu kippen. «Aber dann gab es neue Technologien, effizientere Methoden zur Lebensmittelproduktion. Wir wurden überflüssig.»\n\nSein Blick verfinsterte sich: «Aber Jangkoff hat uns nicht vergessen. Er hat versprochen, uns allen zu helfen.»",
             "image_description": ""
           },
           {
-            "text": "Victor erstarrte, Milo wandte sich zu ihm. «Jangkoff? Der radikale Milliardär von Terra?»",
+            "text": "Victor erstarrte, Milo wandte sich zu ihm: «Jangkoff? Der radikale Milliardär von Terra?»",
             "image_description": "Milo"
           },
           {
-            "text": "Richard wurde nun noch lauter, und seine Stimme zitterte. «Er weiss von eurer Mission, er weiss, dass ihr einen speziellen Fusionsreaktor habt oder wisst, wo er zu finden ist.»",
+            "text": "Richard wurde nun noch lauter, und seine Stimme zitterte: «Er weiss von eurer Mission, er weiss, dass ihr einen speziellen Fusionsreaktor habt oder wisst, wo er zu finden ist.»",
             "image_description": ""
           },
           {
-            "text": "Agatha verschränkte die Arme. «Lass mich raten: Er will den Laser für einen Angriff oder als Erpressungsmittel?»",
+            "text": "Agatha verschränkte die Arme. «Lass mich raten, er will den Laser für einen Angriff oder als Erpressungsmittel?»",
             "image_description": "Agatha"
           },
           {
@@ -549,7 +566,7 @@
             "image_description": ""
           },
           {
-            "text": "Er wurde immer nervöser, seine Hand zitterte, und er fuchtelte mit der Waffe zwischen ihren Köpfen hin und her.\n\nIn diesem Moment meldete sich sein Intercom. «Ritschi, wir sind soweit. Der Laser ist bereit, und das vorlaute Weib haben wir festgesetzt.»\n\n«Die Irre hat versucht, mich zu beissen!», rief eine weitere Stimme durch den Lautsprecher.",
+            "text": "Er wurde immer nervöser, seine Hand zitterte, und er fuchtelte mit der Waffe zwischen ihren Köpfen hin und her.\n\nIn diesem Moment meldete sich sein Intercom: «Ritschi, wir sind so weit. Der Laser ist bereit und das vorlaute Weib haben wir festgesetzt.»\n\n«Die Irre hat versucht, mich zu beissen!», rief eine weitere Stimme durch den Lautsprecher.",
             "image_description": ""
           },
           {
@@ -593,7 +610,7 @@
             "image_description": "Agatha"
           },
           {
-            "text": "Die Tür summte – weitere Wachen näherten sich. Agatha zerstörte das Türpanel mit einem Hieb, um Zeit zu gewinnen.\n\n«Wir müssen einen anderen Weg rausfinden.»",
+            "text": "Die Tür summte, weitere Wachen näherten sich. Agatha zerstörte den Öffnungsmechanismus der Tür mit einem Hieb, um Zeit zu gewinnen.\n\n«Wir müssen einen anderen Weg rausfinden.»",
             "image_description": "Agatha"
           },
           {
@@ -605,7 +622,7 @@
             "image_description": ""
           },
           {
-            "text": "«Verdammt», fluchte Agatha. «Mehr Energie!»",
+            "text": "«Verdammt», fluchte Agatha, «mehr Energie!»",
             "image_description": "Agatha"
           }
         ]
@@ -627,7 +644,7 @@
             "image_description": ""
           },
           {
-            "text": "Agatha befestigte das Seil an dem Laser und aktivierte die Winde.\n\nDie Wachen stürmten den Raum – und eröffneten das Feuer.\n\nAgatha erwiderte es, während Milo und Lyra zur Rampe rannten. Ein Schuss traf Lyra ins Bein. Sie taumelte.",
+            "text": "Agatha befestigte das Seil an dem Laser und aktivierte die Winde.\n\nDie Wachen stürmten den Raum und eröffneten das Feuer.\n\nAgatha erwiderte es, während Milo und Lyra zur Rampe rannten. Ein Schuss traf Lyra ins Bein. Sie taumelte.",
             "image_description": ""
           },
           {
@@ -651,7 +668,7 @@
             "image_description": "Lyra"
           },
           {
-            "text": "Milo schmunzelte. «Wir sind an ein Patrouillenschiff von Terra angedockt. Victor übergibt gerade unseren Gefangenen und bespricht noch irgendetwas mit denen.»",
+            "text": "Milo schmunzelte: «Wir sind an ein Patrouillenschiff von Terra angedockt. Victor übergibt gerade unseren Gefangenen und bespricht noch irgendetwas mit denen.»",
             "image_description": "Milo"
           },
           {
@@ -690,15 +707,15 @@
         "type": "story",
         "story_lines": [
           {
-            "text": "<b>Von Regen in die Taufe</b><br/><br/>Der Fahrstuhl<br/>Die Minerva durchbrach die dichte Wolkendecke von Thalassa, es regnete wie immer auf diesem Planeten. Sie näherte sich einem der vielen Landeplätze, welche wie stählerne Inseln aus dem Wasser ragten.",
+            "text": "<b>Vom Regen in die Traufe</b><br/><br/><b>Der Fahrstuhl</b><br/>Die Minerva durchbrach die dichte Wolkendecke von Thalassa, es regnete wie immer auf diesem Planeten. Sie näherte sich einem der vielen Landeplätze, welche wie stählerne Inseln aus dem Wasser ragten.",
             "image_description": ""
           },
           {
-            "text": "«Und wie kommen wir jetzt da hinunter?» fragte Milos skeptisch.",
+            "text": "«Und wie kommen wir jetzt da runter?» fragte Milos skeptisch.",
             "image_description": "Milo"
           },
           {
-            "text": "Victor, der sich zusammen mit Lyra immer noch auf das Landemanöver konzentrierte, entgegnete: «Wir nehmen den Fahrstuhl, wart ab.»",
+            "text": "Victor, der sich zusammen mit Lyra immer noch auf das Landemanöver konzentrierte, erwiderte: «Wir nehmen den Fahrstuhl, wart ab.»",
             "image_description": "Victor"
           },
           {
@@ -718,11 +735,11 @@
             "image_description": ""
           },
           {
-            "text": "<b>Die Vergangenheit</b><br/>Die Gänge waren feucht und kalt. Während Agatha und Milos eine Tür nach der anderen öffneten, vertrieben sie sich die Zeit mit Gesprächen.\n\nAgatha wollte wissen, wieso Milos, welcher eigentlich eine Abneigung gegen das All hatte, sich für eine solche Mission meldete.",
+            "text": "<b>Die Vergangenheit</b><br/>Die Gänge waren feucht und kalt. Während Agatha und Milos eine Tür nach der anderen öffneten, vertrieben sie sich die Zeit mit Gesprächen.\n\nAgatha wollte wissen, wieso Milos, welcher eigentlich eine Abneigung gegen das All hatte, sich für eine solche Mission gemeldet hatte.",
             "image_description": ""
           },
           {
-            "text": "«Habe ich auch nicht», sagte er mit einem schiefen Grinsen. «Vor ein paar Wochen rief mich Vic an, er meinte, er bräuchte mich, weil er sonst keinen Arzt auf dem Schiff hätte.» Milos blickte in die Ferne und legte die Stirn in Falten. «Es gibt doch genügend andere Ärzte, welche sogar speziell dafür ausgebildet wären.»",
+            "text": "«Habe ich auch nicht», sagte er mit einem schiefen Grinsen. «Vor ein paar Wochen schickte mir Vic eine Nachricht, er meinte, er bräuchte mich, weil er sonst keinen Arzt auf dem Schiff hätte.» Milos blickte in die Ferne und legte die Stirn in Falten. und sprach dann aus was ihm bereits seit langem durch den Kopf ging: «Es gibt doch genügend andere Ärzte, welche sogar speziell dafür ausgebildet wären. Mir ist also schleierhaft, weshalb er unbedingt mich dabeihaben wollte.»",
             "image_description": "Milo"
           },
           {
@@ -738,7 +755,7 @@
             "image_description": "Agatha"
           },
           {
-            "text": "Sie schwiegen eine Zeit lang, während sie drei weitere Räume inspizierten. Irgendwann begann Milos, von seinem Medizinstudium zu erzählen und wie ihm dies half, dieses Ding in ihm besser zu verstehen. Er vertraute ihr an, dass seit sie unterwegs waren, dieses Ding wieder viel aktiver war und es ihm wieder schlechter ging. Dies sei natürlich schlecht, aber es verriet ihm auch sehr viel darüber.",
+            "text": "Sie schwiegen eine Zeit lang, während sie drei weitere Räume inspizierten. Irgendwann begann Milos, von seinem Medizinstudium zu erzählen und wie ihm dies half, dieses Ding in ihm besser zu verstehen. Er vertraute ihr an, dass seit sie unterwegs waren, dieses Ding wieder viel aktiver war und es ihm wieder schlechter ging. Dies sei natürlich unangenehm, aber es verriet ihm auch sehr viel darüber.",
             "image_description": ""
           },
           {
@@ -758,7 +775,7 @@
             "image_description": "Agatha"
           },
           {
-            "text": "Milos verdrehte die Augen. Eigentlich wollte er nicht, aber die Möglichkeit, endlich mit jemandem darüber reden zu können, war zu verlockend. «Ich finde sie super, sie ist so, wie ich gerne wäre, aber es ist... kompliziert. Im einen Moment habe ich das Gefühl, ja, da könnte auch von ihr aus etwas sein, und im anderen denke ich mir, ich bilde mir das ein, fast wie...»",
+            "text": "Milos verdrehte die Augen. Eigentlich wollte er nicht, aber die Möglichkeit, endlich mit jemandem darüber reden zu können, war zu verlockend. «Ich finde sie super, sie ist so, wie ich gerne wäre, aber es ist ... naja, kompliziert. In einen Moment habe ich das Gefühl, ja, da könnte auch von ihr aus etwas sein, und im anderen denke ich mir, ich bilde mir das ein, fast wie...»",
             "image_description": "Milo"
           },
           {
@@ -774,7 +791,7 @@
             "image_description": ""
           },
           {
-            "text": "<b>Das Wasser</b><br/>Milos wollte gerade das Panel betätigen, als Agatha ihn zurückriss. «Warte. Sieh mal da!» Feine Wassertropfen drückten kontinuierlich durch den Türspalt und bildeten eine Pfütze am Boden.",
+            "text": "<b>Das Wasser</b><br/>Milos wollte gerade das Panel betätigen, als Agatha ihn zurückriss. «Warte, sieh mal da!» Feine Wassertropfen drückten kontinuierlich durch den Türspalt und bildeten eine Pfütze am Boden.",
             "image_description": "Agatha"
           },
           {
@@ -810,7 +827,7 @@
             "image_description": ""
           },
           {
-            "text": "Er sah, dass das Loch gross war. Wie sollte er es schliessen? Er überlegte und schaute sich um. Er schnappte sich etwas, das er als Stemmeisen benutzen konnte, und drückte eine Abdeckplatte von der Wand weg. Trotz des Wassers hatte er Mühe, sie zu halten und hochzuheben.",
+            "text": "Er sah, dass das Loch gross war. Wie sollte er es schliessen? Er überlegte und schaute sich um. Er schnappte sich etwas, das er als Stemmeisen benutzen konnte und riss eine Abdeckplatte von der Wand weg. Trotz des Wassers hatte er Mühe, sie zu halten und hochzuheben.",
             "image_description": ""
           },
           {
@@ -836,7 +853,7 @@
         "type": "story",
         "story_lines": [
           {
-            "text": "Währenddessen wanderte Agatha ungeduldig vor dem Schott auf und ab. «Milos, ich schwöre dir, wenn du tot bist, bringe ich dich um!» Sie legte ihren Kopf gegen das Metall, das sie trennte. Sie erschrak, als es von der anderen Seite dagegen hämmerte.\n\nSie rannte zur Konsole und öffnete das Schott – dann sah sie Milos.\nEin Schwall Wasser strömte ihr entgegen und warf sie beinahe um.",
+            "text": "Währenddessen wanderte Agatha ungeduldig vor dem Schott auf und ab. «Milos, ich schwöre dir, wenn du tot bist, bringe ich dich um!» Sie legte ihren Kopf gegen das Metall, das sie trennte. Sie erschrak, als es von der anderen Seite dagegen hämmerte.\n\nSie rannte zur Konsole und öffnete den Schott – dann sah sie Milos.\nEin Schwall Wasser strömte ihr entgegen und warf sie beinahe um.",
             "image_description": "Agatha"
           },
           {
@@ -860,7 +877,7 @@
             "image_description": ""
           },
           {
-            "text": "Sie hielten inne, als ein lautes dumpfes Grollen, gefolgt von einem weit entfernten Zischen, durch den Hangar hallte.\nDas verhies nichts Gutes.\n\nDie Beleuchtung flackerte und ging aus.",
+            "text": "Sie harrten inne als ein lautes dumpfes Grollen gefolgt von einem weit entfernten Zischen durch den Hangar hallte.\nDas verhies nichts Gutes.\n\nDie Beleuchtung flackerte und ging aus.",
             "image_description": ""
           },
           {
