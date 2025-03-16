@@ -141,6 +141,7 @@ class BaseQuizView(View):
         Display the view in its own game loop until the user confirms their answer.
         """
         self.build_ui()
+        self.pygame_gui_ui_manager.set_focus_set(self.input_field)
         clock = pygame.time.Clock()
         self.is_running = True
         while self.is_running:
@@ -151,6 +152,8 @@ class BaseQuizView(View):
                     self.is_running = False
                 if event.type == pygame.KEYDOWN and event.key == pygame.K_d:
                     self.game.debug_manager.toggle_debug_mode()
+                if event.type == pygame.KEYDOWN and event.key == pygame.K_RETURN:
+                    self.submit()
                 self.pygame_gui_ui_manager.process_events(event)
             self.pygame_gui_ui_manager.update(time_delta)
             self.game.window.blit(self.background_image, (0, 0))

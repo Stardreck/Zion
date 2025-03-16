@@ -105,6 +105,8 @@ class InfoView(View):
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_d:
                         self.game.debug_manager.toggle_debug_mode()
+                    if event.key == pygame.K_RETURN:
+                        self.kill()
                 self.pygame_gui_ui_manager.process_events(event)
             self.pygame_gui_ui_manager.update(time_delta)
             # Draw the background image covering the window

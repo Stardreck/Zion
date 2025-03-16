@@ -93,6 +93,8 @@ class ErrorView(View):
                     self.is_running = False
                 if event.type == pygame.KEYDOWN and event.key == pygame.K_d:
                     self.game.debug_manager.toggle_debug_mode()
+                if event.type == pygame.KEYDOWN and event.key == pygame.K_RETURN:
+                    self.kill()
                 self.pygame_gui_ui_manager.process_events(event)
             self.pygame_gui_ui_manager.update(time_delta)
             self.game.window.blit(self.background_image, (0, 0))
