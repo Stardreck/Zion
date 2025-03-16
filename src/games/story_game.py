@@ -304,6 +304,7 @@ class StoryGame(Game):
     def run_station_free_fuel_action(self, planet: Planet):
         ##### display a message and add the fuel #####
         description = f"Die Minerva wird aufgetankt, mit <b>+{self.engine.config.planet_menu_fuel_free_amount} Treibstoff</b> ist sie wieder einsatzbereit."
+
         view = InfoView(self, "Tanken", self.engine.config.planet_menu_fuel_station_image_path,
                         self.engine.config.planet_menu_fuel_station_background_image_path, description,
                         "Akzeptieren")

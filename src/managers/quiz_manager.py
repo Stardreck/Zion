@@ -29,6 +29,7 @@ class QuizManager(Manager):
         self.game: StoryGame = game
         self.tolerance: float = self.game.engine.config.quiz_tolerance
         self.is_last_quiz_correct: bool = False
+        self.last_quiz_type: str | None = None
 
     def run_general_field_action(self):
         quiz = self.get_random_quiz_for_planet("default")
@@ -131,5 +132,18 @@ class QuizManager(Manager):
             quizzes = self.game.planet_quizzes_current[planet_name]
 
         if quizzes:
-            return quizzes.pop(random.randint(0, len(quizzes) - 1))
+            if self.last_quiz_type is not None:
+                # get a different quiz type if possible
+                different_type_quizzes = [quiz for quiz in quizzes if quiz.quiz_type != self.last_quiz_type]
+                if different_type_quizzes:
+                    selected_quiz = random.choice(different_type_quizzes)
+                    quizzes.remove(selected_quiz)
+                    self.last_quiz_type = selected_quiz.quiz_type
+                    return selected_quiz
+
+            # fallback
+            selected_quiz = random.choice(quizzes)
+            quizzes.remove(selected_quiz)
+            self.last_quiz_type = selected_quiz.quiz_type
+            return selected_quiz
         return None

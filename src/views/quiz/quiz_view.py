@@ -17,7 +17,7 @@ class QuizView(BaseQuizView):
         """
         if self.quiz.answer_options:
             answers_html = "<br/>".join(
-                [f"<b>{idx + 1})</b> {answer}" for idx, answer in enumerate(self.quiz.answer_options)]
+                [f"<b>{idx + 1})</b> {answer}<br/>" for idx, answer in enumerate(self.quiz.answer_options)]
             )
         else:
             answers_html = "No answers provided."
