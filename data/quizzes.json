@@ -66,7 +66,7 @@
     },
     {
       "type": "boolean",
-      "question": "Die Beschleunigung eines Objektes berechnet sich aus der Geschwindigkeitsänderung pro Zeiteinheit?",
+      "question": "Die Beschleunigung eines Objektes berechnet sich aus der Geschwindigkeitsänderung pro Zeiteinheit.",
       "correct_value": true,
       "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
       	"person": "Milo",
@@ -75,7 +75,7 @@
     },
     {
       "type": "boolean",
-      "question": "Die Geschwindigkeit eines Objektes berechnet sich aus der zurückgelegten Distanz während einer bestimmten Zeiteinheit?",
+      "question": "Die Geschwindigkeit eines Objektes berechnet sich aus der zurückgelegten Distanz während einer bestimmten Zeiteinheit.",
       "correct_value": true,
       "solution": "<b>Leider falsch</b> <br/>«Schade, aber die Mission muss weitergehen. Das üben wir noch.»",
       	"person": "Viktor",
@@ -111,7 +111,7 @@
     },
     {
       "type": "boolean",
-      "question": "Im v/t Diagramm, entspricht die Fläche der Durchschnittsgeschwindigkeit?",
+      "question": "Im v/t Diagramm, entspricht die Fläche der Durchschnittsgeschwindigkeit.",
       "correct_value": false,
       "solution": "<b>Leider falsch</b> <br/>«Schade, aber die Mission muss weitergehen. Das üben wir noch.»",
       	"person": "Viktor",
@@ -120,7 +120,7 @@
     },
     {
       "type": "boolean",
-      "question": "Ist die Gerade im v/t Diagramm horizontal so ist die Geschwindigkeit 0?",
+      "question": "Ist die Gerade im v/t Diagramm horizontal so ist die Geschwindigkeit 0.",
       "correct_value": false,
       "solution": "<b>Leider falsch</b> <br/>«Naja, nicht so schlimm Schätzchen. Beim nächsten Mal klappt das schon.»",
       	"person": "Agatha",
@@ -164,7 +164,7 @@
     },
     {
       "type": "boolean",
-      "question": "Eine höhere Kreisbahngeschwindigkeit resultiert in einer Höheren Frequenz und tieferer Umlaufperiode?",
+      "question": "Eine höhere Kreisbahngeschwindigkeit resultiert in einer Höheren Frequenz und tieferer Umlaufperiode.",
       "correct_value": true,
       "solution": "<b>Leider falsch</b> <br/>«Es war Nichts anderes zu erwarten, wenn man diese Aufgabe euch überlässt.»",
       	"person": "Lyra",
@@ -173,7 +173,7 @@
     },
     {
       "type": "boolean",
-      "question": "Das Superpositionsprinzip besagt, dass ein Körper mit einer Bewegung gleichzeitig an mehreren Positionen sein kann?",
+      "question": "Das Superpositionsprinzip besagt, dass ein Körper mit einer Bewegung gleichzeitig an mehreren Positionen sein kann.",
       "correct_value": false,
       "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
       	"person": "Milo",
@@ -254,7 +254,7 @@
     },
     {
       "type": "boolean",
-      "question": "Wenn die Summer der links- und rechtsdrehenden Drehmomente nicht gleich 0 ist, dann entsteht eine konstante Geschwindigkeit.",
+      "question": "Wenn die Summe der links- und rechtsdrehenden Drehmomente nicht gleich 0 ist, dann entsteht eine konstante Geschwindigkeit.",
       "correct_value": false,
       "solution": "<b>Leider falsch</b> <br/>«Schade, aber die Mission muss weitergehen. Das üben wir noch.»",
       	"person": "Viktor",
@@ -281,7 +281,7 @@
     },
     {
       "type": "boolean",
-      "question": "Wenn ein Schiff einen Asteroiden mit einem Seil zeihen möchte, dann kann dieses in der Schwerelosigkeit irgendwo am Asteroiden befestigt werden.",
+      "question": "Wenn ein Schiff einen Asteroiden mit einem Seil zeihen möchte, dann kann dieses in der Schwerelosigkeit irgendwo am Asteroiden befestigt werden?",
       "correct_value": false,
       "solution": "<b>Leider falsch</b> <br/>«Oh nein, hoffentlich hat das keine Konsequenzen.»",
       	"person": "Milo",
@@ -335,7 +335,7 @@
     },
     {
       "type": "quiz",
-      "question": "Inwiefern unterscheidet sich das steuern eines Raumschiffes im All vom Steuern eines Flugzeuges auf einem Planeten.",
+      "question": "Inwiefern unterscheidet sich das steuern eines Raumschiffes im All vom Steuern eines Flugzeuges auf einem Planeten?",
       "answers": [
         "Durch die zusätzlich mögliche Bewegungsrichtungen ergeben sich viel mehr Möglichkeiten.",
         "Ohne Gegenkraft bleiben einmal initiierte Bewegungen konstant, und können sich sogar überlagern.",
@@ -349,7 +349,7 @@
     },
     {
       "type": "quiz",
-      "question": "Wie verhält sich der Geschwindigkeitsvektor der Bahngeschwindigkeit eines Punktes, welcher einen anderen Punkt umkreist.",
+      "question": "Wie verhält sich der Geschwindigkeitsvektor der Bahngeschwindigkeit eines Punktes, welcher einen anderen Punkt umkreist?",
       "answers": [
         "Der Geschwindigkeitsvektor ist immer rechtwinklig zum Radius.",
         "Der Geschwindigkeitsvektor zeigt aufgrund der Zentrifugalkraft senkrecht vom Radius weg.",
@@ -469,7 +469,7 @@
     },
     {
       "type": "quiz",
-      "question": "Milos muss im Rahmen einer Routineuntersuchung die Gewichte aller Crewmitglieder ermitteln. Wieso könnte das an Bord der Minerva noch schwierig werden.",
+      "question": "Milos muss im Rahmen einer Routineuntersuchung die Gewichte aller Crewmitglieder ermitteln. Wieso könnte das an Bord der Minerva noch schwierig werden?",
       "answers": [
         "In der Schwerelosigkeit nimmt man durch die fehlende Bewegung zwangsweise zu, was vielen unangenehm ist.",
         "Je nach Beschleunigung der Minerva ist die Gravitation an Bord des Schiffes anders. Und so variieren auch die Gewichtswerte.",
@@ -499,7 +499,7 @@
     },
     {
       "type": "quiz",
-      "question": "In welche Komponenten zerlegt sich die Gewichtskraft auf der schiefen Ebene.",
+      "question": "In welche Komponenten zerlegt sich die Gewichtskraft auf der schiefen Ebene?",
       "answers": [
         "Auflagekraft und Hangabtriebskraft",
         "Reibungskraft und Normalkraft",
@@ -514,7 +514,7 @@
     },
     {
       "type": "quiz",
-      "question": "Wie lautet das 1. Newtonsche Gesetz (Trägheitsgesetz)",
+      "question": "Wie lautet das 1. Newtonsche Gesetz (Trägheitsgesetz)?",
       "answers": [
         "Jeder Körper behält seine Geschwindigkeit nach Betrag und Richtung so lange bei, bis er durch äußere Kräfte gezwungen wird, seinen Bewegungszustand zu ändern.",
         "Wirkt auf einen Körper eine Kraft, so wird er in Richtung der Kraft beschleunigt. Die Beschleunigung ist dabei direkt proportional zur Kraft und indirekt proportional zur Masse des Körpers.",
@@ -529,7 +529,7 @@
     },
     {
       "type": "quiz",
-      "question": "Wie lautet das 2. Newtonsche Gesetz (Aktionsprinzip)",
+      "question": "Wie lautet das 2. Newtonsche Gesetz (Aktionsprinzip)?",
       "answers": [
         "Jeder Körper behält seine Geschwindigkeit nach Betrag und Richtung so lange bei, bis er durch äußere Kräfte gezwungen wird, seinen Bewegungszustand zu ändern.",
         "Wirkt auf einen Körper eine Kraft, so wird er in Richtung der Kraft beschleunigt. Die Beschleunigung ist dabei direkt proportional zur Kraft und indirekt proportional zur Masse des Körpers.",
@@ -544,7 +544,7 @@
     },
     {
       "type": "quiz",
-      "question": "Wie lautet das 3. Newtonsche Gesetz (Reaktionsprinzip)",
+      "question": "Wie lautet das 3. Newtonsche Gesetz (Reaktionsprinzip)?",
       "answers": [
         "Jeder Körper behält seine Geschwindigkeit nach Betrag und Richtung so lange bei, bis er durch äußere Kräfte gezwungen wird, seinen Bewegungszustand zu ändern.",
         "Wirkt auf einen Körper eine Kraft, so wird er in Richtung der Kraft beschleunigt. Die Beschleunigung ist dabei direkt proportional zur Kraft und indirekt proportional zur Masse des Körpers.",
@@ -559,7 +559,7 @@
     },
     {
       "type": "quiz",
-      "question": "Wie lautet das Superpositionsprinzip",
+      "question": "Wie lautet das Superpositionsprinzip?",
       "answers": [
         "Jeder Körper behält seine Geschwindigkeit nach Betrag und Richtung so lange bei, bis er durch äußere Kräfte gezwungen wird, seinen Bewegungszustand zu ändern.",
         "Wirkt auf einen Körper eine Kraft, so wird er in Richtung der Kraft beschleunigt. Die Beschleunigung ist dabei direkt proportional zur Kraft und indirekt proportional zur Masse des Körpers.",

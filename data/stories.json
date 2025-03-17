@@ -322,7 +322,7 @@
       },
       {
         "type": "task",
-        "question": "<b>Victor begann mit den Berechnungen für den konstanten Schub, während Lyra den Kurs in ihre Konsole eingab.\nSie sollten kontinuierlich mit 1.2g beschleunigen, um so eine künstliche Schwerkraft an Bord des Schiffes zu generieren.</b>><br/>Die Angabe soll in Meganewton sein. Kommastelle abrunden.",
+        "question": "<b>Victor begann mit den Berechnungen für den konstanten Schub, während Lyra den Kurs in ihre Konsole eingab.\nSie sollten kontinuierlich mit 1.2g beschleunigen, um so eine künstliche Schwerkraft an Bord des Schiffes zu generieren.</b><br/>Die Angabe soll in Meganewton sein. Kommastelle abrunden.",
         "correct_value": 36,
         "story_consequence": {
           "text": "Victor war sich bei der Eingabe der Werte nicht sicher, irgendetwas schien nicht plausibel zu sein. Er ging es noch einmal durch und tatsächlich, hätte er diesen Fehler nicht bemerkt wären die Folgen fatal gewesen.",
