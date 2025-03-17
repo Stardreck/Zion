@@ -28,12 +28,13 @@ class MiniGameManager(Manager):
 
         ##### Run a random mini-game #####
         mini_game_options = [
-            self.__play_bubble_pop_challenge_mini_game()
-            # self.__play_cable_connection_mini_game,
-            # self.__play_magical_orbs_connection_mini_game
+            self.__play_bubble_pop_challenge_mini_game
+            #self.__play_cable_connection_mini_game,
+            #self.__play_magical_orbs_connection_mini_game
         ]
-        mini_game_result = random.choice(mini_game_options)
-        return mini_game_result
+        mini_game_choice = random.choice(mini_game_options)
+        result = mini_game_choice()
+        return result
 
     def __play_cable_connection_mini_game(self) -> bool:
         background = self.__get_background_image_path()

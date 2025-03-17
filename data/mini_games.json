@@ -21,5 +21,15 @@
       "assets/images/mini_games/magical_orbs_connection/sky_background_04.png",
       "assets/images/mini_games/magical_orbs_connection/sky_background_05.png"
     ]
+  },
+  "BubblePopChallengeMiniGame": {
+    "backgrounds": [
+   "assets/images/mini_games/bubble_pop_challenge/background_01.png",
+   "assets/images/mini_games/bubble_pop_challenge/background_02.png",
+   "assets/images/mini_games/bubble_pop_challenge/background_03.png",
+   "assets/images/mini_games/bubble_pop_challenge/background_04.png",
+   "assets/images/mini_games/bubble_pop_challenge/background_05.png",
+   "assets/images/mini_games/bubble_pop_challenge/background_06.png"
+    ]
   }
 }
