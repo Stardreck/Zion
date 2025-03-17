@@ -82,7 +82,7 @@ class QuizManager(Manager):
             portrait_path = self.game.engine.config.portrait_victor
 
         view = InfoView(self.game, "Hoppla!", portrait_path,
-                        self.game.engine.config.planet_menu_fuel_station_background_image_path, quiz.solution,
+                        self.get_background_image_path(), quiz.solution,
                         "Weiter")
         view.run()
 
@@ -147,3 +147,7 @@ class QuizManager(Manager):
             self.last_quiz_type = selected_quiz.quiz_type
             return selected_quiz
         return None
+
+    def get_background_image_path(self) -> str:
+        # --- Background: Select a random spaceship window image ---
+        return random.choice(self.game.engine.config.quiz_backgrounds)

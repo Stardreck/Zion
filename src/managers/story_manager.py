@@ -30,10 +30,10 @@ class StoryManager(Manager):
 
         return planet_menu.run()
 
-    def show_planet_station_menu(self, planet: Planet):
+    def show_planet_station_menu(self, planet: Planet, fuel_station_background_path: str):
         station = copy.deepcopy(planet)
         station.planet_image = "assets/images/fuel_station/fuel_station_icon.png"
-        station.background_image = "assets/images/fuel_station/fuel_station_background.png"
+        station.background_image = fuel_station_background_path
         station.description = "Tankstellen befinden sich bei jedem Planeten. Es besteht die Möglichkeit gratis zu tanken. (+5) Oder eine Aufgabe zu lösen und den Tank damit mehr zu füllen. (+10)"
         planet_station_menu = PlanetStationMenu(self.game, station)
 

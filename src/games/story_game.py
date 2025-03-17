@@ -239,17 +239,18 @@ class StoryGame(Game):
 
         ##### visit station clicked #####
         if selected_planet_menu_option == 1:
-            selected_station_option = self.story_manager.show_planet_station_menu(planet)
+            fuel_station_background_path = self.get_background_fuel_station_image_path()
+            selected_station_option = self.story_manager.show_planet_station_menu(planet, fuel_station_background_path)
 
             ##### solve quiz clicked #####
             if selected_station_option == 1:
                 print("aufgabe lösen")
-                self.run_station_quiz_fuel_action(planet)
+                self.run_station_quiz_fuel_action(planet, fuel_station_background_path)
 
             ##### free refuel clicked #####
             if selected_station_option == 2:
                 print("kostenlos tanken")
-                self.run_station_free_fuel_action(planet)
+                self.run_station_free_fuel_action(planet, fuel_station_background_path)
 
         ##### visit planet clicked #####
         if selected_planet_menu_option == 2:
@@ -282,7 +283,7 @@ class StoryGame(Game):
 
             print("Planet besuchen")
 
-    def run_station_quiz_fuel_action(self, planet: Planet):
+    def run_station_quiz_fuel_action(self, planet: Planet, fuel_station_background_path: str):
         ##### display quiz or task #####
         self.run_general_field_actions()
 
@@ -297,16 +298,16 @@ class StoryGame(Game):
             self.hull += self.engine.config.planet_menu_fuel_quiz_wrong_amount
 
         view = InfoView(self, "Resultat", self.engine.config.portrait_milo,
-                        self.engine.config.planet_menu_fuel_station_background_image_path, description,
+                        fuel_station_background_path, description,
                         "Akzeptieren")
         view.run()
 
-    def run_station_free_fuel_action(self, planet: Planet):
+    def run_station_free_fuel_action(self, planet: Planet, fuel_station_background_path: str):
         ##### display a message and add the fuel #####
         description = f"Die Minerva wird aufgetankt, mit <b>+{self.engine.config.planet_menu_fuel_free_amount} Treibstoff</b> ist sie wieder einsatzbereit."
 
         view = InfoView(self, "Tanken", self.engine.config.planet_menu_fuel_station_image_path,
-                        self.engine.config.planet_menu_fuel_station_background_image_path, description,
+                        fuel_station_background_path, description,
                         "Akzeptieren")
         view.run()
         self.fuel += self.engine.config.planet_menu_fuel_free_amount
@@ -331,6 +332,10 @@ class StoryGame(Game):
         if len(items) == 4:
             return True
         return False
+
+    def get_background_fuel_station_image_path(self) -> str:
+        # --- Background: Select a random spaceship window image ---
+        return random.choice(self.engine.config.planet_menu_fuel_station_background_image_paths)
 
     def restart(self):
         print("[Game Restart]")

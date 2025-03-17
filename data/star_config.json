@@ -36,12 +36,15 @@
     "victor": "assets/images/people/portrait_victor.png"
   },
   "player_settings": {
-    "player_start_row": 2,
-    "player_start_col": 1
+    "player_start_row": 10,
+    "player_start_col": 6
   },
   "planet_menu": {
     "fuel_station": {
-      "background": "assets/images/fuel_station/fuel_station_background.png",
+      "backgrounds": [
+        "assets/images/fuel_station/fuel_station_01.png",
+        "assets/images/fuel_station/fuel_station_02.png"
+      ],
       "image": "assets/images/fuel_station/fuel_station_icon.png",
       "fuel_free_amount": 5,
       "fuel_quiz_correct_amount": 10,
@@ -77,7 +80,18 @@
   "quiz_system": {
     "tolerance": 0.3,
     "backgrounds": [
-      "assets/images/welcome_screen.png"
+      "assets/images/quizzes/quiz_background_01.png",
+      "assets/images/quizzes/quiz_background_02.png",
+      "assets/images/quizzes/quiz_background_03.png",
+      "assets/images/quizzes/quiz_background_04.png",
+      "assets/images/quizzes/quiz_background_05.png",
+      "assets/images/quizzes/quiz_background_06.png",
+      "assets/images/quizzes/quiz_background_07.png",
+      "assets/images/quizzes/quiz_background_08.png",
+      "assets/images/quizzes/quiz_background_09.png",
+      "assets/images/quizzes/quiz_background_10.png",
+      "assets/images/quizzes/quiz_background_11.png",
+      "assets/images/quizzes/quiz_background_12.png"
     ]
   },
   "inventory_system": {
@@ -89,8 +103,12 @@
     "empty_slot": "assets/interface/inventory/inventory_empty_slot.png"
   },
   "game_over_system": {
-    "game_over_reject_backgrounds": ["assets/images/states/game_over/game_over_reject.png"],
-    "game_over_terraform_backgrounds": ["assets/images/states/game_over/x.png"],
+    "game_over_reject_backgrounds": [
+      "assets/images/states/game_over/game_over_reject.png"
+    ],
+    "game_over_terraform_backgrounds": [
+      "assets/images/states/game_over/x.png"
+    ],
     "game_over_fuel_background": "assets/images/states/game_over/game_over_fuel.png",
     "game_over_hull_background": "assets/images/states/game_over/game_over_hull.png",
     "game_over_default_backgrounds": [

@@ -98,10 +98,10 @@ class BubblePopChallengeMiniGame(MiniGame):
         timer_rect = Rect(0, 30, 300, 150)
         self.timer_label = UILabel(
             relative_rect=timer_rect,
-            text=f"Zeit: {int(self.game_duration)}",
+            text=f"zeit: {int(self.game_duration)}",
             manager=self.game.ui_manager.gui_manager,
             anchors={"left": "left", "top": "top"},
-            object_id="timer_label",
+            object_id="score_text",
         )
         close_button_rect: Rect = Rect(0, -60, 500, 50)
         self.close_button = UIButton(
@@ -193,7 +193,7 @@ class BubblePopChallengeMiniGame(MiniGame):
         # Update timer label.
         if self.timer_label:
             remaining = max(0, int(self.game_duration - self.game_time))
-            self.timer_label.set_text(f"Zeit: {remaining}")
+            self.timer_label.set_text(f"zeit: {remaining}")
             if remaining <= 0:
                 self.game_finished = True
                 self.title.set_text("Das war’s... fürs Erste")

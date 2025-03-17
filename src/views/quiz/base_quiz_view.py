@@ -123,8 +123,6 @@ class BaseQuizView(View):
         )
         self.confirm_button.bind(pygame_gui.UI_BUTTON_PRESSED, lambda event: self.submit())
 
-
-
         # Call method for additional UI elements (specific to quiz vs. task)
         self.build_specific_ui()
 

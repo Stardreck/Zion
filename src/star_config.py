@@ -42,8 +42,8 @@ class StarConfig:
         self.player_settings_start_col: int = self._data.get("player_settings", {}).get("player_start_col", 0)
 
         ##### planet menu #####
-        self.planet_menu_fuel_station_background_image_path: str = self._data.get("planet_menu", {}).get("fuel_station",                                                                                                         {}).get(
-            "background", "")
+        self.planet_menu_fuel_station_background_image_paths: List[str] = self._data.get("planet_menu", {}).get("fuel_station",                                                                                                         {}).get(
+            "backgrounds", [])
         self.planet_menu_fuel_station_image_path: str = self._data.get("planet_menu", {}).get("fuel_station", {}).get(
             "image", "")
         self.planet_menu_fuel_free_amount: int = self._data.get("planet_menu", {}).get("fuel_station", {}).get(
