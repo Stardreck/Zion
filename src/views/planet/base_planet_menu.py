@@ -27,7 +27,7 @@ class BasePlanetMenu(View):
       - button_texts: A tuple with the texts for the two buttons.
     """
 
-    def __init__(self, game: StoryGame, planet: Planet, title_text: str, button_texts: Tuple[str, str]):
+    def __init__(self, game: StoryGame, planet: Planet, title_text: str, button_texts: Tuple[str, str], show_button_1 = True, show_button_2 = True):
         super().__init__(game.ui_manager.gui_manager)
         self.game = game
         self.planet = planet
@@ -47,8 +47,8 @@ class BasePlanetMenu(View):
         self.planet_description = None
         self.button1: UIButton | None = None
         self.button2: UIButton | None = None
-        self.show_button_1 = True
-        self.show_button_2 = True
+        self.show_button_1 = show_button_1
+        self.show_button_2 = show_button_2
 
     def __build_ui(self):
         """Build the common UI elements"""

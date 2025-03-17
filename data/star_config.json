@@ -36,8 +36,8 @@
     "victor": "assets/images/people/portrait_victor.png"
   },
   "player_settings": {
-    "player_start_row": 11,
-    "player_start_col": 6
+    "player_start_row": 2,
+    "player_start_col": 1
   },
   "planet_menu": {
     "fuel_station": {

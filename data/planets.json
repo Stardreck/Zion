@@ -30,7 +30,7 @@
     "row": 5,
     "col": 5,
     "visited": false,
-    "isFuelPlanet": false,
+    "isFuelPlanet": true,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/tartarus.png",
     "cutscene": "assets/videos/planets/tartarus_cutscene.mp4"
@@ -98,7 +98,7 @@
     "row": 8,
     "col": 2,
     "visited": false,
-    "isFuelPlanet": false,
+    "isFuelPlanet": true,
     "background_image": "assets/images/galaxy/galaxy_01.png",
     "planet_image": "assets/images/planets/olympus.png",
     "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"
@@ -109,7 +109,7 @@
     "row": 2,
     "col": 1,
     "visited": false,
-    "isFuelPlanet": false,
+    "isFuelPlanet": true,
     "background_image": "assets/images/planets/ymir_zion_background.png",
     "planet_image": "assets/images/planets/ymir.png",
     "cutscene": "assets/videos/spaceship/spaceship_movement_02.mp4"
