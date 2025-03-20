@@ -8,6 +8,7 @@ from src.models.game_object import GameObject
 from src.models.planet import Planet
 from src.models.story import Story
 from src.views.decisions.final_decision_view import FinalDecisionView
+from src.views.decisions.story_decision_view import StoryDecisionView
 from src.views.object.object_found_view import ObjectFoundView
 from src.views.planet.planet_menu import PlanetMenu
 from src.views.planet.planet_station_menu import PlanetStationMenu
@@ -27,7 +28,6 @@ class StoryManager(Manager):
 
     def show_planet_menu(self, planet: Planet):
         planet_menu = PlanetMenu(self.game, planet)
-
         return planet_menu.run()
 
     def show_planet_station_menu(self, planet: Planet, fuel_station_background_path: str):
@@ -69,7 +69,58 @@ class StoryManager(Manager):
         current_quiz_count = 0
         total_quiz_count = len([block for block in story.blocks if block.block_type in {"quiz", "task", "boolean"}])
 
+        final_decision = 0
+
         for block in story.blocks:
+
+            if final_decision == 1:
+                story_option_10 = next(
+                    (block for block in story.blocks if
+                     block.story_option is not None and block.story_option.option == 10),
+                    None
+                )
+                story_block_view = StoryBlockView(self.game, planet, story_option_10)
+                story_block_view.run()
+
+                game_over_view = GameOverView(self.game,
+                                              self.game.engine.config.game_over_terraform_backgrounds_paths[0])
+                game_over_view.run()
+                self.game.stop()
+
+                pass
+                # get the object story_option with the option value 2
+                test = ""
+                # get the story
+                # show the final decision
+            if final_decision == 2:
+                story_option_20 = next(
+                    (block for block in story.blocks if
+                     block.story_option is not None and block.story_option.option == 20),
+                    None
+                )
+                story_block_view = StoryBlockView(self.game, planet, story_option_20)
+                story_block_view.run()
+
+                decision = FinalDecisionView(self.game, block.decision)
+                decision.run()
+
+                story_option_21 = next(
+                    (block for block in story.blocks if
+                     block.story_option is not None and block.story_option.option == 21),
+                    None
+                )
+                story_block_view = StoryBlockView(self.game, planet, story_option_21)
+                story_block_view.run()
+
+                game_over_view = GameOverView(self.game,
+                                              self.game.engine.config.game_over_reject_background_paths[0])
+                game_over_view.run()
+                self.game.stop()
+
+                # test
+
+            # end the game
+
             if block.block_type == "story":
                 story_block_view = StoryBlockView(self.game, planet, block)
                 story_block_view.run()
@@ -79,6 +130,7 @@ class StoryManager(Manager):
 
             has_quizzes: bool = block.block_type in ["quiz", "task", "boolean"]
             ##### run quiz loop #####
+
             if has_quizzes:
                 current_quiz_count += 1
                 is_correct = False
@@ -110,6 +162,12 @@ class StoryManager(Manager):
                 if total_quiz_count == current_quiz_count:
                     print(f"[Story Quiz] object gained")
                     self.show_object_found(planet)
+
+            if block.block_type == "story_decision":
+                decision = StoryDecisionView(self.game, block.decision)
+                decision.run()
+                option = decision.selected_option
+                final_decision = option
 
             if block.block_type == "final_decision":
                 # todo game finished screen improvement

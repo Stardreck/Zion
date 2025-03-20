@@ -4,7 +4,7 @@
     "width": 1600,
     "height": 720,
     "fps": 60,
-    "full_screen": false,
+    "full_screen": true,
     "system_check_backgrounds": [
       "assets/images/states/system_check/system_check_01.png",
       "assets/images/states/system_check/system_check_02.png",
@@ -104,10 +104,10 @@
   },
   "game_over_system": {
     "game_over_reject_backgrounds": [
-      "assets/images/states/game_over/game_over_reject.png"
+      "assets/images/states/game_over/game_over_station.png"
     ],
     "game_over_terraform_backgrounds": [
-      "assets/images/states/game_over/x.png"
+      "assets/images/states/game_over/game_over_ship.png"
     ],
     "game_over_fuel_background": "assets/images/states/game_over/game_over_fuel.png",
     "game_over_hull_background": "assets/images/states/game_over/game_over_hull.png",

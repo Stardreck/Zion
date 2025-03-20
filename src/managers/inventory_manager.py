@@ -28,31 +28,11 @@ class InventoryManager(Manager):
         self.game_objects.append(game_object)
         pass
 
-    def remove_item(self):
-        """
-        Removes a GameObject from the inventory. Returns True if successful.
-        """
-        print("[InventoryManager]item removed")
-        pass
-
     def get_items(self):
         """
         Returns a list of all GameObjects in the inventory.
         """
         return self.game_objects
-
-    def find_item_by_name(self, name: str):
-        """
-        Finds a GameObject in the inventory by its name.
-        """
-        pass
-
-    def clear_inventory(self) -> None:
-        """
-        Removes all items from the inventory.
-        """
-        print("[InventoryManager] inventory cleared")
-        self.game_objects = []
 
     def open_inventory(self):
         """

@@ -1,5 +1,5 @@
 # Zion
-IDPA Brettspiel
+Interaktives Physik-Brettspiel
 
+![Logo](assets/images/logo.png)
 
-source venvzion/bin/activate

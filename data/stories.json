@@ -686,17 +686,458 @@
         "type": "story",
         "story_lines": [
           {
-            "text": "Hier kommt die story",
+            "text": "<b>Das Ende der Reise</b><br/>«Da, seht mal», verkündete Agatha aufgeregt, «die Forschungsstation Erebus.»<br/>",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "«Beeindruckend», merkte Lyra an. ",
             "image_description": "Lyra"
           },
           {
-            "text": "HOOOOIIIIII",
+            "text": "Nun waren sie also am Ende ihrer Mission angelangt. Dann ertönte bereits IRIS’ Stimme durch das Schiff: «Die Landeerlaubnis wurde erteilt. Alle Crewmitglieder haben sich schnellstmöglich auf ihre Plätze zu begeben, um eine Unfallfreie Landung zu garantieren.» ",
+            "image_description": ""
+          },
+          {
+            "text": "Milos und Agatha nahmen ihre Plätze ein, Lyra und Victor hatten ihre bereits eingenommen.",
+            "image_description": ""
+          },
+          {
+            "text": "Von Lyra kam ein sarkastisches: «Wenn ihr in dem Tempo weitermacht, dann verliere ich meinen Führerschein, bevor wir gelandet sind», als die beiden sich festschnallten.",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Mit der Landefreigabe führte Lyra ihr perfektioniertes Landemanöver durch. Als sie sicher gelandet waren und alle das Raumschiff verlassen hatten, wurden sie von einem furchteinflössenden, schwer bewaffneten Kampfroboter empfangen:",
+            "image_description": ""
+          },
+          {
+            "text": "«Jegliche Gegenstände, die nichts auf dieser Raumstation zu suchen haben, müssen auf dem Schiff gelassen werden. Einzig die 4 bestellten Objekte und Crewmitglieder haben die Erlaubnis die Forschungsstation in Begleitung des Stationsleiters zu betreten. Sobald sie die Objekte abgeladen haben und durch das blaue Tor, dass sie beim Betreten und Verlassen der Station auf mögliche Gegenstände scannen wird, getreten sind, werden sie vom Stationsleiter weitergeführt. Nach Beendigung ihres Auftrags muss ich sie bitten, die Forschungsstation sofort zu verlassen. Wenn sie alles verstanden haben dürfen sie nun anfangen.»",
+            "image_description": ""
+          },
+          {
+            "text": "«Na du bist mir ja ein sympathischer Zeitgenosse», witzelte Lyra ironisch. ",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Der Roboter drehte sich bedrohlich zu ihr. «Wir haben die Ausführung verstanden und werden nun mit dem Abladen der Waren beginnen», sprach Vic mit fester Stimme zu dem Kampfriesen. ",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Dieser nickte ihm nur schwach merklich zu und stellte sich danach neben das Tor, um ihre Schritte zu überwachen.",
+            "image_description": ""
+          },
+          {
+            "text": "Bevor sie mit dem Abladen der Gegenstände begannen, merke Lyra noch an: «Da wurde wohl jemandem das letzte Update verweigert.»",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "<b>Ein schrecklicher Verrat</b><br/>Nachdem sie die vier Gegenstände vom Schiff auf Transportplattformen verladen hatten, waren sie bereit, um die Basis zu betreten. Dies alles geschah unter akribischer Beobachtung des unmanierlichen Roboters.",
+            "image_description": ""
+          },
+          {
+            "text": "Als sie durch das Tor schritten, wurden sie vom Chef der Forschungseinheit in Empfang genommen. «Ich heisse sie herzlich willkommen auf unserer bescheidenen Forschungseinheit Erebus.",
+            "image_description": ""
+          },
+          {
+            "text": "Ich bin der Leiter der Station, mein Name lautet Dr. Zereb. Ich möchte mich gerne für das Benehmen unserer stählernen Empfangsdame entschuldigen aber sie werden verstehen, dass gewisse Besucher nichts Gutes im Schilde führen.»",
+            "image_description": ""
+          },
+          {
+            "text": "«Der Blechklotz ist eine sie?», rutschte es Lyra entsetzt heraus, «Da hatte der Entwickler ja einen speziellen Geschmack.» ",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Ohne mit der Wimper zu zucken, antwortete Dr. Zereb: «Das wäre dann wohl ich.» Vic warf Lyra einen vorwurfsvollen Blick zu, während Agatha versuchte, ihr anbahnendes Schmunzeln zu unterdrücken.",
+            "image_description": ""
+          },
+          {
+            "text": "«Aber genug der Freundlichkeiten», fuhr der Mann fort, «Ich nehme an, es wird sie interessieren, wofür sie nun einen solchen Aufwand auf sich genommen haben, nur um uns bei der Fertigstellung des Labors zu helfen.» ",
+            "image_description": ""
+          },
+          {
+            "text": "«Ich habe etwas Zeit und kann ihnen eine kurze Führung durch das Labor anbieten, danach muss ich sie aber bitten zu gehen, da dies doch immer noch eine militärische Forschungsstation ist und Besucher grundsätzlich nicht erlaubt sind.» ",
+            "image_description": ""
+          },
+          {
+            "text": "Die Crew der Minerva nahm das Angebot interessiert an. Einzig Victor wurde leicht nervös, da die anderen nicht in den wahren Zweck der Forschungsstation eingeweiht waren. Das hatte er ihnen noch immer verschwiegen und so sollte es eigentlich auch bleiben, doch nun war er beunruhigt, dass bei der Führung alles ans Licht kommen könnte.",
+            "image_description": ""
+          },
+          {
+            "text": "Als der Stationsleiter die Crew begann durch die Räumlichkeiten zu führen, fielen Milos die vielen untypischen Geräte für solch einen Ort auf. Er wunderte sich immer mehr, über die Gegenstände, zum Beispiel den Hochleistungslaser, die sie im Auftrag dieser Station beschafft hatten.",
+            "image_description": ""
+          },
+          {
+            "text": "Die anderen schienen nichts davon zu bemerken. Sie folgten interessiert und vollkommen fokussiert den Ausführungen des Leiters der Abteilung.",
+            "image_description": ""
+          },
+          {
+            "text": "Einzig Vic kam Milos etwas angespannt vor, ja fast schon nervös. Aber dies konnte auch daran liegen, dass er den Auftrag möglichst schnell abschliessen und nach Terra Nova zurückkehren wollte.",
+            "image_description": ""
+          },
+          {
+            "text": "Nach der Führung wies Vic die anderen an, bereits zum Schiff zu gehen, unter dem Vorwand, dass er noch Papierkram mit Dr. Zereb zu erledigen hatte.",
+            "image_description": ""
+          },
+          {
+            "text": "Die drei liefen zum Tor zurück, doch Milos, dem die ganze Sache immer seltsamer vorkam, beschloss auf halbem Weg umzudrehen, mit der Begründung, dass er dem Stationsleiter noch eine Frage zur Azidität des gefundenen Gesteins stellen wollte. Er wusste genau, dass sie das nicht interessieren würde. Und so war es auch, die beiden Frauen liessen ihn allein und setzten ihren Weg zum Schiff fort.",
+            "image_description": ""
+          },
+          {
+            "text": "Milos schlich sich zurück und platzierte sich in Hörweite des Gesprächs, das der Stationsleiter gerade mit Victor führte.",
+            "image_description": ""
+          },
+          {
+            "text": "«Ihre Mission war ein voller Erfolg, dank ihrem Einsatz wird es uns in wenigen Minuten möglich sein den Planeten von diesen Ziantanern freizuräumen und den Menschen auf Terra Nova eine Zukunft zu ermöglichen.",
+            "image_description": ""
+          },
+          {
+            "text": "Dafür werden sie als Held in die Geschichtsbücher eingehen. Damit werden ihnen alle Türen offen stehen. Das war doch der Grund, weshalb sie diese Mission angenommen hatten», sagte der Funktionsleiter zu Vic.",
+            "image_description": ""
+          },
+          {
+            "text": "Milos hatte bereits genug gehört. Nun ergab alles Sinn. Zion war bewohnt, und dies war keine Forschungsstation, sondern eine Massenvernichtungswaffe. Geschaffen, um das Überleben der Bewohner von Terra Nova zu sichern. Und das Schlimmste, Vic wusste von Anfang an davon.",
+            "image_description": ""
+          },
+          {
+            "text": "Er hatte sie hereingelegt. Er hatte ihn extra für eine Mission angeheuert, bei der eine ganze Spezies einfach ausgelöscht wurde. Milos verspürte eine ungeheure Enttäuschung, Wut und Verzweiflung.",
+            "image_description": ""
+          },
+          {
+            "text": "Er drehte sich von dem Gespräch weg und beschloss Agatha und Lyra zu informieren, bevor er Vic zur rede stellen wollte. Er schlich sich rasch weg und überhörte damit den Schluss des Gespräches.",
+            "image_description": ""
+          },
+          {
+            "text": "«Stellen sie mich nicht mit solchen Leuten auf eine Stufe. Ich habe es weder für den Ruhm noch für die Beförderung gemacht. Es war lediglich ein Auftrag, ein Auftrag, den jemand erledigen musste, um unser Überleben zu sichern. Nicht mehr und nicht weniger. Genug schlimm, dass ich meine Crew belügen musste aber, dass sie mir nun solch niedere Motive vorwerfen.» Vic war sichtlich gereizt.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Sein schlechtes Gewissen war schon schlimm genug aber jetzt noch so etwas vorgeworfen zu bekommen. Er würde sich erst wieder entspannen können, wenn sie auf dem Rückweg nach Terra Nova waren.",
+            "image_description": ""
+          },
+          {
+            "text": "Er verabschiedete sich von Dr. Zereb, der sichtlich irritiert von dem leichten Gefühlsausbruch dieses reservierten Mannes war. Der Stationsleiter gab ihm zum Schluss noch bekannt, dass sie den Abschluss des Auftrags starteten, sobald die Minerva gestartet war. Victor lief zurück in Richtung Landeplatz.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Die Konfrontation</b><br/>In der Zwischenzeit war Milos sichtlich entrüstet zurück bei der Minerva angelangt.",
+            "image_description": ""
+          },
+          {
+            "text": "Dort waren Agatha und Lyra gerade damit beschäftigt dem unhöflichen Roboter, der sie empfangen hatte und nun an der Ladestation angedockt war mit Sprühfarbe ein freundlicheres Äusseres zu verpassen.",
+            "image_description": ""
+          },
+          {
+            "text": "Als sie ihn bemerkten, war ihnen schlagartig klar, dass etwas nicht stimmte. Sie legten ihre Farbe zur Seite und kamen ihm entgegen.",
+            "image_description": ""
+          },
+          {
+            "text": "«Was ist passiert?», fragte Lyra etwas besorgt.",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Milo erzählte, wie ihm vieles auf dieser Station seltsam vorkam und was er nun durch das Gespräch zwischen Victor und dem Stationsleiter erfahren hatte und wie nun alles einen Sinn ergab. «Er hatte es von Anfang an gewusst und uns belogen», beendete er seine Ausführungen.",
             "image_description": "Milo"
+          },
+          {
+            "text": "Agatha wollte es nicht glauben und starrte ihn fassungslos an. «Bist du dir sicher, dass du nicht etwas falsch verstanden hast?», fragte sie ein wenig hoffnungsvoll.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Doch als Lyra meinte: «Wo kann man da etwas falsch verstehen? Ich weiss du willst es nicht hören, aber Milos hat recht. Deshalb brauchten sie auch einen Hydro-Splitter», wurde ihr klar, dass Milos Erzählung Sinn ergab.",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Genau in diesem Moment trat Victor durch das Tor auf sie zu. Als er Agathas gebrochenen Gesichtsausdruck wahrnahm, war er sofort in höchster Alarmbereitschaft.",
+            "image_description": ""
+          },
+          {
+            "text": "Mit allem hatte er in diesem Moment gerechnet, ausser mit der Frage, die in diesem Moment ihre Lippen verliess: «Stimmt es? Hast du davon gewusst? Wusstest du, dass mit unserer Hilfe ein Massenmord begangen wird?»",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "Sie hatten es also herausgefunden. Er suchte die Blicke der anderen beiden. Anklagend verlangten sie nach einer Antwort.",
+            "image_description": ""
+          },
+          {
+            "text": "Er machte sich auf einen emotionalen Ausbruch gefasst, dass sie ihn verprügeln oder in ihrer Wut aus Versehen erschiessen würde aber der Ausdruck, der sich in ihren Augen widerspiegelte als er ein, «Ja», formulierte, brach ihn innerlich.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Keine Wut, keine Verzweiflung, keine Trauer, aber…Leere, als wäre sie gerade vor seinen Augen ausgesaugt worden. Er hatte es mit seiner Aktion geschafft, dass die emotionalste Person, die er kannte, aussah, als wüsste sie nicht, wie man fühlt.",
+            "image_description": ""
+          },
+          {
+            "text": "Ohne ein weiteres Wort drehte sie sich mechanisch um und kehrte auf das Schiff zurück.",
+            "image_description": ""
+          },
+          {
+            "text": "Als er ihr nacheilen wollte. Stellten sich ihm Lyra und Milos in den Weg.",
+            "image_description": ""
+          },
+          {
+            "text": "«Was du getan hast, ist unverzeihlich. Aber das weisst du bereits. Du wusstest, dass Agatha und ich nie dabei geholfen hätten, wenn wir das gewusst hätten», warf ihm Milos an den Kopf.",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Auch Lyra mischte sich ein. «Du hättest uns nicht belügen sollen. Dein steter Sinn Befehle zu befolgen hat dich nun deine Freunde gekostet. Ich hoffe es hat sich gelohnt.»",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Mit diesem letzten Satz drehten auch sie sich um und verschwanden im Raumschiff. Nun stand Victor allein vor dem Tor.",
+            "image_description": ""
+          }
+        ]
+      },
+      {
+        "type": "story_decision"
+      },
+      {
+        "type": "story_option",
+        "option": 10,
+        "story_lines": [
+          {
+            "text": "<b>Die Rettung der Menschheit</b><br/>Nach kurzem Zögern verliess auch Vic die Brücke und begab sich zurück in die Minerva. An Bord war die Stimmung erdrückend, als er das Kommando zum Aufbrechen verkündete: «Alle auf ihre Plätze, wir starten.»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "<b>Der Abschied</b><br/>Nach der Abreise von Erebus lag eine schwere, bedrückende Stille über der Minerva. Kein Wort wurde über das gesprochen, was geschehen war. Kein Wort über Zion.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Kein Wort über den Massenmord, den sie mit ihrer Mission ermöglicht hatten. Victor sass allein auf der Brücke, die Hände fest um das Steuer geklammert, während Lyra und Milos sich zurückzogen.",
+            "image_description": ""
+          },
+          {
+            "text": "Es war, als hätten sie alle beschlossen, sich nicht mehr zu suchen. Keine Blicke, keine Gespräche.",
+            "image_description": ""
+          },
+          {
+            "text": "In jener Nacht passierte es. Agatha schlich lautlos durch die Gänge des Schiffes, eine fast gespenstische Stille in ihrem Schritt. Sie nahm nur das Nötigste, einen Raumanzug und eine Rettungskapsel, die für Notfälle bereitstand.",
+            "image_description": ""
+          },
+          {
+            "text": "Keine Nachricht. Kein Abschied. Als sie die Schleuse aktivierte, blinkte das Notfallluken-System kurz rot auf, doch es war bereits zu spät.",
+            "image_description": ""
+          },
+          {
+            "text": "Die Kapsel wurde mit einem leisen Zischen aus dem Schiff geschleudert, ein winziger, unauffälliger Punkt, der langsam in der Dunkelheit verschwand. Niemand bemerkte es, niemand ausser IRIS. Doch die KI wusste, dass ihr Captain den Befehl gegeben hatte keinen Alarm auszulösen. Also schwieg sie.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Der Morgen danach</b><br/>Am nächsten Morgen war Agatha nicht da. Lyra fand die offene Schleuse, ihre Hände wurden eiskalt. Milos überprüfte die Schiffsprotokolle. Eine Rettungskapsel fehlte.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Victor trat langsam in den Raum, sein Gesicht ausdruckslos, wie immer. Er musterte das offene System, dann richtete er sich auf und sagte mit kühler, gleichgültiger Ruhe: «Sie hat ihre Entscheidung getroffen.»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Lyra drehte sich zu ihm, ihre Augen flammten vor Wut. «Mehr hast du nicht zu sagen?» «Was soll ich sagen?», fragte er ruhig zurück.",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Milos’ Gesicht war von Unverständnis und Zorn verzerrt. «Verdammt, Victor! Sie ist in einer Rettungskapsel ins Unbekannte geflogen! Wir müssen sie suchen!»",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Victor schüttelte den Kopf, seine Stimme wie aus Eis: «Das Schiff hat eine Mission. Ich werde keine Befehle ändern. Sie wollte gehen. Also ist sie gegangen.»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Das Schweigen, das folgte, war lauter als alles, was zuvor gesprochen worden war. Milos stand da, fassungslos. Lyra wirkte, als wolle sie ihn anschreien. Doch sie tat nichts. Denn zum ersten Mal, seit sie Victor gekannt hatten, war klar, dass er nicht mehr der Mann war, den sie früher kannten.",
+            "image_description": ""
+          },
+          {
+            "text": "Er hatte eine Entscheidung getroffen. Er war nicht mehr ihr Freund. Er war ihr Captain.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Der Rückflug</b><br/>Victor sprach nicht mehr persönlich mit ihnen. Es waren nur noch Formalitäten, militärisch.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Sein Ton war scharf, präzise. Lyra und Milos ertrugen es, doch jedes Wort von ihm zeigte ihnen nur, wie weit er sich von ihnen entfernt hatte. «Anflugvektoren berechnen, Lieutenant.»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "«Verstanden, Captain.»",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "«Zielkoordinaten anpassen, Geschwindigkeit halten.»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "«Aye, Sir.»",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Victor sass stumm in seinem Sessel auf der Brücke, sein Gesicht unbeweglich. Er wusste, dass sie ihn verachteten. Doch das spielte keine Rolle. Befehl ist Befehl. Auftrag ist Auftrag.",
+            "image_description": ""
+          },
+          {
+            "text": "Milos brach schliesslich das Schweigen, seine Stimme brüchig, aber voller Wut. «Du bist nicht so. Ich weiss, dass du nicht so bist. Also hör auf, dich und uns zu verarschen!»",
+            "image_description": "Milos"
+          },
+          {
+            "text": "Victor sah ihn an, ausdruckslos. Das war der Moment, in dem Milos es endgültig klar wurde. Victor war tot. Zumindest der Mann, den er einst gekannt hatte.",
+            "image_description": ""
+          },
+          {
+            "text": "<b>Ankunft auf Terra Nova, der letzte Abschied</b><br/>Die Minerva setzte zur Landung an. Keiner sprach. Keiner verabschiedete sich. Victor erwartete es nicht.",
+            "image_description": ""
+          },
+          {
+            "text": "Er wusste, dass dies das letzte Mal war, dass sie gemeinsam ein Schiff verliessen. Lyra schnallte sich ab, packte ihre Sachen. Ihr Blick war eiskalt.",
+            "image_description": ""
+          },
+          {
+            "text": "«Du wirst befördert. Du hast deine Mission erfüllt. Glückwunsch, Captain.» Victor nickte. Keine Freude. Keine Überraschung. Nur eine weitere Anweisung, die er zur Kenntnis nahm.",
+            "image_description": ""
+          },
+          {
+            "text": "Milos blieb noch einen Moment stehen, als wollte er etwas sagen, doch dann schüttelte er nur den Kopf und ging. Selbst er hatte die Hoffnung verloren, dass sein bester Freund noch irgendwo in ihm steckte.",
+            "image_description": "Milo"
+          },
+          {
+            "text": "Victor blieb allein zurück. Keiner drehte sich um.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "«Ende»",
+            "image_description": "Victor"
+          }
+        ]
+      },
+      {
+        "type": "story_option",
+        "option": 20,
+        "story_lines": [
+          {
+            "text": "Victor sah zur Minerva hinüber und dachte darüber nach, wie sie dort stand und in ihr seine Freunde, die es nun nicht mehr waren. Der Gedanke daran, dass es nun vorbei war, frass ihn innerlich auf.",
+            "image_description": ""
+          },
+          {
+            "text": "Noch schlimmer, er hatte Agatha verloren, für immer, das würde sie ihm nie verzeihen. Dann fasste er einen Entschluss.",
+            "image_description": ""
+          },
+          {
+            "text": "Mit einem Tippen auf seinem Intercom öffnete er einen direkten verschlüsselten Kanal zu IRIS: «IRIS, ich will das du das Homerun-Protokoll startest.»",
+            "image_description": "Victor"
+          },
+          {
+            "text": "«Verstanden Victor, der Befehl wird ausgeführt, Protokoll 69 wird gestartet, sobald du an Bord der Minerva bist», gab die Bord-KI zurück.",
+            "image_description": ""
+          },
+          {
+            "text": "«Nein, starte es jetzt», sagte Victor, während er immer noch auf das Schiff sah.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Es dauerte eine Weile, ehe IRIS antwortete.: «Verstanden, hiermit gehen sämtliche Weisungsbefugnisse für den Rest der Mission auf Commander Torello über.» Die Minerva zündete das Haupttriebwerk und schwebte langsam davon, sie richtete sich aus und gab Schub.",
+            "image_description": ""
+          },
+          {
+            "text": "Eine Zeit lang blickte er ihr noch hinterher, dann deaktivierte er sein Intercom. Nun lag der Rest an ihm. Er schlich sich wieder in die Basis hinein, durch seine langjährige Erfahrung beim Militär war dies ein Klacks für ihn.",
+            "image_description": ""
+          },
+          {
+            "text": "Er wusste, wie sie solche Stationen entwarfen und kannte all ihre Schwachpunkte. Sein Ziel war der Reaktorraum der Forschungsstation. Das Herz der Basis.",
+            "image_description": ""
+          },
+          {
+            "text": "Die wenigsten wussten, dass sich auf dem Gelände einer jeden militärischen Station eine Art Selbstzerstörungsmechanismus befand, der aktiviert werden konnte, falls die Station in falsche Hände geraten sollten.",
+            "image_description": ""
+          },
+          {
+            "text": "Dies war, damit sich keine feindlich gesinnten Mächte der Technologien oder Forschungen, die an solchen Orten durchgeführt wurden, ermächtigen konnte.",
+            "image_description": ""
+          },
+          {
+            "text": "Er schaffte es tatsächlich unbemerkt bis in den Frachtraum vorzudringen. Doch die Tür zum Kontrollraum stand noch zwischen ihm und der Steuerung, er konnte sie nicht öffnen.",
+            "image_description": ""
+          },
+          {
+            "text": "Er überlegte und ging Ideen durch wie er sie öffnen könnte, als er durch eine Schockwelle, quer durch den kleinen Raum an die gegenüberliegende Wand geschleudert wurde. Er prallte hart auf dem Boden auf.",
+            "image_description": ""
+          },
+          {
+            "text": "Ein stechender Schmerz durchfuhr ihn, er hat sich beim Aufprall den linken Arm gebrochen. Als er sich aufrichtete, sah er wie etwas auf ihn zuraste und konnte gerade noch ausweichen, als das Etwas dann auch schon mit einem lauten Knall eine Delle in die Wand schlug.",
+            "image_description": ""
+          },
+          {
+            "text": "Es war die Blechbüchse von zuvor, Matilda oder Gerthilde oder wie auch immer dieser Psychopath seinen Roboter getauft hatte. Er war wohl doch nicht unbemerkt eingeschlichen. Victor fluchte leise und rappelte sich auf, keine Sekunde zu früh, denn dieses Ding ging bereits wieder in den Angriff über.",
+            "image_description": ""
+          },
+          {
+            "text": "Er wich ihm immer wieder geschickt aus, doch er wusste, dass der Roboter länger durchhalten würde als er. Logischerweise griff dieser ihn im Nahkampfmodus an, da der Roboter in solch einem heiklen Raum keine Schusswaffen verwenden konnte, ohne zu riskieren, dass er alles zerstörte.",
+            "image_description": ""
+          },
+          {
+            "text": "Nach einigen Minuten ducken und zur Seite springen war Victor ausser Atem. Er schmeckte das Blut in seinem Mund, er hielt nicht länger durch und dann würde ihn diese Blechkiste erwischen.",
+            "image_description": ""
+          },
+          {
+            "text": "Im Besten fall tötete sie ihn sofort oder sie nahm ihn gefangen und übergab ihn dem Dr. Zereb. Er Sprang hinter eine Kiste und verschwand so für einen Augenblick aus ihrem Sichtfeld.",
+            "image_description": ""
+          },
+          {
+            "text": "Victor zwang sich ruhiger zu atmen und es kam ihm so vor, als würde er dabei ersticken. Der Roboter drohte ihn zu entdecken und so warf Victor einen metallischen Gegenstand durch den Raum in eine andere Ecke. Der Roboter fuhr herum und raste dem Geräusch hinterher, dabei raste er durch eine Raumabtrennung, als wäre sie aus Papier.",
+            "image_description": ""
+          },
+          {
+            "text": "Victor hatte einen Geistesblitz, er kroch hinter der Kiste hervor und platzierte sich vor der Tür zum Reaktorraum. «Hey Brunhilde!», rief er so laut es ging.",
+            "image_description": "Victor"
+          },
+          {
+            "text": "Der Roboter fuhr herum und raste auf Victor zu, dieser sprang in letzter Sekunde zur Seite. Die stählerne Dame durchschlug die Sicherheitstür gerade so und wurde durch die Wucht des Einschlages ausser Kraft gesetzt. ",
+            "image_description": ""
+          },
+          {
+            "text": "Victor kletterte an ihr vorbei und näherte sich der Steuerung. Er öffnete sie und erblickte einen kleinen roten Schalter. Ironisch wie ein solcher kleiner Schalter über Leben und Tod der ganzen Besatzung dieser Forschungsstation entscheiden konnte und so auch über das seinige.",
+            "image_description": ""
+          },
+          {
+            "text": "Doch würde dieser Schalter auch bedeuten, dass wohl Millionen Individuen einer anderen Spezies weiterleben konnten. Victor sah auf die Uhr, die Minerva würde nun weit genug weg sein.",
+            "image_description": ""
+          },
+          {
+            "text": "Zur selben Zeit versuchte Lyra an Bord der Minerva das Schiff unter ihre Kontrolle zu bringen. Aber erfolglos, es musste eine Art Notfallprotokoll gestartet worden sein, denn nicht einmal IRIS reagierte auf ihre Kommunikationsversuche.",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Auch Vic antwortete nicht auf ihre Anfragen. Sein Empfänger wurde ausgeschalten. Instinktiv war ihnen allen klar, was das zu bedeuten hatte. Als das Schiff endlich zu einem Halt kam waren sie bereits viel zu weit weg, um etwas verhindern zu können.",
+            "image_description": "Lyra"
+          },
+          {
+            "text": "Sie kannten ihren Freund gut genug, um zu wissen, dass wenn er sich etwas in den Kopf gesetzt hatte, dann würde er es auch durchziehen.",
+            "image_description": ""
+          },
+          {
+            "text": "Er drückte seinen Finger an den Schalter und legte ihn um. Das Letzte, was er hörte, war das Klicken des Schalters. Sein letzter Gedanke galt seinen Freunden auf der Minerva. Und Agatha.",
+            "image_description": "Victor"
           }
         ]
       },
       {
         "type": "final_decision"
+      },
+      {
+        "type": "story_option",
+        "option": 21,
+        "story_lines": [
+          {
+            "text": "Wie auf Kommando konnte die Besatzung der Minerva nun beobachten, wie die Forschungsstation vor ihren Augen explodierte und sich ihre Trümmer im All verteilten.",
+            "image_description": ""
+          },
+          {
+            "text": "«Viiic!», schrie Agatha schmerzerfüllt, bevor ihr Tränen über die Wangen liefen.",
+            "image_description": "Agatha"
+          },
+          {
+            "text": "«Ende»",
+            "image_description": "Agatha"
+          }
+        ]
       }
     ]
   },
