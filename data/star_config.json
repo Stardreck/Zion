@@ -36,8 +36,8 @@
     "victor": "assets/images/people/portrait_victor.png"
   },
   "player_settings": {
-    "player_start_row": 10,
-    "player_start_col": 6
+    "player_start_row": 9,
+    "player_start_col": 7
   },
   "planet_menu": {
     "fuel_station": {
@@ -67,7 +67,7 @@
     "panel_background": "assets/interface/events/event_panel_background.png"
   },
   "mini_game_system": {
-    "mini_game_probability": 1,
+    "mini_game_probability": 0.2,
     "menu_backgrounds": [
       "assets/images/spaceship/casino/spaceship_casino_01.png",
       "assets/images/spaceship/casino/spaceship_casino_02.png",

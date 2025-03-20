@@ -221,17 +221,14 @@ class StoryGame(Game):
             self.story_manager.show_planet_story(planet, self.data.story_segments[planet.name])
             return
         if planet.is_end_planet:
-            pass
-        ##### player hasn't all items, show error message #####
-        # todo activate this
-        # if not self.has_all_items():
-        #    story_line = StoryLine(
-        #        self.engine.config.planet_menu_states_zion_not_allowed_text,
-        #        "", "Lyra")
-        #    error_view = StoryView(self, planet, story_line)
-        #    error_view.run()
-        #    return
-
+            ##### player hasn't all items, show error message #####
+            if not self.has_all_items():
+                story_line = StoryLine(
+                    self.engine.config.planet_menu_states_zion_not_allowed_text,
+                    "", "Lyra")
+                error_view = StoryView(self, planet, story_line)
+                error_view.run()
+                return
 
         if planet.is_spacestation:
             self.story_manager.show_spacestation_menu(planet)
